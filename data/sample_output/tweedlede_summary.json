@@ -5,11 +5,62 @@
     "first": "Tue Jul 23 22:22:20 2024",
     "last": "Wed Sep 16 00:28:19 2026"
   },
+  "guild_history": [
+    {
+      "timestamp": "Fri Sep 13 17:38:03 2024",
+      "action": "joined",
+      "guild": "Project Faceless"
+    },
+    {
+      "timestamp": "Fri Oct 25 10:33:35 2024",
+      "action": "left",
+      "guild": "Dungeons and Dragons"
+    },
+    {
+      "timestamp": "Fri Oct 25 11:04:51 2024",
+      "action": "joined",
+      "guild": "Haven"
+    },
+    {
+      "timestamp": "Sun Dec 15 01:27:48 2024",
+      "action": "left",
+      "guild": "Haven"
+    },
+    {
+      "timestamp": "Tue Dec 17 20:51:51 2024",
+      "action": "joined",
+      "guild": "Dungeons and Dragons"
+    }
+  ],
+  "expansion_firsts": {
+    "Kunark": {
+      "timestamp": "Thu Aug 01 22:29:24 2024",
+      "zone": "Timorous Deep"
+    },
+    "Velious": {
+      "timestamp": "Tue Apr 01 20:50:51 2025",
+      "zone": "Kael Drakkel"
+    },
+    "Luclin": {
+      "timestamp": "Sat Jul 26 22:52:08 2025",
+      "zone": "Ssraeshza Temple"
+    }
+  },
+  "epic_quest": {
+    "name": "Staff of the Serpent",
+    "class": "Enchanter Epic 1.0",
+    "timestamp": "Sun Jan 05 00:55:53 2025",
+    "zone": "The Burning Wood"
+  },
   "stats": {
     "total_deaths": 561,
-    "total_level_dings": 0,
-    "total_aas_earned": 10,
+    "total_level_dings": 65,
     "max_level": 60,
+    "total_aas_earned": 49,
+    "total_lockouts": 558,
+    "unique_lockout_bosses": 71,
+    "attended_guild_kills": 263,
+    "remote_guild_kills": 67,
     "top_zones_by_entries": [
       [
         "Chardok",
@@ -97,18 +148,30 @@
     "top_zones_by_aas": [
       [
         "The Fungus Grove",
-        5
+        33
       ],
       [
         "Veksar",
-        3
+        9
       ],
       [
         "Ssraeshza Temple",
-        1
+        2
       ],
       [
         "Siren's Grotto",
+        2
+      ],
+      [
+        "Acrylia Caverns",
+        1
+      ],
+      [
+        "The Deep",
+        1
+      ],
+      [
+        "The Maiden's Eye",
         1
       ]
     ],
@@ -238,359 +301,914 @@
         3293
       ]
     ],
-    "raid_kills_count": 28
+    "top_lockout_bosses": [
+      [
+        "Venril Sathir",
+        38
+      ],
+      [
+        "Cazic Thule",
+        30
+      ],
+      [
+        "a dracoliche",
+        29
+      ],
+      [
+        "Terror",
+        29
+      ],
+      [
+        "Dread",
+        29
+      ],
+      [
+        "Fright",
+        29
+      ],
+      [
+        "Trakanon",
+        20
+      ],
+      [
+        "Phara Dar",
+        15
+      ],
+      [
+        "Keeper of Souls",
+        12
+      ],
+      [
+        "Bazzt Zzzt",
+        12
+      ],
+      [
+        "Silverwing",
+        11
+      ],
+      [
+        "Faydedar",
+        10
+      ],
+      [
+        "King Tranix",
+        10
+      ],
+      [
+        "Lord Nagafen",
+        10
+      ],
+      [
+        "Lady Vox",
+        10
+      ]
+    ]
   },
-  "level_timeline": [],
+  "level_timeline_firsts": [
+    {
+      "timestamp": "Tue Jul 23 23:11:18 2024",
+      "level": 2,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jul 23 23:56:18 2024",
+      "level": 3,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 24 01:02:46 2024",
+      "level": 4,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 24 01:50:56 2024",
+      "level": 5,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 24 02:22:52 2024",
+      "level": 6,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 24 22:47:38 2024",
+      "level": 7,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Jul 25 00:02:27 2024",
+      "level": 8,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jul 29 15:43:42 2024",
+      "level": 9,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jul 30 23:43:19 2024",
+      "level": 10,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 31 00:59:45 2024",
+      "level": 11,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 31 23:53:33 2024",
+      "level": 12,
+      "zone": "Steamfont Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Aug 01 23:59:43 2024",
+      "level": 13,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Aug 05 22:00:12 2024",
+      "level": 14,
+      "zone": "Kurn's Tower (Alternate)",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Aug 05 23:54:38 2024",
+      "level": 15,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Aug 06 01:19:29 2024",
+      "level": 16,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Aug 06 23:17:05 2024",
+      "level": 17,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Aug 07 00:23:51 2024",
+      "level": 18,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Aug 07 22:10:44 2024",
+      "level": 19,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Aug 07 23:24:40 2024",
+      "level": 20,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Aug 10 18:23:13 2024",
+      "level": 21,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Aug 10 21:55:26 2024",
+      "level": 22,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Aug 10 23:19:51 2024",
+      "level": 23,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 11 00:13:16 2024",
+      "level": 24,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 11 01:12:41 2024",
+      "level": 25,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Aug 12 00:33:19 2024",
+      "level": 26,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Aug 13 22:36:19 2024",
+      "level": 27,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Aug 13 23:51:35 2024",
+      "level": 28,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Aug 14 01:11:47 2024",
+      "level": 29,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Aug 15 09:37:18 2024",
+      "level": 30,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 18 00:06:53 2024",
+      "level": 31,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 18 01:24:12 2024",
+      "level": 32,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 18 22:24:28 2024",
+      "level": 33,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 18 23:44:47 2024",
+      "level": 34,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Aug 19 21:37:41 2024",
+      "level": 35,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Aug 19 23:42:55 2024",
+      "level": 36,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Aug 21 00:17:08 2024",
+      "level": 37,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Aug 21 22:32:26 2024",
+      "level": 38,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Aug 22 00:29:21 2024",
+      "level": 39,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Aug 23 21:42:18 2024",
+      "level": 40,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Aug 24 23:35:11 2024",
+      "level": 41,
+      "zone": "Timorous Deep",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 25 22:44:05 2024",
+      "level": 42,
+      "zone": "Timorous Deep",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Aug 26 00:36:34 2024",
+      "level": 43,
+      "zone": "Timorous Deep",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Aug 27 00:08:51 2024",
+      "level": 44,
+      "zone": "Timorous Deep",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Aug 28 22:17:35 2024",
+      "level": 45,
+      "zone": "Timorous Deep",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Aug 29 22:46:16 2024",
+      "level": 46,
+      "zone": "Timorous Deep",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Sep 03 20:43:19 2024",
+      "level": 47,
+      "zone": "The Burning Wood",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Sep 04 00:28:07 2024",
+      "level": 48,
+      "zone": "The Burning Wood",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Sep 04 23:33:06 2024",
+      "level": 49,
+      "zone": "The Burning Wood",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Sep 05 22:33:05 2024",
+      "level": 50,
+      "zone": "The Burning Wood",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Sep 06 00:22:34 2024",
+      "level": 51,
+      "zone": "The Burning Wood",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Sep 07 00:05:21 2024",
+      "level": 52,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 08 00:01:32 2024",
+      "level": 53,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Sep 10 23:53:33 2024",
+      "level": 54,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Sep 13 22:15:17 2024",
+      "level": 55,
+      "zone": "an Arena (PvP) area",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 16 22:47:08 2024",
+      "level": 56,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Sep 19 15:06:29 2024",
+      "level": 57,
+      "zone": "Neriak - Foreign Quarter",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 23 18:03:52 2024",
+      "level": 58,
+      "zone": "Neriak - Foreign Quarter",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Sep 26 23:44:59 2024",
+      "level": 59,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Sep 28 15:02:41 2024",
+      "level": 60,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    }
+  ],
   "aa_events": [
     {
       "timestamp": "Sun Jul 27 00:06:04 2025",
-      "total_aa": 1,
+      "banked": 1,
       "zone": "Ssraeshza Temple"
     },
     {
       "timestamp": "Fri Aug 01 22:08:40 2025",
-      "total_aa": 1,
+      "banked": 1,
       "zone": "Siren's Grotto"
     },
     {
       "timestamp": "Sat Aug 02 23:28:14 2025",
-      "total_aa": 1,
+      "banked": 1,
       "zone": "Veksar"
     },
     {
       "timestamp": "Sun Aug 03 00:36:12 2025",
-      "total_aa": 1,
+      "banked": 1,
       "zone": "Veksar"
     },
     {
       "timestamp": "Sun Aug 03 01:38:11 2025",
-      "total_aa": 1,
+      "banked": 1,
       "zone": "Veksar"
     },
     {
+      "timestamp": "Mon Aug 04 22:08:22 2025",
+      "banked": 2,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Mon Aug 04 22:58:32 2025",
+      "banked": 3,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Mon Aug 04 23:50:24 2025",
+      "banked": 2,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Tue Aug 05 00:40:54 2025",
+      "banked": 3,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Thu Aug 07 00:07:06 2025",
+      "banked": 2,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Thu Aug 07 00:55:24 2025",
+      "banked": 3,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Thu Aug 14 16:57:09 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
       "timestamp": "Sat Aug 16 00:48:45 2025",
-      "total_aa": 1,
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Aug 16 01:26:19 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 17 14:49:35 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 17 16:08:17 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Aug 20 21:39:40 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Aug 20 22:27:05 2025",
+      "banked": 6,
       "zone": "The Fungus Grove"
     },
     {
       "timestamp": "Wed Aug 20 23:20:55 2025",
-      "total_aa": 1,
+      "banked": 1,
       "zone": "The Fungus Grove"
     },
     {
+      "timestamp": "Thu Aug 21 00:07:54 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Aug 21 00:39:25 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Aug 23 00:59:20 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Aug 23 01:35:42 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 24 00:47:53 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 24 01:18:16 2025",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 24 01:46:00 2025",
+      "banked": 8,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Aug 30 15:22:05 2025",
+      "banked": 9,
+      "zone": "Siren's Grotto"
+    },
+    {
       "timestamp": "Sat Sep 27 00:09:52 2025",
-      "total_aa": 1,
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 20:45:49 2025",
+      "banked": 2,
       "zone": "The Fungus Grove"
     },
     {
       "timestamp": "Wed Nov 19 21:17:16 2025",
-      "total_aa": 1,
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 21:55:03 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 22:17:30 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 22:50:21 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 23:09:53 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 23:34:55 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 23:54:37 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Nov 20 00:13:19 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Nov 24 15:01:00 2025",
+      "banked": 5,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Sun Nov 30 15:07:11 2025",
+      "banked": 6,
       "zone": "The Fungus Grove"
     },
     {
       "timestamp": "Sun Dec 07 00:39:03 2025",
-      "total_aa": 1,
+      "banked": 1,
       "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Dec 07 01:03:41 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Dec 07 01:29:01 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Dec 11 21:32:33 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Dec 11 22:04:19 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Dec 11 22:28:57 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Dec 11 22:54:51 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Jan 13 17:36:00 2026",
+      "banked": 2,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Jan 14 23:53:59 2026",
+      "banked": 3,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Tue Jul 07 11:47:39 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
     }
   ],
-  "deaths_sample": [
+  "attended_guild_kills_sample": [
     {
-      "timestamp": "Tue Jul 23 22:52:58 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Ak'Anon"
+      "timestamp": "Wed Nov 06 21:04:03 2024",
+      "boss": "Faydedar",
+      "killer": "Tweedledum",
+      "zone": "Timorous Deep",
+      "player_zone": "Timorous Deep"
     },
     {
-      "timestamp": "Tue Jul 23 22:58:44 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Mon Nov 11 17:49:17 2024",
+      "boss": "Trakanon",
+      "killer": "Tweedlede",
+      "zone": "Ruins of Sebilis",
+      "player_zone": "Ruins of Sebilis"
     },
     {
-      "timestamp": "Tue Jul 23 23:01:28 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Mon Dec 02 18:50:20 2024",
+      "boss": "King Tranix",
+      "killer": "Frankenberries",
+      "zone": "Nagafen's Lair",
+      "player_zone": "Nagafen's Lair"
     },
     {
-      "timestamp": "Tue Jul 23 23:05:43 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Mon Dec 02 18:51:29 2024",
+      "boss": "Warlord Skarlon",
+      "killer": "Malarkie",
+      "zone": "Nagafen's Lair",
+      "player_zone": "Nagafen's Lair"
     },
     {
-      "timestamp": "Tue Jul 23 23:12:44 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Mon Dec 02 18:57:19 2024",
+      "boss": "Lord Nagafen",
+      "killer": "Noname",
+      "zone": "Nagafen's Lair",
+      "player_zone": "Nagafen's Lair"
     },
     {
-      "timestamp": "Tue Jul 23 23:37:22 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Fri Dec 13 17:48:56 2024",
+      "boss": "Venril Sathir",
+      "killer": "Cattastrophe",
+      "zone": "Karnor's Castle",
+      "player_zone": "Karnor's Castle"
     },
     {
-      "timestamp": "Wed Jul 24 01:03:09 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Fri Dec 13 18:00:42 2024",
+      "boss": "Talendor",
+      "killer": "Quick",
+      "zone": "Skyfire Mountains",
+      "player_zone": "Skyfire Mountains"
     },
     {
-      "timestamp": "Wed Jul 24 01:20:41 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Ak'Anon"
+      "timestamp": "Fri Dec 13 18:22:53 2024",
+      "boss": "Silverwing",
+      "killer": "Noname",
+      "zone": "Veeshan's Peak",
+      "player_zone": "Veeshan's Peak"
     },
     {
-      "timestamp": "Wed Jul 24 01:35:04 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Fri Dec 13 18:31:57 2024",
+      "boss": "Hoshkar",
+      "killer": "Tokagechan",
+      "zone": "Veeshan's Peak",
+      "player_zone": "Veeshan's Peak"
     },
     {
-      "timestamp": "Wed Jul 24 01:42:26 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Tue Dec 17 21:12:30 2024",
+      "boss": "Venril Sathir",
+      "killer": "Tweedlede",
+      "zone": "Karnor's Castle",
+      "player_zone": "Karnor's Castle"
     },
     {
-      "timestamp": "Wed Jul 24 22:23:59 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Fri Dec 20 22:13:07 2024",
+      "boss": "Venril Sathir",
+      "killer": "Fitty",
+      "zone": "Karnor's Castle",
+      "player_zone": "Karnor's Castle"
     },
     {
-      "timestamp": "Wed Jul 24 23:10:18 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Sat Dec 21 21:32:06 2024",
+      "boss": "Phara Dar",
+      "killer": "Sturmboli",
+      "zone": "Veeshan's Peak",
+      "player_zone": "Veeshan's Peak"
     },
     {
-      "timestamp": "Thu Jul 25 01:17:08 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Lesser Faydark"
+      "timestamp": "Sat Dec 21 22:10:36 2024",
+      "boss": "a dracoliche",
+      "killer": "Lyric",
+      "zone": "Plane of Fear Instanced",
+      "player_zone": "Plane of Fear (Instanced)"
     },
     {
-      "timestamp": "Mon Jul 29 15:11:14 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Sat Dec 21 22:22:28 2024",
+      "boss": "Terror",
+      "killer": "Chryos",
+      "zone": "Plane of Fear Instanced",
+      "player_zone": "Plane of Fear (Instanced)"
     },
     {
-      "timestamp": "Mon Jul 29 15:29:32 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Sat Dec 21 22:24:09 2024",
+      "boss": "Dread",
+      "killer": "Lazrahriz",
+      "zone": "Plane of Fear Instanced",
+      "player_zone": "Plane of Fear (Instanced)"
     },
     {
-      "timestamp": "Mon Jul 29 15:59:11 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Sat Dec 21 22:28:42 2024",
+      "boss": "Fright",
+      "killer": "Chryos",
+      "zone": "Plane of Fear Instanced",
+      "player_zone": "Plane of Fear (Instanced)"
     },
     {
-      "timestamp": "Mon Jul 29 16:04:59 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Ak'Anon"
+      "timestamp": "Sat Dec 21 22:38:29 2024",
+      "boss": "Cazic Thule",
+      "killer": "Lyric",
+      "zone": "Plane of Fear Instanced",
+      "player_zone": "Plane of Fear (Instanced)"
     },
     {
-      "timestamp": "Tue Jul 30 23:32:51 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Mon Dec 23 00:13:18 2024",
+      "boss": "Overking Bathezid",
+      "killer": "Thebrain",
+      "zone": "Chardok",
+      "player_zone": "Chardok"
     },
     {
-      "timestamp": "Wed Jul 31 00:47:42 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Mon Dec 23 23:04:10 2024",
+      "boss": "Overking Bathezid",
+      "killer": "Metman",
+      "zone": "Chardok",
+      "player_zone": "Chardok"
     },
     {
-      "timestamp": "Wed Jul 31 22:35:11 2024",
-      "killer": "Unknown/Gravity",
-      "zone": "Steamfont Mountains"
+      "timestamp": "Tue Dec 24 01:53:00 2024",
+      "boss": "Queen Velazul Di zok",
+      "killer": "Tweedledum",
+      "zone": "Chardok",
+      "player_zone": "Chardok"
     }
   ],
-  "raid_kills": [
+  "lockouts_sample": [
     {
       "timestamp": "Fri Sep 13 17:58:45 2024",
       "boss": "Trakanon",
-      "killer": "Morde",
-      "zone": "Ruins of Sebilis",
-      "type": "local_slay"
+      "zone": "Ruins of Sebilis"
     },
     {
-      "timestamp": "Wed Oct 16 11:55:20 2024",
-      "boss": "Venril Sathir",
-      "killer": "Ranza",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Wed Oct 16 13:02:40 2024",
-      "boss": "Faydedar",
-      "killer": "Lasartik",
-      "zone": "Timorous Deep",
-      "type": "local_slay"
+      "timestamp": "Fri Sep 13 17:58:45 2024",
+      "boss": "Trakanon",
+      "zone": "Ruins of Sebilis"
     },
     {
       "timestamp": "Wed Nov 06 21:04:03 2024",
       "boss": "Faydedar",
-      "killer": "Hillaryclinton",
-      "zone": "Timorous Deep",
-      "type": "local_slay"
+      "zone": "Timorous Deep"
+    },
+    {
+      "timestamp": "Wed Nov 06 21:04:03 2024",
+      "boss": "Faydedar",
+      "zone": "Timorous Deep"
     },
     {
       "timestamp": "Fri Nov 08 17:35:22 2024",
       "boss": "Venril Sathir",
-      "killer": "Dismas",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
+      "zone": "Karnor's Castle"
     },
     {
-      "timestamp": "Mon Nov 11 17:49:16 2024",
+      "timestamp": "Fri Nov 08 17:35:22 2024",
+      "boss": "Venril Sathir",
+      "zone": "Karnor's Castle"
+    },
+    {
+      "timestamp": "Mon Nov 11 17:49:17 2024",
       "boss": "Trakanon",
-      "killer": "Thrakazog",
-      "zone": "Ruins of Sebilis",
-      "type": "local_slay"
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Mon Nov 11 17:49:17 2024",
+      "boss": "Trakanon",
+      "zone": "Ruins of Sebilis"
     },
     {
       "timestamp": "Tue Nov 26 17:35:16 2024",
       "boss": "Venril Sathir",
-      "killer": "Mobiaz",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
+      "zone": "Karnor's Castle"
+    },
+    {
+      "timestamp": "Tue Nov 26 17:35:17 2024",
+      "boss": "Venril Sathir",
+      "zone": "Karnor's Castle"
     },
     {
       "timestamp": "Fri Nov 29 21:54:31 2024",
       "boss": "Faydedar",
-      "killer": "Chonky",
-      "zone": "Timorous Deep",
-      "type": "local_slay"
+      "zone": "Timorous Deep"
+    },
+    {
+      "timestamp": "Fri Nov 29 21:54:31 2024",
+      "boss": "Faydedar",
+      "zone": "Timorous Deep"
+    },
+    {
+      "timestamp": "Fri Nov 29 22:21:16 2024",
+      "boss": "Severilous",
+      "zone": "Timorous Deep"
+    },
+    {
+      "timestamp": "Fri Nov 29 22:21:16 2024",
+      "boss": "Severilous",
+      "zone": "Timorous Deep"
+    },
+    {
+      "timestamp": "Fri Nov 29 23:26:37 2024",
+      "boss": "Talendor",
+      "zone": "Timorous Deep"
+    },
+    {
+      "timestamp": "Fri Nov 29 23:26:37 2024",
+      "boss": "Talendor",
+      "zone": "Timorous Deep"
     },
     {
       "timestamp": "Sat Nov 30 00:10:26 2024",
       "boss": "Venril Sathir",
-      "killer": "Gondori",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
+      "zone": "Karnor's Castle"
     },
     {
-      "timestamp": "Mon Dec 02 17:54:45 2024",
+      "timestamp": "Sat Nov 30 00:10:26 2024",
+      "boss": "Venril Sathir",
+      "zone": "Karnor's Castle"
+    },
+    {
+      "timestamp": "Mon Dec 02 17:54:46 2024",
       "boss": "Trakanon",
-      "killer": "Mofen",
-      "zone": "Ruins of Sebilis",
-      "type": "local_slay"
+      "zone": "Ruins of Sebilis"
     },
     {
-      "timestamp": "Fri Dec 13 21:16:44 2024",
-      "boss": "Lady Vox",
-      "killer": "Speedysquiffy",
-      "zone": "Permafrost Caverns",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Dec 13 21:35:36 2024",
-      "boss": "Lord Nagafen",
-      "killer": "Gondori",
-      "zone": "Nagafen's Lair",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Dec 27 22:39:08 2024",
-      "boss": "Venril Sathir",
-      "killer": "Jenobtik",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Dec 27 23:42:00 2024",
+      "timestamp": "Mon Dec 02 17:54:46 2024",
       "boss": "Trakanon",
-      "killer": "Winx",
-      "zone": "Ruins of Sebilis",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Mon Jan 13 14:03:27 2025",
-      "boss": "Venril Sathir",
-      "killer": "Gondori",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Tue Jan 14 21:06:19 2025",
-      "boss": "Venril Sathir",
-      "killer": "Tuxxy",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Tue Jan 14 22:10:25 2025",
-      "boss": "Trakanon",
-      "killer": "Bannin",
-      "zone": "Ruins of Sebilis",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Mon Jan 20 11:21:00 2025",
-      "boss": "Venril Sathir",
-      "killer": "Yareyare",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Sat Feb 01 21:36:17 2025",
-      "boss": "Innoruuk",
-      "killer": "Gondori",
-      "zone": "Plane of Hate (Instanced)",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Feb 07 21:06:13 2025",
-      "boss": "Lady Vox",
-      "killer": "Bannin",
-      "zone": "Permafrost Caverns",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Sun Feb 09 12:07:33 2025",
-      "boss": "Trakanon",
-      "killer": "Sevur",
-      "zone": "Ruins of Sebilis",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Feb 28 21:22:29 2025",
-      "boss": "Lord Nagafen",
-      "killer": "Gibtik",
-      "zone": "Nagafen's Lair",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Mar 07 23:31:20 2025",
-      "boss": "Lord Nagafen",
-      "killer": "Tunezz",
-      "zone": "Nagafen's Lair",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Mar 21 21:07:38 2025",
-      "boss": "Lady Vox",
-      "killer": "Destroy",
-      "zone": "Permafrost Caverns",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Mar 21 21:29:24 2025",
-      "boss": "Faydedar",
-      "killer": "Pinkiy",
-      "zone": "Timorous Deep",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Fri Mar 21 22:35:11 2025",
-      "boss": "Venril Sathir",
-      "killer": "Farva",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Sat Mar 22 18:47:10 2025",
-      "boss": "Venril Sathir",
-      "killer": "Bannin",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
-    },
-    {
-      "timestamp": "Mon Jun 23 00:39:37 2025",
-      "boss": "Venril Sathir",
-      "killer": "Kaloft",
-      "zone": "Karnor's Castle",
-      "type": "local_slay"
+      "zone": "Ruins of Sebilis"
     }
   ]
 }

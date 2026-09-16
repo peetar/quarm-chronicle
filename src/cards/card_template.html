@@ -10,7 +10,7 @@
     --gold-dark: #82641e;
     --gold-soft: #f3df8a;
     --bg-dark: #0f1219;
-    --card-bg: rgba(22, 27, 39, 0.88);
+    --card-bg: rgba(22, 28, 42, 0.92);
     --card-border: #2d3748;
     --cyan: #38bdf8;
     --purple: #c084fc;
@@ -21,7 +21,7 @@
 
   body {
     background-color: #08090d;
-    background-image: radial-gradient(circle at 50% 20%, #1e1b4b 0%, #08090d 80%);
+    background-image: radial-gradient(circle at 50% 15%, #1e1b4b 0%, #08090d 80%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--white);
     display: flex;
@@ -29,26 +29,26 @@
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    padding: 24px;
+    padding: 30px;
     box-sizing: border-box;
   }
 
   .chronicle-card {
     width: 100%;
-    max-width: 820px;
+    max-width: 960px;
     background: var(--card-bg);
     border: 3px double var(--gold);
     border-radius: 12px;
-    padding: 32px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 175, 55, 0.15);
+    padding: 36px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 35px rgba(212, 175, 55, 0.15);
     position: relative;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
   }
 
   .corner-ornament {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border: 2px solid var(--gold);
   }
   .tl { top: 8px; left: 8px; border-right: none; border-bottom: none; }
@@ -73,7 +73,7 @@
 
   h1.char-name {
     margin: 8px 0 4px 0;
-    font-size: 42px;
+    font-size: 46px;
     letter-spacing: 2px;
     color: #fff;
     text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
@@ -82,8 +82,8 @@
 
   .char-subtitle {
     color: var(--cyan);
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 600;
   }
 
   .char-dates {
@@ -94,18 +94,19 @@
 
   .stat-grid-top {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
     margin-bottom: 24px;
   }
 
   .stat-box {
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(15, 23, 42, 0.65);
     border: 1px solid var(--card-border);
     border-radius: 8px;
-    padding: 16px;
+    padding: 16px 12px;
     text-align: center;
   }
+  .stat-box.gold { border-top: 3px solid var(--gold); }
   .stat-box.cyan { border-top: 3px solid var(--cyan); }
   .stat-box.purple { border-top: 3px solid var(--purple); }
   .stat-box.crimson { border-top: 3px solid var(--crimson); }
@@ -117,7 +118,7 @@
     color: var(--gray);
   }
   .stat-box .value {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 800;
     margin: 4px 0;
     font-family: Georgia, serif;
@@ -135,10 +136,10 @@
   }
 
   .card-panel {
-    background: rgba(15, 23, 42, 0.5);
+    background: rgba(15, 23, 42, 0.55);
     border: 1px solid var(--card-border);
     border-radius: 8px;
-    padding: 18px;
+    padding: 20px;
   }
 
   .panel-header {
@@ -164,7 +165,7 @@
   .stat-list li {
     display: flex;
     justify-content: space-between;
-    padding: 6px 0;
+    padding: 7px 0;
     font-size: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
@@ -175,27 +176,41 @@
   .stat-list .qty { font-weight: 700; color: var(--gold-soft); }
   .stat-list .qty.crimson { color: var(--crimson); }
   .stat-list .qty.cyan { color: var(--cyan); }
+  .stat-list .qty.gray { color: var(--gray); font-weight: normal; font-size: 13px; }
 
-  .raid-panel {
-    background: rgba(15, 23, 42, 0.5);
+  .wide-panel {
+    background: rgba(15, 23, 42, 0.55);
     border: 1px solid var(--card-border);
     border-radius: 8px;
-    padding: 18px;
+    padding: 20px;
+    margin-bottom: 24px;
     border-top: 3px solid var(--gold);
   }
 
+  .timeline-row {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 2.5fr;
+    padding: 8px 0;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .timeline-row:last-child { border-bottom: none; }
+  .timeline-title { color: var(--gold-soft); font-weight: 700; }
+  .timeline-date { color: var(--gray); }
+  .timeline-zone { color: var(--cyan); text-align: right; }
+
   .raid-item {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2.5fr 2fr 2.5fr 1.5fr;
     padding: 8px 0;
     font-size: 13px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
   .raid-item:last-child { border-bottom: none; }
-  .raid-boss { color: var(--gold-soft); font-weight: 700; }
+  .raid-boss { color: var(--white); font-weight: 700; }
   .raid-zone { color: var(--gray); }
-  .raid-date { color: var(--white); }
-  .raid-killer { color: var(--cyan); text-align: right; }
+  .raid-note { color: var(--gold-soft); font-size: 12px; }
+  .raid-lockout { color: var(--cyan); text-align: right; font-size: 12px; }
 
   footer {
     text-align: center;
@@ -217,95 +232,122 @@
   <header>
     <div class="series-tag">Project Quarm Chronicle</div>
     <h1 class="char-name">TWEEDLEDE</h1>
-    <div class="char-subtitle">Grand Illusionist • Level 60 Enchanter</div>
-    <div class="char-dates">Jul 23, 2024 — Sep 16, 2026 • Norrathian Career Recap</div>
+    <div class="char-subtitle">Level 60 Enchanter • &lt;Dungeons and Dragons&gt;</div>
+    <div class="char-dates">Jul 23, 2024 — Sep 16, 2026 • Norrathian Journey & Milestone Deck</div>
   </header>
 
   <div class="stat-grid-top">
+    <div class="stat-box gold">
+      <div class="title">AA Harvest</div>
+      <div class="value" style="color: var(--gold-soft);">49 AAs</div>
+      <div class="sub">33 in Fungus Grove</div>
+    </div>
     <div class="stat-box cyan">
-      <div class="title">Zone Transitions</div>
-      <div class="value" style="color: var(--cyan);">2,517</div>
-      <div class="sub">in Chardok alone</div>
+      <div class="title">Raid Victories</div>
+      <div class="value" style="color: var(--cyan);">71 Bosses</div>
+      <div class="sub">558 Lockouts Incurred</div>
     </div>
     <div class="stat-box purple">
-      <div class="title">Spells Weaved</div>
-      <div class="value" style="color: var(--purple);">36,235+</div>
-      <div class="sub">Total incantations</div>
+      <div class="title">Top Haunt</div>
+      <div class="value" style="color: var(--purple);">2,517</div>
+      <div class="sub">Chardok Transitions</div>
     </div>
     <div class="stat-box crimson">
       <div class="title">Total Deaths</div>
-      <div class="value" style="color: var(--crimson);">573</div>
+      <div class="value" style="color: var(--crimson);">561</div>
       <div class="sub">229 in Arena PvP</div>
     </div>
   </div>
 
   <div class="split-grid">
     <div class="card-panel">
-      <div class="panel-header purple">🔮 Signature Spells</div>
+      <div class="panel-header purple">🔮 Signature Incantations</div>
       <ul class="stat-list">
-        <li><span class="label">Shallow Breath (Fast Pull)</span> <span class="qty">11,239</span></li>
+        <li><span class="label">Shallow Breath (Fast Tag/Pull)</span> <span class="qty">11,239</span></li>
         <li><span class="label">Pacify (Calm Harmony)</span> <span class="qty">7,540</span></li>
         <li><span class="label">Mesmerize (Crowd Control)</span> <span class="qty">6,124</span></li>
-        <li><span class="label">Minor Shielding (Buff/Cycle)</span> <span class="qty">5,795</span></li>
+        <li><span class="label">Minor Shielding (Cycle/GCD)</span> <span class="qty">5,795</span></li>
         <li><span class="label">Boltran's Agacerie (Charm)</span> <span class="qty">5,537</span></li>
       </ul>
     </div>
 
     <div class="card-panel">
-      <div class="panel-header gold">🌟 AA Harvest & Grind</div>
+      <div class="panel-header gold">🌟 AA Points by Zone</div>
       <ul class="stat-list">
-        <li><span class="label">The Fungus Grove</span> <span class="qty">5 AAs</span></li>
-        <li><span class="label">Veksar (Deep Ruins)</span> <span class="qty">3 AAs</span></li>
-        <li><span class="label">Ssraeshza Temple</span> <span class="qty">1 AA</span></li>
-        <li><span class="label">Siren's Grotto</span> <span class="qty">1 AA</span></li>
-        <li style="font-weight: 700;"><span class="label">Total AAs Earned</span> <span class="qty cyan">10 AAs</span></li>
+        <li><span class="label">The Fungus Grove (AE Grind)</span> <span class="qty">33 AAs</span></li>
+        <li><span class="label">Veksar (Deep Crypts)</span> <span class="qty">9 AAs</span></li>
+        <li><span class="label">Ssraeshza Temple</span> <span class="qty">2 AAs</span></li>
+        <li><span class="label">Siren's Grotto</span> <span class="qty">2 AAs</span></li>
+        <li><span class="label">Acrylia / Deep / Maiden's Eye</span> <span class="qty">3 AAs</span></li>
       </ul>
     </div>
   </div>
 
   <div class="split-grid">
     <div class="card-panel">
-      <div class="panel-header crimson">☠️ Deadliest Locales</div>
+      <div class="panel-header cyan">🛡️ Guild & Social Circle</div>
       <ul class="stat-list">
-        <li><span class="label">an Arena (PvP Duels)</span> <span class="qty crimson">229 deaths</span></li>
-        <li><span class="label">Chardok (AE Pulling)</span> <span class="qty crimson">113 deaths</span></li>
-        <li><span class="label">Temple of Veeshan</span> <span class="qty crimson">23 deaths</span></li>
-        <li><span class="label">Plane of Fear (Instanced)</span> <span class="qty crimson">22 deaths</span></li>
-        <li><span class="label">Siren's Grotto</span> <span class="qty crimson">19 deaths</span></li>
+        <li><span class="label">Dungeons and Dragons (Current)</span> <span class="qty gray">Dec 2024 – Present</span></li>
+        <li><span class="label">Haven (Former)</span> <span class="qty gray">Oct – Dec 2024</span></li>
+        <li><span class="label">Project Faceless (Former)</span> <span class="qty gray">Sep – Oct 2024</span></li>
+        <li><span class="label">Tweedledum (Partner in Crime)</span> <span class="qty cyan">480 tells</span></li>
+        <li><span class="label">Olboy & Pinkiy</span> <span class="qty cyan">170 tells</span></li>
       </ul>
     </div>
 
     <div class="card-panel">
-      <div class="panel-header cyan">💬 Social & Inner Circle</div>
+      <div class="panel-header crimson">☠️ Deadliest Locales</div>
       <ul class="stat-list">
-        <li><span class="label">Tweedledum (Partner in Crime)</span> <span class="qty cyan">480 tells</span></li>
-        <li><span class="label">Olboy</span> <span class="qty">87 tells</span></li>
-        <li><span class="label">Pinkiy</span> <span class="qty">83 tells</span></li>
-        <li><span class="label">Soulys</span> <span class="qty">78 tells</span></li>
-        <li><span class="label">Tigir</span> <span class="qty">61 tells</span></li>
+        <li><span class="label">an Arena (PvP Area Duels)</span> <span class="qty crimson">229 deaths</span></li>
+        <li><span class="label">Chardok (AE Pulling Hazards)</span> <span class="qty crimson">113 deaths</span></li>
+        <li><span class="label">Temple of Veeshan (Dragon Raid)</span> <span class="qty crimson">23 deaths</span></li>
+        <li><span class="label">Plane of Fear (Instanced)</span> <span class="qty crimson">22 deaths</span></li>
+        <li><span class="label">Siren's Grotto</span> <span class="qty crimson">19 deaths</span></li>
       </ul>
     </div>
   </div>
 
-  <div class="raid-panel">
-    <div class="panel-header gold">⚔️ Raid Boss Trophy Case (Witnessed / Slain)</div>
+  <div class="wide-panel">
+    <div class="panel-header gold">🏆 Milestones & Expansion Firsts</div>
+    <div class="timeline-row">
+      <span class="timeline-title">★ Staff of the Serpent (Epic 1.0)</span><span class="timeline-date">Sun Jan 05, 2025</span><span class="timeline-zone">The Burning Wood / Overthere</span>
+    </div>
+    <div class="timeline-row">
+      <span class="timeline-title">★ Ding 60 (Max Level Milestone)</span><span class="timeline-date">Sat Sep 28, 2024</span><span class="timeline-zone">Skyfire Mountains</span>
+    </div>
+    <div class="timeline-row">
+      <span class="timeline-title">★ First Kunark Footstep</span><span class="timeline-date">Thu Aug 01, 2024</span><span class="timeline-zone">Timorous Deep</span>
+    </div>
+    <div class="timeline-row">
+      <span class="timeline-title">★ First Velious Footstep</span><span class="timeline-date">Tue Apr 01, 2025</span><span class="timeline-zone">Kael Drakkel</span>
+    </div>
+    <div class="timeline-row">
+      <span class="timeline-title">★ First Luclin Footstep</span><span class="timeline-date">Sat Jul 26, 2025</span><span class="timeline-zone">Ssraeshza Temple</span>
+    </div>
+  </div>
+
+  <div class="wide-panel">
+    <div class="panel-header gold">⚔️ Pinnacle Raid Conquests (71 Unique Bosses Defeated)</div>
     <div class="raid-item" style="font-weight: 700; color: var(--gray); border-bottom: 1px solid var(--card-border);">
-      <span>Boss</span><span>Zone</span><span>Date</span><span style="text-align: right;">Final Blow</span>
+      <span>Boss Encounter</span><span>Zone</span><span>Notable Drops / Context</span><span style="text-align: right;">Status</span>
     </div>
     <div class="raid-item">
-      <span class="raid-boss">★ Trakanon</span><span class="raid-zone">Ruins of Sebilis</span><span class="raid-date">Sep 13, 2024</span><span class="raid-killer">Morde</span>
+      <span class="raid-boss">⚔ The Avatar of War</span><span class="raid-zone">Kael Drakkel</span><span class="raid-note">Statue / Idol / AoW Ring Event</span><span class="raid-lockout">Lockout Verified</span>
     </div>
     <div class="raid-item">
-      <span class="raid-boss">★ Venril Sathir</span><span class="raid-zone">Karnor's Castle</span><span class="raid-date">Oct 16, 2024</span><span class="raid-killer">Ranza</span>
+      <span class="raid-boss">⚔ Lord Vyemm & Dragons</span><span class="raid-zone">Temple of Veeshan</span><span class="raid-note">North ToV Dragon Clear</span><span class="raid-lockout">Lockout Verified</span>
     </div>
     <div class="raid-item">
-      <span class="raid-boss">★ Faydedar</span><span class="raid-zone">Timorous Deep</span><span class="raid-date">Oct 16, 2024</span><span class="raid-killer">Lasartik</span>
+      <span class="raid-boss">⚔ King Tormax & Dain</span><span class="raid-zone">Kael / Thurgadin</span><span class="raid-note">Faction War Pinnacle Lords</span><span class="raid-lockout">Lockout Verified</span>
     </div>
     <div class="raid-item">
-      <span class="raid-boss">★ Faydedar</span><span class="raid-zone">Timorous Deep</span><span class="raid-date">Nov 06, 2024</span><span class="raid-killer">Hillaryclinton</span>
+      <span class="raid-boss">⚔ Trakanon & Faydedar</span><span class="raid-zone">Sebilis / Timorous</span><span class="raid-note">Classic Kunark Dragons</span><span class="raid-lockout">Lockout Verified</span>
     </div>
     <div class="raid-item">
-      <span class="raid-boss">★ Venril Sathir</span><span class="raid-zone">Karnor's Castle</span><span class="raid-date">Nov 08, 2024</span><span class="raid-killer">Dismas</span>
+      <span class="raid-boss">⚔ Veeshan's Peak Flight</span><span class="raid-zone">Veeshan's Peak</span><span class="raid-note">Phara Dar, Silverwing, Hoshkar, Xygoz</span><span class="raid-lockout">Lockout Verified</span>
+    </div>
+    <div class="raid-item">
+      <span class="raid-boss">⚔ Luclin Horrors</span><span class="raid-zone">Ssra Temple / Akheva</span><span class="raid-note">Shei Vinitras, Vyzh`dra, Grieg Veneficus</span><span class="raid-lockout">Lockout Verified</span>
     </div>
   </div>
 

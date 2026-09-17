@@ -1,0 +1,100 @@
+{
+  "Bard": {
+    "weapon": "Singing Short Sword",
+    "activation_type": "click",
+    "effect": "Dance of the Blade",
+    "effect_spell_id": 1475,
+    "description": "55% Haste, +15 Attack, 30 Damage Shield song"
+  },
+  "Cleric": {
+    "weapon": "Water Sprinkler of Nem`an",
+    "activation_type": "click",
+    "effect": "Reviviscence",
+    "effect_spell_id": 1548,
+    "description": "96% Resurrection clicky (no exp loss)"
+  },
+  "Druid": {
+    "weapon": "Nature Walkers Scimitar",
+    "activation_type": "click",
+    "effect": "Wrath of Nature",
+    "effect_spell_id": 1547,
+    "description": "500 Dmg DoT with -9 Cold Resist debuff"
+  },
+  "Enchanter": {
+    "weapon": "Staff of the Serpent",
+    "activation_type": "click",
+    "effect": "Speed of the Shissar",
+    "effect_spell_id": 1549,
+    "description": "Instant Haste + Agility single-target buff"
+  },
+  "Magician": {
+    "weapon": "Orb of Mastery",
+    "activation_type": "click",
+    "effect": "Manifest Elements",
+    "effect_spell_id": 1550,
+    "description": "Summons a level 49 multi-elemental pet"
+  },
+  "Monk": {
+    "weapon": "Celestial Fists",
+    "activation_type": "click",
+    "effect": "Celestial Tranquility",
+    "effect_spell_id": 1551,
+    "description": "33% Haste, +12 AC, +10 HP regen/tick"
+  },
+  "Necromancer": {
+    "weapon": "Scythe of the Shadowed Soul",
+    "activation_type": "click",
+    "effect": "Torment of Shadows",
+    "effect_spell_id": 1552,
+    "description": "774 Dmg DoT with -40 STR debuff"
+  },
+  "Paladin": {
+    "weapon": "Fiery Defender",
+    "activation_type": "click",
+    "effect": "Holy Order",
+    "effect_spell_id": 1553,
+    "description": "400 pt Rune + 10 AC + Fire Resist"
+  },
+  "Ranger": {
+    "weapon": "Swiftwind & Earthcaller",
+    "activation_type": "passive_and_proc",
+    "effect": "Swiftwind (40% Haste Worn), Earthcaller (Slow Proc)",
+    "effect_spell_id": 1554,
+    "description": "Dual wield weapons: 40% haste and 50% slow proc"
+  },
+  "Rogue": {
+    "weapon": "Ragebringer",
+    "activation_type": "passive",
+    "effect": "Seething Rage",
+    "effect_spell_id": 1555,
+    "description": "40% Haste Worn, +100 HP, +10 Attack (15/25 dagger)"
+  },
+  "Shadowknight": {
+    "weapon": "Innoruuk's Curse",
+    "activation_type": "combat_proc",
+    "effect": "Soul Consumption",
+    "effect_spell_id": 1556,
+    "description": "130 pt Lifetap proc + Snare debuff"
+  },
+  "Shaman": {
+    "weapon": "Spear of Fate",
+    "activation_type": "click",
+    "effect": "Curse of the Spirits",
+    "effect_spell_id": 1557,
+    "description": "1080 Dmg DoT with Magic Resist debuff"
+  },
+  "Warrior": {
+    "weapon": "Jagged Blade of Mourning & Blade of Tactics (Red Scabbard)",
+    "activation_type": "click",
+    "effect": "Fury of Kerafyrm",
+    "effect_spell_id": 1558,
+    "description": "Red Scabbard haste clicky + high ratio 1H/2H weapons"
+  },
+  "Wizard": {
+    "weapon": "Staff of the Four",
+    "activation_type": "click",
+    "effect": "Shield of the Immaculate",
+    "effect_spell_id": 1559,
+    "description": "800 pt Rune + Mana Regeneration"
+  }
+}

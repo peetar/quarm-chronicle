@@ -10,18 +10,19 @@
     --gold-dark: #82641e;
     --gold-soft: #f3df8a;
     --bg-dark: #0f1219;
-    --card-bg: rgba(22, 28, 42, 0.92);
+    --card-bg: rgba(22, 28, 42, 0.94);
     --card-border: #2d3748;
     --cyan: #38bdf8;
     --purple: #c084fc;
     --crimson: #f87171;
+    --emerald: #4ade80;
     --gray: #94a3b8;
     --white: #f8fafc;
   }
 
   body {
     background-color: #08090d;
-    background-image: radial-gradient(circle at 50% 15%, #1e1b4b 0%, #08090d 80%);
+    background-image: radial-gradient(circle at 50% 12%, #1e1b4b 0%, #08090d 80%);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--white);
     display: flex;
@@ -35,7 +36,7 @@
 
   .chronicle-card {
     width: 100%;
-    max-width: 960px;
+    max-width: 980px;
     background: var(--card-bg);
     border: 3px double var(--gold);
     border-radius: 12px;
@@ -118,7 +119,7 @@
     color: var(--gray);
   }
   .stat-box .value {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 800;
     margin: 4px 0;
     font-family: Georgia, serif;
@@ -156,6 +157,7 @@
   .panel-header.gold { color: var(--gold-soft); }
   .panel-header.crimson { color: var(--crimson); }
   .panel-header.cyan { color: var(--cyan); }
+  .panel-header.emerald { color: var(--emerald); }
 
   .stat-list {
     list-style: none;
@@ -176,6 +178,7 @@
   .stat-list .qty { font-weight: 700; color: var(--gold-soft); }
   .stat-list .qty.crimson { color: var(--crimson); }
   .stat-list .qty.cyan { color: var(--cyan); }
+  .stat-list .qty.emerald { color: var(--emerald); }
   .stat-list .qty.gray { color: var(--gray); font-weight: normal; font-size: 13px; }
 
   .wide-panel {
@@ -199,18 +202,13 @@
   .timeline-date { color: var(--gray); }
   .timeline-zone { color: var(--cyan); text-align: right; }
 
-  .raid-item {
+  .social-columns {
     display: grid;
-    grid-template-columns: 2.5fr 2fr 2.5fr 1.5fr;
-    padding: 8px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     font-size: 13px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    line-height: 1.6;
   }
-  .raid-item:last-child { border-bottom: none; }
-  .raid-boss { color: var(--white); font-weight: 700; }
-  .raid-zone { color: var(--gray); }
-  .raid-note { color: var(--gold-soft); font-size: 12px; }
-  .raid-lockout { color: var(--cyan); text-align: right; font-size: 12px; }
 
   footer {
     text-align: center;
@@ -233,7 +231,7 @@
     <div class="series-tag">Project Quarm Chronicle</div>
     <h1 class="char-name">TWEEDLEDE</h1>
     <div class="char-subtitle">Level 60 Enchanter • &lt;Dungeons and Dragons&gt;</div>
-    <div class="char-dates">Jul 23, 2024 — Sep 16, 2026 • Norrathian Journey & Milestone Deck</div>
+    <div class="char-dates">Jul 23, 2024 — Sep 16, 2026 • Norrathian Career Chronicle</div>
   </header>
 
   <div class="stat-grid-top">
@@ -243,22 +241,50 @@
       <div class="sub">33 in Fungus Grove</div>
     </div>
     <div class="stat-box cyan">
-      <div class="title">Raid Victories</div>
-      <div class="value" style="color: var(--cyan);">71 Bosses</div>
-      <div class="sub">558 Lockouts Incurred</div>
+      <div class="title">Pinnacle Bosses</div>
+      <div class="value" style="color: var(--cyan);">6 Defeated</div>
+      <div class="sub">Nagafen, Vox, Phara, AoW, Vulak, Aten</div>
     </div>
     <div class="stat-box purple">
-      <div class="title">Top Haunt</div>
+      <div class="title">Chardok Visits</div>
       <div class="value" style="color: var(--purple);">2,517</div>
-      <div class="sub">Chardok Transitions</div>
+      <div class="sub">Zone Transitions</div>
     </div>
     <div class="stat-box crimson">
-      <div class="title">Total Deaths</div>
-      <div class="value" style="color: var(--crimson);">561</div>
-      <div class="sub">229 in Arena PvP</div>
+      <div class="title">Death & Rez</div>
+      <div class="value" style="color: var(--crimson);">561 / 225</div>
+      <div class="sub">Deaths / Rezzes Accepted</div>
     </div>
   </div>
 
+  <!-- Section 1: Pinnacle Bosses & Top Raid Kills -->
+  <div class="split-grid">
+    <div class="card-panel">
+      <div class="panel-header gold">👑 Pinnacle Raid Bosses (First Kills)</div>
+      <ul class="stat-list">
+        <li><span class="label">★ Lord Nagafen (Classic)</span> <span class="qty">Dec 02, 2024 (17 Kills)</span></li>
+        <li><span class="label">★ Lady Vox (Classic)</span> <span class="qty">Dec 13, 2024 (17 Kills)</span></li>
+        <li><span class="label">★ Phara Dar (Kunark)</span> <span class="qty">Sep 20, 2024 (27 Kills)</span></li>
+        <li><span class="label">★ The Avatar of War (Velious)</span> <span class="qty">May 19, 2025 (5 Kills)</span></li>
+        <li><span class="label">★ Vulak`Aerr (Velious)</span> <span class="qty">Aug 30, 2025 (2 Kills)</span></li>
+        <li><span class="label">★ Aten Ha Ra (Luclin)</span> <span class="qty">Sep 15, 2026 (2 Kills)</span></li>
+      </ul>
+    </div>
+
+    <div class="card-panel">
+      <div class="panel-header cyan">⚔️ Top Raid Boss Total Kills</div>
+      <ul class="stat-list">
+        <li><span class="label">Venril Sathir (Karnor / HS)</span> <span class="qty cyan">58 kills</span></li>
+        <li><span class="label">Cazic Thule (Plane of Fear)</span> <span class="qty cyan">45 kills</span></li>
+        <li><span class="label">a dracoliche (Plane of Fear)</span> <span class="qty cyan">45 kills</span></li>
+        <li><span class="label">Terror / Dread / Fright (Fear Golems)</span> <span class="qty cyan">44 kills each</span></li>
+        <li><span class="label">Trakanon (Ruins of Sebilis)</span> <span class="qty cyan">31 kills</span></li>
+        <li><span class="label">King Tranix & Silverwing</span> <span class="qty cyan">42 kills</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 2: Spells & AA -->
   <div class="split-grid">
     <div class="card-panel">
       <div class="panel-header purple">🔮 Signature Incantations</div>
@@ -283,37 +309,66 @@
     </div>
   </div>
 
+  <!-- Section 3: Mortality/Nemesis & Top NPCs Slain -->
   <div class="split-grid">
     <div class="card-panel">
-      <div class="panel-header cyan">🛡️ Guild & Social Circle</div>
+      <div class="panel-header crimson">☠️ Mortality & Nemesis</div>
       <ul class="stat-list">
-        <li><span class="label">Dungeons and Dragons (Current)</span> <span class="qty gray">Dec 2024 – Present</span></li>
-        <li><span class="label">Haven (Former)</span> <span class="qty gray">Oct – Dec 2024</span></li>
-        <li><span class="label">Project Faceless (Former)</span> <span class="qty gray">Sep – Oct 2024</span></li>
-        <li><span class="label">Tweedledum (Partner in Crime)</span> <span class="qty cyan">480 tells</span></li>
-        <li><span class="label">Olboy & Pinkiy</span> <span class="qty cyan">170 tells</span></li>
+        <li><span class="label">PvP Arena Rival: Xebobn</span> <span class="qty crimson">227 deaths</span></li>
+        <li><span class="label">Gravity / Falling Damage</span> <span class="qty">16 deaths</span></li>
+        <li><span class="label">Kenekn</span> <span class="qty">12 deaths</span></li>
+        <li><span class="label">Di`zok Royal Guards & Sages</span> <span class="qty">26 deaths</span></li>
+        <li><span class="label">Total Accepted Resurrections</span> <span class="qty emerald">225 rezzes</span></li>
       </ul>
     </div>
 
     <div class="card-panel">
-      <div class="panel-header crimson">☠️ Deadliest Locales</div>
+      <div class="panel-header emerald">🗡️ Top NPCs Personally Slain</div>
       <ul class="stat-list">
-        <li><span class="label">an Arena (PvP Area Duels)</span> <span class="qty crimson">229 deaths</span></li>
-        <li><span class="label">Chardok (AE Pulling Hazards)</span> <span class="qty crimson">113 deaths</span></li>
-        <li><span class="label">Temple of Veeshan (Dragon Raid)</span> <span class="qty crimson">23 deaths</span></li>
-        <li><span class="label">Plane of Fear (Instanced)</span> <span class="qty crimson">22 deaths</span></li>
-        <li><span class="label">Siren's Grotto</span> <span class="qty crimson">19 deaths</span></li>
+        <li><span class="label">escaped slave (Chardok / Droga)</span> <span class="qty emerald">122 kills</span></li>
+        <li><span class="label">goblin guard</span> <span class="qty emerald">57 kills</span></li>
+        <li><span class="label">bat & kobold runt</span> <span class="qty emerald">63 kills</span></li>
+        <li><span class="label">wretched vanguard</span> <span class="qty emerald">39 kills</span></li>
+        <li><span class="label">shackled champion & knave</span> <span class="qty emerald">47 kills</span></li>
       </ul>
     </div>
   </div>
 
+  <!-- Section 4: Social & Companions -->
+  <div class="wide-panel" style="border-top-color: var(--cyan);">
+    <div class="panel-header cyan">💬 Companions in Arms & Social Circle</div>
+    <div class="social-columns">
+      <div>
+        <strong style="color: var(--gold-soft);">Top Group Chat Companions:</strong>
+        <p style="margin: 6px 0; color: var(--gray);">
+          • Destu (372 msgs) &nbsp;• Buffin (336 msgs) &nbsp;• Tsalwin (260 msgs)<br>
+          • Asirk (197 msgs) &nbsp;• Thebrain (192 msgs) &nbsp;• Olboy (188 msgs)
+        </p>
+        <p style="margin: 6px 0; color: var(--cyan); font-weight: 600;">
+          ★ Partner in Crime: Tweedledum (480 direct tells exchanged)
+        </p>
+      </div>
+      <div>
+        <strong style="color: var(--gold-soft);">Top Raid Chat Companions:</strong>
+        <p style="margin: 6px 0; color: var(--gray);">
+          • Tsalwin (2,482 msgs) &nbsp;• Lyric (2,395 msgs)<br>
+          • Soulys (2,237 msgs) &nbsp;• Poep (1,936 msgs) &nbsp;• Destu (1,021 msgs)
+        </p>
+        <p style="margin: 6px 0; color: var(--gold-soft); font-weight: 600;">
+          🛡️ Guild: &lt;Dungeons and Dragons&gt; (Joined Dec 17, 2024)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5: Expansion Firsts & Epic Quest -->
   <div class="wide-panel">
     <div class="panel-header gold">🏆 Milestones & Expansion Firsts</div>
     <div class="timeline-row">
       <span class="timeline-title">★ Staff of the Serpent (Epic 1.0)</span><span class="timeline-date">Sun Jan 05, 2025</span><span class="timeline-zone">The Burning Wood / Overthere</span>
     </div>
     <div class="timeline-row">
-      <span class="timeline-title">★ Ding 60 (Max Level Milestone)</span><span class="timeline-date">Sat Sep 28, 2024</span><span class="timeline-zone">Skyfire Mountains</span>
+      <span class="timeline-title">★ Ding 60 (Max Level Milestone)</span><span class="timeline-date">Sat Sep 28, 2024</span><span class="timeline-zone">Skyfire Mountains (2 mos 5 days)</span>
     </div>
     <div class="timeline-row">
       <span class="timeline-title">★ First Kunark Footstep</span><span class="timeline-date">Thu Aug 01, 2024</span><span class="timeline-zone">Timorous Deep</span>
@@ -323,31 +378,6 @@
     </div>
     <div class="timeline-row">
       <span class="timeline-title">★ First Luclin Footstep</span><span class="timeline-date">Sat Jul 26, 2025</span><span class="timeline-zone">Ssraeshza Temple</span>
-    </div>
-  </div>
-
-  <div class="wide-panel">
-    <div class="panel-header gold">⚔️ Pinnacle Raid Conquests (71 Unique Bosses Defeated)</div>
-    <div class="raid-item" style="font-weight: 700; color: var(--gray); border-bottom: 1px solid var(--card-border);">
-      <span>Boss Encounter</span><span>Zone</span><span>Notable Drops / Context</span><span style="text-align: right;">Status</span>
-    </div>
-    <div class="raid-item">
-      <span class="raid-boss">⚔ The Avatar of War</span><span class="raid-zone">Kael Drakkel</span><span class="raid-note">Statue / Idol / AoW Ring Event</span><span class="raid-lockout">Lockout Verified</span>
-    </div>
-    <div class="raid-item">
-      <span class="raid-boss">⚔ Lord Vyemm & Dragons</span><span class="raid-zone">Temple of Veeshan</span><span class="raid-note">North ToV Dragon Clear</span><span class="raid-lockout">Lockout Verified</span>
-    </div>
-    <div class="raid-item">
-      <span class="raid-boss">⚔ King Tormax & Dain</span><span class="raid-zone">Kael / Thurgadin</span><span class="raid-note">Faction War Pinnacle Lords</span><span class="raid-lockout">Lockout Verified</span>
-    </div>
-    <div class="raid-item">
-      <span class="raid-boss">⚔ Trakanon & Faydedar</span><span class="raid-zone">Sebilis / Timorous</span><span class="raid-note">Classic Kunark Dragons</span><span class="raid-lockout">Lockout Verified</span>
-    </div>
-    <div class="raid-item">
-      <span class="raid-boss">⚔ Veeshan's Peak Flight</span><span class="raid-zone">Veeshan's Peak</span><span class="raid-note">Phara Dar, Silverwing, Hoshkar, Xygoz</span><span class="raid-lockout">Lockout Verified</span>
-    </div>
-    <div class="raid-item">
-      <span class="raid-boss">⚔ Luclin Horrors</span><span class="raid-zone">Ssra Temple / Akheva</span><span class="raid-note">Shei Vinitras, Vyzh`dra, Grieg Veneficus</span><span class="raid-lockout">Lockout Verified</span>
     </div>
   </div>
 

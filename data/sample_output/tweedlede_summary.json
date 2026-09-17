@@ -52,15 +52,66 @@
     "timestamp": "Sun Jan 05 00:55:53 2025",
     "zone": "The Burning Wood"
   },
+  "pinnacle_bosses": {
+    "Classic": [
+      {
+        "boss": "Lord Nagafen",
+        "first_kill": "Mon Dec 02 18:57:19 2024",
+        "total_kills_or_lockouts": 17
+      },
+      {
+        "boss": "Lady Vox",
+        "first_kill": "Fri Dec 13 21:16:44 2024",
+        "total_kills_or_lockouts": 17
+      }
+    ],
+    "Kunark": [
+      {
+        "boss": "Phara Dar",
+        "first_kill": "Fri Sep 20 19:53:09 2024",
+        "total_kills_or_lockouts": 27
+      }
+    ],
+    "Velious": [
+      {
+        "boss": "Tunare",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      },
+      {
+        "boss": "Vulak`Aerr",
+        "first_kill": "Sat Aug 30 23:30:03 2025",
+        "total_kills_or_lockouts": 2
+      },
+      {
+        "boss": "The Avatar of War",
+        "first_kill": "Mon May 19 21:48:03 2025",
+        "total_kills_or_lockouts": 5
+      }
+    ],
+    "Luclin": [
+      {
+        "boss": "Aten Ha Ra",
+        "first_kill": "Tue Sep 15 21:52:24 2026",
+        "total_kills_or_lockouts": 2
+      }
+    ],
+    "Planes of Power": [
+      {
+        "boss": "Quarm",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ]
+  },
   "stats": {
     "total_deaths": 561,
+    "resurrections_accepted": 225,
     "total_level_dings": 65,
     "max_level": 60,
     "total_aas_earned": 49,
     "total_lockouts": 558,
-    "unique_lockout_bosses": 71,
-    "attended_guild_kills": 263,
-    "remote_guild_kills": 67,
+    "total_guild_kill_announcements": 330,
     "top_zones_by_entries": [
       [
         "Chardok",
@@ -175,6 +226,74 @@
         1
       ]
     ],
+    "top_npcs_slain": [
+      [
+        "escaped slave",
+        122
+      ],
+      [
+        "goblin guard",
+        57
+      ],
+      [
+        "bat",
+        39
+      ],
+      [
+        "wretched vanguard",
+        39
+      ],
+      [
+        "shackled champion",
+        27
+      ],
+      [
+        "steadfast lookout",
+        26
+      ],
+      [
+        "kobold runt",
+        24
+      ],
+      [
+        "decaying skeleton",
+        20
+      ],
+      [
+        "shackled knave",
+        20
+      ],
+      [
+        "wretched blackguard",
+        20
+      ]
+    ],
+    "pvp_nemesis": [
+      "Xebobn",
+      227
+    ],
+    "top_pve_nemesis": [
+      [
+        "Falling / Environmental",
+        16
+      ],
+      [
+        "Kenekn",
+        12
+      ],
+      [
+        "Di`zok royal guard",
+        10
+      ],
+      [
+        "a Di`zok Sage",
+        8
+      ],
+      [
+        "sorcerer of Di`zok",
+        8
+      ]
+    ],
     "top_tell_recipients": [
       [
         "Tweedledum",
@@ -259,6 +378,132 @@
         147
       ]
     ],
+    "top_group_companions": [
+      [
+        "Destu",
+        372
+      ],
+      [
+        "Buffin",
+        336
+      ],
+      [
+        "Tsalwin",
+        260
+      ],
+      [
+        "Asirk",
+        197
+      ],
+      [
+        "Thebrain",
+        192
+      ],
+      [
+        "Olboy",
+        188
+      ],
+      [
+        "Tweedledum",
+        157
+      ],
+      [
+        "Cephei",
+        112
+      ],
+      [
+        "Lyric",
+        111
+      ],
+      [
+        "Flyrr",
+        102
+      ]
+    ],
+    "top_raid_companions": [
+      [
+        "Tsalwin",
+        2482
+      ],
+      [
+        "Lyric",
+        2395
+      ],
+      [
+        "Soulys",
+        2237
+      ],
+      [
+        "Poep",
+        1936
+      ],
+      [
+        "Destu",
+        1021
+      ],
+      [
+        "Nfidell",
+        754
+      ],
+      [
+        "Cephei",
+        633
+      ],
+      [
+        "Kaloft",
+        586
+      ],
+      [
+        "Asirk",
+        566
+      ],
+      [
+        "Bluesage",
+        415
+      ]
+    ],
+    "top_looters_seen": [
+      [
+        "Tweedledum",
+        2578
+      ],
+      [
+        "Cephei",
+        1419
+      ],
+      [
+        "Pinkiy",
+        975
+      ],
+      [
+        "Destroy",
+        917
+      ],
+      [
+        "Evocate",
+        584
+      ],
+      [
+        "Calamienie",
+        270
+      ],
+      [
+        "Arisma",
+        268
+      ],
+      [
+        "Frozone",
+        231
+      ],
+      [
+        "Sturmboli",
+        165
+      ],
+      [
+        "Thebrain",
+        155
+      ]
+    ],
     "top_spells_cast": [
       [
         "Shallow Breath",
@@ -301,66 +546,66 @@
         3293
       ]
     ],
-    "top_lockout_bosses": [
+    "top_raid_boss_kills_overall": [
       [
         "Venril Sathir",
-        38
-      ],
-      [
-        "Cazic Thule",
-        30
+        58
       ],
       [
         "a dracoliche",
-        29
+        45
+      ],
+      [
+        "Cazic Thule",
+        45
       ],
       [
         "Terror",
-        29
+        44
       ],
       [
         "Dread",
-        29
+        44
       ],
       [
         "Fright",
-        29
+        44
       ],
       [
         "Trakanon",
-        20
+        31
       ],
       [
         "Phara Dar",
-        15
-      ],
-      [
-        "Keeper of Souls",
-        12
-      ],
-      [
-        "Bazzt Zzzt",
-        12
-      ],
-      [
-        "Silverwing",
-        11
-      ],
-      [
-        "Faydedar",
-        10
+        26
       ],
       [
         "King Tranix",
-        10
+        22
       ],
       [
-        "Lord Nagafen",
-        10
+        "Silverwing",
+        20
       ],
       [
-        "Lady Vox",
-        10
+        "Bazzt Zzzt",
+        19
+      ],
+      [
+        "Keeper of Souls",
+        18
+      ],
+      [
+        "Hoshkar",
+        16
+      ],
+      [
+        "Druushk",
+        16
+      ],
+      [
+        "Faydedar",
+        16
       ]
     ]
   },
@@ -965,250 +1210,6 @@
       "timestamp": "Tue Jul 07 11:47:39 2026",
       "banked": 4,
       "zone": "The Maiden's Eye"
-    }
-  ],
-  "attended_guild_kills_sample": [
-    {
-      "timestamp": "Wed Nov 06 21:04:03 2024",
-      "boss": "Faydedar",
-      "killer": "Tweedledum",
-      "zone": "Timorous Deep",
-      "player_zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Mon Nov 11 17:49:17 2024",
-      "boss": "Trakanon",
-      "killer": "Tweedlede",
-      "zone": "Ruins of Sebilis",
-      "player_zone": "Ruins of Sebilis"
-    },
-    {
-      "timestamp": "Mon Dec 02 18:50:20 2024",
-      "boss": "King Tranix",
-      "killer": "Frankenberries",
-      "zone": "Nagafen's Lair",
-      "player_zone": "Nagafen's Lair"
-    },
-    {
-      "timestamp": "Mon Dec 02 18:51:29 2024",
-      "boss": "Warlord Skarlon",
-      "killer": "Malarkie",
-      "zone": "Nagafen's Lair",
-      "player_zone": "Nagafen's Lair"
-    },
-    {
-      "timestamp": "Mon Dec 02 18:57:19 2024",
-      "boss": "Lord Nagafen",
-      "killer": "Noname",
-      "zone": "Nagafen's Lair",
-      "player_zone": "Nagafen's Lair"
-    },
-    {
-      "timestamp": "Fri Dec 13 17:48:56 2024",
-      "boss": "Venril Sathir",
-      "killer": "Cattastrophe",
-      "zone": "Karnor's Castle",
-      "player_zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Fri Dec 13 18:00:42 2024",
-      "boss": "Talendor",
-      "killer": "Quick",
-      "zone": "Skyfire Mountains",
-      "player_zone": "Skyfire Mountains"
-    },
-    {
-      "timestamp": "Fri Dec 13 18:22:53 2024",
-      "boss": "Silverwing",
-      "killer": "Noname",
-      "zone": "Veeshan's Peak",
-      "player_zone": "Veeshan's Peak"
-    },
-    {
-      "timestamp": "Fri Dec 13 18:31:57 2024",
-      "boss": "Hoshkar",
-      "killer": "Tokagechan",
-      "zone": "Veeshan's Peak",
-      "player_zone": "Veeshan's Peak"
-    },
-    {
-      "timestamp": "Tue Dec 17 21:12:30 2024",
-      "boss": "Venril Sathir",
-      "killer": "Tweedlede",
-      "zone": "Karnor's Castle",
-      "player_zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Fri Dec 20 22:13:07 2024",
-      "boss": "Venril Sathir",
-      "killer": "Fitty",
-      "zone": "Karnor's Castle",
-      "player_zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Sat Dec 21 21:32:06 2024",
-      "boss": "Phara Dar",
-      "killer": "Sturmboli",
-      "zone": "Veeshan's Peak",
-      "player_zone": "Veeshan's Peak"
-    },
-    {
-      "timestamp": "Sat Dec 21 22:10:36 2024",
-      "boss": "a dracoliche",
-      "killer": "Lyric",
-      "zone": "Plane of Fear Instanced",
-      "player_zone": "Plane of Fear (Instanced)"
-    },
-    {
-      "timestamp": "Sat Dec 21 22:22:28 2024",
-      "boss": "Terror",
-      "killer": "Chryos",
-      "zone": "Plane of Fear Instanced",
-      "player_zone": "Plane of Fear (Instanced)"
-    },
-    {
-      "timestamp": "Sat Dec 21 22:24:09 2024",
-      "boss": "Dread",
-      "killer": "Lazrahriz",
-      "zone": "Plane of Fear Instanced",
-      "player_zone": "Plane of Fear (Instanced)"
-    },
-    {
-      "timestamp": "Sat Dec 21 22:28:42 2024",
-      "boss": "Fright",
-      "killer": "Chryos",
-      "zone": "Plane of Fear Instanced",
-      "player_zone": "Plane of Fear (Instanced)"
-    },
-    {
-      "timestamp": "Sat Dec 21 22:38:29 2024",
-      "boss": "Cazic Thule",
-      "killer": "Lyric",
-      "zone": "Plane of Fear Instanced",
-      "player_zone": "Plane of Fear (Instanced)"
-    },
-    {
-      "timestamp": "Mon Dec 23 00:13:18 2024",
-      "boss": "Overking Bathezid",
-      "killer": "Thebrain",
-      "zone": "Chardok",
-      "player_zone": "Chardok"
-    },
-    {
-      "timestamp": "Mon Dec 23 23:04:10 2024",
-      "boss": "Overking Bathezid",
-      "killer": "Metman",
-      "zone": "Chardok",
-      "player_zone": "Chardok"
-    },
-    {
-      "timestamp": "Tue Dec 24 01:53:00 2024",
-      "boss": "Queen Velazul Di zok",
-      "killer": "Tweedledum",
-      "zone": "Chardok",
-      "player_zone": "Chardok"
-    }
-  ],
-  "lockouts_sample": [
-    {
-      "timestamp": "Fri Sep 13 17:58:45 2024",
-      "boss": "Trakanon",
-      "zone": "Ruins of Sebilis"
-    },
-    {
-      "timestamp": "Fri Sep 13 17:58:45 2024",
-      "boss": "Trakanon",
-      "zone": "Ruins of Sebilis"
-    },
-    {
-      "timestamp": "Wed Nov 06 21:04:03 2024",
-      "boss": "Faydedar",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Wed Nov 06 21:04:03 2024",
-      "boss": "Faydedar",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Fri Nov 08 17:35:22 2024",
-      "boss": "Venril Sathir",
-      "zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Fri Nov 08 17:35:22 2024",
-      "boss": "Venril Sathir",
-      "zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Mon Nov 11 17:49:17 2024",
-      "boss": "Trakanon",
-      "zone": "Ruins of Sebilis"
-    },
-    {
-      "timestamp": "Mon Nov 11 17:49:17 2024",
-      "boss": "Trakanon",
-      "zone": "Ruins of Sebilis"
-    },
-    {
-      "timestamp": "Tue Nov 26 17:35:16 2024",
-      "boss": "Venril Sathir",
-      "zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Tue Nov 26 17:35:17 2024",
-      "boss": "Venril Sathir",
-      "zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Fri Nov 29 21:54:31 2024",
-      "boss": "Faydedar",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Fri Nov 29 21:54:31 2024",
-      "boss": "Faydedar",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Fri Nov 29 22:21:16 2024",
-      "boss": "Severilous",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Fri Nov 29 22:21:16 2024",
-      "boss": "Severilous",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Fri Nov 29 23:26:37 2024",
-      "boss": "Talendor",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Fri Nov 29 23:26:37 2024",
-      "boss": "Talendor",
-      "zone": "Timorous Deep"
-    },
-    {
-      "timestamp": "Sat Nov 30 00:10:26 2024",
-      "boss": "Venril Sathir",
-      "zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Sat Nov 30 00:10:26 2024",
-      "boss": "Venril Sathir",
-      "zone": "Karnor's Castle"
-    },
-    {
-      "timestamp": "Mon Dec 02 17:54:46 2024",
-      "boss": "Trakanon",
-      "zone": "Ruins of Sebilis"
-    },
-    {
-      "timestamp": "Mon Dec 02 17:54:46 2024",
-      "boss": "Trakanon",
-      "zone": "Ruins of Sebilis"
     }
   ]
 }

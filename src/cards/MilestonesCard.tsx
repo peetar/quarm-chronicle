@@ -33,6 +33,18 @@ export const MilestonesCard: React.FC<CardProps> = ({ data, className = '' }) =>
           </div>
         )}
 
+        {events.level1
+          .filter((e) => e.type === 'class_aa_learn')
+          .map((aa: any, i: number) => (
+            <div key={`maa-${i}`} className="py-2 flex justify-between items-center">
+              <span className="text-indigo-300 font-semibold flex items-center gap-1.5 truncate pr-2">
+                <span>🔮</span> {aa.title}
+              </span>
+              <span className="text-slate-400 whitespace-nowrap">{aa.date}</span>
+              <span className="text-cyan font-medium whitespace-nowrap pl-2">{aa.zone}</span>
+            </div>
+          ))}
+
         {eras.map((era) => (
           <div key={era.era} className="py-2 flex justify-between items-center">
             <span className="text-slate-200 flex items-center gap-1.5">

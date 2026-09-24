@@ -12,12 +12,16 @@ import {
   SpellFirstEvent,
   DailyZoneActivityEvent,
   EraMilestone,
+  ClassAALearnEvent,
 } from '../types/events';
+import CLASS_AAS from '../data/class_aas.json';
 
 const TS_PATTERN = /^\[([A-Za-z]{3}\s+[A-Za-z]{3}\s+[\s\d]?\d\s+\d{2}:\d{2}:\d{2}\s+\d{4})\]\s*(.*)\r?$/;
 const ZONE_PATTERN = /^You have entered ([^\.]+)\./i;
 const DING_PATTERN = /Welcome to level (\d+)!/i;
 const AA_PATTERN = /You have gained an ability point!\s*You now have (\d+) ability point(?:\(s\)|s)?\./i;
+const AA_GAIN_PATTERN = /^You have gained the ability \"(?<name>[^\"]+)\" at a cost of (?<cost>\d+) ability points?\./i;
+const AA_IMPROVE_PATTERN = /^You have improved (?<name>.+?)(?:\s+(?<rank>\d+))? at a cost of (?<cost>\d+) ability points?\./i;
 const DEATH_SLAIN = /^You have been slain by ([^!]+)!/i;
 const CAST_PATTERN = /^You begin (?:casting|singing) (.*?)\./i;
 const GUILD_JOIN = /^You have joined (?!the group|the raid)(.+?)\.?$/i;
@@ -434,7 +438,7 @@ self.onmessage = async (event: MessageEvent) => {
     const firstSpellSeen = new Map<string, { spell: string; timestamp: string; date: string; iso?: string; zone: string }>();
 
     // Event collections
-    const level1Events: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent> = [];
+    const level1Events: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent | ClassAALearnEvent> = [];
     const level2Events: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent> = [];
     const level3Events: Array<BossKillEvent | DeathEvent | DailyZoneActivityEvent> = [];
 
@@ -745,6 +749,72 @@ self.onmessage = async (event: MessageEvent) => {
           date: dateStr || '',
           iso: iso || undefined,
         });
+        continue;
+      }
+
+      // ------------------------------------------------------------------
+      // Class-based AA Learning & Improvements (Level 1 Milestone)
+      // ------------------------------------------------------------------
+      if (msg.startsWith('You have gained the ability "') || msg.startsWith('You have improved ')) {
+        let rawName = '';
+        let rank = 1;
+        let cost = 0;
+
+        if (msg.startsWith('You have gained the ability "')) {
+          const gm = AA_GAIN_PATTERN.exec(msg);
+          if (gm && gm.groups) {
+            rawName = gm.groups.name.trim();
+            cost = parseInt(gm.groups.cost, 10);
+            rank = 1;
+          }
+        } else {
+          const im = AA_IMPROVE_PATTERN.exec(msg);
+          if (im && im.groups) {
+            rawName = im.groups.name.trim();
+            cost = parseInt(im.groups.cost, 10);
+            rank = im.groups.rank ? parseInt(im.groups.rank, 10) : 2;
+          }
+        }
+
+        if (rawName) {
+          const aaInfo = (CLASS_AAS as Record<string, any>)[rawName.toLowerCase()];
+          if (aaInfo) {
+            const { iso, dateStr } = parseEqDate(ts);
+            const rankLabel = rank > 1 ? ` Rank ${rank}` : '';
+            const title = `${aaInfo.name}${rankLabel} (${cost} AA${cost === 1 ? '' : 's'})`;
+
+            level1Events.push({
+              level: 1,
+              type: 'class_aa_learn',
+              title,
+              abilityName: aaInfo.name,
+              rank,
+              cost,
+              category: aaInfo.category,
+              classes: aaInfo.classes,
+              description: aaInfo.description,
+              zone: currentZone,
+              timestamp: ts,
+              date: dateStr || '',
+              iso: iso || undefined,
+            });
+
+            // Class inference scoring
+            const classTokens = aaInfo.classes.split(/[,/\s+]+/).map((c: string) => c.trim().toUpperCase());
+            const classMap: Record<string, string> = {
+              WAR: 'Warrior', CLR: 'Cleric', PAL: 'Paladin', RNG: 'Ranger',
+              SHD: 'Shadow Knight', DRU: 'Druid', MNK: 'Monk', BRD: 'Bard',
+              ROG: 'Rogue', SHM: 'Shaman', NEC: 'Necromancer', WIZ: 'Wizard',
+              MAG: 'Magician', ENC: 'Enchanter', BST: 'Beastlord'
+            };
+            for (const tok of classTokens) {
+              const fullCls = classMap[tok];
+              if (fullCls) {
+                classAbilityScores[fullCls] = (classAbilityScores[fullCls] || 0) + (classTokens.length === 1 ? 25 : 10);
+              }
+            }
+          }
+        }
         continue;
       }
 

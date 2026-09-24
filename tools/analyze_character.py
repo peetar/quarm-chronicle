@@ -18,6 +18,8 @@ TS_PATTERN = re.compile(r"^\[(?P<ts>[A-Za-z]{3} [A-Za-z]{3} \d{1,2} \d{2}:\d{2}:
 ZONE_PATTERN = re.compile(r"^You have entered ([^\.]+)\.", re.I)
 DING_PATTERN = re.compile(r"Welcome to level (\d+)!", re.I)
 AA_PATTERN = re.compile(r"You have gained an ability point!\s*You now have (\d+) ability point(?:\(s\)|s)?\.", re.I)
+AA_GAIN_PATTERN = re.compile(r'^You have gained the ability \"(?P<name>[^\"]+)\" at a cost of (?P<cost>\d+) ability points?\.', re.I)
+AA_IMPROVE_PATTERN = re.compile(r'^You have improved (?P<name>.+?)(?:\s+(?P<rank>\d+))? at a cost of (?P<cost>\d+) ability points?\.', re.I)
 
 DEATH_SLAIN = re.compile(r"^You have been slain by ([^!]+)!", re.I)
 DEATH_DIED = re.compile(r"^You died\.", re.I)
@@ -254,6 +256,17 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
         with open(epics_ref_path, "r", encoding="utf-8") as f:
             epics_ref = json.load(f)
 
+    # Load Class AAs reference
+    class_aas_ref_path = os.path.join(PROJECT_ROOT, "data", "reference", "class_aas.json")
+    if not os.path.exists(class_aas_ref_path):
+        class_aas_ref_path = os.path.join(PROJECT_ROOT, "src", "data", "class_aas.json")
+    class_aas_ref = {}
+    if os.path.exists(class_aas_ref_path):
+        with open(class_aas_ref_path, "r", encoding="utf-8") as f:
+            class_aas_ref = json.load(f)
+
+    class_aa_events = []
+
     print("Streaming log lines (this may take a few moments for multi-GB logs)...")
     for line in stitcher.stream_lines():
         total_lines += 1
@@ -351,6 +364,48 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
             banked = int(am.group(1)) if am else None
             zone_aas[current_zone] += 1
             aa_events.append({"timestamp": ts, "banked": banked, "zone": current_zone})
+            continue
+
+        # Class AA Learning & Improvement
+        if msg.startswith('You have gained the ability "') or msg.startswith('You have improved '):
+            if msg.startswith('You have gained the ability "'):
+                gm = AA_GAIN_PATTERN.match(msg)
+                if gm:
+                    raw_name = gm.group("name").strip()
+                    cost = int(gm.group("cost"))
+                    rank = 1
+                    aa_info = class_aas_ref.get(raw_name.lower())
+                    if aa_info:
+                        class_aa_events.append({
+                            "timestamp": ts,
+                            "date": dt.strftime("%Y-%m-%d") if dt else "",
+                            "ability": aa_info["name"],
+                            "rank": rank,
+                            "cost": cost,
+                            "category": aa_info["category"],
+                            "classes": aa_info["classes"],
+                            "description": aa_info["description"],
+                            "zone": current_zone
+                        })
+            else:
+                im = AA_IMPROVE_PATTERN.match(msg)
+                if im:
+                    raw_name = im.group("name").strip()
+                    cost = int(im.group("cost"))
+                    rank = int(im.group("rank")) if im.group("rank") else 2
+                    aa_info = class_aas_ref.get(raw_name.lower())
+                    if aa_info:
+                        class_aa_events.append({
+                            "timestamp": ts,
+                            "date": dt.strftime("%Y-%m-%d") if dt else "",
+                            "ability": aa_info["name"],
+                            "rank": rank,
+                            "cost": cost,
+                            "category": aa_info["category"],
+                            "classes": aa_info["classes"],
+                            "description": aa_info["description"],
+                            "zone": current_zone
+                        })
             continue
 
         # Resurrections
@@ -767,7 +822,8 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
             "top_raid_boss_kills_overall": all_boss_kills.most_common(15)
         },
         "level_timeline_firsts": [x for x in level_timeline if x["first_time"]],
-        "aa_events": aa_events
+        "aa_events": aa_events,
+        "class_aa_milestones": class_aa_events
     }
 
     out_path = os.path.join(PROJECT_ROOT, "data", "sample_output", f"{character_name.lower()}_summary.json")

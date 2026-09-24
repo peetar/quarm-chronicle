@@ -743,6 +743,31 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
                   );
                 }
 
+                if (e.type === 'class_aa_learn') {
+                  const tiers = [145, 105, 65, 25];
+                  const baseTop = tiers[idx % tiers.length];
+                  const jitter = getEventJitter(e.abilityName + idx, 8);
+                  const chosenTop = Math.max(16, Math.min(165, baseTop + jitter));
+                  const stemHeight = Math.max(14, 240 - chosenTop - 24);
+
+                  return (
+                    <div
+                      key={`aa-learn-${idx}`}
+                      style={{ left: `${leftPct}%`, top: `${chosenTop}px` }}
+                      className="absolute -translate-x-1/2 flex flex-col items-center z-20 hover:z-50 pointer-events-none"
+                    >
+                      <div
+                        onClick={() => setSelectedEvent(e)}
+                        className="pointer-events-auto cursor-pointer bg-indigo-950/95 border border-indigo-400 text-indigo-200 px-2.5 py-1 rounded-full text-xs font-bold whitespace-nowrap shadow-[0_0_12px_rgba(129,140,248,0.5)] hover:scale-110 transition-transform flex items-center gap-1.5"
+                      >
+                        <span>🔮</span>
+                        <span>{e.abilityName}{e.rank > 1 ? ` ${e.rank}` : ''}</span>
+                      </div>
+                      <div style={{ height: `${stemHeight}px` }} className="w-[1.5px] bg-indigo-400 opacity-75 pointer-events-none" />
+                    </div>
+                  );
+                }
+
                 if (e.type === 'guild_join' || e.type === 'guild_leave') {
                   const tiers = [24, 56, 88];
                   const baseStem = tiers[idx % tiers.length];
@@ -982,6 +1007,7 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
               <span><strong className="text-gold-soft">👑</strong> Pinnacle First Kills</span>
               <span><strong className="text-gold">✨</strong> Epic 1.0 Weapon</span>
               <span><strong className="text-amber-400">●</strong> Milestone Dings (1–60)</span>
+              <span><strong className="text-indigo-400">🔮</strong> Class & Specialized AAs</span>
               <span><strong className="text-purple">◆</strong> Alternate Advancements ({data.aggregates.totalAAs} AAs)</span>
               <span><strong className="text-cyan">⚔️</strong> {data.aggregates.totalBossKills} Raid & PvP Boss Kills</span>
             </div>
@@ -1007,6 +1033,31 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
               {selectedEvent.title}
             </h3>
             <div className="space-y-2 text-sm text-slate-300">
+              {selectedEvent.type === 'class_aa_learn' && (
+                <>
+                  <div className="flex justify-between border-b border-white/5 py-1">
+                    <span className="text-slate-400">Ability:</span>
+                    <span className="text-indigo-300 font-semibold">{selectedEvent.abilityName}</span>
+                  </div>
+                  <div className="flex justify-between border-b border-white/5 py-1">
+                    <span className="text-slate-400">Rank:</span>
+                    <span className="text-slate-200 font-medium">Rank {selectedEvent.rank}</span>
+                  </div>
+                  <div className="flex justify-between border-b border-white/5 py-1">
+                    <span className="text-slate-400">Cost:</span>
+                    <span className="text-purple font-medium">{selectedEvent.cost} Ability Points</span>
+                  </div>
+                  <div className="flex justify-between border-b border-white/5 py-1">
+                    <span className="text-slate-400">Category:</span>
+                    <span className="text-slate-300">{selectedEvent.category} ({selectedEvent.classes})</span>
+                  </div>
+                  {selectedEvent.description && (
+                    <div className="mt-2 p-2.5 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-300 leading-relaxed">
+                      {selectedEvent.description}
+                    </div>
+                  )}
+                </>
+              )}
               {selectedEvent.dateLabel && (
                 <div className="flex justify-between border-b border-white/5 py-1">
                   <span className="text-slate-400">Date:</span>

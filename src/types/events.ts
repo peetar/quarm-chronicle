@@ -129,6 +129,22 @@ export interface SpellFirstEvent {
   iso?: string;
 }
 
+export interface ClassAALearnEvent {
+  level: number;
+  type: 'class_aa_learn';
+  title: string;
+  abilityName: string;
+  rank: number;
+  cost: number;
+  category: 'Class AA' | 'PoP Ability AA';
+  classes: string;
+  description?: string;
+  zone: string;
+  timestamp: string;
+  date: string;
+  iso?: string;
+}
+
 export interface DailyZoneActivityEvent {
   level: number;
   type: 'daily_zone_activity';
@@ -216,7 +232,7 @@ export interface ParsedCharacterBundle {
   character: CharacterMetadata;
   eras: EraMilestone[];
   events: {
-    level1: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent>;
+    level1: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent | ClassAALearnEvent>;
     level2: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent>;
     level3: Array<BossKillEvent | DeathEvent | DailyZoneActivityEvent>;
   };

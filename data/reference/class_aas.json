@@ -1,0 +1,1178 @@
+{
+  "acrobatics": {
+    "name": "Acrobatics",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD MNK ROG",
+    "ranks": 3,
+    "description": "This ability will reduce the damage that you take from falling."
+  },
+  "act of valor": {
+    "name": "Act of Valor",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "PAL",
+    "ranks": 1,
+    "description": "This noble ability will allow you to transfer all of your hit points to a target player, killing you in the process."
+  },
+  "advanced trap negotiation": {
+    "name": "Advanced Trap Negotiation",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD ROG",
+    "ranks": 3,
+    "description": "This ability will reduce the reuse time on your sense and disarm trap skills."
+  },
+  "alchemy mastery": {
+    "name": "Alchemy Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "SHM",
+    "ranks": 3,
+    "description": "This ability reduces your chances of failing alchemy combinations by 10, 25, and 50 percent."
+  },
+  "ambidexterity": {
+    "name": "Ambidexterity",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD BST MNK RNG ROG WAR",
+    "ranks": 1,
+    "description": "This ability increases your chance to use dual wield successfully."
+  },
+  "archery mastery": {
+    "name": "Archery Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "RNG",
+    "ranks": 3,
+    "description": "This ability increases your archery damage 30, 60, and 100 percent."
+  },
+  "area taunt": {
+    "name": "Area Taunt",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WAR",
+    "ranks": 1,
+    "description": "This ability will allow you to taunt everything in a small radius."
+  },
+  "bandage wound": {
+    "name": "Bandage Wound",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability will give you increased healing ability per bandage by 10, 25, and 50 percent."
+  },
+  "bestow divine aura": {
+    "name": "Bestow Divine Aura",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "CLR",
+    "ranks": 1,
+    "description": "This ability gives you the ability to cast a Divine Aura spell on a Player target, temporarily rendering the target invulnerable."
+  },
+  "body and mind rejuvenation": {
+    "name": "Body and Mind Rejuvenation",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "Hybrids",
+    "ranks": 1,
+    "description": "This ability will give you one additional point of mana and hit point regeneration."
+  },
+  "call to corpse": {
+    "name": "Call to Corpse",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "NEC",
+    "ranks": 1,
+    "description": "This ability allows you to cast a no component summon corpse spell."
+  },
+  "cannibalization": {
+    "name": "Cannibalization",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "SHM",
+    "ranks": 1,
+    "description": "This ability will give the caster a new, massive Cannibalize spell."
+  },
+  "celestial regeneration": {
+    "name": "Celestial Regeneration",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "CLR",
+    "ranks": 1,
+    "description": "This ability gives you the ability to cast a large heal over time spell at no mana cost."
+  },
+  "chaotic stab": {
+    "name": "Chaotic Stab",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ROG",
+    "ranks": 1,
+    "description": "This ability will allow you to do minimal backstab damage on your backstab attempt, even if you are not positioned behind the monster."
+  },
+  "critical mend": {
+    "name": "Critical Mend",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MNK",
+    "ranks": 3,
+    "description": "This ability gives you a chance to perform a superior mend 5, 10, and 25 percent of the time."
+  },
+  "dead mesmerization": {
+    "name": "Dead Mesmerization",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "NEC",
+    "ranks": 1,
+    "description": "This ability allows you to cast an AE low resist mesmerization spell effective against the undead."
+  },
+  "dire charm": {
+    "name": "Dire Charm",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "DRU ENC NEC",
+    "ranks": 1,
+    "description": "This ability gives you the chance to permanently charm an NPC. (Enchanters: All. Druids: Animals only. Necromancers: Undead only.)"
+  },
+  "divine resurrection": {
+    "name": "Divine Resurrection",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "CLR",
+    "ranks": 1,
+    "description": "This ability allows you to provide a resurrection that restores 100 percent experience, all hit points and mana, and causes no adverse resurrection effects."
+  },
+  "divine stun": {
+    "name": "Divine Stun",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "PAL",
+    "ranks": 1,
+    "description": "Training in this ability gives you a new, fast-casting spell that has the chance to interrupt Level 68 or lower NPCs. Normal resist rules apply."
+  },
+  "double riposte": {
+    "name": "Double Riposte",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BER BST MNK PAL RNG ROG SHD WAR",
+    "ranks": 3,
+    "description": "This ability will give you an increased chance to execute a double riposte 15, 35, and 50 percent of the time."
+  },
+  "dragon punch": {
+    "name": "Dragon Punch",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MNK",
+    "ranks": 1,
+    "description": "This ability augments Dragon Punch for human monks and Tail Rake for iksars with the chance to automatically perform a Knockback."
+  },
+  "elemental form: air": {
+    "name": "Elemental Form: Air",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 3,
+    "description": "This ability will allow you to turn into an air elemental, gaining many of the innate benefits of the form, as well as some of the penalties."
+  },
+  "elemental form: earth": {
+    "name": "Elemental Form: Earth",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 3,
+    "description": "This ability will allow you to turn into an earth elemental, gaining many of the innate benefits of the form, as well as some of the penalties."
+  },
+  "elemental form: fire": {
+    "name": "Elemental Form: Fire",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 3,
+    "description": "This ability will allow you to turn into a fire elemental, gaining many of the innate benefits of the form, as well as some of the penalties."
+  },
+  "elemental form: water": {
+    "name": "Elemental Form: Water",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 3,
+    "description": "This ability will allow you to turn into a water elemental, gaining many of the innate benefits of the form, as well as some of the penalties."
+  },
+  "elemental pact": {
+    "name": "Elemental Pact",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 1,
+    "description": "This ability will prevent components used in the summoning of pets from being expended."
+  },
+  "endless quiver": {
+    "name": "Endless Quiver",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "RNG",
+    "ranks": 1,
+    "description": "This ability provides you a never-ending supply of arrows."
+  },
+  "enhanced root": {
+    "name": "Enhanced Root",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "DRU",
+    "ranks": 1,
+    "description": "This ability reduces the chance that a rooted NPC will be freed by your damage spells by 50 percent."
+  },
+  "escape": {
+    "name": "Escape",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ROG",
+    "ranks": 1,
+    "description": "This ability will cause all NPCs to forget about you. If you are out of immediate combat, this ability will also make you invisible similar to your hiding ability."
+  },
+  "exodus": {
+    "name": "Exodus",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "DRU WIZ",
+    "ranks": 1,
+    "description": "This ability gives you the ability to cast an extremely fast-casting, no mana cost evacuation or succor spell."
+  },
+  "extended notes": {
+    "name": "Extended Notes",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD",
+    "ranks": 3,
+    "description": "This ability will increased your song ranges by 10, 15, and 25 percent."
+  },
+  "fearless": {
+    "name": "Fearless",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "PAL SHD",
+    "ranks": 1,
+    "description": "This ability will make you permanently immune to fear spells."
+  },
+  "fearstorm": {
+    "name": "Fearstorm",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "NEC",
+    "ranks": 1,
+    "description": "Allows you to cast an AE low resist fear spell."
+  },
+  "flesh to bone": {
+    "name": "Flesh to Bone",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "NEC",
+    "ranks": 1,
+    "description": "This ability allows you to turn any meat or body part item into bone chips. You must hold the item or stack on your cursor. *Warning* This ability will use magical or no trade items if they are held on the cursor."
+  },
+  "flurry": {
+    "name": "Flurry",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability will allow you to perform up to 2 additional attacks from your primary hand."
+  },
+  "frenzied burnout": {
+    "name": "Frenzied Burnout",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 1,
+    "description": "This ability allows you to cast a buff on your pet that will cause it to go berserk, doing increased damage."
+  },
+  "frenzy of spirit": {
+    "name": "Frenzy of Spirit",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BST",
+    "ranks": 1,
+    "description": "This ability gives Beastlords the power to send themselves into an animalistic frenzy, bent only on slaughter, for a brief period of time."
+  },
+  "gather mana": {
+    "name": "Gather Mana",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ENC",
+    "ranks": 1,
+    "description": "This ability allows you to recover up to 10,000 points of mana nearly instantly."
+  },
+  "hobble of spirits": {
+    "name": "Hobble of Spirits",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BST",
+    "ranks": 1,
+    "description": "Once you train this ability, you may imbue your pet with an attack that is reputed to slow an enemys walking."
+  },
+  "holy steed": {
+    "name": "Holy Steed",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "PAL",
+    "ranks": 1,
+    "description": "This ability provides you with the power to call the ultimate holy steed to your side."
+  },
+  "improved familiar": {
+    "name": "Improved Familiar",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WIZ",
+    "ranks": 1,
+    "description": "This ability will summon an improved familiar that is an upgrade from the greater familiar. This improved familiar is higher in level, has more hitpoints, and is very resistant to all spells."
+  },
+  "improved harm touch": {
+    "name": "Improved Harm Touch",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "SHD",
+    "ranks": 1,
+    "description": "This ability gives you a low-resist Harm Touch. Using this ability also uses your existing Harm Touch timer."
+  },
+  "improved lay on hands": {
+    "name": "Improved Lay on Hands",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "PAL",
+    "ranks": 1,
+    "description": "This ability will turn your Lay of Hands into a complete heal."
+  },
+  "improved reclaim energy": {
+    "name": "Improved Reclaim Energy",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 1,
+    "description": "This ability will increase the amount of mana returned to you when reclaiming your pet."
+  },
+  "innate camouflage": {
+    "name": "Innate Camouflage",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "DRU RNG",
+    "ranks": 1,
+    "description": "This ability allows you to become invisible, nearly at will, without the need to memorize a spell."
+  },
+  "innate invisibility vs undead": {
+    "name": "Innate Invisibility vs Undead",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "CLR NEC",
+    "ranks": 1,
+    "description": "This ability allows you to become invisible to the undead, nearly at will, without the need to memorize a spell."
+  },
+  "instrument mastery": {
+    "name": "Instrument Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD",
+    "ranks": 3,
+    "description": "This ability allows for improved use of all instrument types."
+  },
+  "jam fest": {
+    "name": "Jam Fest",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD",
+    "ranks": 3,
+    "description": "This ability allows you to sing your songs at a higher apparent level. Note: This does not allow you to sing songs that are actually higher than your level."
+  },
+  "jewelcraft mastery": {
+    "name": "Jewelcraft Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ENC",
+    "ranks": 3,
+    "description": "This ability reduces your chance of failing jewelcraft combinations by 10, 25, and 50 percent."
+  },
+  "leech touch": {
+    "name": "Leech Touch",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "SHD",
+    "ranks": 1,
+    "description": "This ability gives you a life tap harm touch. Using this ability also uses your existing Harm Touch timer."
+  },
+  "lifeburn": {
+    "name": "Lifeburn",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "NEC",
+    "ranks": 1,
+    "description": "This ability allows you to cast a no-resist direct damage spell equal to that of your current hitpoints. The effect drains your life and provides a life bond effect that does 250 damage per tick, for 6 ticks."
+  },
+  "manaburn": {
+    "name": "Manaburn",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WIZ",
+    "ranks": 1,
+    "description": "This ability allows you to do non-resistable damage in an amount based off of your current mana. This is calculated as a random 50-100% of the current mana pool (gear and buffs) is added to the current mana pool number. Ex: 4500 mana could result in 9000 damage at the high end or 6750 at the low end. A debuff is left on the mob for one minute that blocks other manaburns. Cap is 9492."
+  },
+  "mass group buff": {
+    "name": "Mass Group Buff",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BST CLR DRU ENC MAG NEC PAL RNG SHM",
+    "ranks": 1,
+    "description": "This ability turns the next group buff that you cast into a beneficial area effect spell, hitting everyone within its radius, at the cost of doubling the spells mana usage."
+  },
+  "mend companion": {
+    "name": "Mend Companion",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BST MAG NEC",
+    "ranks": 1,
+    "description": "This ability allows you to cast a Lay of Hands type spell on your pet."
+  },
+  "nexus gate": {
+    "name": "Nexus Gate",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WIZ",
+    "ranks": 1,
+    "description": "This ability gives you an instant-cast self gate spell to the Nexus."
+  },
+  "paragon of spirit": {
+    "name": "Paragon of Spirit",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BST",
+    "ranks": 1,
+    "description": "This ability allows the Beastlord to share some of his natural attunement with his party in the form of health and mana."
+  },
+  "permanent illusion": {
+    "name": "Permanent Illusion",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ENC",
+    "ranks": 1,
+    "description": "This ability allows you to zone without losing your current illusion."
+  },
+  "pet discipline": {
+    "name": "Pet Discipline",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BST MAG NEC SHD SHM",
+    "ranks": 1,
+    "description": "This ability will allow you to give your pet a hold command until explicitly told to attack. Usage: /pet hold."
+  },
+  "physical enhancement": {
+    "name": "Physical Enhancement",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "Hybrids + Melees",
+    "ranks": 1,
+    "description": "This ability will give you additional improvements in your Natural Durability, Avoidance Boost, and Mitigation Boost."
+  },
+  "poison mastery": {
+    "name": "Poison Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ROG",
+    "ranks": 3,
+    "description": "This ability reduces your chance of failing on a poison combination by 10, 25, and 50 percent. It also reduces the time to apply poison by 2.5 seconds per ability level. Once one point is applied to this ability, you will never again fail in poison application."
+  },
+  "purge poison": {
+    "name": "Purge Poison",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ROG",
+    "ranks": 1,
+    "description": "This ability will remove all poisons from your body."
+  },
+  "purify body": {
+    "name": "Purify Body",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MNK",
+    "ranks": 1,
+    "description": "This ability removes all negative effects from your body except for fear, charm, and resurrection effects."
+  },
+  "purify soul": {
+    "name": "Purify Soul",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "CLR",
+    "ranks": 1,
+    "description": "This ability allows you to cast a spell that cures most ailments."
+  },
+  "quick buff": {
+    "name": "Quick Buff",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "ENC SHM",
+    "ranks": 3,
+    "description": "This ability reduces the casting time of many beneficial spells that have a duration by 10, 25, and 50 percent."
+  },
+  "quick damage": {
+    "name": "Quick Damage",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "DRU WIZ",
+    "ranks": 3,
+    "description": "This ability reduces the casting time on your damage spells that have a casting time greater than four seconds by 2, 5 and 10 percent."
+  },
+  "quick evacuation": {
+    "name": "Quick Evacuation",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "DRU WIZ",
+    "ranks": 3,
+    "description": "This ability reduces the casting time on your evacuation and succor spells by 10, 25, and 50 percent."
+  },
+  "quick summoning": {
+    "name": "Quick Summoning",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 3,
+    "description": "This ability reduces the casting time of your summoning spells by 10, 25, and 50 percent. This includes CotH."
+  },
+  "rabid bear": {
+    "name": "Rabid Bear",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "SHM",
+    "ranks": 1,
+    "description": "This ability turns you into a Rabid Bear, boosting all of your offensive capabilities."
+  },
+  "rampage": {
+    "name": "Rampage",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WAR",
+    "ranks": 1,
+    "description": "This ability will allow you to strike everything in a small radius."
+  },
+  "rapid feign": {
+    "name": "Rapid Feign",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MNK",
+    "ranks": 3,
+    "description": "This ability reduces your reuse time on feign death by 10, 25, and 50 percent."
+  },
+  "return kick": {
+    "name": "Return Kick",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MNK",
+    "ranks": 3,
+    "description": "This ability gives you the chance to automatically perform a bonus flying kick on ripostes 25, 35, and 50 percent of the time."
+  },
+  "scribble notes": {
+    "name": "Scribble Notes",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD",
+    "ranks": 1,
+    "description": "This ability will reduce the amount of time that it takes you to memorize a song."
+  },
+  "singing mastery": {
+    "name": "Singing Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "BRD",
+    "ranks": 3,
+    "description": "This ability allows for specialization and improved use of your voice."
+  },
+  "slay undead": {
+    "name": "Slay Undead",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "PAL",
+    "ranks": 3,
+    "description": "This ability will cause your criticals to inflict greatly improved damage versus the undead."
+  },
+  "soul abrasion": {
+    "name": "Soul Abrasion",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "SHD",
+    "ranks": 3,
+    "description": "This ability gives you increased damage off of the lifetap procs that result from your self buffs."
+  },
+  "spell casting fury mastery": {
+    "name": "Spell Casting Fury Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WIZ",
+    "ranks": 3,
+    "description": "This ability gives you an increased chance to score a critical hit with your direct damage spells."
+  },
+  "spell casting reinforcement mastery": {
+    "name": "Spell Casting Reinforcement Mastery",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "CLR DRU ENC SHM",
+    "ranks": 1,
+    "description": "This ability increases the duration of beneficial buffs that you cast by an additional 20 percent."
+  },
+  "strong root": {
+    "name": "Strong Root",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WIZ",
+    "ranks": 1,
+    "description": "This ability will grant you the ability to cast an extremely low resistance Root-type spell."
+  },
+  "turn summoned": {
+    "name": "Turn Summoned",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "MAG",
+    "ranks": 1,
+    "description": "This ability infuses a summoned NPC with elemental energy, causing it to continually take damage for the next 30 seconds. Each additional level of this ability increases the damage done. Occasionally a summoned NPC will react violently to the infusion of energy, potentially destroying it outright."
+  },
+  "turn undead": {
+    "name": "Turn Undead",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "CLR",
+    "ranks": 3,
+    "description": "This ability infuses an undead NPC with holy energy, causing it to continually take damage for the next 30 seconds. Each additional level of this ability increases the damage done. Occasionally an undead NPC will react violently to the infusion of holy energy, potentially destroying it outright."
+  },
+  "two hand bash": {
+    "name": "Two Hand Bash",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "PAL SHD",
+    "ranks": 1,
+    "description": "This ability will allow you to use your Bash skill while wielding any 2-handed weapon."
+  },
+  "unholy steed": {
+    "name": "Unholy Steed",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "SHD",
+    "ranks": 1,
+    "description": "This ability provides you with the power to call the ultimate unholy steed to your side."
+  },
+  "warcry": {
+    "name": "Warcry",
+    "category": "Class AA",
+    "era": "Luclin",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability will allow you to make your entire group immune to fear for 10 seconds per level of the ability."
+  },
+  "allegiant familiar": {
+    "name": "Allegiant Familiar",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WIZ",
+    "ranks": 1,
+    "description": "This ability will cause your existing Improved Familiar to summon an even more powerful companion. This familiar provides even greater benefits to its owner than its predecessor."
+  },
+  "animation empathy": {
+    "name": "Animation Empathy",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ENC",
+    "ranks": 3,
+    "description": "Progressive ranks of this ability grant you finer control over your animations. At its initial level, you are allowed to give your animations Guard and Follow commands. At the second rank, Attack and Go Away commands. At the final rank,back off, Taunt, and Sit commands. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "ayonae's tutelage": {
+    "name": "Ayonae's Tutelage",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BRD",
+    "ranks": 3,
+    "description": "This ability allows for further improvements in the use of all instrument and singing types. The three ranks of this ability may be trained once each level for levels 63 and above."
+  },
+  "bestial frenzy": {
+    "name": "Bestial Frenzy",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BST",
+    "ranks": 5,
+    "description": "This ability grants you a chance of performing a double attack in any given combat round. You may train in this ability once each level after reaching level 61."
+  },
+  "boastful bellow": {
+    "name": "Boastful Bellow",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BRD",
+    "ranks": 1,
+    "description": "This ability allows you to bellow with a force that causes physical harm to your enemies as well as potentially interfering with their spell casting."
+  },
+  "call of xuzl": {
+    "name": "Call of Xuzl",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WIZ",
+    "ranks": 3,
+    "description": "This ability calls a number of swords of Xuzl into existence directed at a target. The swords attack the target until they dissipate 45 seconds later."
+  },
+  "celestial renewal": {
+    "name": "Celestial Renewal",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "CLR",
+    "ranks": 2,
+    "description": "This ability grants improvements to your existing Celestial Regeneration. You may train in the two ranks of this ability at or after levels 63 and 64."
+  },
+  "consumption of the soul": {
+    "name": "Consumption of the Soul",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "SHD",
+    "ranks": 3,
+    "description": "The most advanced Shadow Knights can further enhance their Leech Touch ability. This ability adds 200 additional damage and healing to Leech Touch, per rank. You gain the ability to train an additional rank at levels 61, 63, and 65. The ability caps at 1500 hp."
+  },
+  "divine arbitration": {
+    "name": "Divine Arbitration",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "CLR",
+    "ranks": 3,
+    "description": "Using this ability balances the health of your group such that all group members end up with the same amount of damage taken. The first rank does so at a 20 percent penalty to the average, the second rank does so at a 10 percent penalty, and the final rank does so at no penalty. You may train the ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "eldritch rune": {
+    "name": "Eldritch Rune",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ENC",
+    "ranks": 3,
+    "description": "This ability provides Enchanters with an additional line of defense in the form of an added self-only rune. Each rank of this ability provides a stronger rune than the previous. You may train the ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "entrap": {
+    "name": "Entrap",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "RNG",
+    "ranks": 1,
+    "description": "This ability provides you an additional means of entrapping, or more specifically, ensnaring an opponent."
+  },
+  "fading memories": {
+    "name": "Fading Memories",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BRD",
+    "ranks": 1,
+    "description": "This ability will cause all NPCs to forget about you. If you are out of immediate combat, this ability will also make you invisible. This ability is usable any time that you have 900 mana."
+  },
+  "feigned minion": {
+    "name": "Feigned Minion",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "NEC",
+    "ranks": 3,
+    "description": "This ability allows you to instruct your pet to feign death via the /pet feign command. Three ranks of this skill are available, causing your pet to succeed 25%, 50%, and 75% of the time, respectively. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "feverent blessing": {
+    "name": "Feverent Blessing",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "PAL",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Lay Hands by twelve minutes per rank. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "fleet of foot": {
+    "name": "Fleet of Foot",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BRD",
+    "ranks": 2,
+    "description": "This ability allows Bards to run at previously unheard of speeds. You may train in this ability at or after levels 62 and 64."
+  },
+  "furious rampage": {
+    "name": "Furious Rampage",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Rampage by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "fury of magic mastery": {
+    "name": "Fury of Magic Mastery",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WIZ",
+    "ranks": 3,
+    "description": "This ability further increases your chance to score a critical hit with your direct damage spells."
+  },
+  "guardian of the forest": {
+    "name": "Guardian of the Forest",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "RNG",
+    "ranks": 3,
+    "description": "This ability transforms you into an exceptionally bloodthirsty wolf that attacks with lightning speed, for a brief time. You may train the three ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "hand of piety": {
+    "name": "Hand of Piety",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "PAL",
+    "ranks": 3,
+    "description": "This ability invokes the direct blessing of your deity upon all of those nearby. All group members in range are healed 750 hit points in the first rank, and successive ranks each add 250. You may train in this ability at or after levels 61, 63, and 65."
+  },
+  "harmonious attack": {
+    "name": "Harmonious Attack",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BRD",
+    "ranks": 5,
+    "description": "This ability grants you a chance of performing a double attack in any given combat round. You may train in this ability once each level after reaching level 61."
+  },
+  "harvest of druzzil": {
+    "name": "Harvest of Druzzil",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WIZ",
+    "ranks": 1,
+    "description": "This ability gathers streams of additional mana into your being. You may train this ability at or after level 62."
+  },
+  "hastened divinity": {
+    "name": "Hastened Divinity",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "CLR",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Bestow Divine Aura by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened exodus": {
+    "name": "Hastened Exodus",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "DRU WIZ",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Exodus by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened gathering": {
+    "name": "Hastened Gathering",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ENC",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Gather Mana by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened instigation": {
+    "name": "Hastened Instigation",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Area Taunt by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened mending": {
+    "name": "Hastened Mending",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BST MAG NEC",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Mend Companion by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened purification": {
+    "name": "Hastened Purification",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ROG",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Purge Poison by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened purification of body": {
+    "name": "Hastened Purification of Body",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "MNK",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Purify Body by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened purification of soul": {
+    "name": "Hastened Purification of Soul",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "CLR",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Purify Soul by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened rabidity": {
+    "name": "Hastened Rabidity",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "SHM",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Rabid Bear by four minutes per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "hastened root": {
+    "name": "Hastened Root",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WIZ",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Strong Root by ten percent per rank. You may train in this ability once each level, upon reaching level 6"
+  },
+  "hastened stealth": {
+    "name": "Hastened Stealth",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ROG",
+    "ranks": 3,
+    "description": "This ability reduces the time between which you may attempt to hide or evade by one second per rank. You may train the ranks of this ability at or after levels 61, 62, and 63."
+  },
+  "hasty exit": {
+    "name": "Hasty Exit",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ROG",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Escape by ten percent per rank. You may train in this ability once each level, upon reaching level 63."
+  },
+  "headshot": {
+    "name": "Headshot",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "RNG",
+    "ranks": 1,
+    "description": "This ability provides you the chance of instantly killing an opponent(humanoid only) who is too far below you in level to provide a challenge, when using a bow. (Deals 32,000 dmg on humanoid mobs lvl 46 and below.)"
+  },
+  "host of the elements": {
+    "name": "Host of the Elements",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "MAG",
+    "ranks": 3,
+    "description": "This ability calls an assault of elemental minions into existence directed at a target. The minions attack the target without question until they are called back to their plane 30 seconds later. The initial rank of this ability calls five elementals. Additional ranks add two elementals each. You may train the ranks of this ability at or after levels 63, 64, and 65."
+  },
+  "knight's advantage": {
+    "name": "Knight's Advantage",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "PAL SHD",
+    "ranks": 3,
+    "description": "This ability grants you an increased chance of performing a double attack in any given combat round. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "living shield": {
+    "name": "Living Shield",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This extends your capacity to act as a living shield, This ability adds twelve seconds per rank to the duration of your /shield. You may train the ranks of this ability at or after levels 61, 63, and 65"
+  },
+  "mending of the tranquil": {
+    "name": "Mending of the Tranquil",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "MNK",
+    "ranks": 3,
+    "description": "This ability further increases the chance of performing a superior mend. The three ranks of this ability may be trained once each level for levels 63 and above."
+  },
+  "mithaniel's binding": {
+    "name": "Mithaniel's Binding",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability further increases the amount of healing provided by a single bandage while binding wounds. The two ranks of this ability may be trained at or after levels 63 and 64."
+  },
+  "nimble evasion": {
+    "name": "Nimble Evasion",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ROG",
+    "ranks": 5,
+    "description": "This ability grants you a chance to hide or evade while moving. Each rank provides an increasing chance. You may train in this ability once each level after reaching level 61."
+  },
+  "project illusion": {
+    "name": "Project Illusion",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ENC",
+    "ranks": 1,
+    "description": "This ability allows you to project your innate talent with illusions upon others. (Activating this ability on a targeted group member causes your next illusion spell to affect that target.)"
+  },
+  "punishing blade": {
+    "name": "Punishing Blade",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "MNK RNG WAR",
+    "ranks": 3,
+    "description": "This ability increases the chance of scoring an extra hit with all two-handed weapons that you wield. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "raging flurry": {
+    "name": "Raging Flurry",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability further increases the chance of performing a flurry attack upon successfully scoring a triple attack. The three ranks of this ability may be trained once each level for levels 63 and above."
+  },
+  "rush to judgment": {
+    "name": "Rush to Judgment",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "PAL",
+    "ranks": 3,
+    "description": "Training in this ability shortens the time between uses of Divine Stun by seven seconds per rank. The three ranks of this ability may be trained once each level for levels 63 and above."
+  },
+  "servant of ro": {
+    "name": "Servant of Ro",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "MAG",
+    "ranks": 3,
+    "description": "This ability calls a loyal servant into being who will repeatedly hurl fire at your target. Each rank of this ability increases the amount of time that the servant is able to remain by your side (45, 70, and 90 seconds). You may train the ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "shroud of stealth": {
+    "name": "Shroud of Stealth",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ROG",
+    "ranks": 1,
+    "description": "This ability provides a previously unheard of level of stealth. The Rogue is able to draw shadows about himself so completely, even creatures that are normally not fooled by such trickery are frequently unable to see him. You may train in this ability upon reaching level 63."
+  },
+  "sionachie's crescendo": {
+    "name": "Sionachie's Crescendo",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "BRD",
+    "ranks": 3,
+    "description": "This ability provides an even greater extension to the range of group songs. The three ranks of this ability may be trained once each level for levels 63 and above."
+  },
+  "speed of the knight": {
+    "name": "Speed of the Knight",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "PAL SHD",
+    "ranks": 3,
+    "description": "This ability grants you the chance to score an additional attack with two-handed weapons. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "spirit call": {
+    "name": "Spirit Call",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "SHM",
+    "ranks": 3,
+    "description": "This ability calls a number of spirit companions into existence directed at a target. The companions attack the target without question until they are called back to their home plane 60 seconds later. The initial rank of this ability calls three companions. Additional ranks add one companion each. You may train the ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "spirit of the wood": {
+    "name": "Spirit of the Wood",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "DRU",
+    "ranks": 3,
+    "description": "For a brief time, you are able to commune with the woodland spirits who provide your party with exceptional regenerative abilities and a protective shield of armor and thorns. You may train in the three ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "stalwart endurance": {
+    "name": "Stalwart Endurance",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "This ability grants a chance to endure what would otherwise be a stunning blow, from any angle, without being stunned. You may train in the ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "tactical mastery": {
+    "name": "Tactical Mastery",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "WAR",
+    "ranks": 3,
+    "description": "Studying ones opponent for weaknesses provides the knowledge and ability to pierce through advanced defenses. Each rank of this ability grants an increasing chance of bypassing an opponents special defenses, such as dodge, block, parry, and riposte. You may train in this ability at or after levels 61, 63, and 65."
+  },
+  "technique of master wu": {
+    "name": "Technique of Master Wu",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "MNK",
+    "ranks": 5,
+    "description": "Under the tutelage of Wu, Monks are able to hone their skills to the point of being able to execute a second and sometimes even third strike when scoring a hit with their special attacks. This ability grants a 20 percent increase in the chance of scoring multiple special attacks, per rank."
+  },
+  "theft of life": {
+    "name": "Theft of Life",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "NEC SHD",
+    "ranks": 3,
+    "description": "This ability grants a chance that the healing effect on your lifetaps will provide an exceptional amount of healing."
+  },
+  "total domination": {
+    "name": "Total Domination",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "ENC",
+    "ranks": 3,
+    "description": "This ability adds strength to your charm spells. Victims of your charm spells are less likely to break out of their charms early."
+  },
+  "touch of the wicked": {
+    "name": "Touch of the Wicked",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "SHD",
+    "ranks": 3,
+    "description": "This ability decreases the amount of time required between uses of Harm Touch and its upgrades by twelve minutes per rank. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "unfailing divinity": {
+    "name": "Unfailing Divinity",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "CLR",
+    "ranks": 3,
+    "description": "The most devout find that their calls are answered with much greater frequency. This ability grants your Death Pact-type spells a second chance to successfully heal their target. Additional ranks of this ability cause said spells to do a portion of their healing value even on a complete failure. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "unholy touch": {
+    "name": "Unholy Touch",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "SHD",
+    "ranks": 3,
+    "description": "A further enhancement to Improved Harm Touch, this ability grants a considerable bonus to the amount of damage done by that ability. You gain the ability to train an additional rank at levels 61, 63, and 65."
+  },
+  "virulent paralysis": {
+    "name": "Virulent Paralysis",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "SHM",
+    "ranks": 3,
+    "description": "This ability causes your target to succumb to a sudden, violent attack, after which they are frequently unable to move for a time. Each rank of this ability increases the amount of time that the victim remains immobile. You may train the ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "viscid roots": {
+    "name": "Viscid Roots",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "DRU",
+    "ranks": 1,
+    "description": "Root spells applied by the owner of this ability are significantly less likely to break when the victim takes damage initiated by anyone, unlike previous abilities which only affect damage caused by the caster."
+  },
+  "wake the dead": {
+    "name": "Wake the Dead",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "NEC",
+    "ranks": 3,
+    "description": "This ability calls the shade of a nearby corpse back to life to serve the Necromancer. The soulless abomination will fight the target, until called back to the afterlife some time later. The slave summoned by the first rank of this ability serves for 60 seconds, and each increasing rank adds 15 additional seconds. You may train the ranks of this ability at or after levels 61, 63, and 65."
+  },
+  "wrack summoned": {
+    "name": "Wrack Summoned",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "MAG",
+    "ranks": 1,
+    "description": "This ability further improves the damage caused by your Turn Summoned ability."
+  },
+  "wrack undead": {
+    "name": "Wrack Undead",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "CLR",
+    "ranks": 1,
+    "description": "This ability grants you a more damaging version of your Turn Undead ability."
+  },
+  "wrath of the wild": {
+    "name": "Wrath of the Wild",
+    "category": "PoP Ability AA",
+    "era": "Planes of Power",
+    "classes": "DRU",
+    "ranks": 3,
+    "description": "Developed by the denizens of Tranquility as a deterrent to potential attackers, this ability will shield you with a single-hit, large damage barrier of thorns. Additional ranks of this ability increase the amount of damage that is inflicted by 350, 500, and 650 points of damage. You may train the ranks of this ability at or after levels 61, 63, and 65."
+  }
+}

@@ -33,7 +33,7 @@ export const MilestonesCard: React.FC<CardProps> = ({ data, className = '' }) =>
           </div>
         )}
 
-        {events.level1
+        {events.level2
           .filter((e) => e.type === 'class_aa_learn')
           .map((aa: any, i: number) => (
             <div key={`maa-${i}`} className="py-2 flex justify-between items-center">

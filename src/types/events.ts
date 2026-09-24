@@ -232,8 +232,8 @@ export interface ParsedCharacterBundle {
   character: CharacterMetadata;
   eras: EraMilestone[];
   events: {
-    level1: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent | ClassAALearnEvent>;
-    level2: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent>;
+    level1: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent>;
+    level2: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent | ClassAALearnEvent>;
     level3: Array<BossKillEvent | DeathEvent | DailyZoneActivityEvent>;
   };
   aggregates: CharacterAggregates;

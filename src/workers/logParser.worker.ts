@@ -438,8 +438,8 @@ self.onmessage = async (event: MessageEvent) => {
     const firstSpellSeen = new Map<string, { spell: string; timestamp: string; date: string; iso?: string; zone: string }>();
 
     // Event collections
-    const level1Events: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent | ClassAALearnEvent> = [];
-    const level2Events: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent> = [];
+    const level1Events: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent> = [];
+    const level2Events: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent | ClassAALearnEvent> = [];
     const level3Events: Array<BossKillEvent | DeathEvent | DailyZoneActivityEvent> = [];
 
     // Aggregates buffers
@@ -783,8 +783,8 @@ self.onmessage = async (event: MessageEvent) => {
             const rankLabel = rank > 1 ? ` Rank ${rank}` : '';
             const title = `${aaInfo.name}${rankLabel} (${cost} AA${cost === 1 ? '' : 's'})`;
 
-            level1Events.push({
-              level: 1,
+            level2Events.push({
+              level: 2,
               type: 'class_aa_learn',
               title,
               abilityName: aaInfo.name,

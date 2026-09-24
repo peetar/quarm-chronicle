@@ -506,9 +506,9 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
     } else if (zoomLevel === 2) {
       list.push(...dailyBossSummaries);
       list.push(...dailyDeathSummaries);
-      list.push(...events.level2.filter((e) => e.type === 'aa_gain'));
+      list.push(...events.level2.filter((e) => e.type === 'aa_gain' || e.type === 'class_aa_learn'));
     } else if (zoomLevel >= 3) {
-      list.push(...events.level2.filter((e) => e.type === 'aa_gain'));
+      list.push(...events.level2.filter((e) => e.type === 'aa_gain' || e.type === 'class_aa_learn'));
       list.push(...events.level3);
     }
 

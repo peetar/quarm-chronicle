@@ -16,10 +16,10 @@ export const TopStatsCard: React.FC<CardProps> = ({ data, className = '' }) => {
     stat1Value = ch > 0 ? ch.toLocaleString() : aggregates.topSpellsCast[0]?.count.toLocaleString() || '0';
     stat1Sub = 'Heartbeat of the Raid';
   } else if (cls === 'bard') {
-    const totalSongs = aggregates.topSpellsCast.reduce((a, b) => a + b.count, 0);
+    const totalSongs = aggregates.bardSongsTwisted || aggregates.topSpellsCast.reduce((a, b) => a + b.count, 0);
     stat1Title = 'Songs Twisted';
     stat1Value = totalSongs.toLocaleString();
-    stat1Sub = 'Melodic Pulse of Quarm';
+    stat1Sub = aggregates.bardSeloPulses ? `${aggregates.bardSeloPulses.toLocaleString()} Selo's Pulses` : 'Melodic Pulse of Quarm';
   } else if (cls === 'enchanter') {
     const chardokEntries = events.level2.filter((z) => z.zone.toLowerCase().includes('chardok')).length;
     stat1Title = 'Chardok Runs';

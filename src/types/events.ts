@@ -194,6 +194,8 @@ export interface CharacterAggregates {
   totalDeaths: number;
   totalBossKills: number;
   totalZoneTransitions: number;
+  bardSongsTwisted?: number;
+  bardSeloPulses?: number;
   topSpellsCast: Array<{ spell: string; count: number }>;
   topTellPartners: Array<{ partner: string; sent: number; received: number; total: number }>;
   topGroupCompanions: Array<{ companion: string; count: number }>;

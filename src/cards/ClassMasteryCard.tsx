@@ -68,7 +68,7 @@ export const ClassMasteryCard: React.FC<CardProps> = ({ data, className = '' }) 
             <li key={s.spell} className="py-1.5 flex justify-between items-center">
               <span className="text-slate-100 truncate pr-2">{s.spell}</span>
               <span className={`font-bold text-xs md:text-sm whitespace-nowrap ${headerColor}`}>
-                {s.count.toLocaleString()} casts
+                {s.count.toLocaleString()} {cls === 'bard' ? 'pulses' : 'casts'}
               </span>
             </li>
           ))

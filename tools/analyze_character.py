@@ -25,9 +25,54 @@ REZ_PATTERN = re.compile(r"You regain some experience from resurrection", re.I)
 YOU_SLAIN_PATTERN = re.compile(r"^You have slain (?:an? )?([^!]+)!", re.I)
 
 TELL_SENT = re.compile(r"^You told ([A-Za-z]+),\s*'(.*)'", re.I)
-TELL_RECV = re.compile(r"^([A-Za-z]+) tells you,\s*'(.*)'", re.I)
+TELL_RECV = re.compile(r"^([A-Za-z\s]+) tells you,\s*'(.*)'", re.I)
 CAST_PATTERN = re.compile(r"^You begin (?:casting|singing) (.*?)\.", re.I)
 MEM_PATTERN = re.compile(r"^You have finished memorizing (.*?)\.", re.I)
+BARD_DAMAGE_PATTERN = re.compile(r"has taken \d+ (?:non-melee )?damage from your (.*?)\.", re.I)
+
+NPC_TELL_PATTERNS = [
+    re.compile(r"\bMaster[\.!]?$", re.I),
+    re.compile(r"^Attacking .* Master", re.I),
+    re.compile(r"^Following you, Master", re.I),
+    re.compile(r"^Guarding .* Master", re.I),
+    re.compile(r"^At your service, Master", re.I),
+    re.compile(r"^As you command, Master", re.I),
+    re.compile(r"^I am unable to obey, Master", re.I),
+    re.compile(r"^Sorry, Master", re.I),
+    re.compile(r"^That(?:'ll| will) be \d+", re.I),
+    re.compile(r"^I(?:'ll| will) give you \d+", re.I),
+    re.compile(r"^I(?:'ll| will) buy that ", re.I),
+    re.compile(r"^I don'?t buy ", re.I),
+    re.compile(r"^I don'?t want that", re.I),
+    re.compile(r"^You(?:'ll| will) have to pay ", re.I),
+    re.compile(r"^I have nothing to give you for that", re.I),
+    re.compile(r"^I cannot buy that from you", re.I),
+    re.compile(r"^You cannot afford that", re.I),
+    re.compile(r"^You do not have enough", re.I),
+    re.compile(r"per (?:ticket|bottle|ration|flask|arrow|pattern|clay|sketches|sketch|meat)", re.I),
+    re.compile(r"^Welcome to my bank!", re.I),
+    re.compile(r"^Come back soon!", re.I),
+    re.compile(r"^You don'?t have that much money in the bank!", re.I),
+    re.compile(r"^You have deposited ", re.I),
+    re.compile(r"^You have withdrawn ", re.I),
+    re.compile(r"^You have increased your skill in ", re.I),
+    re.compile(r"^You have no more training points", re.I),
+    re.compile(r"^You will have to achieve level ", re.I),
+    re.compile(r"^Welcome to the Guild of ", re.I),
+    re.compile(r"^Binding your soul", re.I),
+    re.compile(r"^You are now bound to this location", re.I),
+]
+
+def is_npc_tell(sender: str, text: str) -> bool:
+    s = sender.strip()
+    if " " in s:
+        return True
+    if s and s[0].islower():
+        return True
+    for p in NPC_TELL_PATTERNS:
+        if p.search(text):
+            return True
+    return False
 
 GUILD_JOIN = re.compile(r"^You have joined (?!the group|the raid)(.+?)\.?$", re.I)
 GUILD_LEAVE = re.compile(r"^You are no longer a member of (.+?)\.?$", re.I)
@@ -124,6 +169,7 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
 
     tells_sent = Counter()
     tells_recv = Counter()
+    known_npc_senders = set()
     spells_cast = Counter()
     songs_memorized = Counter()
     
@@ -152,6 +198,7 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
     }
 
     epic_quest_event = None
+    candidate_epics = {}
 
     # Load Epics reference
     epics_ref_path = os.path.join(PROJECT_ROOT, "data", "reference", "epics.json")
@@ -330,8 +377,11 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
         elif " tells you, " in msg:
             tm = TELL_RECV.match(msg)
             if tm:
-                sender = tm.group(1)
-                if not sender.lower().endswith("merchant"):
+                sender = tm.group(1).strip()
+                text = tm.group(2).strip()
+                if is_npc_tell(sender, text):
+                    known_npc_senders.add(sender.lower())
+                else:
                     tells_recv[sender] += 1
             continue
 
@@ -350,6 +400,7 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
         # Bard specific lines
         if msg == "Your feet move faster.":
             bard_selo_pulses += 1
+            spells_cast["Selo's Accelerating Chorus"] += 1
             continue
         elif msg == "Your song ends.":
             bard_songs_ended += 1
@@ -357,6 +408,12 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
         elif msg == "You miss a note, bringing your song to a close!":
             bard_missed_notes += 1
             continue
+        elif "damage from your " in msg:
+            bdm = BARD_DAMAGE_PATTERN.search(msg)
+            if bdm:
+                s_name = bdm.group(1).replace("`", "'").strip()
+                spells_cast[s_name] += 1
+                continue
 
         # Group & Raid Chat Companions
         gt = GROUP_TELL.match(msg) or GROUP_CHAT.match(msg)
@@ -381,19 +438,18 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
             continue
 
         # Epic Quest detection in log
-        if not epic_quest_event:
-            for cls_name, edata in epics_ref.items():
+        for cls_name, edata in epics_ref.items():
+            if cls_name not in candidate_epics:
                 if edata["weapon"].lower() in msg.lower():
                     # Look for player acquisition or guild announcement
                     if "You say to your guild" in msg or "you have looted" in msg.lower() or "worthy" in msg.lower() or "primary:" in msg.lower():
-                        epic_quest_event = {
+                        candidate_epics[cls_name] = {
                             "name": edata["weapon"],
                             "class": f"{cls_name} Epic 1.0",
                             "effect": edata["effect"],
                             "timestamp": ts,
                             "zone": current_zone
                         }
-                        break
 
     # Fallback: check inventory for Epic 1.0 if not captured in log text
     if not epic_quest_event:
@@ -518,6 +574,11 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
         else:
             char_class = "Adventurer"
 
+    if not epic_quest_event:
+        epic_quest_event = candidate_epics.get(char_class)
+        if not epic_quest_event and len(candidate_epics) == 1:
+            epic_quest_event = list(candidate_epics.values())[0]
+
     char_race = who_race_votes.most_common(1)[0][0] if who_race_votes else quarmy_data.get("race")
 
     result = {
@@ -547,8 +608,8 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
             "top_npcs_slain": resolved_top_slain,
             "pvp_nemesis": pvp_nemesis_raw[:5],
             "top_pve_nemesis": pve_nemesis_raw[:5],
-            "top_tell_recipients": tells_sent.most_common(10),
-            "top_tell_senders": tells_recv.most_common(10),
+            "top_tell_recipients": [(p, c) for p, c in tells_sent.most_common(25) if p.lower() not in known_npc_senders and " " not in p and not p[0].islower()][:10],
+            "top_tell_senders": [(p, c) for p, c in tells_recv.most_common(25) if p.lower() not in known_npc_senders and " " not in p and not p[0].islower()][:10],
             "top_group_companions": group_companions.most_common(10),
             "top_raid_companions": raid_companions.most_common(10),
             "top_looters_seen": looters.most_common(10),

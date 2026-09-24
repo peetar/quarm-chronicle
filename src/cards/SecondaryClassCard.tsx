@@ -53,8 +53,8 @@ export const SecondaryClassCard: React.FC<CardProps> = ({ data, className = '' }
     color = 'text-yellow-400';
   }
 
-  // Pick spells starting after the first 5 or secondary utility spells
-  const secondarySpells = aggregates.topSpellsCast.slice(5, 11);
+  // Pick spells starting after the first 6 (so no overlap with primary mastery)
+  const secondarySpells = aggregates.topSpellsCast.slice(6, 12);
 
   return (
     <div className={`bg-slate-900/50 border border-slate-700/60 rounded-lg p-4 backdrop-blur-sm ${className}`}>
@@ -67,7 +67,7 @@ export const SecondaryClassCard: React.FC<CardProps> = ({ data, className = '' }
             <li key={s.spell} className="py-1.5 flex justify-between items-center">
               <span className="text-slate-100 truncate pr-2">{s.spell}</span>
               <span className={`font-bold text-xs md:text-sm whitespace-nowrap ${color}`}>
-                {s.count.toLocaleString()} casts
+                {s.count.toLocaleString()} {cls === 'bard' ? 'pulses' : 'casts'}
               </span>
             </li>
           ))

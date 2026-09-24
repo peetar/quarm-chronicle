@@ -27,9 +27,58 @@ const LOCKOUT_PATTERN = /^You have incurred a lockout for (?<boss>.+?) that expi
 const LOCAL_SLAY = /^(?<target>.*?) has been slain by (?<killer>.*?)!/i;
 const PVP_KILL = /^\[PVP\]\s*(?<player>.+?)\s*of\s*<(?<guild>.+?)>\s*has killed\s*(?<boss>.+?)\s*in\s*(?<zone>.+?)!/i;
 const TELL_SENT = /^You told ([A-Za-z]+),\s*'(.*)'/i;
-const TELL_RECV = /^([A-Za-z]+) tells you,\s*'(.*)'/i;
+const TELL_RECV = /^([A-Za-z\s]+) tells you,\s*'(.*)'/i;
 const GROUP_CHAT = /^\[Group\]\s*([A-Za-z]+):\s*(.*)/i;
 const RAID_CHAT = /^\[Raid\]\s*([A-Za-z]+):\s*(.*)/i;
+const BARD_SONG_DAMAGE = /has taken \d+ (?:non-melee )?damage from your (.*?)\./i;
+const MEM_PATTERN = /^You have finished memorizing (.*?)\./i;
+
+const NPC_TELL_PATTERNS = [
+  // Pets (summoned & charmed)
+  /\bMaster[\.!]?$/i,
+  /^Attacking .* Master/i,
+  /^Following you, Master/i,
+  /^Guarding .* Master/i,
+  /^At your service, Master/i,
+  /^As you command, Master/i,
+  /^I am unable to obey, Master/i,
+  /^Sorry, Master/i,
+  // Merchants
+  /^That(?:'ll| will) be \d+/i,
+  /^I(?:'ll| will) give you \d+/i,
+  /^I(?:'ll| will) buy that /i,
+  /^I don'?t buy /i,
+  /^I don'?t want that/i,
+  /^You(?:'ll| will) have to pay /i,
+  /^I have nothing to give you for that/i,
+  /^I cannot buy that from you/i,
+  /^You cannot afford that/i,
+  /^You do not have enough/i,
+  /per (?:ticket|bottle|ration|flask|arrow|pattern|clay|sketches|sketch|meat)/i,
+  // Bankers
+  /^Welcome to my bank!/i,
+  /^Come back soon!/i,
+  /^You don'?t have that much money in the bank!/i,
+  /^You have deposited /i,
+  /^You have withdrawn /i,
+  // Trainers / Guildmasters / Soulbinders
+  /^You have increased your skill in /i,
+  /^You have no more training points/i,
+  /^You will have to achieve level /i,
+  /^Welcome to the Guild of /i,
+  /^Binding your soul/i,
+  /^You are now bound to this location/i,
+];
+
+function isNpcTell(sender: string, text: string): boolean {
+  const s = sender.trim();
+  if (s.includes(' ')) return true;
+  if (s && s[0] === s[0].toLowerCase()) return true;
+  for (const pattern of NPC_TELL_PATTERNS) {
+    if (pattern.test(text)) return true;
+  }
+  return false;
+}
 
 const WHO_ENTRY_PATTERN = /^\[(?<lvl>\d+)\s+(?<cls>[A-Za-z\s]+)\]\s+(?:(?<title>[A-Za-z]+)\s+)?(?<first>[A-Za-z0-9]+)(?:\s+(?<surname>[A-Za-z0-9]+))?(?:\s+\((?<race>[A-Za-z\s]+)\))?(?:\s+<(?<guild>[^>]+)>)?/i;
 const WHO_ANON_PATTERN = /^\[(?:ANONYMOUS|ROLEPLAYING)\]\s+(?:(?<title>[A-Za-z]+)\s+)?(?<first>[A-Za-z0-9]+)(?:\s+(?<surname>[A-Za-z0-9]+))?(?:\s+\((?<race>[A-Za-z\s]+)\))?(?:\s+<(?<guild>[^>]+)>)?/i;
@@ -101,10 +150,13 @@ const SIGNATURE_SPELLS_BY_CLASS: Record<string, string[]> = {
     'Supernal Remedy', 'Supernal Elixir', "Kazad's Mark", 'Mark of Karn'
   ],
   Bard: [
-    "Selo's Accelerating Chorus", "Largo's Absonant Binding", "Fufil's Curtailing Chant",
-    'Cantata of Soothing', "Solon's Bewitching Bravura", 'Occlusion of Sound', 'Chant of Flame',
-    "McVaxius' Berserker Crescendo", "Niv's Harmonic Melody", 'Composition of Ervaj',
-    "Denon's Disruptive Discord", 'Verses of Victory', 'Psalm of Veeshan'
+    "Selo's Accelerating Chorus", "Selo's Accelerando", "Chords of Dissonance",
+    "Denon's Disruptive Discord", "Denon's Bereavement", "Selo's Chords of Cessation",
+    "Cantata of Replenishment", "Cassindra's Chorus of Clarity", "Largo's Absonant Binding",
+    "Fufil's Curtailing Chant", "Cantata of Soothing", "Solon's Bewitching Bravura",
+    "Occlusion of Sound", "Tuyen's Chant of Flame", "Tuyen's Chant of Frost",
+    "McVaxius' Berserker Crescendo", "Niv's Harmonic Melody", "Composition of Ervaj",
+    "Verses of Victory", "Psalm of Veeshan", "Shauri's Sonorous Clouding", "Angstlich's Assonance"
   ],
   Necromancer: [
     'Dooming Darkness', 'Cascading Darkness', 'Cessation of Cor', 'Splurt', 'Ancient: Lifebane',
@@ -154,20 +206,20 @@ for (const [cls, spells] of Object.entries(SIGNATURE_SPELLS_BY_CLASS)) {
 }
 
 const EPICS_REF: Record<string, { weapons: string[]; effect: string }> = {
-  Enchanter: { weapons: ['Staff of the Serpent'], effect: 'Speed of the Shissar' },
   Bard: { weapons: ['Singing Short Sword'], effect: 'Dance of the Blade' },
-  Cleric: { weapons: ['Water Sprinkler of Nem Ankh'], effect: 'Reviviscence' },
-  Necromancer: { weapons: ['Scythe of the Shadowed Soul'], effect: 'Tormenting Darkness' },
-  Druid: { weapons: ["Nature Walker's Scimitar", "Nature Walkers Scimitar"], effect: 'Wrath of Nature' },
-  Shaman: { weapons: ['Spear of Fate'], effect: 'True Spirit' },
-  Wizard: { weapons: ['Staff of the Four'], effect: 'Barrier of Force' },
+  Cleric: { weapons: ["Water Sprinkler of Nem'Ankh", 'Water Sprinkler of Nem`Ankh', 'Water Sprinkler of Nem Ankh'], effect: 'Reviviscence' },
+  Druid: { weapons: ["Nature Walker's Scimitar", "Nature Walker`s Scimitar", "Nature Walkers Scimitar"], effect: 'Wrath of Nature' },
+  Enchanter: { weapons: ['Staff of the Serpent'], effect: 'Speed of the Shissar' },
   Magician: { weapons: ['Orb of Mastery'], effect: 'Manifest Elements' },
   Monk: { weapons: ['Celestial Fists'], effect: 'Celestial Tranquility' },
-  Rogue: { weapons: ['Ragebringer', 'Jagged Blade of Mourning'], effect: 'Seething Fury' },
+  Necromancer: { weapons: ['Scythe of the Shadowed Soul'], effect: 'Tormenting Darkness' },
   Paladin: { weapons: ['Fiery Defender'], effect: 'Holy Order' },
-  'Shadow Knight': { weapons: ["Innoruuk's Curse", "Innoruuks Curse"], effect: 'Soul Well' },
-  Ranger: { weapons: ['Swiftwind', 'Earthcaller'], effect: 'Swift Spirit' },
-  Warrior: { weapons: ['Jagged Blade of War', 'Blade of Tactics', 'Blade of Strategy'], effect: 'Fury of Zek' },
+  Ranger: { weapons: ['Swiftwind', 'Earthcaller'], effect: 'Swift Spirit & Earthcall' },
+  Rogue: { weapons: ['Ragebringer'], effect: 'Seething Fury' },
+  'Shadow Knight': { weapons: ["Innoruuk's Curse", "Innoruuk`s Curse", "Innoruuks Curse"], effect: 'Soul Well' },
+  Shaman: { weapons: ['Spear of Fate'], effect: 'True Spirit' },
+  Warrior: { weapons: ['Jagged Blade of War', 'Blade of Tactics', 'Blade of Strategy', 'Red Scabbard'], effect: 'Fury of Zek' },
+  Wizard: { weapons: ['Staff of the Four'], effect: 'Barrier of Force' },
   Beastlord: { weapons: ['Claw of the Savage Spirit'], effect: 'Fury of the Beast' },
 };
 
@@ -303,8 +355,10 @@ self.onmessage = async (event: MessageEvent) => {
     let currentZone = 'Unknown';
     const seenLevels = new Set<number>();
     const seenZones = new Set<string>();
-    let epicAcquired = false;
-    let epicAcquiredClass: string | null = null;
+    const candidateEpics: Record<string, EpicEvent> = {};
+    let bardSongsEnded = 0;
+    let bardSeloPulses = 0;
+    const bardSongsMemorized: Record<string, number> = {};
     const knownGuilds = new Set<string>();
 
     // /who command tracking (Tier 1)
@@ -332,6 +386,7 @@ self.onmessage = async (event: MessageEvent) => {
     const rawBossEvents: RawBossSignal[] = [];
     const spellCounts: Record<string, number> = {};
     const tellCounts: Record<string, { sent: number; received: number; total: number }> = {};
+    const knownNpcSenders = new Set<string>();
     const groupCompanions: Record<string, number> = {};
     const raidCompanions: Record<string, number> = {};
     const deathKillers: Record<string, number> = {};
@@ -588,9 +643,9 @@ self.onmessage = async (event: MessageEvent) => {
       // ------------------------------------------------------------------
       // Epic Acquisition (Level 1)
       // ------------------------------------------------------------------
-      if (!epicAcquired) {
-        const ml = msg.toLowerCase();
-        for (const [clsName, edata] of Object.entries(EPICS_REF)) {
+      const ml = msg.toLowerCase();
+      for (const [clsName, edata] of Object.entries(EPICS_REF)) {
+        if (!candidateEpics[clsName]) {
           const matchedWeapon = edata.weapons.find((w) => ml.includes(w.toLowerCase()));
           if (matchedWeapon) {
             if (
@@ -599,10 +654,8 @@ self.onmessage = async (event: MessageEvent) => {
               ml.includes('worthy') ||
               ml.includes('primary:')
             ) {
-              epicAcquired = true;
-              epicAcquiredClass = clsName;
               const { iso, dateStr } = parseEqDate(ts);
-              level1Events.push({
+              candidateEpics[clsName] = {
                 level: 1,
                 type: 'epic_acquired',
                 title: matchedWeapon,
@@ -612,8 +665,7 @@ self.onmessage = async (event: MessageEvent) => {
                 timestamp: ts,
                 date: dateStr || '',
                 iso: iso || undefined,
-              });
-              break;
+              };
             }
           }
         }
@@ -642,6 +694,69 @@ self.onmessage = async (event: MessageEvent) => {
       // ------------------------------------------------------------------
       // Spells, Songs & Melodies
       // ------------------------------------------------------------------
+      if (msg === 'Your song ends.') {
+        bardSongsEnded++;
+        classAbilityScores['Bard'] = (classAbilityScores['Bard'] || 0) + 2;
+        continue;
+      }
+
+      if (msg === 'Your feet move faster.') {
+        bardSeloPulses++;
+        const sName = "Selo's Accelerating Chorus";
+        spellCounts[sName] = (spellCounts[sName] || 0) + 1;
+        classAbilityScores['Bard'] = (classAbilityScores['Bard'] || 0) + 2;
+        if (!firstSpellSeen.has(sName)) {
+          const { iso, dateStr } = parseEqDate(ts);
+          firstSpellSeen.set(sName, {
+            spell: sName,
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+            zone: currentZone,
+          });
+        }
+        continue;
+      }
+
+      if (msg.includes('damage from your ')) {
+        const bdm = BARD_SONG_DAMAGE.exec(msg);
+        if (bdm) {
+          const sName = bdm[1].replace(/`/g, "'").trim();
+          spellCounts[sName] = (spellCounts[sName] || 0) + 1;
+          classAbilityScores['Bard'] = (classAbilityScores['Bard'] || 0) + 2;
+          if (!firstSpellSeen.has(sName)) {
+            const { iso, dateStr } = parseEqDate(ts);
+            firstSpellSeen.set(sName, {
+              spell: sName,
+              timestamp: ts,
+              date: dateStr || '',
+              iso: iso || undefined,
+              zone: currentZone,
+            });
+          }
+          continue;
+        }
+      }
+
+      if (msg.startsWith('You have finished memorizing ')) {
+        const mm = MEM_PATTERN.exec(msg);
+        if (mm) {
+          const sName = mm[1].replace(/`/g, "'").trim();
+          bardSongsMemorized[sName] = (bardSongsMemorized[sName] || 0) + 1;
+          if (!firstSpellSeen.has(sName)) {
+            const { iso, dateStr } = parseEqDate(ts);
+            firstSpellSeen.set(sName, {
+              spell: sName,
+              timestamp: ts,
+              date: dateStr || '',
+              iso: iso || undefined,
+              zone: currentZone,
+            });
+          }
+        }
+        continue;
+      }
+
       if (msg.startsWith('You begin ')) {
         if (msg.startsWith('You begin playing a melody.')) {
           classAbilityScores['Bard'] = (classAbilityScores['Bard'] || 0) + 10;
@@ -649,7 +764,7 @@ self.onmessage = async (event: MessageEvent) => {
           classAbilityScores['Bard'] = (classAbilityScores['Bard'] || 0) + 10;
           const cm = CAST_PATTERN.exec(msg);
           if (cm) {
-            const sName = cm[1].trim();
+            const sName = cm[1].replace(/`/g, "'").trim();
             spellCounts[sName] = (spellCounts[sName] || 0) + 1;
             if (!firstSpellSeen.has(sName)) {
               const { iso, dateStr } = parseEqDate(ts);
@@ -665,7 +780,7 @@ self.onmessage = async (event: MessageEvent) => {
         } else {
           const cm = CAST_PATTERN.exec(msg);
           if (cm) {
-            const sName = cm[1].trim();
+            const sName = cm[1].replace(/`/g, "'").trim();
             spellCounts[sName] = (spellCounts[sName] || 0) + 1;
             const spCls = SPELL_TO_CLASS[sName.toLowerCase()];
             if (spCls) {
@@ -743,7 +858,7 @@ self.onmessage = async (event: MessageEvent) => {
       if (msg.startsWith('You told ')) {
         const tm = TELL_SENT.exec(msg);
         if (tm) {
-          const p = tm[1];
+          const p = tm[1].trim();
           if (!tellCounts[p]) tellCounts[p] = { sent: 0, received: 0, total: 0 };
           tellCounts[p].sent++;
           tellCounts[p].total++;
@@ -752,10 +867,15 @@ self.onmessage = async (event: MessageEvent) => {
       } else if (msg.includes(' tells you, ')) {
         const tm = TELL_RECV.exec(msg);
         if (tm) {
-          const p = tm[1];
-          if (!tellCounts[p]) tellCounts[p] = { sent: 0, received: 0, total: 0 };
-          tellCounts[p].received++;
-          tellCounts[p].total++;
+          const p = tm[1].trim();
+          const text = tm[2].trim();
+          if (isNpcTell(p, text)) {
+            knownNpcSenders.add(p.toLowerCase());
+          } else {
+            if (!tellCounts[p]) tellCounts[p] = { sent: 0, received: 0, total: 0 };
+            tellCounts[p].received++;
+            tellCounts[p].total++;
+          }
         }
         continue;
       } else if (msg.startsWith('[Group] ')) {
@@ -963,9 +1083,12 @@ self.onmessage = async (event: MessageEvent) => {
       detectedClass = whoClassEntries[0][0];
     }
 
-    // Tier 2: Epic 1.0 Weapon / Quest Acquisition
-    if (detectedClass === 'Adventurer' && epicAcquiredClass) {
-      detectedClass = epicAcquiredClass;
+    // Tier 2: Epic 1.0 Weapon / Quest Acquisition (if class unknown and unambiguous)
+    if (detectedClass === 'Adventurer') {
+      const candidateClasses = Object.keys(candidateEpics);
+      if (candidateClasses.length === 1) {
+        detectedClass = candidateClasses[0];
+      }
     }
 
     // Tier 3: Signature Ability & Spell Scoring
@@ -974,6 +1097,11 @@ self.onmessage = async (event: MessageEvent) => {
       if (scoreEntries.length > 0 && scoreEntries[0][1] > 0) {
         detectedClass = scoreEntries[0][0];
       }
+    }
+
+    // Attach Epic Milestone for the DETECTED class only (prevents cross-class loot triggers)
+    if (candidateEpics[detectedClass]) {
+      level1Events.push(candidateEpics[detectedClass]);
     }
 
     // Race resolution from /who logs
@@ -1028,13 +1156,26 @@ self.onmessage = async (event: MessageEvent) => {
       }
     }
 
+    // For bards, incorporate utility songs memorized that aren't already represented in spellCounts
+    if (detectedClass === 'Bard') {
+      for (const [song, memCount] of Object.entries(bardSongsMemorized)) {
+        if (!spellCounts[song]) {
+          spellCounts[song] = memCount;
+        }
+      }
+    }
+
     // Top aggregates
     const topSpells = Object.entries(spellCounts)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 10)
+      .slice(0, 20)
       .map(([spell, count]) => ({ spell, count }));
 
     const topTells = Object.entries(tellCounts)
+      .filter(([partner]) => {
+        const p = partner.trim();
+        return !knownNpcSenders.has(p.toLowerCase()) && !p.includes(' ') && p[0] === p[0].toUpperCase();
+      })
       .map(([partner, c]) => ({ partner, sent: c.sent, received: c.received, total: c.total }))
       .sort((a, b) => b.total - a.total)
       .slice(0, 6);
@@ -1117,6 +1258,8 @@ self.onmessage = async (event: MessageEvent) => {
         totalDeaths,
         totalBossKills,
         totalZoneTransitions,
+        bardSongsTwisted: bardSongsEnded > 0 ? bardSongsEnded : undefined,
+        bardSeloPulses: bardSeloPulses > 0 ? bardSeloPulses : undefined,
         topSpellsCast: topSpells,
         topTellPartners: topTells,
         topGroupCompanions: topGroup,

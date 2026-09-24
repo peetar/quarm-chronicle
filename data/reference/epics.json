@@ -7,14 +7,14 @@
     "description": "55% Haste, +15 Attack, 30 Damage Shield song"
   },
   "Cleric": {
-    "weapon": "Water Sprinkler of Nem`an",
+    "weapon": "Water Sprinkler of Nem'Ankh",
     "activation_type": "click",
     "effect": "Reviviscence",
     "effect_spell_id": 1548,
     "description": "96% Resurrection clicky (no exp loss)"
   },
   "Druid": {
-    "weapon": "Nature Walkers Scimitar",
+    "weapon": "Nature Walker's Scimitar",
     "activation_type": "click",
     "effect": "Wrath of Nature",
     "effect_spell_id": 1547,
@@ -44,7 +44,7 @@
   "Necromancer": {
     "weapon": "Scythe of the Shadowed Soul",
     "activation_type": "click",
-    "effect": "Torment of Shadows",
+    "effect": "Tormenting Darkness",
     "effect_spell_id": 1552,
     "description": "774 Dmg DoT with -40 STR debuff"
   },
@@ -58,43 +58,50 @@
   "Ranger": {
     "weapon": "Swiftwind & Earthcaller",
     "activation_type": "passive_and_proc",
-    "effect": "Swiftwind (40% Haste Worn), Earthcaller (Slow Proc)",
+    "effect": "Swift Spirit & Earthcall",
     "effect_spell_id": 1554,
     "description": "Dual wield weapons: 40% haste and 50% slow proc"
   },
   "Rogue": {
     "weapon": "Ragebringer",
     "activation_type": "passive",
-    "effect": "Seething Rage",
+    "effect": "Seething Fury",
     "effect_spell_id": 1555,
     "description": "40% Haste Worn, +100 HP, +10 Attack (15/25 dagger)"
   },
   "Shadowknight": {
     "weapon": "Innoruuk's Curse",
     "activation_type": "combat_proc",
-    "effect": "Soul Consumption",
+    "effect": "Soul Well",
     "effect_spell_id": 1556,
     "description": "130 pt Lifetap proc + Snare debuff"
   },
   "Shaman": {
     "weapon": "Spear of Fate",
     "activation_type": "click",
-    "effect": "Curse of the Spirits",
+    "effect": "True Spirit",
     "effect_spell_id": 1557,
     "description": "1080 Dmg DoT with Magic Resist debuff"
   },
   "Warrior": {
-    "weapon": "Jagged Blade of Mourning & Blade of Tactics (Red Scabbard)",
+    "weapon": "Jagged Blade of War & Blade of Tactics (Red Scabbard)",
     "activation_type": "click",
-    "effect": "Fury of Kerafyrm",
+    "effect": "Fury of Zek",
     "effect_spell_id": 1558,
     "description": "Red Scabbard haste clicky + high ratio 1H/2H weapons"
   },
   "Wizard": {
     "weapon": "Staff of the Four",
     "activation_type": "click",
-    "effect": "Shield of the Immaculate",
+    "effect": "Barrier of Force",
     "effect_spell_id": 1559,
     "description": "800 pt Rune + Mana Regeneration"
+  },
+  "Beastlord": {
+    "weapon": "Claw of the Savage Spirit",
+    "activation_type": "combat_proc",
+    "effect": "Fury of the Beast",
+    "effect_spell_id": 2795,
+    "description": "Hand-to-hand weapon with 200 pt DD + 50 pt heal proc"
   }
 }

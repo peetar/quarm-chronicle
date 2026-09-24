@@ -30,6 +30,44 @@ CAST_PATTERN = re.compile(r"^You begin (?:casting|singing) (.*?)\.", re.I)
 MEM_PATTERN = re.compile(r"^You have finished memorizing (.*?)\.", re.I)
 BARD_DAMAGE_PATTERN = re.compile(r"has taken \d+ (?:non-melee )?damage from your (.*?)\.", re.I)
 
+DISC_ACTIVATIONS = {
+    # Monk
+    'You assume a stone stance.': 'Stonestance Discipline',
+    'You assume a void stance.': 'Voiddance Discipline',
+    'You begin to whirl.': 'Whirlwind Discipline',
+    'You summon your inner strength.': 'Inner Flame Discipline',
+    'You prepare to strike with furious speed.': 'Hundred Fists Discipline',
+    'You prepare for thunderous strikes.': 'Thunderkick Discipline',
+    # Warrior
+    'You assume a defensive fighting style.': 'Defensive Discipline',
+    'You assume an evasive fighting style.': 'Evasive Discipline',
+    'You assume an aggressive fighting style.': 'Aggressive Discipline',
+    'You begin to throw frantic strikes.': 'Furious Discipline',
+    'You ready yourself to deflect incoming blows.': 'Fortitude Discipline',
+    'You prepare to attack with precision.': 'Precision Discipline',
+    'You prepare to land a fell strike.': 'Fellstrike Discipline',
+    'You prepare to land mighty strikes.': 'Mighty Strike Discipline',
+    'You begin to charge your weapons.': 'Charge Discipline',
+    # Ranger
+    'You become hyper-focused on your archery.': 'Trueshot Discipline',
+    'You prepare for weapon strikes.': 'Weapon Shield Discipline',
+    # Rogue
+    'You prepare to duel.': 'Duelist Discipline',
+    'You focus on your kinesthetic movements.': 'Kinesthetics Discipline',
+    'You become more nimble.': 'Nimble Discipline',
+    'You focus your aim.': 'Deadeye Discipline',
+    'You prepare to counterattack.': 'Counterattack Discipline',
+    # General / Melee
+    'You prepare to resist magical attacks.': 'Resistant Discipline',
+    'You become fearless.': 'Fearless Discipline',
+    'You steel your nerves.': 'Fearless Discipline',
+}
+
+KICK_HIT_PATTERN = re.compile(r"^You (?:flying kick|round kick|kick) .* for \d+ points? of damage\.", re.I)
+MARTIAL_HIT_PATTERN = re.compile(r"^You (?:dragon punch|tail rake|tiger claw|eagle strike) .* for \d+ points? of damage\.", re.I)
+BACKSTAB_HIT_PATTERN = re.compile(r"^You backstab .* for \d+ points? of damage\.", re.I)
+FD_FALL_PATTERN = re.compile(r"^([A-Za-z]+) has fallen to the ground\.", re.I)
+
 NPC_TELL_PATTERNS = [
     re.compile(r"\bMaster[\.!]?$", re.I),
     re.compile(r"^Attacking .* Master", re.I),
@@ -178,6 +216,15 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
     bard_songs_ended = 0
     bard_missed_notes = 0
 
+    # Martial & Feign Death metrics
+    monk_kicks = 0
+    mend_successes = 0
+    mend_failures = 0
+    bind_wounds_count = 0
+    fd_failed_or_broken = 0
+    deaths_after_failed_fd = 0
+    last_failed_fd_dt = None
+
     group_companions = Counter()
     raid_companions = Counter()
     looters = Counter()
@@ -320,6 +367,11 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
 
         # Deaths & Nemesis
         if msg.startswith("You have been slain by ") or msg == "You died.":
+            if last_failed_fd_dt and dt:
+                diff = (dt - last_failed_fd_dt).total_seconds()
+                if 0 <= diff <= 30:
+                    deaths_after_failed_fd += 1
+                last_failed_fd_dt = None
             if msg.startswith("You have been slain by "):
                 dsm = DEATH_SLAIN.match(msg)
                 killer = dsm.group(1).strip() if dsm else "Unknown"
@@ -414,6 +466,50 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
                 s_name = bdm.group(1).replace("`", "'").strip()
                 spells_cast[s_name] += 1
                 continue
+
+        # Disciplines
+        disc_name = DISC_ACTIVATIONS.get(msg)
+        if disc_name:
+            spells_cast[disc_name] += 1
+            continue
+
+        # Bandaging
+        if msg == "The bandaging is complete.":
+            bind_wounds_count += 1
+            spells_cast["Bind Wound"] += 1
+            continue
+
+        # Mend
+        if "You mend your wounds and heal some damage" in msg:
+            mend_successes += 1
+            spells_cast["Mend"] += 1
+            continue
+        elif "You have worsened your wounds!" in msg or "You have failed to mend your wounds" in msg:
+            mend_failures += 1
+            continue
+
+        # Feign Death Fail / Spell Broken
+        if msg == "You are no longer feigning death, because a spell hit you.":
+            fd_failed_or_broken += 1
+            last_failed_fd_dt = dt
+            continue
+
+        fdm = FD_FALL_PATTERN.match(msg)
+        if fdm and fdm.group(1).lower() == character_name.lower():
+            fd_failed_or_broken += 1
+            last_failed_fd_dt = dt
+            continue
+
+        # Kicks & Martial Arts
+        if KICK_HIT_PATTERN.match(msg):
+            monk_kicks += 1
+            skill = "Flying Kick" if msg.lower().startswith("you flying kick") else ("Round Kick" if msg.lower().startswith("you round kick") else "Kick")
+            spells_cast[skill] += 1
+        elif MARTIAL_HIT_PATTERN.match(msg):
+            skill = "Dragon Punch" if msg.lower().startswith("you dragon punch") else ("Tail Rake" if msg.lower().startswith("you tail rake") else ("Tiger Claw" if msg.lower().startswith("you tiger claw") else "Eagle Strike"))
+            spells_cast[skill] += 1
+        elif BACKSTAB_HIT_PATTERN.match(msg):
+            spells_cast["Backstab"] += 1
 
         # Group & Raid Chat Companions
         gt = GROUP_TELL.match(msg) or GROUP_CHAT.match(msg)
@@ -571,6 +667,12 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
             char_class = "Necromancer"
         elif spells_cast.get("Boltran's Agacerie", 0) > 0 or spells_cast.get("Clarity II", 0) > 0:
             char_class = "Enchanter"
+        elif monk_kicks > 5 or mend_successes > 0 or mend_failures > 0:
+            char_class = "Monk"
+        elif spells_cast.get("Backstab", 0) > 0:
+            char_class = "Rogue"
+        elif spells_cast.get("Defensive Discipline", 0) > 0 or spells_cast.get("Taunt", 0) > 0:
+            char_class = "Warrior"
         else:
             char_class = "Adventurer"
 
@@ -653,6 +755,14 @@ def analyze_character(character_name: str, log_dir: str = r"C:\TAKPv22"):
                                 spells_cast.get("Minion of Shadows", 0) + 
                                 spells_cast.get("Servant of Bones", 0)),
                 "rezzes_cast": spells_cast.get("Convergence", 0)
+            },
+            "monk_stats": {
+                "kicks_landed": monk_kicks,
+                "mend_successes": mend_successes,
+                "mend_failures": mend_failures,
+                "bandages_completed": bind_wounds_count,
+                "fd_failed_or_broken": fd_failed_or_broken,
+                "deaths_after_failed_fd": deaths_after_failed_fd
             },
             "top_raid_boss_kills_overall": all_boss_kills.most_common(15)
         },

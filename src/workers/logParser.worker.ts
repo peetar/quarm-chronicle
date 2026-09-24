@@ -80,6 +80,44 @@ function isNpcTell(sender: string, text: string): boolean {
   return false;
 }
 
+const DISC_ACTIVATIONS: Record<string, { disc: string; cls: string }> = {
+  // Monk
+  'You assume a stone stance.': { disc: 'Stonestance Discipline', cls: 'Monk' },
+  'You assume a void stance.': { disc: 'Voiddance Discipline', cls: 'Monk' },
+  'You begin to whirl.': { disc: 'Whirlwind Discipline', cls: 'Monk' },
+  'You summon your inner strength.': { disc: 'Inner Flame Discipline', cls: 'Monk' },
+  'You prepare to strike with furious speed.': { disc: 'Hundred Fists Discipline', cls: 'Monk' },
+  'You prepare for thunderous strikes.': { disc: 'Thunderkick Discipline', cls: 'Monk' },
+  // Warrior
+  'You assume a defensive fighting style.': { disc: 'Defensive Discipline', cls: 'Warrior' },
+  'You assume an evasive fighting style.': { disc: 'Evasive Discipline', cls: 'Warrior' },
+  'You assume an aggressive fighting style.': { disc: 'Aggressive Discipline', cls: 'Warrior' },
+  'You begin to throw frantic strikes.': { disc: 'Furious Discipline', cls: 'Warrior' },
+  'You ready yourself to deflect incoming blows.': { disc: 'Fortitude Discipline', cls: 'Warrior' },
+  'You prepare to attack with precision.': { disc: 'Precision Discipline', cls: 'Warrior' },
+  'You prepare to land a fell strike.': { disc: 'Fellstrike Discipline', cls: 'Warrior' },
+  'You prepare to land mighty strikes.': { disc: 'Mighty Strike Discipline', cls: 'Warrior' },
+  'You begin to charge your weapons.': { disc: 'Charge Discipline', cls: 'Warrior' },
+  // Ranger
+  'You become hyper-focused on your archery.': { disc: 'Trueshot Discipline', cls: 'Ranger' },
+  'You prepare for weapon strikes.': { disc: 'Weapon Shield Discipline', cls: 'Ranger' },
+  // Rogue
+  'You prepare to duel.': { disc: 'Duelist Discipline', cls: 'Rogue' },
+  'You focus on your kinesthetic movements.': { disc: 'Kinesthetics Discipline', cls: 'Rogue' },
+  'You become more nimble.': { disc: 'Nimble Discipline', cls: 'Rogue' },
+  'You focus your aim.': { disc: 'Deadeye Discipline', cls: 'Rogue' },
+  'You prepare to counterattack.': { disc: 'Counterattack Discipline', cls: 'Rogue' },
+  // General / Defensive Melee
+  'You prepare to resist magical attacks.': { disc: 'Resistant Discipline', cls: 'Warrior' },
+  'You become fearless.': { disc: 'Fearless Discipline', cls: 'Warrior' },
+  'You steel your nerves.': { disc: 'Fearless Discipline', cls: 'Warrior' },
+};
+
+const KICK_HIT_PATTERN = /^You (?:flying kick|round kick|kick) .* for \d+ points? of damage\./i;
+const MARTIAL_HIT_PATTERN = /^You (?:dragon punch|tail rake|tiger claw|eagle strike) .* for \d+ points? of damage\./i;
+const BACKSTAB_HIT_PATTERN = /^You backstab .* for \d+ points? of damage\./i;
+const FD_FALL_PATTERN = /^([A-Za-z]+) has fallen to the ground\./i;
+
 const WHO_ENTRY_PATTERN = /^\[(?<lvl>\d+)\s+(?<cls>[A-Za-z\s]+)\]\s+(?:(?<title>[A-Za-z]+)\s+)?(?<first>[A-Za-z0-9]+)(?:\s+(?<surname>[A-Za-z0-9]+))?(?:\s+\((?<race>[A-Za-z\s]+)\))?(?:\s+<(?<guild>[^>]+)>)?/i;
 const WHO_ANON_PATTERN = /^\[(?:ANONYMOUS|ROLEPLAYING)\]\s+(?:(?<title>[A-Za-z]+)\s+)?(?<first>[A-Za-z0-9]+)(?:\s+(?<surname>[A-Za-z0-9]+))?(?:\s+\((?<race>[A-Za-z\s]+)\))?(?:\s+<(?<guild>[^>]+)>)?/i;
 
@@ -193,9 +231,19 @@ const SIGNATURE_SPELLS_BY_CLASS: Record<string, string[]> = {
   Beastlord: [
     'Spirit of Sharik', 'Spirit of Allizewsaur', 'Spiritual Dominion', "Sha's Advantage"
   ],
-  Monk: [],
-  Rogue: [],
-  Warrior: [],
+  Monk: [
+    'Flying Kick', 'Dragon Punch', 'Tail Rake', 'Stonestance Discipline',
+    'Voiddance Discipline', 'Inner Flame Discipline', 'Whirlwind Discipline',
+    'Hundred Fists Discipline', 'Thunderkick Discipline', 'Mend'
+  ],
+  Rogue: [
+    'Backstab', 'Duelist Discipline', 'Kinesthetics Discipline', 'Nimble Discipline',
+    'Deadeye Discipline', 'Counterattack Discipline'
+  ],
+  Warrior: [
+    'Defensive Discipline', 'Evasive Discipline', 'Fortitude Discipline', 'Furious Discipline',
+    'Aggressive Discipline', 'Precision Discipline', 'Fellstrike Discipline', 'Mighty Strike Discipline'
+  ],
 };
 
 const SPELL_TO_CLASS: Record<string, string> = {};
@@ -360,6 +408,15 @@ self.onmessage = async (event: MessageEvent) => {
     let bardSeloPulses = 0;
     const bardSongsMemorized: Record<string, number> = {};
     const knownGuilds = new Set<string>();
+
+    // Martial abilities & Feign Death state
+    let monkKicks = 0;
+    let mendSuccesses = 0;
+    let mendFailures = 0;
+    let bindWoundsCount = 0;
+    let fdFailedOrBroken = 0;
+    let deathsAfterFailedFd = 0;
+    let lastFailedFdMs = 0;
 
     // /who command tracking (Tier 1)
     const whoClassVotes: Record<string, number> = {};
@@ -802,26 +859,141 @@ self.onmessage = async (event: MessageEvent) => {
       }
 
       // ------------------------------------------------------------------
-      // Class Combat Abilities (Melee & Hybrid)
+      // Disciplines & Combat Abilities (Melee & Hybrid)
       // ------------------------------------------------------------------
-      if (msg.startsWith('You backstab ') || msg.startsWith('You try to backstab ')) {
-        classAbilityScores['Rogue'] = (classAbilityScores['Rogue'] || 0) + 10;
-      } else if (msg.startsWith('You perform a ') || msg.includes('mend your wounds')) {
-        if (
-          msg.includes('Dragon Punch') ||
-          msg.includes('Flying Kick') ||
-          msg.includes('Tiger Claw') ||
-          msg.includes('Eagle Strike') ||
-          msg.includes('mend your wounds')
-        ) {
-          classAbilityScores['Monk'] = (classAbilityScores['Monk'] || 0) + 10;
+      const discInfo = DISC_ACTIVATIONS[msg];
+      if (discInfo) {
+        spellCounts[discInfo.disc] = (spellCounts[discInfo.disc] || 0) + 1;
+        classAbilityScores[discInfo.cls] = (classAbilityScores[discInfo.cls] || 0) + 10;
+        if (!firstSpellSeen.has(discInfo.disc)) {
+          const { iso, dateStr } = parseEqDate(ts);
+          firstSpellSeen.set(discInfo.disc, {
+            spell: discInfo.disc,
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+            zone: currentZone,
+          });
         }
-      } else if (
-        msg.startsWith('You taunt ') ||
-        msg.includes('Defensive Discipline') ||
-        msg.includes('Evasive Discipline')
-      ) {
+        continue;
+      }
+
+      // Bandaging
+      if (msg === 'The bandaging is complete.') {
+        bindWoundsCount++;
+        spellCounts['Bind Wound'] = (spellCounts['Bind Wound'] || 0) + 1;
+        if (!firstSpellSeen.has('Bind Wound')) {
+          const { iso, dateStr } = parseEqDate(ts);
+          firstSpellSeen.set('Bind Wound', {
+            spell: 'Bind Wound',
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+            zone: currentZone,
+          });
+        }
+        continue;
+      }
+
+      // Mend (Monk)
+      if (msg.includes('You mend your wounds and heal some damage')) {
+        mendSuccesses++;
+        spellCounts['Mend'] = (spellCounts['Mend'] || 0) + 1;
+        classAbilityScores['Monk'] = (classAbilityScores['Monk'] || 0) + 10;
+        if (!firstSpellSeen.has('Mend')) {
+          const { iso, dateStr } = parseEqDate(ts);
+          firstSpellSeen.set('Mend', {
+            spell: 'Mend',
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+            zone: currentZone,
+          });
+        }
+        continue;
+      } else if (msg.includes('You have worsened your wounds!') || msg.includes('You have failed to mend your wounds')) {
+        mendFailures++;
+        classAbilityScores['Monk'] = (classAbilityScores['Monk'] || 0) + 10;
+        continue;
+      }
+
+      // Feign Death Fail / Spell Broken (Monk, Necromancer, Shadow Knight)
+      if (msg === 'You are no longer feigning death, because a spell hit you.') {
+        fdFailedOrBroken++;
+        lastFailedFdMs = lineMs;
+        classAbilityScores['Monk'] = (classAbilityScores['Monk'] || 0) + 5;
+        classAbilityScores['Necromancer'] = (classAbilityScores['Necromancer'] || 0) + 5;
+        classAbilityScores['Shadow Knight'] = (classAbilityScores['Shadow Knight'] || 0) + 5;
+        continue;
+      }
+      const fdm = FD_FALL_PATTERN.exec(msg);
+      if (fdm && fdm[1].toLowerCase() === characterName.toLowerCase()) {
+        fdFailedOrBroken++;
+        lastFailedFdMs = lineMs;
+        classAbilityScores['Monk'] = (classAbilityScores['Monk'] || 0) + 10;
+        classAbilityScores['Necromancer'] = (classAbilityScores['Necromancer'] || 0) + 10;
+        classAbilityScores['Shadow Knight'] = (classAbilityScores['Shadow Knight'] || 0) + 10;
+        continue;
+      }
+
+      // Kicks & Martial Arts
+      if (KICK_HIT_PATTERN.test(msg)) {
+        monkKicks++;
+        classAbilityScores['Monk'] = (classAbilityScores['Monk'] || 0) + 2;
+        const skillName = msg.startsWith('You flying kick')
+          ? 'Flying Kick'
+          : msg.startsWith('You round kick')
+          ? 'Round Kick'
+          : 'Kick';
+        spellCounts[skillName] = (spellCounts[skillName] || 0) + 1;
+        if (!firstSpellSeen.has(skillName)) {
+          const { iso, dateStr } = parseEqDate(ts);
+          firstSpellSeen.set(skillName, {
+            spell: skillName,
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+            zone: currentZone,
+          });
+        }
+      } else if (MARTIAL_HIT_PATTERN.test(msg)) {
+        classAbilityScores['Monk'] = (classAbilityScores['Monk'] || 0) + 2;
+        const skillName = msg.startsWith('You dragon punch')
+          ? 'Dragon Punch'
+          : msg.startsWith('You tail rake')
+          ? 'Tail Rake'
+          : msg.startsWith('You tiger claw')
+          ? 'Tiger Claw'
+          : 'Eagle Strike';
+        spellCounts[skillName] = (spellCounts[skillName] || 0) + 1;
+        if (!firstSpellSeen.has(skillName)) {
+          const { iso, dateStr } = parseEqDate(ts);
+          firstSpellSeen.set(skillName, {
+            spell: skillName,
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+            zone: currentZone,
+          });
+        }
+      } else if (BACKSTAB_HIT_PATTERN.test(msg)) {
+        classAbilityScores['Rogue'] = (classAbilityScores['Rogue'] || 0) + 10;
+        spellCounts['Backstab'] = (spellCounts['Backstab'] || 0) + 1;
+        if (!firstSpellSeen.has('Backstab')) {
+          const { iso, dateStr } = parseEqDate(ts);
+          firstSpellSeen.set('Backstab', {
+            spell: 'Backstab',
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+            zone: currentZone,
+          });
+        }
+      } else if (msg.startsWith('You backstab ') || msg.startsWith('You try to backstab ')) {
+        classAbilityScores['Rogue'] = (classAbilityScores['Rogue'] || 0) + 5;
+      } else if (msg.startsWith('You taunt ') || msg.startsWith('You have failed to taunt ')) {
         classAbilityScores['Warrior'] = (classAbilityScores['Warrior'] || 0) + 5;
+        spellCounts['Taunt'] = (spellCounts['Taunt'] || 0) + 1;
       } else if (msg.includes('Harm Touch')) {
         classAbilityScores['Shadow Knight'] = (classAbilityScores['Shadow Knight'] || 0) + 10;
       } else if (msg.includes('Lay on Hands')) {
@@ -832,6 +1004,10 @@ self.onmessage = async (event: MessageEvent) => {
       // Deaths (Level 3)
       // ------------------------------------------------------------------
       if (msg.startsWith('You have been slain by ') || msg === 'You died.') {
+        if (lastFailedFdMs > 0 && lineMs >= lastFailedFdMs && lineMs - lastFailedFdMs <= 30000) {
+          deathsAfterFailedFd++;
+          lastFailedFdMs = 0;
+        }
         let killer = 'Bleeding / Environmental / Gravity';
         if (msg.startsWith('You have been slain by ')) {
           const dsm = DEATH_SLAIN.exec(msg);
@@ -1123,10 +1299,12 @@ self.onmessage = async (event: MessageEvent) => {
     for (const sig of classSigs) {
       const record = firstSpellSeen.get(sig);
       if (record) {
+        const isMeleeClass = ['Monk', 'Warrior', 'Rogue'].includes(detectedClass);
+        const prefix = isMeleeClass ? 'First Use' : detectedClass === 'Bard' ? 'First Performance' : 'First Cast';
         level2Events.push({
           level: 2,
           type: 'spell_first',
-          title: `First Cast: ${sig}`,
+          title: `${prefix}: ${sig}`,
           spell: sig,
           spellClass: detectedClass,
           zone: record.zone,
@@ -1260,6 +1438,12 @@ self.onmessage = async (event: MessageEvent) => {
         totalZoneTransitions,
         bardSongsTwisted: bardSongsEnded > 0 ? bardSongsEnded : undefined,
         bardSeloPulses: bardSeloPulses > 0 ? bardSeloPulses : undefined,
+        monkKicks: monkKicks > 0 ? monkKicks : undefined,
+        mendSuccesses: mendSuccesses > 0 ? mendSuccesses : undefined,
+        mendFailures: mendFailures > 0 ? mendFailures : undefined,
+        bindWoundsCount: bindWoundsCount > 0 ? bindWoundsCount : undefined,
+        fdFailedOrBroken: fdFailedOrBroken > 0 ? fdFailedOrBroken : undefined,
+        deathsAfterFailedFd: deathsAfterFailedFd > 0 ? deathsAfterFailedFd : undefined,
         topSpellsCast: topSpells,
         topTellPartners: topTells,
         topGroupCompanions: topGroup,

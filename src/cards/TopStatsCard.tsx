@@ -50,6 +50,27 @@ export const TopStatsCard: React.FC<CardProps> = ({ data, className = '' }) => {
     stat1Title = 'Conjurations';
     stat1Value = summons > 0 ? summons.toLocaleString() : (aggregates.topSpellsCast[0]?.count.toLocaleString() || '0');
     stat1Sub = 'Call of the Hero & Minions';
+  } else if (cls === 'monk') {
+    const kicks = aggregates.monkKicks || 0;
+    stat1Title = 'Kicks Landed';
+    stat1Value = kicks > 0 ? kicks.toLocaleString() : (aggregates.topSpellsCast[0]?.count.toLocaleString() || '0');
+    const mendsSuccess = aggregates.mendSuccesses || 0;
+    const mendsFail = aggregates.mendFailures || 0;
+    const totalMends = mendsSuccess + mendsFail;
+    const mendPct = totalMends > 0 ? Math.round((mendsSuccess / totalMends) * 100) : 0;
+    stat1Sub = totalMends > 0
+      ? `${mendsSuccess}/${totalMends} Mends (${mendPct}%)`
+      : (aggregates.bindWoundsCount ? `${aggregates.bindWoundsCount.toLocaleString()} Bandages Complete` : 'Martial Arts Mastery');
+  } else if (cls === 'warrior') {
+    const stances = aggregates.topSpellsCast.filter((s) => s.spell.toLowerCase().includes('discipline') || s.spell.toLowerCase().includes('taunt')).reduce((a, b) => a + b.count, 0);
+    stat1Title = 'Combat Stances';
+    stat1Value = stances > 0 ? stances.toLocaleString() : (aggregates.topSpellsCast[0]?.count.toLocaleString() || '0');
+    stat1Sub = 'Defensive & Evasive Mastery';
+  } else if (cls === 'rogue') {
+    const bs = aggregates.topSpellsCast.find((s) => s.spell.toLowerCase() === 'backstab')?.count || 0;
+    stat1Title = 'Backstabs Landed';
+    stat1Value = bs > 0 ? bs.toLocaleString() : (aggregates.topSpellsCast[0]?.count.toLocaleString() || '0');
+    stat1Sub = 'Assassination & Stealth';
   } else {
     stat1Title = 'Primary Ability';
     stat1Value = aggregates.topSpellsCast[0]?.count.toLocaleString() || '0';
@@ -73,7 +94,10 @@ export const TopStatsCard: React.FC<CardProps> = ({ data, className = '' }) => {
   const topKiller = aggregates.topSlainKillers[0]?.killer || 'Bleeding';
   const stat4Title = 'Mortality & Nemesis';
   const stat4Value = `${aggregates.totalDeaths} Deaths`;
-  const stat4Sub = `Nemesis: ${topKiller}`;
+  const postFd = aggregates.deathsAfterFailedFd || 0;
+  const stat4Sub = postFd > 0
+    ? `${postFd} post-FD fail • Nemesis: ${topKiller}`
+    : `Nemesis: ${topKiller}`;
 
   return (
     <div className={`grid grid-cols-2 md:grid-cols-4 gap-3 mb-6 ${className}`}>

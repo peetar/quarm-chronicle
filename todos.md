@@ -32,6 +32,7 @@
   - [x] Fix Class & Identity parsing with 3-tier detection hierarchy (/who extraction, Epic 1.0 weapon, weighted ability frequency scoring) and auto-detect race, max level, and guild.
   - [x] Isolate timeline hover effects and click triggers strictly to text boxes and badges, keeping connector stems static with zero phantom mouse interaction.
   - [x] Replace separate Overview Snapshot mode with direct 📋 Copy Image and 💾 Download PNG buttons on the interactive timeline header.
+  - [x] Add monk martial arts, feign death failure tracking, and melee disciplines (Kicks landed, Mend success/fail ratio, Bandages, FD fail/spell break, and deaths immediately following failed FD).
   - [x] Verify production Vite build (`dist/` bundle) and Python unit tests.
 
 ## Backlog Ideas

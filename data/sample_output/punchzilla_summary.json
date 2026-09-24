@@ -1,0 +1,344 @@
+{
+  "character": "Punchzilla",
+  "last_name": null,
+  "character_class": "Monk",
+  "character_race": "Human",
+  "date_range": {
+    "first": "Tue May 26 16:58:55 2026",
+    "last": "Wed May 27 21:07:09 2026"
+  },
+  "total_log_lines": 4021,
+  "guild_history": [],
+  "expansion_firsts": {
+    "Kunark": null,
+    "Velious": null,
+    "Luclin": null
+  },
+  "epic_quest": null,
+  "equipped_gear": [],
+  "pinnacle_bosses": {
+    "Classic": [
+      {
+        "boss": "Lord Nagafen",
+        "id": 32040,
+        "url": "https://www.pqdi.cc/npc/32040",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      },
+      {
+        "boss": "Lady Vox",
+        "id": 73057,
+        "url": "https://www.pqdi.cc/npc/73057",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ],
+    "Kunark": [
+      {
+        "boss": "Phara Dar",
+        "id": 108510,
+        "url": "https://www.pqdi.cc/npc/108510",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ],
+    "Velious": [
+      {
+        "boss": "Tunare",
+        "id": 127002,
+        "url": "https://www.pqdi.cc/npc/127002",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      },
+      {
+        "boss": "Vulak`Aerr",
+        "id": 124128,
+        "url": "https://www.pqdi.cc/npc/124128",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      },
+      {
+        "boss": "The Avatar of War",
+        "id": 113244,
+        "url": "https://www.pqdi.cc/npc/113244",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ],
+    "Luclin": [
+      {
+        "boss": "Aten Ha Ra",
+        "id": 158436,
+        "url": "https://www.pqdi.cc/npc/158436",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ],
+    "Planes of Power": [
+      {
+        "boss": "Quarm",
+        "id": null,
+        "url": null,
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ]
+  },
+  "stats": {
+    "total_deaths": 15,
+    "resurrections_accepted": 0,
+    "environmental_or_bleeding_deaths": 2,
+    "total_level_dings": 5,
+    "max_level": 6,
+    "total_aas_earned": 0,
+    "total_lockouts": 0,
+    "total_guild_kill_announcements": 0,
+    "top_zones_by_entries": [
+      [
+        "North Qeynos",
+        17
+      ],
+      [
+        "West Freeport",
+        2
+      ],
+      [
+        "South Qeynos",
+        2
+      ],
+      [
+        "Qeynos Hills",
+        1
+      ]
+    ],
+    "top_zones_by_deaths": [
+      [
+        "North Qeynos",
+        12
+      ],
+      [
+        "South Qeynos",
+        2
+      ],
+      [
+        "West Freeport",
+        1
+      ]
+    ],
+    "top_zones_by_aas": [],
+    "top_npcs_slain": [
+      {
+        "name": "brown myotis bat",
+        "count": 42,
+        "id": 2017,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/2017",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "large rat",
+        "count": 34,
+        "id": 2011,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/2011",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "gnoll pup",
+        "count": 31,
+        "id": 2002,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/2002",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "grass snake",
+        "count": 31,
+        "id": 2003,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/2003",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "snake",
+        "count": 28,
+        "id": 2049,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/2049",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "decaying skeleton",
+        "count": 21,
+        "id": 78036,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/78036",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "whiskered bat",
+        "count": 21,
+        "id": 2028,
+        "level": 2,
+        "hp": 32,
+        "url": "https://www.pqdi.cc/npc/2028",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "gopher snake",
+        "count": 14,
+        "id": 2101,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/2101",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "klicnik worker",
+        "count": 6,
+        "id": 2014,
+        "level": 2,
+        "hp": 32,
+        "url": "https://www.pqdi.cc/npc/2014",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "fire beetle",
+        "count": 3,
+        "id": 2024,
+        "level": 2,
+        "hp": 32,
+        "url": "https://www.pqdi.cc/npc/2024",
+        "zone": "North Qeynos"
+      }
+    ],
+    "pvp_nemesis": [],
+    "top_pve_nemesis": [
+      {
+        "name": "a Klicnik warrior",
+        "count": 2,
+        "id": 2015,
+        "level": 5,
+        "zone": "North Qeynos",
+        "url": "https://www.pqdi.cc/npc/2015"
+      },
+      {
+        "name": "Eracon Krengon",
+        "count": 2,
+        "id": 1086,
+        "level": 45,
+        "zone": "South Qeynos",
+        "url": "https://www.pqdi.cc/npc/1086"
+      },
+      {
+        "name": "a whiskered bat",
+        "count": 2,
+        "id": 2028,
+        "level": 2,
+        "zone": "North Qeynos",
+        "url": "https://www.pqdi.cc/npc/2028"
+      },
+      {
+        "name": "Ran`un",
+        "count": 1,
+        "id": 9027,
+        "level": 35,
+        "zone": "West Freeport",
+        "url": "https://www.pqdi.cc/npc/9027"
+      },
+      {
+        "name": "Seta Bakindo",
+        "count": 1,
+        "id": 2086,
+        "level": 61,
+        "zone": "North Qeynos",
+        "url": "https://www.pqdi.cc/npc/2086"
+      }
+    ],
+    "top_tell_recipients": [],
+    "top_tell_senders": [],
+    "top_group_companions": [],
+    "top_raid_companions": [],
+    "top_looters_seen": [],
+    "top_spells_or_songs": [
+      [
+        "Kick",
+        158
+      ],
+      [
+        "Maelin's Magical Concoction",
+        1
+      ]
+    ],
+    "top_songs_memorized": [],
+    "bard_twisting": {
+      "selo_pulses": 0,
+      "songs_completed": 0,
+      "missed_notes": 0
+    },
+    "cleric_stats": {
+      "complete_healing_casts": 0,
+      "rezzes_cast": 0,
+      "divine_intervention_casts": 0,
+      "group_heals": 0,
+      "aegolism_casts": 0,
+      "heroic_bond_casts": 0
+    },
+    "necro_stats": {
+      "twitch_casts": 0,
+      "dots_cast": 0,
+      "lifetaps_cast": 0,
+      "feign_death_casts": 0,
+      "pet_summons": 0,
+      "rezzes_cast": 0
+    },
+    "monk_stats": {
+      "kicks_landed": 158,
+      "mend_successes": 0,
+      "mend_failures": 17,
+      "bandages_completed": 0,
+      "fd_failed_or_broken": 0,
+      "deaths_after_failed_fd": 0
+    },
+    "top_raid_boss_kills_overall": []
+  },
+  "level_timeline_firsts": [
+    {
+      "timestamp": "Tue May 26 17:11:43 2026",
+      "level": 2,
+      "zone": "North Qeynos",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue May 26 17:28:13 2026",
+      "level": 3,
+      "zone": "North Qeynos",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue May 26 17:48:45 2026",
+      "level": 4,
+      "zone": "North Qeynos",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed May 27 20:42:25 2026",
+      "level": 5,
+      "zone": "North Qeynos",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed May 27 21:05:29 2026",
+      "level": 6,
+      "zone": "Qeynos Hills",
+      "first_time": true
+    }
+  ],
+  "aa_events": []
+}

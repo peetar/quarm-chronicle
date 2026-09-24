@@ -45,6 +45,22 @@ CUSTOM_BOSS_OVERRIDES = {
         "hp": 1000000,
         "zone_short": "growthplane",
         "zone_long": "Plane of Growth"
+    },
+    "emperor ssraeshza": {
+        "id": 162065,
+        "name": "#Emperor_Ssraeshza",
+        "level": 66,
+        "hp": 1000000,
+        "zone_short": "ssratemple",
+        "zone_long": "Ssraeshza Temple"
+    },
+    "high priest of ssraeshza": {
+        "id": 162076,
+        "name": "High_Priest_of_Ssraeshza",
+        "level": 66,
+        "hp": 930000,
+        "zone_short": "ssratemple",
+        "zone_long": "Ssraeshza Temple"
     }
 }
 

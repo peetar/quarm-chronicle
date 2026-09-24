@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Quarm Chronicle - Guild Roster Showcase</title>
+<style>
+  :root {
+    --gold: #d4af37;
+    --gold-dark: #82641e;
+    --gold-soft: #f3df8a;
+    --bg-dark: #090b10;
+    --card-bg: rgba(18, 23, 36, 0.95);
+    --card-border: #242e42;
+    --cyan: #38bdf8;
+    --purple: #c084fc;
+    --crimson: #f87171;
+    --emerald: #4ade80;
+    --amber: #fbbf24;
+    --gray: #94a3b8;
+    --light-gray: #cbd5e1;
+    --white: #f8fafc;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--bg-dark);
+    background-image: radial-gradient(circle at 50% 10%, #1e1b4b 0%, #090b10 80%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--white);
+    min-height: 100vh;
+    padding: 24px 16px 60px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  /* Main Title Banner */
+  .chronicle-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 20px;
+    background: rgba(15, 20, 32, 0.85);
+    border: 2px double var(--gold);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.15);
+  }
+
+  .series-tag {
+    color: var(--gold-soft);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  h1.main-title {
+    margin: 8px 0;
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    font-family: Georgia, serif;
+  }
+
+  .subtitle {
+    color: var(--cyan);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  /* Navigation Tabs */
+  .tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .tab-btn {
+    background: rgba(22, 29, 46, 0.8);
+    border: 1px solid var(--card-border);
+    color: var(--gray);
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tab-btn:hover {
+    background: rgba(30, 41, 65, 0.95);
+    color: var(--white);
+    border-color: var(--gold-dark);
+  }
+
+  .tab-btn.active {
+    background: linear-gradient(180deg, #2a344d 0%, #161f33 100%);
+    color: var(--gold-soft);
+    border: 1px solid var(--gold);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  }
+
+  /* Tab Content Panels */
+  .tab-pane {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .tab-pane.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Card Wrap */
+  .chronicle-card {
+    background: var(--card-bg);
+    border: 2px double var(--gold);
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 35px rgba(212, 175, 55, 0.12);
+    position: relative;
+    backdrop-filter: blur(12px);
+    margin-bottom: 30px;
+  }
+
+  .corner-ornament {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--gold);
+  }
+  .tl { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+  .tr { top: 8px; right: 8px; border-left: none; border-bottom: none; }
+  .bl { bottom: 8px; left: 8px; border-right: none; border-top: none; }
+  .br { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+
+  /* Stat Grids */
+  .stat-grid-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .stat-box {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 16px 12px;
+    text-align: center;
+  }
+  .stat-box.gold { border-top: 3px solid var(--gold); }
+  .stat-box.cyan { border-top: 3px solid var(--cyan); }
+  .stat-box.purple { border-top: 3px solid var(--purple); }
+  .stat-box.crimson { border-top: 3px solid var(--crimson); }
+  .stat-box.emerald { border-top: 3px solid var(--emerald); }
+  .stat-box.amber { border-top: 3px solid var(--amber); }
+
+  .stat-box .title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray);
+  }
+  .stat-box .value {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 4px 0;
+    font-family: Georgia, serif;
+    color: #fff;
+  }
+  .stat-box .sub {
+    font-size: 12px;
+    color: var(--gray);
+  }
+
+  /* 2 Column Panels */
+  .split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 768px) {
+    .split-grid { grid-template-columns: 1fr; }
+  }
+
+  .card-panel {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .panel-header {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 14px;
+  }
+  .list-item:last-child { border-bottom: none; }
+  .list-label { color: var(--light-gray); }
+  .list-val { font-weight: 600; color: #fff; }
+
+  /* Data Table */
+  .table-wrap {
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+
+  table.boss-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  table.boss-table th {
+    background: rgba(15, 23, 42, 0.85);
+    color: var(--gold-soft);
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  table.boss-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--light-gray);
+  }
+
+  table.boss-table tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .pqdi-link {
+    color: var(--cyan);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s;
+  }
+  .pqdi-link:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+  }
+
+  .item-link {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .item-link:hover {
+    color: #e9d5ff;
+    text-decoration: underline;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .badge-classic { background: #3b2a1a; color: #fdba74; border: 1px solid #c2410c; }
+  .badge-kunark { background: #143522; color: #86efac; border: 1px solid #16a34a; }
+  .badge-velious { background: #162c45; color: #93c5fd; border: 1px solid #2563eb; }
+  .badge-luclin { background: #311c47; color: #d8b4fe; border: 1px solid #9333ea; }
+
+  /* Discord PNG Preview */
+  .png-preview-wrap {
+    text-align: center;
+    margin-top: 24px;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .png-preview-img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
+
+  footer {
+    text-align: center;
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Main Banner -->
+  <div class="chronicle-header">
+    <div class="series-tag">Project Quarm &bull; TAKP Log Chronicle</div>
+    <h1 class="main-title">&lt;Dungeons and Dragons&gt; Roster Chronicle</h1>
+    <div class="subtitle">Complete Guild Raid Statistics, Pinnacle Boss Kills, and Individual Player Milestones</div>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('guild')">🏛️ Guild Roster &amp; Bosses</button>
+    <button class="tab-btn" onclick="showTab('thebrain')">🕊️ Thebrain (Cleric)</button>
+    <button class="tab-btn" onclick="showTab('steps')">🎵 Steps (Bard)</button>
+    <button class="tab-btn" onclick="showTab('zondro')">💀 Zondro (Necromancer)</button>
+    <button class="tab-btn" onclick="showTab('tweedle')">🧙 Tweedlede (Enchanter)</button>
+    <a class="tab-btn" href="timeline_card.html" target="_blank" style="text-decoration:none; border-color:var(--gold); color:var(--gold-soft);">⏳ Tweedlede Timeline</a>
+  </div>
+
+  <!-- TAB 1: Guild Roster Overview -->
+  <div id="tab-guild" class="tab-pane active">
+    <div class="chronicle-card">
+      <div class="corner-ornament tl"></div>
+      <div class="corner-ornament tr"></div>
+      <div class="corner-ornament bl"></div>
+      <div class="corner-ornament br"></div>
+
+      <!-- Guild Top Stat Grid -->
+      <div class="stat-grid-top">
+        <div class="stat-box gold">
+          <div class="title">Total Lines Processed</div>
+          <div class="value">37.67M</div>
+          <div class="sub">2.85 GB across 4 characters</div>
+        </div>
+        <div class="stat-box cyan">
+          <div class="title">Active Playspan</div>
+          <div class="value">2+ Years</div>
+          <div class="sub">Jul 2024 &ndash; Sep 2026</div>
+        </div>
+        <div class="stat-box purple">
+          <div class="title">Total AA Points</div>
+          <div class="value">545</div>
+          <div class="sub">Steps: 226 | Thebrain: 158 | Zondro: 112 | Tweedle: 49</div>
+        </div>
+        <div class="stat-box emerald">
+          <div class="title">Kunark Epic 1.0</div>
+          <div class="value">4 / 4</div>
+          <div class="sub">All 4 Class Epics Acquired</div>
+        </div>
+      </div>
+
+      <!-- Pinnacle Boss Kills Table -->
+      <div class="card-panel" style="margin-bottom: 24px;">
+        <div class="panel-header">
+          <span>👑 Pinnacle Raid Boss Defeats Across Norrath</span>
+          <span style="font-size: 11px; color: var(--gray); font-weight: normal;">(Clustered &amp; Deduplicated 10-min window)</span>
+        </div>
+        <div class="table-wrap">
+          <table class="boss-table">
+            <thead>
+              <tr>
+                <th>Era</th>
+                <th>Pinnacle Boss</th>
+                <th>Zone</th>
+                <th style="text-align:center;">Thebrain</th>
+                <th style="text-align:center;">Steps</th>
+                <th style="text-align:center;">Zondro</th>
+                <th style="text-align:center;">Tweedlede</th>
+                <th style="text-align:right;">Combined Clears</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge badge-classic">Classic</span></td>
+                <td><a class="pqdi-link" href="https://www.pqdi.cc/npc/32040" target="_blank">Lord Nagafen</a></td>
+                <td>Nagafen's Lair</td>
+                <td style="text-align:center; font-weight:700; color:#fff;">13</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right; font-weight:700; color:var(--gold-soft);">22</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-classic">Classic</span></td>
+                <td><a class="pqdi-link" href="https://www.pqdi.cc/npc/73057" target="_blank">Lady Vox</a></td>
+                <td>Permafrost Keep</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:right; font-weight:700; color:var(--gold-soft);">16</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-kunark">Kunark</span></td>
+                <td><a class="pqdi-link" href="https://www.pqdi.cc/npc/108510" target="_blank">Phara Dar</a></td>
+                <td>Veeshan's Peak</td>
+                <td style="text-align:center; font-weight:700; color:#fff;">25</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:right; font-weight:700; color:var(--gold-soft);">59</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-velious">Velious</span></td>
+                <td><a class="pqdi-link" href="https://www.pqdi.cc/npc/127002" target="_blank">Tunare</a></td>
+                <td>Plane of Growth</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:center; font-weight:700; color:#fff;">22</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:center;">0</td>
+                <td style="text-align:right; font-weight:700; color:var(--gold-soft);">37</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-velious">Velious</span></td>
+                <td><a class="pqdi-link" href="https://www.pqdi.cc/npc/113244" target="_blank">The Avatar of War</a></td>
+                <td>Kael Drakkel</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:center; font-weight:700; color:#fff;">25</td>
+                <td style="text-align:center;">0</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right; font-weight:700; color:var(--gold-soft);">43</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-velious">Velious</span></td>
+                <td><a class="pqdi-link" href="https://www.pqdi.cc/npc/124128" target="_blank">Vulak`Aerr</a></td>
+                <td>Temple of Veeshan</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:center; font-weight:700; color:#fff;">10</td>
+                <td style="text-align:center;">6</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:right; font-weight:700; color:var(--gold-soft);">24</td>
+              </tr>
+              <tr style="background: rgba(192, 132, 252, 0.08);">
+                <td><span class="badge badge-luclin">Luclin</span></td>
+                <td><a class="pqdi-link" href="https://www.pqdi.cc/npc/158436" target="_blank">Aten Ha Ra</a></td>
+                <td>Vex Thal</td>
+                <td style="text-align:center; font-weight:800; color:var(--gold-soft);">18</td>
+                <td style="text-align:center; font-weight:700;">6</td>
+                <td style="text-align:center; font-weight:700;">9</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right; font-weight:800; color:var(--purple);">34 Unique Clears</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr style="border-top: 2px solid var(--gold);">
+                <th colspan="3" style="text-align:left; color:var(--gold-soft);">TOTAL PINNACLE ENCOUNTERS</th>
+                <th style="text-align:center; color:var(--gold-soft);">97</th>
+                <th style="text-align:center; color:var(--gold-soft);">90</th>
+                <th style="text-align:center; color:var(--gold-soft);">21</th>
+                <th style="text-align:center; color:var(--gold-soft);">27</th>
+                <th style="text-align:right; color:var(--gold-soft); font-size:15px;">235</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- Trinity Core Role Breakdown -->
+      <div class="split-grid">
+        <div class="card-panel">
+          <div class="panel-header">🛡️ Raid Support &amp; Trinity Pillars</div>
+          <div class="list-item">
+            <span class="list-label">🕊️ Complete Healing</span>
+            <span class="list-val">23,639 casts &bull; Thebrain</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">🕊️ Battle Rezzes Cast</span>
+            <span class="list-val">4,120 casts (3,979 Reviviscence) &bull; Thebrain</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">🎵 Continuous Melody Songs</span>
+            <span class="list-val">178,904 songs &bull; Steps</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">🎵 Selo's Speed Pulses</span>
+            <span class="list-val">83,795 bursts &bull; Steps</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">💀 Necromancer DoTs Cast</span>
+            <span class="list-val">17,385 casts &bull; Zondro</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">🧙 Crowd Control Spells</span>
+            <span class="list-val">5,537 Charms / 7,540 Pacifys &bull; Tweedle</span>
+          </div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">⚡ Mortality &amp; Recovery Ratios</div>
+          <div class="list-item">
+            <span class="list-label">🕊️ Thebrain (Cleric)</span>
+            <span class="list-val" style="color:var(--emerald);">230 deaths / 205 rezzes &bull; 89.1% recovery</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">🎵 Steps (Bard)</span>
+            <span class="list-val" style="color:var(--cyan);">433 deaths / 276 rezzes &bull; 63.7% recovery</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">💀 Zondro (Necromancer)</span>
+            <span class="list-val" style="color:var(--purple);">218 deaths / 137 rezzes &bull; 62.8% recovery</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">🧙 Tweedlede (Enchanter)</span>
+            <span class="list-val" style="color:var(--crimson);">561 deaths / 225 rezzes &bull; 40.1% recovery</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">💀 Feign Deaths Survived</span>
+            <span class="list-val">1,356 FD activations &bull; Zondro</span>
+          </div>
+          <div class="list-item">
+            <span class="list-label">⚔️ Arena PvP Rivalry</span>
+            <span class="list-val">227 duel deaths to Xebobn</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 2: Thebrain -->
+  <div id="tab-thebrain" class="tab-pane">
+    <div class="chronicle-card">
+      <div class="corner-ornament tl"></div>
+      <div class="corner-ornament tr"></div>
+      <div class="corner-ornament bl"></div>
+      <div class="corner-ornament br"></div>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h2 style="font-family: Georgia, serif; font-size: 38px; color: #fff; text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);">Thebrain</h2>
+        <div style="color: var(--cyan); font-size: 18px; font-weight: 600;">Level 60 Halfling Cleric &bull; &lt;Dungeons and Dragons&gt;</div>
+        <div style="color: var(--gray); font-size: 13px; margin-top: 4px;">Log Span: Sep 29, 2024 &ndash; Sep 17, 2026 &bull; 16,039,454 lines processed</div>
+      </div>
+
+      <div class="stat-grid-top">
+        <div class="stat-box gold">
+          <div class="title">Epic 1.0 Weapon</div>
+          <div class="value" style="font-size: 18px; margin: 8px 0;"><a class="pqdi-link" href="https://www.pqdi.cc/item/5532" target="_blank" style="color:var(--gold-soft);">Water Sprinkler</a></div>
+          <div class="sub">Click: Reviviscence</div>
+        </div>
+        <div class="stat-box cyan">
+          <div class="title">Complete Healing</div>
+          <div class="value">23,639</div>
+          <div class="sub">74.8% of all spell casts</div>
+        </div>
+        <div class="stat-box purple">
+          <div class="title">Aten Ha Ra Kills</div>
+          <div class="value">18</div>
+          <div class="sub">First: Jan 06, 2026</div>
+        </div>
+        <div class="stat-box emerald">
+          <div class="title">Rez Recovery Rate</div>
+          <div class="value">89.1%</div>
+          <div class="sub">230 Deaths / 205 Rezzes Accepted</div>
+        </div>
+      </div>
+
+      <div class="split-grid">
+        <div class="card-panel">
+          <div class="panel-header">✨ Signature Cleric Arsenal</div>
+          <div class="list-item"><span class="list-label">Complete Healing</span><span class="list-val">23,639</span></div>
+          <div class="list-item"><span class="list-label">Greater Healing</span><span class="list-val">10,442</span></div>
+          <div class="list-item"><span class="list-label">Celestial Elixir</span><span class="list-val">5,100</span></div>
+          <div class="list-item"><span class="list-label">Yaulp V</span><span class="list-val">4,686</span></div>
+          <div class="list-item"><span class="list-label">Reviviscence</span><span class="list-val">3,979</span></div>
+          <div class="list-item"><span class="list-label">Aegis</span><span class="list-val">1,607</span></div>
+          <div class="list-item"><span class="list-label">Divine Intervention</span><span class="list-val">169 clutch saves</span></div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">👑 Pinnacle Boss Kills</div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/158436" target="_blank">Aten Ha Ra</a></span><span class="list-val">18 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/108510" target="_blank">Phara Dar</a></span><span class="list-val">25 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/113244" target="_blank">The Avatar of War</a></span><span class="list-val">16 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/127002" target="_blank">Tunare</a></span><span class="list-val">14 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/32040" target="_blank">Lord Nagafen</a></span><span class="list-val">13 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/124128" target="_blank">Vulak`Aerr</a></span><span class="list-val">6 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/73057" target="_blank">Lady Vox</a></span><span class="list-val">5 kills</span></div>
+        </div>
+      </div>
+
+      <div class="png-preview-wrap">
+        <div style="color: var(--gold-soft); font-size: 14px; font-weight: 700; margin-bottom: 8px;">Discord Card View</div>
+        <img class="png-preview-img" src="../../data/sample_output/thebrain_chronicle_card.png" alt="Thebrain Chronicle Card">
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: Steps -->
+  <div id="tab-steps" class="tab-pane">
+    <div class="chronicle-card">
+      <div class="corner-ornament tl"></div>
+      <div class="corner-ornament tr"></div>
+      <div class="corner-ornament bl"></div>
+      <div class="corner-ornament br"></div>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h2 style="font-family: Georgia, serif; font-size: 38px; color: #fff; text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);">Steps</h2>
+        <div style="color: var(--cyan); font-size: 18px; font-weight: 600;">Level 60 Half Elf Bard &bull; &lt;Dungeons and Dragons&gt;</div>
+        <div style="color: var(--gray); font-size: 13px; margin-top: 4px;">Log Span: Jul 06, 2024 &ndash; Sep 17, 2026 &bull; 12,959,374 lines processed</div>
+      </div>
+
+      <div class="stat-grid-top">
+        <div class="stat-box gold">
+          <div class="title">Epic 1.0 Weapon</div>
+          <div class="value" style="font-size: 17px; margin: 8px 0;"><a class="pqdi-link" href="https://www.pqdi.cc/item/20542" target="_blank" style="color:var(--gold-soft);">Singing Short Sword</a></div>
+          <div class="sub">Completed at Level 58</div>
+        </div>
+        <div class="stat-box cyan">
+          <div class="title">Songs Completed</div>
+          <div class="value">178,904</div>
+          <div class="sub">83,795 Selo's Speed Pulses</div>
+        </div>
+        <div class="stat-box crimson">
+          <div class="title">Avatar of War Kills</div>
+          <div class="value">25</div>
+          <div class="sub">First: May 12, 2025</div>
+        </div>
+        <div class="stat-box purple">
+          <div class="title">AA Progress</div>
+          <div class="value">226 AAs</div>
+          <div class="sub">Highest in Guild Core</div>
+        </div>
+      </div>
+
+      <div class="split-grid">
+        <div class="card-panel">
+          <div class="panel-header">🎵 Twisting Maestro Repertory</div>
+          <div class="list-item"><span class="list-label">Selo's Accelerating Chorus</span><span class="list-val">83,795 pulses</span></div>
+          <div class="list-item"><span class="list-label">Total Completed Songs</span><span class="list-val">178,904 chants</span></div>
+          <div class="list-item"><span class="list-label">Missed Notes</span><span class="list-val">28,409 flubs</span></div>
+          <div class="list-item"><span class="list-label">Largo's Absonant Binding</span><span class="list-val">641 mems</span></div>
+          <div class="list-item"><span class="list-label">Fufil's Curtailing Chant</span><span class="list-val">541 mems</span></div>
+          <div class="list-item"><span class="list-label">Solon's Bewitching Bravura</span><span class="list-val">489 mems</span></div>
+          <div class="list-item"><span class="list-label">Duo Partner Tells: Pinkiy</span><span class="list-val">1,121 tells</span></div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">👑 Pinnacle Boss Kills</div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/113244" target="_blank">The Avatar of War</a></span><span class="list-val">25 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/127002" target="_blank">Tunare</a></span><span class="list-val">22 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/108510" target="_blank">Phara Dar</a></span><span class="list-val">19 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/124128" target="_blank">Vulak`Aerr</a></span><span class="list-val">10 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/158436" target="_blank">Aten Ha Ra</a></span><span class="list-val">6 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/73057" target="_blank">Lady Vox</a></span><span class="list-val">5 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/32040" target="_blank">Lord Nagafen</a></span><span class="list-val">3 kills</span></div>
+        </div>
+      </div>
+
+      <div class="png-preview-wrap">
+        <div style="color: var(--gold-soft); font-size: 14px; font-weight: 700; margin-bottom: 8px;">Discord Card View</div>
+        <img class="png-preview-img" src="../../data/sample_output/steps_chronicle_card.png" alt="Steps Chronicle Card">
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: Zondro -->
+  <div id="tab-zondro" class="tab-pane">
+    <div class="chronicle-card">
+      <div class="corner-ornament tl"></div>
+      <div class="corner-ornament tr"></div>
+      <div class="corner-ornament bl"></div>
+      <div class="corner-ornament br"></div>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h2 style="font-family: Georgia, serif; font-size: 38px; color: #fff; text-shadow: 0 0 15px rgba(192, 132, 252, 0.4);">Zondro</h2>
+        <div style="color: var(--purple); font-size: 18px; font-weight: 600;">Level 60 Iksar Necromancer &bull; &lt;Dungeons and Dragons&gt;</div>
+        <div style="color: var(--gray); font-size: 13px; margin-top: 4px;">Log Span: Jun 21, 2024 &ndash; Sep 17, 2026 &bull; 4,988,555 lines processed</div>
+      </div>
+
+      <div class="stat-grid-top">
+        <div class="stat-box gold">
+          <div class="title">Epic 1.0 Weapon</div>
+          <div class="value" style="font-size: 16px; margin: 8px 0;"><a class="pqdi-link" href="https://www.pqdi.cc/item/20544" target="_blank" style="color:var(--gold-soft);">Scythe of the Shadowed Soul</a></div>
+          <div class="sub">Completed Feb 13, 2025</div>
+        </div>
+        <div class="stat-box purple">
+          <div class="title">Total DoTs Cast</div>
+          <div class="value">17,385</div>
+          <div class="sub">11,246 Dooming Darkness</div>
+        </div>
+        <div class="stat-box emerald">
+          <div class="title">Feign Deaths</div>
+          <div class="value">1,356</div>
+          <div class="sub">Survival Mastery</div>
+        </div>
+        <div class="stat-box cyan">
+          <div class="title">Aten Ha Ra Kills</div>
+          <div class="value">9</div>
+          <div class="sub">First: Feb 17, 2026</div>
+        </div>
+      </div>
+
+      <div class="split-grid">
+        <div class="card-panel">
+          <div class="panel-header">💀 Dark Arts &amp; Decay</div>
+          <div class="list-item"><span class="list-label">Dooming Darkness</span><span class="list-val">11,246</span></div>
+          <div class="list-item"><span class="list-label">Splurt</span><span class="list-val">4,906</span></div>
+          <div class="list-item"><span class="list-label">Cessation of Cor</span><span class="list-val">4,834</span></div>
+          <div class="list-item"><span class="list-label">Vexing Mordinia</span><span class="list-val">4,402</span></div>
+          <div class="list-item"><span class="list-label">Ancient: Lifebane</span><span class="list-val">3,972</span></div>
+          <div class="list-item"><span class="list-label">Emissary of Thule</span><span class="list-val">610 summons</span></div>
+          <div class="list-item"><span class="list-label">Sedulous Subversion</span><span class="list-val">424 batteries</span></div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">👑 Pinnacle Boss Defeats</div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/158436" target="_blank">Aten Ha Ra</a></span><span class="list-val">9 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/124128" target="_blank">Vulak`Aerr</a></span><span class="list-val">6 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/108510" target="_blank">Phara Dar</a></span><span class="list-val">3 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/127002" target="_blank">Tunare</a></span><span class="list-val">1 kill</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/32040" target="_blank">Lord Nagafen</a></span><span class="list-val">1 kill</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/73057" target="_blank">Lady Vox</a></span><span class="list-val">1 kill</span></div>
+          <div class="list-item"><span class="list-label">Mana Conversion</span><span class="list-val">3,722 casts</span></div>
+        </div>
+      </div>
+
+      <div class="png-preview-wrap">
+        <div style="color: var(--gold-soft); font-size: 14px; font-weight: 700; margin-bottom: 8px;">Discord Card View</div>
+        <img class="png-preview-img" src="../../data/sample_output/zondro_chronicle_card.png" alt="Zondro Chronicle Card">
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 5: Tweedlede -->
+  <div id="tab-tweedle" class="tab-pane">
+    <div class="chronicle-card">
+      <div class="corner-ornament tl"></div>
+      <div class="corner-ornament tr"></div>
+      <div class="corner-ornament bl"></div>
+      <div class="corner-ornament br"></div>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h2 style="font-family: Georgia, serif; font-size: 38px; color: #fff; text-shadow: 0 0 15px rgba(248, 113, 113, 0.4);">Tweedlede</h2>
+        <div style="color: var(--crimson); font-size: 18px; font-weight: 600;">Level 60 Gnome Enchanter &bull; &lt;Dungeons and Dragons&gt;</div>
+        <div style="color: var(--gray); font-size: 13px; margin-top: 4px;">Log Span: Jul 06, 2024 &ndash; Sep 17, 2026 &bull; 3,684,402 lines processed</div>
+      </div>
+
+      <div class="stat-grid-top">
+        <div class="stat-box gold">
+          <div class="title">Epic 1.0 Weapon</div>
+          <div class="value" style="font-size: 17px; margin: 8px 0;"><a class="pqdi-link" href="https://www.pqdi.cc/item/10650" target="_blank" style="color:var(--gold-soft);">Staff of the Serpent</a></div>
+          <div class="sub">Completed Jan 05, 2025</div>
+        </div>
+        <div class="stat-box cyan">
+          <div class="title">Charm Domination</div>
+          <div class="value">5,537</div>
+          <div class="sub">Boltran's Agacerie</div>
+        </div>
+        <div class="stat-box crimson">
+          <div class="title">Chardok Entries</div>
+          <div class="value">2,517</div>
+          <div class="sub">King of Chardok AE Pulls</div>
+        </div>
+        <div class="stat-box purple">
+          <div class="title">Phara Dar Kills</div>
+          <div class="value">12</div>
+          <div class="sub">First: Sep 20, 2024</div>
+        </div>
+      </div>
+
+      <div class="split-grid">
+        <div class="card-panel">
+          <div class="panel-header">🧙 Crowd Control &amp; Manipulation</div>
+          <div class="list-item"><span class="list-label">Shallow Breath</span><span class="list-val">11,239</span></div>
+          <div class="list-item"><span class="list-label">Pacify</span><span class="list-val">7,540</span></div>
+          <div class="list-item"><span class="list-label">Mesmerize</span><span class="list-val">6,124</span></div>
+          <div class="list-item"><span class="list-label">Boltran's Agacerie</span><span class="list-val">5,537</span></div>
+          <div class="list-item"><span class="list-label">Color Slant</span><span class="list-val">3,892</span></div>
+          <div class="list-item"><span class="list-label">Clarity II</span><span class="list-val">2,118</span></div>
+          <div class="list-item"><span class="list-label">Arena Rival: Xebobn</span><span class="list-val">227 duel deaths</span></div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">👑 Pinnacle Boss Defeats</div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/108510" target="_blank">Phara Dar</a></span><span class="list-val">12 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/32040" target="_blank">Lord Nagafen</a></span><span class="list-val">5 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/73057" target="_blank">Lady Vox</a></span><span class="list-val">5 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/113244" target="_blank">The Avatar of War</a></span><span class="list-val">2 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/124128" target="_blank">Vulak`Aerr</a></span><span class="list-val">2 kills</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/158436" target="_blank">Aten Ha Ra</a></span><span class="list-val">1 kill</span></div>
+          <div class="list-item"><span class="list-label"><a class="pqdi-link" href="https://www.pqdi.cc/npc/127002" target="_blank">Tunare</a></span><span class="list-val">0 kills</span></div>
+        </div>
+      </div>
+
+      <div class="png-preview-wrap">
+        <div style="color: var(--gold-soft); font-size: 14px; font-weight: 700; margin-bottom: 8px;">Discord Card View</div>
+        <img class="png-preview-img" src="../../data/sample_output/tweedlede_chronicle_card.png" alt="Tweedlede Chronicle Card">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Project Quarm Chronicle &bull; Generated from TAKP Mac Client Logs &bull; Linked with <a href="https://www.pqdi.cc" target="_blank" style="color:var(--cyan); text-decoration:none;">pqdi.cc</a> EverQuest Item &amp; NPC Database
+</footer>
+
+<script>
+function showTab(tabId) {
+  document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+  const targetPane = document.getElementById('tab-' + tabId);
+  if (targetPane) targetPane.classList.add('active');
+
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(btn => {
+    if (btn.getAttribute('onclick').includes(tabId)) {
+      btn.classList.add('active');
+    }
+  });
+}
+</script>
+
+</body>
+</html>

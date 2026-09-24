@@ -1,10 +1,13 @@
 {
   "character": "Tweedlede",
-  "class": "Enchanter",
+  "last_name": null,
+  "character_class": "Enchanter",
+  "character_race": "Gnome",
   "date_range": {
     "first": "Tue Jul 23 22:22:20 2024",
     "last": "Wed Sep 16 00:28:19 2026"
   },
+  "total_log_lines": 3685287,
   "guild_history": [
     {
       "timestamp": "Fri Sep 13 17:38:03 2024",
@@ -49,56 +52,2575 @@
   "epic_quest": {
     "name": "Staff of the Serpent",
     "class": "Enchanter Epic 1.0",
-    "timestamp": "Sun Jan 05 00:55:53 2025",
+    "effect": "Speed of the Shissar",
+    "timestamp": "Sun Jan 05 00:56:17 2025",
     "zone": "The Burning Wood"
   },
+  "equipped_gear": [
+    {
+      "slot": "Ear",
+      "name": "Earring of Blazing Energy",
+      "id": 5702
+    },
+    {
+      "slot": "Head",
+      "name": "Circlet of the Falinkan",
+      "id": 1867
+    },
+    {
+      "slot": "Face",
+      "name": "Sky Watcher's Monocle",
+      "id": 31328
+    },
+    {
+      "slot": "Ear",
+      "name": "Solist's Earring of Insight",
+      "id": 31228
+    },
+    {
+      "slot": "Neck",
+      "name": "Harla Dar's Talisman",
+      "id": 27244
+    },
+    {
+      "slot": "Shoulders",
+      "name": "Dusty Blue Shawl",
+      "id": 30542
+    },
+    {
+      "slot": "Arms",
+      "name": "Spirit Wracked Cord",
+      "id": 5723
+    },
+    {
+      "slot": "Back",
+      "name": "Hierophant's Cloak",
+      "id": 1622
+    },
+    {
+      "slot": "Wrist",
+      "name": "Supple Scale Armband",
+      "id": 1618
+    },
+    {
+      "slot": "Wrist",
+      "name": "Bracelet of the Sky",
+      "id": 31384
+    },
+    {
+      "slot": "Range",
+      "name": "Nevederias Right Eye",
+      "id": 31361
+    },
+    {
+      "slot": "Hands",
+      "name": "Ancient Shissar Gauntlet",
+      "id": 4582
+    },
+    {
+      "slot": "Primary",
+      "name": "Wand of Tranquility",
+      "id": 26768
+    },
+    {
+      "slot": "Secondary",
+      "name": "Insignia Protector",
+      "id": 9206
+    },
+    {
+      "slot": "Fingers",
+      "name": "Ring of Stealthy Travel",
+      "id": 5733
+    },
+    {
+      "slot": "Fingers",
+      "name": "Gem Encrusted Ring",
+      "id": 11541
+    },
+    {
+      "slot": "Chest",
+      "name": "Robe of the Azure Sky",
+      "id": 10845
+    },
+    {
+      "slot": "Legs",
+      "name": "Tanned Iksar Hide Leggings",
+      "id": 5819
+    },
+    {
+      "slot": "Feet",
+      "name": "Boots of Silent Dreams",
+      "id": 28881
+    },
+    {
+      "slot": "Waist",
+      "name": "Girdle of Rapidity",
+      "id": 5765
+    },
+    {
+      "slot": "Ammo",
+      "name": "Brown Rope Bridle",
+      "id": 21815
+    },
+    {
+      "slot": "General1",
+      "name": "Box of Nil Space",
+      "id": 17082
+    },
+    {
+      "slot": "General1-Slot1",
+      "name": "Bronze Long Sword",
+      "id": 5027
+    },
+    {
+      "slot": "General1-Slot2",
+      "name": "Rusty Broad Sword",
+      "id": 5016
+    },
+    {
+      "slot": "General1-Slot3",
+      "name": "Rusty Mace",
+      "id": 6011
+    },
+    {
+      "slot": "General1-Slot4",
+      "name": "Rusty Short Sword",
+      "id": 5013
+    },
+    {
+      "slot": "General1-Slot5",
+      "name": "Rusty Short Sword",
+      "id": 5013
+    },
+    {
+      "slot": "General1-Slot6",
+      "name": "Rusty Rapier",
+      "id": 7008
+    },
+    {
+      "slot": "General1-Slot7",
+      "name": "Rusty Rapier",
+      "id": 7008
+    },
+    {
+      "slot": "General1-Slot8",
+      "name": "Rusty Rapier",
+      "id": 7008
+    },
+    {
+      "slot": "General1-Slot9",
+      "name": "Rusty Rapier",
+      "id": 7008
+    },
+    {
+      "slot": "General1-Slot10",
+      "name": "Rusty Bastard Sword",
+      "id": 5022
+    },
+    {
+      "slot": "General2",
+      "name": "Box of Abu-Kar",
+      "id": 11703
+    },
+    {
+      "slot": "General2-Slot1",
+      "name": "Rusty Rapier",
+      "id": 7008
+    },
+    {
+      "slot": "General2-Slot2",
+      "name": "Rusty Mace",
+      "id": 6011
+    },
+    {
+      "slot": "General2-Slot3",
+      "name": "Rusty Warhammer",
+      "id": 6014
+    },
+    {
+      "slot": "General2-Slot4",
+      "name": "Rusty Short Sword",
+      "id": 5013
+    },
+    {
+      "slot": "General2-Slot5",
+      "name": "Tarnished Short Sword",
+      "id": 5042
+    },
+    {
+      "slot": "General2-Slot6",
+      "name": "Rusty Short Sword",
+      "id": 5013
+    },
+    {
+      "slot": "General2-Slot7",
+      "name": "Rusty Morning Star",
+      "id": 6016
+    },
+    {
+      "slot": "General2-Slot8",
+      "name": "Rusty Morning Star",
+      "id": 6016
+    },
+    {
+      "slot": "General2-Slot9",
+      "name": "Rusty Short Sword",
+      "id": 5013
+    },
+    {
+      "slot": "General2-Slot10",
+      "name": "Rusty Mace",
+      "id": 6011
+    },
+    {
+      "slot": "General3",
+      "name": "Kavruul`s Mystic Pouch",
+      "id": 17701
+    },
+    {
+      "slot": "General3-Slot1",
+      "name": "Shissar Focus Staff",
+      "id": 24637
+    },
+    {
+      "slot": "General3-Slot2",
+      "name": "Wand of Allure",
+      "id": 12507
+    },
+    {
+      "slot": "General3-Slot3",
+      "name": "Pegasus Feather Cloak",
+      "id": 2463
+    },
+    {
+      "slot": "General3-Slot4",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "General3-Slot5",
+      "name": "Vermiculated Armplates",
+      "id": 3803
+    },
+    {
+      "slot": "General3-Slot6",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "General3-Slot7",
+      "name": "Platinum Jacinth Wedding Ring",
+      "id": 14699
+    },
+    {
+      "slot": "General3-Slot8",
+      "name": "Platinum Jacinth Wedding Ring",
+      "id": 14699
+    },
+    {
+      "slot": "General3-Slot9",
+      "name": "Preserved Chokidai Vocal Cords",
+      "id": 5810
+    },
+    {
+      "slot": "General3-Slot10",
+      "name": "Manarock",
+      "id": 2970
+    },
+    {
+      "slot": "General4",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "General4-Slot1",
+      "name": "Black Sapphire",
+      "id": 10036
+    },
+    {
+      "slot": "General4-Slot2",
+      "name": "Lyssa`s Darkwood Piccolo",
+      "id": 11642
+    },
+    {
+      "slot": "General4-Slot3",
+      "name": "Cloak of Fading Hues",
+      "id": 19726
+    },
+    {
+      "slot": "General4-Slot4",
+      "name": "Lustrous Russet Bracer",
+      "id": 14726
+    },
+    {
+      "slot": "General4-Slot5",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "General4-Slot6",
+      "name": "Vermiculated Bracelet",
+      "id": 3804
+    },
+    {
+      "slot": "General4-Slot7",
+      "name": "Fire Emerald Ring",
+      "id": 10049
+    },
+    {
+      "slot": "General4-Slot8",
+      "name": "Blue Diamond",
+      "id": 22503
+    },
+    {
+      "slot": "General4-Slot9",
+      "name": "Staff of the Serpent",
+      "id": 10650
+    },
+    {
+      "slot": "General4-Slot10",
+      "name": "Blood Fire",
+      "id": 11645
+    },
+    {
+      "slot": "General5",
+      "name": "Bag of the Tinkerers",
+      "id": 32619
+    },
+    {
+      "slot": "General5-Slot1",
+      "name": "Holgresh Elder Beads",
+      "id": 24890
+    },
+    {
+      "slot": "General5-Slot2",
+      "name": "Mana Robe",
+      "id": 1606
+    },
+    {
+      "slot": "General5-Slot3",
+      "name": "Worker Sledgemallet",
+      "id": 12863
+    },
+    {
+      "slot": "General5-Slot4",
+      "name": "Robe of Smothering",
+      "id": 24604
+    },
+    {
+      "slot": "General5-Slot5",
+      "name": "Fungus Covered Great Stick",
+      "id": 10895
+    },
+    {
+      "slot": "General5-Slot6",
+      "name": "Zlandicar's Heart",
+      "id": 26009
+    },
+    {
+      "slot": "General5-Slot7",
+      "name": "Rod of Infinite Thought",
+      "id": 11574
+    },
+    {
+      "slot": "General5-Slot8",
+      "name": "Rod of Annihilation",
+      "id": 6204
+    },
+    {
+      "slot": "General6",
+      "name": "Shralok Pack",
+      "id": 17401
+    },
+    {
+      "slot": "General6-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot2",
+      "name": "Sarnak Hide Boots",
+      "id": 5749
+    },
+    {
+      "slot": "General6-Slot3",
+      "name": "Medal of Deep Thought",
+      "id": 31365
+    },
+    {
+      "slot": "General6-Slot4",
+      "name": "Ancient: Lifebane",
+      "id": 26614
+    },
+    {
+      "slot": "General6-Slot5",
+      "name": "Lustrous Russet Gauntlets",
+      "id": 14728
+    },
+    {
+      "slot": "General6-Slot6",
+      "name": "Velium Blue Diamond Bracelet",
+      "id": 30299
+    },
+    {
+      "slot": "General6-Slot7",
+      "name": "Amygdalan Tendril",
+      "id": 5520
+    },
+    {
+      "slot": "General6-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7",
+      "name": "Bag of the Tinkerers",
+      "id": 32619
+    },
+    {
+      "slot": "General7-Slot1",
+      "name": "Journeyman's Boots",
+      "id": 2300
+    },
+    {
+      "slot": "General7-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7-Slot3",
+      "name": "Regal band of Bathezid",
+      "id": 5727
+    },
+    {
+      "slot": "General7-Slot4",
+      "name": "Medic's Pouch",
+      "id": 7472
+    },
+    {
+      "slot": "General7-Slot5",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "General7-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General8",
+      "name": "Bag of Sewn Evil-Eye",
+      "id": 17354
+    },
+    {
+      "slot": "General8-Slot1",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General8-Slot2",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General8-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General8-Slot4",
+      "name": "Tiny Dagger",
+      "id": 13080
+    },
+    {
+      "slot": "General8-Slot5",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "General8-Slot6",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "General8-Slot7",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "General8-Slot8",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "General-Coin",
+      "name": "Currency",
+      "id": 0
+    },
+    {
+      "slot": "Held",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank1",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank1-Slot1",
+      "name": "Glowing Black Sword",
+      "id": 20657
+    },
+    {
+      "slot": "Bank1-Slot2",
+      "name": "Vile Sarnak Brew",
+      "id": 5805
+    },
+    {
+      "slot": "Bank1-Slot3",
+      "name": "Ball of Everliving Golem",
+      "id": 20677
+    },
+    {
+      "slot": "Bank1-Slot4",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank1-Slot5",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank1-Slot6",
+      "name": "Jeb's Seal",
+      "id": 10604
+    },
+    {
+      "slot": "Bank1-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank1-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank2",
+      "name": "Dusty Ransacker's Pack",
+      "id": 17081
+    },
+    {
+      "slot": "Bank2-Slot1",
+      "name": "Amulet of Woven Hair",
+      "id": 20827
+    },
+    {
+      "slot": "Bank2-Slot2",
+      "name": "Yakman Parts",
+      "id": 30264
+    },
+    {
+      "slot": "Bank2-Slot3",
+      "name": "Fourth part of an Iceclad Map",
+      "id": 30073
+    },
+    {
+      "slot": "Bank2-Slot4",
+      "name": "Second part of an Iceclad Map",
+      "id": 30044
+    },
+    {
+      "slot": "Bank2-Slot5",
+      "name": "Wand of Mana Tapping",
+      "id": 10375
+    },
+    {
+      "slot": "Bank2-Slot6",
+      "name": "The Scepter of Shadows",
+      "id": 22198
+    },
+    {
+      "slot": "Bank2-Slot7",
+      "name": "Wind Walkers Mantle",
+      "id": 1276
+    },
+    {
+      "slot": "Bank2-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank3",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank3-Slot1",
+      "name": "Crushed Diamond Dust",
+      "id": 25842
+    },
+    {
+      "slot": "Bank3-Slot2",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank3-Slot3",
+      "name": "Courier`s Potion",
+      "id": 5735
+    },
+    {
+      "slot": "Bank3-Slot4",
+      "name": "Crushed Emerald",
+      "id": 25835
+    },
+    {
+      "slot": "Bank3-Slot5",
+      "name": "Crushed Sea Sapphire",
+      "id": 25839
+    },
+    {
+      "slot": "Bank3-Slot6",
+      "name": "Torn Enchanted Silk Wristband",
+      "id": 24953
+    },
+    {
+      "slot": "Bank3-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank3-Slot8",
+      "name": "Tattered Silk Gloves",
+      "id": 24983
+    },
+    {
+      "slot": "Bank4",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank4-Slot1",
+      "name": "Golden Cat Eye Bracelet",
+      "id": 14618
+    },
+    {
+      "slot": "Bank4-Slot2",
+      "name": "Di'zok Signet of Service",
+      "id": 5728
+    },
+    {
+      "slot": "Bank4-Slot3",
+      "name": "Electrum Star Ruby Ring",
+      "id": 14681
+    },
+    {
+      "slot": "Bank4-Slot4",
+      "name": "Maelin's Magical Concoction",
+      "id": 32701
+    },
+    {
+      "slot": "Bank4-Slot5",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank4-Slot6",
+      "name": "Maelin's Magical Concoction",
+      "id": 32700
+    },
+    {
+      "slot": "Bank4-Slot7",
+      "name": "Golden Diamond Mask",
+      "id": 14706
+    },
+    {
+      "slot": "Bank4-Slot8",
+      "name": "Frizznik's Robe of Tinkering",
+      "id": 26570
+    },
+    {
+      "slot": "Bank5",
+      "name": "Jeweller's Kit",
+      "id": 17912
+    },
+    {
+      "slot": "Bank5-Slot1",
+      "name": "Blue Diamond",
+      "id": 22503
+    },
+    {
+      "slot": "Bank5-Slot2",
+      "name": "Jacinth",
+      "id": 10053
+    },
+    {
+      "slot": "Bank5-Slot3",
+      "name": "Black Sapphire",
+      "id": 10036
+    },
+    {
+      "slot": "Bank5-Slot4",
+      "name": "Diamond",
+      "id": 10037
+    },
+    {
+      "slot": "Bank6",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank6-Slot1",
+      "name": "A Crude Stein",
+      "id": 13355
+    },
+    {
+      "slot": "Bank6-Slot2",
+      "name": "A Glowing Black Stone",
+      "id": 10404
+    },
+    {
+      "slot": "Bank6-Slot3",
+      "name": "Golden Cat Eye Bracelet",
+      "id": 14618
+    },
+    {
+      "slot": "Bank6-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank6-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank6-Slot6",
+      "name": "Platinum Star Ruby Veil",
+      "id": 14683
+    },
+    {
+      "slot": "Bank6-Slot7",
+      "name": "Noble's Robes",
+      "id": 1891
+    },
+    {
+      "slot": "Bank6-Slot8",
+      "name": "Electrum Star Ruby Ring",
+      "id": 14681
+    },
+    {
+      "slot": "Bank7",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank7-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot2",
+      "name": "Serrated Bone Dirk",
+      "id": 7502
+    },
+    {
+      "slot": "Bank7-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot4",
+      "name": "Serrated Bone Dirk",
+      "id": 7502
+    },
+    {
+      "slot": "Bank7-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot6",
+      "name": "Serrated Bone Dirk",
+      "id": 7502
+    },
+    {
+      "slot": "Bank7-Slot7",
+      "name": "Shissar scales",
+      "id": 32529
+    },
+    {
+      "slot": "Bank7-Slot8",
+      "name": "Immortals",
+      "id": 18195
+    },
+    {
+      "slot": "Bank8",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank8-Slot1",
+      "name": "Ruby",
+      "id": 10035
+    },
+    {
+      "slot": "Bank8-Slot2",
+      "name": "Bracelet of Quiescence",
+      "id": 12806
+    },
+    {
+      "slot": "Bank8-Slot3",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank8-Slot4",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank8-Slot5",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank8-Slot6",
+      "name": "Small Manisi Plant",
+      "id": 2688
+    },
+    {
+      "slot": "Bank8-Slot7",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank8-Slot8",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank9",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank9-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot2",
+      "name": "Nathsar Vambraces",
+      "id": 5718
+    },
+    {
+      "slot": "Bank9-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank10-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank11-Slot1",
+      "name": "Rat Ears",
+      "id": 13072
+    },
+    {
+      "slot": "Bank11-Slot2",
+      "name": "Rat Ears",
+      "id": 13072
+    },
+    {
+      "slot": "Bank11-Slot3",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank11-Slot4",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank11-Slot5",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank11-Slot6",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank11-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot8",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank12",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank12-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank12-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank12-Slot3",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank12-Slot4",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank12-Slot5",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank12-Slot6",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank12-Slot7",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank12-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank13-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank14-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank15-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank16-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank17-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank18-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19",
+      "name": "Toolbox",
+      "id": 17902
+    },
+    {
+      "slot": "Bank19-Slot1",
+      "name": "Rat Ears",
+      "id": 13072
+    },
+    {
+      "slot": "Bank19-Slot2",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank19-Slot3",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank19-Slot4",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank19-Slot5",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "Bank19-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank20-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank21-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot6",
+      "name": "Seahorse Scales",
+      "id": 12999
+    },
+    {
+      "slot": "Bank21-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank22-Slot1",
+      "name": "Sebilisian Relic Crate",
+      "id": 841
+    },
+    {
+      "slot": "Bank22-Slot2",
+      "name": "Sebilisian Relic Crate",
+      "id": 841
+    },
+    {
+      "slot": "Bank22-Slot3",
+      "name": "Sebilisian Relic Crate",
+      "id": 841
+    },
+    {
+      "slot": "Bank22-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank23-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank24-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank25-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank25-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank26-Slot1",
+      "name": "Crushed Nephrite",
+      "id": 25830
+    },
+    {
+      "slot": "Bank26-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot3",
+      "name": "Crushed Flame Emerald",
+      "id": 25838
+    },
+    {
+      "slot": "Bank26-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank27-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot2",
+      "name": "Coral Crescent",
+      "id": 25817
+    },
+    {
+      "slot": "Bank27-Slot3",
+      "name": "Crushed Chrysolite",
+      "id": 25834
+    },
+    {
+      "slot": "Bank27-Slot4",
+      "name": "Black Symbol",
+      "id": 31251
+    },
+    {
+      "slot": "Bank27-Slot5",
+      "name": "Scout Tools",
+      "id": 29683
+    },
+    {
+      "slot": "Bank27-Slot6",
+      "name": "Excellent Siren Scales",
+      "id": 25109
+    },
+    {
+      "slot": "Bank27-Slot7",
+      "name": "Sapphire",
+      "id": 10034
+    },
+    {
+      "slot": "Bank27-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank28-Slot1",
+      "name": "Seahorse Scales",
+      "id": 12999
+    },
+    {
+      "slot": "Bank28-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot3",
+      "name": "Crushed Onyx Sapphire",
+      "id": 25841
+    },
+    {
+      "slot": "Bank28-Slot4",
+      "name": "Crushed Topaz",
+      "id": 25832
+    },
+    {
+      "slot": "Bank28-Slot5",
+      "name": "Tattered Silk Boots",
+      "id": 24980
+    },
+    {
+      "slot": "Bank28-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot7",
+      "name": "Tobrin's Mystical Eyepatch",
+      "id": 11052
+    },
+    {
+      "slot": "Bank28-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank29-Slot1",
+      "name": "White Symbol",
+      "id": 31250
+    },
+    {
+      "slot": "Bank29-Slot2",
+      "name": "Pristine Emerald",
+      "id": 25807
+    },
+    {
+      "slot": "Bank29-Slot3",
+      "name": "Crushed Flame Opal",
+      "id": 25837
+    },
+    {
+      "slot": "Bank29-Slot4",
+      "name": "Spell: Translocate: Group",
+      "id": 19474
+    },
+    {
+      "slot": "Bank29-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29-Slot6",
+      "name": "Emerald Ring",
+      "id": 10045
+    },
+    {
+      "slot": "Bank29-Slot7",
+      "name": "Sebilisian Relic Crate",
+      "id": 841
+    },
+    {
+      "slot": "Bank29-Slot8",
+      "name": "Spell: Gift of Insight",
+      "id": 30409
+    },
+    {
+      "slot": "Bank30",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank30-Slot1",
+      "name": "Sapphire Necklace",
+      "id": 10050
+    },
+    {
+      "slot": "Bank30-Slot2",
+      "name": "Star Ruby",
+      "id": 10032
+    },
+    {
+      "slot": "Bank30-Slot3",
+      "name": "Emerald",
+      "id": 10029
+    },
+    {
+      "slot": "Bank30-Slot4",
+      "name": "Mithril Amulet",
+      "id": 10047
+    },
+    {
+      "slot": "Bank30-Slot5",
+      "name": "Berserker's Axe",
+      "id": 25074
+    },
+    {
+      "slot": "Bank30-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank30-Slot7",
+      "name": "Wolfs Eye Golden Bracelet",
+      "id": 14646
+    },
+    {
+      "slot": "Bank30-Slot8",
+      "name": "Wolfs Eye Golden Bracelet",
+      "id": 14646
+    },
+    {
+      "slot": "SharedBank1",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank1-Slot1",
+      "name": "Djarns Amethyst Ring",
+      "id": 10366
+    },
+    {
+      "slot": "SharedBank1-Slot2",
+      "name": "Sceptre of Destruction",
+      "id": 1154
+    },
+    {
+      "slot": "SharedBank1-Slot3",
+      "name": "Diamond",
+      "id": 10037
+    },
+    {
+      "slot": "SharedBank1-Slot4",
+      "name": "Puppet Strings",
+      "id": 11643
+    },
+    {
+      "slot": "SharedBank1-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot9",
+      "name": "Fungus Covered Great Staff",
+      "id": 2882
+    },
+    {
+      "slot": "SharedBank1-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank2",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank2-Slot1",
+      "name": "Earring of Living Slime",
+      "id": 27939
+    },
+    {
+      "slot": "SharedBank2-Slot2",
+      "name": "Hammered Golden Hoop",
+      "id": 5716
+    },
+    {
+      "slot": "SharedBank2-Slot3",
+      "name": "Collar of the Brood",
+      "id": 19700
+    },
+    {
+      "slot": "SharedBank2-Slot4",
+      "name": "Trakasaur's Tooth",
+      "id": 11983
+    },
+    {
+      "slot": "SharedBank2-Slot5",
+      "name": "Gauntlets of Mortality",
+      "id": 26026
+    },
+    {
+      "slot": "SharedBank2-Slot6",
+      "name": "Mask of the Dragon Slayer",
+      "id": 29319
+    },
+    {
+      "slot": "SharedBank2-Slot7",
+      "name": "Immaculate Shell Horn",
+      "id": 28510
+    },
+    {
+      "slot": "SharedBank2-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank2-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank2-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3",
+      "name": "Darkwood Trunk",
+      "id": 17703
+    },
+    {
+      "slot": "SharedBank3-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank4-Slot1",
+      "name": "Sword of the Morning",
+      "id": 5158
+    },
+    {
+      "slot": "SharedBank4-Slot2",
+      "name": "Sarnak Summoner`s Dagger",
+      "id": 5759
+    },
+    {
+      "slot": "SharedBank4-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot4",
+      "name": "Seahorse Scales",
+      "id": 12999
+    },
+    {
+      "slot": "SharedBank4-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank5-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot10",
+      "name": "Cone of the Mystics",
+      "id": 14746
+    },
+    {
+      "slot": "SharedBank6",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank6-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank7-Slot1",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "SharedBank7-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot3",
+      "name": "Vile Sarnak Brew",
+      "id": 5805
+    },
+    {
+      "slot": "SharedBank7-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot5",
+      "name": "A Sandwich of Foul Smelling Herbs",
+      "id": 5803
+    },
+    {
+      "slot": "SharedBank7-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank8-Slot1",
+      "name": "a red throne",
+      "id": 24554
+    },
+    {
+      "slot": "SharedBank8-Slot2",
+      "name": "a black throne",
+      "id": 24550
+    },
+    {
+      "slot": "SharedBank8-Slot3",
+      "name": "a white throne",
+      "id": 24562
+    },
+    {
+      "slot": "SharedBank8-Slot4",
+      "name": "a blue throne",
+      "id": 24558
+    },
+    {
+      "slot": "SharedBank8-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot6",
+      "name": "a white crown",
+      "id": 24563
+    },
+    {
+      "slot": "SharedBank8-Slot7",
+      "name": "a blue crown",
+      "id": 24559
+    },
+    {
+      "slot": "SharedBank8-Slot8",
+      "name": "a black crown",
+      "id": 24551
+    },
+    {
+      "slot": "SharedBank8-Slot9",
+      "name": "a black knight",
+      "id": 24552
+    },
+    {
+      "slot": "SharedBank8-Slot10",
+      "name": "a blue knight",
+      "id": 24560
+    },
+    {
+      "slot": "SharedBank9",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank9-Slot1",
+      "name": "a red knight",
+      "id": 24556
+    },
+    {
+      "slot": "SharedBank9-Slot2",
+      "name": "a white knight",
+      "id": 24564
+    },
+    {
+      "slot": "SharedBank9-Slot3",
+      "name": "a white squire",
+      "id": 24565
+    },
+    {
+      "slot": "SharedBank9-Slot4",
+      "name": "a blue squire",
+      "id": 24561
+    },
+    {
+      "slot": "SharedBank9-Slot5",
+      "name": "a red squire",
+      "id": 24557
+    },
+    {
+      "slot": "SharedBank9-Slot6",
+      "name": "a black squire",
+      "id": 24553
+    },
+    {
+      "slot": "SharedBank9-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank10-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot2",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot4",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot6",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot7",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "SharedBank10-Slot8",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot9",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "SharedBank10-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank11",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank12",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank13",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank14",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank15",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank16",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank17",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank18",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank19",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank20",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank21",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank22",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank23",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank24",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank25",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank26",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank27",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank28",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank29",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank30",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank-Coin",
+      "name": "Currency",
+      "id": 0
+    }
+  ],
   "pinnacle_bosses": {
     "Classic": [
       {
         "boss": "Lord Nagafen",
+        "id": 32040,
+        "url": "https://www.pqdi.cc/npc/32040",
         "first_kill": "Mon Dec 02 18:57:19 2024",
-        "total_kills_or_lockouts": 17
+        "total_kills_or_lockouts": 5
       },
       {
         "boss": "Lady Vox",
+        "id": 73057,
+        "url": "https://www.pqdi.cc/npc/73057",
         "first_kill": "Fri Dec 13 21:16:44 2024",
-        "total_kills_or_lockouts": 17
+        "total_kills_or_lockouts": 5
       }
     ],
     "Kunark": [
       {
         "boss": "Phara Dar",
+        "id": 108510,
+        "url": "https://www.pqdi.cc/npc/108510",
         "first_kill": "Fri Sep 20 19:53:09 2024",
-        "total_kills_or_lockouts": 27
+        "total_kills_or_lockouts": 12
       }
     ],
     "Velious": [
       {
         "boss": "Tunare",
+        "id": 127002,
+        "url": "https://www.pqdi.cc/npc/127002",
         "first_kill": null,
         "total_kills_or_lockouts": 0
       },
       {
         "boss": "Vulak`Aerr",
+        "id": 124128,
+        "url": "https://www.pqdi.cc/npc/124128",
         "first_kill": "Sat Aug 30 23:30:03 2025",
         "total_kills_or_lockouts": 2
       },
       {
         "boss": "The Avatar of War",
+        "id": 113244,
+        "url": "https://www.pqdi.cc/npc/113244",
         "first_kill": "Mon May 19 21:48:03 2025",
-        "total_kills_or_lockouts": 5
+        "total_kills_or_lockouts": 2
       }
     ],
     "Luclin": [
       {
         "boss": "Aten Ha Ra",
+        "id": 158436,
+        "url": "https://www.pqdi.cc/npc/158436",
         "first_kill": "Tue Sep 15 21:52:24 2026",
-        "total_kills_or_lockouts": 2
+        "total_kills_or_lockouts": 1
       }
     ],
     "Planes of Power": [
       {
         "boss": "Quarm",
+        "id": null,
+        "url": null,
         "first_kill": null,
         "total_kills_or_lockouts": 0
       }
@@ -107,6 +2629,7 @@
   "stats": {
     "total_deaths": 561,
     "resurrections_accepted": 225,
+    "environmental_or_bleeding_deaths": 16,
     "total_level_dings": 65,
     "max_level": 60,
     "total_aas_earned": 49,
@@ -227,72 +2750,152 @@
       ]
     ],
     "top_npcs_slain": [
-      [
-        "escaped slave",
-        122
-      ],
-      [
-        "goblin guard",
-        57
-      ],
-      [
-        "bat",
-        39
-      ],
-      [
-        "wretched vanguard",
-        39
-      ],
-      [
-        "shackled champion",
-        27
-      ],
-      [
-        "steadfast lookout",
-        26
-      ],
-      [
-        "kobold runt",
-        24
-      ],
-      [
-        "decaying skeleton",
-        20
-      ],
-      [
-        "shackled knave",
-        20
-      ],
-      [
-        "wretched blackguard",
-        20
-      ]
+      {
+        "name": "escaped slave",
+        "count": 122,
+        "id": 103097,
+        "level": 8,
+        "hp": 144,
+        "url": "https://www.pqdi.cc/npc/103097",
+        "zone": "Chardok"
+      },
+      {
+        "name": "goblin guard",
+        "count": 57,
+        "id": 11022,
+        "level": 8,
+        "hp": 190,
+        "url": "https://www.pqdi.cc/npc/11022",
+        "zone": "Runnyeye"
+      },
+      {
+        "name": "bat",
+        "count": 39,
+        "id": 2023,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/2023",
+        "zone": "North Qeynos"
+      },
+      {
+        "name": "wretched vanguard",
+        "count": 39,
+        "id": 6100202,
+        "level": 30,
+        "hp": 1100,
+        "url": "https://www.pqdi.cc/npc/6100202",
+        "zone": "injustice"
+      },
+      {
+        "name": "shackled champion",
+        "count": 27,
+        "id": 6100102,
+        "level": 20,
+        "hp": 594,
+        "url": "https://www.pqdi.cc/npc/6100102",
+        "zone": "injustice"
+      },
+      {
+        "name": "steadfast lookout",
+        "count": 26,
+        "id": 6100206,
+        "level": 30,
+        "hp": 1100,
+        "url": "https://www.pqdi.cc/npc/6100206",
+        "zone": "injustice"
+      },
+      {
+        "name": "kobold runt",
+        "count": 24,
+        "id": 38004,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/38004",
+        "zone": "Toxxulia Forest"
+      },
+      {
+        "name": "decaying skeleton",
+        "count": 20,
+        "id": 78036,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/78036",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "shackled knave",
+        "count": 20,
+        "id": 6100105,
+        "level": 20,
+        "hp": 594,
+        "url": "https://www.pqdi.cc/npc/6100105",
+        "zone": "injustice"
+      },
+      {
+        "name": "wretched blackguard",
+        "count": 20,
+        "id": 6100205,
+        "level": 30,
+        "hp": 1100,
+        "url": "https://www.pqdi.cc/npc/6100205",
+        "zone": "injustice"
+      }
     ],
     "pvp_nemesis": [
-      "Xebobn",
-      227
+      {
+        "name": "Xebobn",
+        "count": 227
+      },
+      {
+        "name": "Kenekn",
+        "count": 12
+      },
+      {
+        "name": "Moiste",
+        "count": 4
+      }
     ],
     "top_pve_nemesis": [
-      [
-        "Falling / Environmental",
-        16
-      ],
-      [
-        "Kenekn",
-        12
-      ],
-      [
-        "Di`zok royal guard",
-        10
-      ],
-      [
-        "a Di`zok Sage",
-        8
-      ],
-      [
-        "sorcerer of Di`zok",
-        8
-      ]
+      {
+        "name": "Di`zok royal guard",
+        "count": 10,
+        "id": 103063,
+        "level": 52,
+        "zone": "Chardok",
+        "url": "https://www.pqdi.cc/npc/103063"
+      },
+      {
+        "name": "a Di`zok Sage",
+        "count": 8,
+        "id": 103078,
+        "level": 55,
+        "zone": "Chardok",
+        "url": "https://www.pqdi.cc/npc/103078"
+      },
+      {
+        "name": "sorcerer of Di`zok",
+        "count": 8,
+        "id": 103151,
+        "level": 48,
+        "zone": "Chardok",
+        "url": "https://www.pqdi.cc/npc/103151"
+      },
+      {
+        "name": "an icy servant",
+        "count": 7,
+        "id": 125003,
+        "level": 52,
+        "zone": "Siren's Grotto",
+        "url": "https://www.pqdi.cc/npc/125003"
+      },
+      {
+        "name": "Fright",
+        "count": 5,
+        "id": 72004,
+        "level": 55,
+        "zone": "Plane of Fear",
+        "url": "https://www.pqdi.cc/npc/72004"
+      }
     ],
     "top_tell_recipients": [
       [
@@ -504,7 +3107,7 @@
         155
       ]
     ],
-    "top_spells_cast": [
+    "top_spells_or_songs": [
       [
         "Shallow Breath",
         11239
@@ -544,68 +3147,171 @@
       [
         "Illusion: Air Elemental",
         3293
+      ],
+      [
+        "Tashanian",
+        2829
+      ],
+      [
+        "Color Shift",
+        2611
+      ],
+      [
+        "Color Skew",
+        2379
+      ],
+      [
+        "Chaotic Feedback",
+        2057
+      ],
+      [
+        "Color Slant",
+        2028
       ]
     ],
+    "top_songs_memorized": [
+      [
+        "Illusion: Air Elemental",
+        922
+      ],
+      [
+        "Clarity II",
+        909
+      ],
+      [
+        "Pacify",
+        650
+      ],
+      [
+        "Shield of the Magi",
+        601
+      ],
+      [
+        "Forlorn Deeds",
+        529
+      ],
+      [
+        "Gate",
+        521
+      ],
+      [
+        "Visions of Grandeur",
+        453
+      ],
+      [
+        "Blanket of Forgetfulness",
+        445
+      ],
+      [
+        "Gift of Pure Thought",
+        441
+      ],
+      [
+        "Boltran`s Agacerie",
+        405
+      ],
+      [
+        "Bedlam",
+        373
+      ],
+      [
+        "Tashanian",
+        325
+      ],
+      [
+        "Fetter",
+        318
+      ],
+      [
+        "Mesmerize",
+        292
+      ],
+      [
+        "Augmentation",
+        288
+      ]
+    ],
+    "bard_twisting": {
+      "selo_pulses": 627,
+      "songs_completed": 0,
+      "missed_notes": 0
+    },
+    "cleric_stats": {
+      "complete_healing_casts": 0,
+      "rezzes_cast": 0,
+      "divine_intervention_casts": 0,
+      "group_heals": 0,
+      "aegolism_casts": 0,
+      "heroic_bond_casts": 0
+    },
+    "necro_stats": {
+      "twitch_casts": 0,
+      "dots_cast": 0,
+      "lifetaps_cast": 0,
+      "feign_death_casts": 0,
+      "pet_summons": 0,
+      "rezzes_cast": 0
+    },
     "top_raid_boss_kills_overall": [
       [
         "Venril Sathir",
-        58
+        23
       ],
       [
         "a dracoliche",
-        45
-      ],
-      [
-        "Cazic Thule",
-        45
+        16
       ],
       [
         "Terror",
-        44
+        15
       ],
       [
         "Dread",
-        44
+        15
       ],
       [
         "Fright",
-        44
+        15
+      ],
+      [
+        "Cazic Thule",
+        15
       ],
       [
         "Trakanon",
-        31
-      ],
-      [
-        "Phara Dar",
-        26
+        13
       ],
       [
         "King Tranix",
-        22
+        13
+      ],
+      [
+        "Phara Dar",
+        12
       ],
       [
         "Silverwing",
-        20
-      ],
-      [
-        "Bazzt Zzzt",
-        19
-      ],
-      [
-        "Keeper of Souls",
-        18
+        10
       ],
       [
         "Hoshkar",
-        16
+        8
       ],
       [
         "Druushk",
-        16
+        8
       ],
       [
         "Faydedar",
-        16
+        7
+      ],
+      [
+        "Bazzt Zzzt",
+        7
+      ],
+      [
+        "Phinigel Autropos",
+        6
       ]
     ]
   },

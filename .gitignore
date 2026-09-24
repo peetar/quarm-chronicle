@@ -45,6 +45,12 @@ data/raw/
 !data/reference/
 !data/sample_output/
 
+# Generated local character HTML outputs (templates preserved)
+src/cards/*_card.html
+!src/cards/card_template.html
+!src/cards/timeline_card.html
+src/cards/*_timeline.html
+
 # OS / Editor files
 .DS_Store
 Thumbs.db

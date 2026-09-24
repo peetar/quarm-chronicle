@@ -27,6 +27,16 @@ class TestNPCDatabase(unittest.TestCase):
         self.assertIsNotNone(phara)
         self.assertEqual(phara["id"], 108510)
 
+        emperor = self.db.resolve("Emperor Ssraeshza", "Ssraeshza Temple")
+        self.assertIsNotNone(emperor)
+        self.assertEqual(emperor["id"], 162065)
+        self.assertEqual(emperor["url"], "https://www.pqdi.cc/npc/162065")
+
+        aten = self.db.resolve("Aten Ha Ra", "Vex Thal")
+        self.assertIsNotNone(aten)
+        self.assertEqual(aten["id"], 158436)
+        self.assertEqual(aten["url"], "https://www.pqdi.cc/npc/158436")
+
     def test_trash_mobs(self):
         slave = self.db.resolve("escaped slave", "Chardok")
         self.assertIsNotNone(slave)

@@ -1,0 +1,4895 @@
+{
+  "character": "Steps",
+  "last_name": "Brother",
+  "character_class": "Bard",
+  "character_race": "Half Elf",
+  "date_range": {
+    "first": "Sat Jul 06 10:11:39 2024",
+    "last": "Wed Sep 16 23:36:34 2026"
+  },
+  "total_log_lines": 12959374,
+  "guild_history": [
+    {
+      "timestamp": "Sat Jan 18 09:43:50 2025",
+      "action": "joined",
+      "guild": "Dungeons and Dragons"
+    }
+  ],
+  "expansion_firsts": {
+    "Kunark": {
+      "timestamp": "Sat Jul 06 10:25:45 2024",
+      "zone": "Timorous Deep"
+    },
+    "Velious": {
+      "timestamp": "Tue Apr 01 20:27:01 2025",
+      "zone": "Kael Drakkel"
+    },
+    "Luclin": {
+      "timestamp": "Fri Jul 25 20:13:26 2025",
+      "zone": "Nexus"
+    }
+  },
+  "epic_quest": {
+    "name": "Singing Short Sword",
+    "class": "Bard Epic 1.0",
+    "effect": "Dance of the Blade",
+    "timestamp": "Sun Mar 23 22:52:17 2025",
+    "zone": "The Dreadlands"
+  },
+  "equipped_gear": [
+    {
+      "slot": "Ear",
+      "name": "Sigil Earring of Veracity",
+      "id": 29861
+    },
+    {
+      "slot": "Head",
+      "name": "Helmet of Shadow",
+      "id": 28986
+    },
+    {
+      "slot": "Face",
+      "name": "Blood Veil of the Shissar",
+      "id": 26582
+    },
+    {
+      "slot": "Ear",
+      "name": "Imperial Symbol of the Shissar",
+      "id": 26579
+    },
+    {
+      "slot": "Neck",
+      "name": "Talisman of Vah Kerrath",
+      "id": 8364
+    },
+    {
+      "slot": "Shoulders",
+      "name": "Blessed Coldain Prayer Shawl",
+      "id": 1200
+    },
+    {
+      "slot": "Arms",
+      "name": "Yttrium Wrapped Sleeves",
+      "id": 8288
+    },
+    {
+      "slot": "Back",
+      "name": "Cloak of Maneuvering",
+      "id": 28959
+    },
+    {
+      "slot": "Wrist",
+      "name": "Clawed Guardian Bracer",
+      "id": 1172
+    },
+    {
+      "slot": "Wrist",
+      "name": "String of Beaded Slime",
+      "id": 28954
+    },
+    {
+      "slot": "Range",
+      "name": "Horn of Shadows",
+      "id": 28933
+    },
+    {
+      "slot": "Hands",
+      "name": "Do`Vassir's Gauntlets of Might",
+      "id": 31227
+    },
+    {
+      "slot": "Primary",
+      "name": "Drums of the Beast",
+      "id": 24737
+    },
+    {
+      "slot": "Secondary",
+      "name": "Singing Short Sword",
+      "id": 20542
+    },
+    {
+      "slot": "Fingers",
+      "name": "Ring of Destruction",
+      "id": 25211
+    },
+    {
+      "slot": "Fingers",
+      "name": "Starred Yttrium Ring",
+      "id": 7870
+    },
+    {
+      "slot": "Chest",
+      "name": "Heavy Yttrium Chestplate",
+      "id": 7869
+    },
+    {
+      "slot": "Legs",
+      "name": "Shimmering Black Greaves",
+      "id": 28907
+    },
+    {
+      "slot": "Feet",
+      "name": "Shadow Footpads",
+      "id": 28888
+    },
+    {
+      "slot": "Waist",
+      "name": "Ssraeshzaen Blood Cord",
+      "id": 26549
+    },
+    {
+      "slot": "Ammo",
+      "name": "Tiny Cloak of Darkest Night",
+      "id": 28766
+    },
+    {
+      "slot": "General1",
+      "name": "Box of Nil Space",
+      "id": 17082
+    },
+    {
+      "slot": "General1-Slot1",
+      "name": "Guise of the Deceiver",
+      "id": 2469
+    },
+    {
+      "slot": "General1-Slot2",
+      "name": "Guise of the Hunter",
+      "id": 26502
+    },
+    {
+      "slot": "General1-Slot3",
+      "name": "Veil of Flames",
+      "id": 28971
+    },
+    {
+      "slot": "General1-Slot4",
+      "name": "Lute of the Howler",
+      "id": 25315
+    },
+    {
+      "slot": "General1-Slot5",
+      "name": "Mask of Monstrosity",
+      "id": 6836
+    },
+    {
+      "slot": "General1-Slot6",
+      "name": "Desiccated Halfling Mask",
+      "id": 5796
+    },
+    {
+      "slot": "General1-Slot7",
+      "name": "Neriad Shawl",
+      "id": 28508
+    },
+    {
+      "slot": "General1-Slot8",
+      "name": "Besmirched Mask of Conception",
+      "id": 29481
+    },
+    {
+      "slot": "General1-Slot9",
+      "name": "Mask of Tinkering",
+      "id": 1135
+    },
+    {
+      "slot": "General1-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2",
+      "name": "Shralok Pack",
+      "id": 17401
+    },
+    {
+      "slot": "General2-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot3",
+      "name": "Vereor Mask",
+      "id": 7468
+    },
+    {
+      "slot": "General2-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General3",
+      "name": "Bag of Sewn Evil-Eye",
+      "id": 17354
+    },
+    {
+      "slot": "General3-Slot1",
+      "name": "Fungus Covered Great Staff",
+      "id": 2882
+    },
+    {
+      "slot": "General3-Slot2",
+      "name": "Fungus Covered Scale Tunic",
+      "id": 2880
+    },
+    {
+      "slot": "General3-Slot3",
+      "name": "Behemoths Fangs",
+      "id": 24746
+    },
+    {
+      "slot": "General3-Slot4",
+      "name": "Bioluminescent Orb",
+      "id": 22822
+    },
+    {
+      "slot": "General3-Slot5",
+      "name": "Lyran's Mystical Lute",
+      "id": 10846
+    },
+    {
+      "slot": "General3-Slot6",
+      "name": "Verlekarnorm's Horn of Disaster",
+      "id": 31341
+    },
+    {
+      "slot": "General3-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General3-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General4",
+      "name": "Shralok Pack",
+      "id": 17401
+    },
+    {
+      "slot": "General4-Slot1",
+      "name": "Orb of Tishan",
+      "id": 11625
+    },
+    {
+      "slot": "General4-Slot2",
+      "name": "Primal Velium Battlehammer",
+      "id": 27321
+    },
+    {
+      "slot": "General4-Slot3",
+      "name": "Sceptre of Destruction",
+      "id": 1154
+    },
+    {
+      "slot": "General4-Slot4",
+      "name": "Vyzh`dra's Render of Souls",
+      "id": 7823
+    },
+    {
+      "slot": "General4-Slot5",
+      "name": "Toetwister",
+      "id": 28832
+    },
+    {
+      "slot": "General4-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General4-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General4-Slot8",
+      "name": "Worker Sledgemallet",
+      "id": 12863
+    },
+    {
+      "slot": "General5",
+      "name": "Box of Abu-Kar",
+      "id": 11703
+    },
+    {
+      "slot": "General5-Slot1",
+      "name": "Ykeshan War Club",
+      "id": 6621
+    },
+    {
+      "slot": "General5-Slot2",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "General5-Slot3",
+      "name": "Vial of Velium Vapors",
+      "id": 1553
+    },
+    {
+      "slot": "General5-Slot4",
+      "name": "Ykeshan War Club",
+      "id": 6621
+    },
+    {
+      "slot": "General5-Slot5",
+      "name": "Spiny Scimitar",
+      "id": 2927
+    },
+    {
+      "slot": "General5-Slot6",
+      "name": "Spiny Warhammer",
+      "id": 2898
+    },
+    {
+      "slot": "General5-Slot7",
+      "name": "Spiny Scimitar",
+      "id": 2927
+    },
+    {
+      "slot": "General5-Slot8",
+      "name": "Ykeshan War Club",
+      "id": 6621
+    },
+    {
+      "slot": "General5-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General5-Slot10",
+      "name": "Throwing Boulder",
+      "id": 8013
+    },
+    {
+      "slot": "General6",
+      "name": "Very Large Coin Purse",
+      "id": 17207
+    },
+    {
+      "slot": "General6-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "General7-Slot1",
+      "name": "Girdle of Living Thorns",
+      "id": 2510
+    },
+    {
+      "slot": "General7-Slot2",
+      "name": "Breastplate of the Void",
+      "id": 7825
+    },
+    {
+      "slot": "General7-Slot3",
+      "name": "10 Dose Potion of Unlife Awareness",
+      "id": 14545
+    },
+    {
+      "slot": "General7-Slot4",
+      "name": "Cloak of Icy Shadows",
+      "id": 28887
+    },
+    {
+      "slot": "General7-Slot5",
+      "name": "Breath of Harmony",
+      "id": 5156
+    },
+    {
+      "slot": "General7-Slot6",
+      "name": "Holgresh Elder Beads",
+      "id": 24890
+    },
+    {
+      "slot": "General7-Slot7",
+      "name": "Singing Steel Bracer",
+      "id": 4560
+    },
+    {
+      "slot": "General7-Slot8",
+      "name": "Black Flower of Functionality",
+      "id": 6817
+    },
+    {
+      "slot": "General7-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7-Slot10",
+      "name": "Berserkers Ring",
+      "id": 1558
+    },
+    {
+      "slot": "General8",
+      "name": "Kavruul`s Mystic Pouch",
+      "id": 17701
+    },
+    {
+      "slot": "General8-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General8-Slot2",
+      "name": "Shadowsong Cloak",
+      "id": 26574
+    },
+    {
+      "slot": "General8-Slot3",
+      "name": "Blood Orchid Katana",
+      "id": 24636
+    },
+    {
+      "slot": "General8-Slot4",
+      "name": "Beer Goggles",
+      "id": 7466
+    },
+    {
+      "slot": "General8-Slot5",
+      "name": "Singing Steel Boots",
+      "id": 4563
+    },
+    {
+      "slot": "General8-Slot6",
+      "name": "Nature's Melody",
+      "id": 7277
+    },
+    {
+      "slot": "General8-Slot7",
+      "name": "Boots of the Mosquito",
+      "id": 27836
+    },
+    {
+      "slot": "General8-Slot8",
+      "name": "Arx Key",
+      "id": 3650
+    },
+    {
+      "slot": "General8-Slot9",
+      "name": "Grobb Liquidised Meat",
+      "id": 9760
+    },
+    {
+      "slot": "General8-Slot10",
+      "name": "Halas 10lb Meat Pie",
+      "id": 9752
+    },
+    {
+      "slot": "General-Coin",
+      "name": "Currency",
+      "id": 0
+    },
+    {
+      "slot": "Held",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank1",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank1-Slot1",
+      "name": "Grey Suede Boots",
+      "id": 24616
+    },
+    {
+      "slot": "Bank1-Slot2",
+      "name": "Blazing Greaves of Fennin Ro",
+      "id": 11612
+    },
+    {
+      "slot": "Bank1-Slot3",
+      "name": "Scout Report",
+      "id": 29688
+    },
+    {
+      "slot": "Bank1-Slot4",
+      "name": "Thunderstone",
+      "id": 31331
+    },
+    {
+      "slot": "Bank1-Slot5",
+      "name": "Chrysanthemum Flower Katana",
+      "id": 10849
+    },
+    {
+      "slot": "Bank1-Slot6",
+      "name": "Feverblade - Bane of the Shissar",
+      "id": 7200
+    },
+    {
+      "slot": "Bank1-Slot7",
+      "name": "Fatebringer",
+      "id": 32615
+    },
+    {
+      "slot": "Bank1-Slot8",
+      "name": "Seal of Thoridain",
+      "id": 1422
+    },
+    {
+      "slot": "Bank1-Slot9",
+      "name": "Ring of the Dead",
+      "id": 13394
+    },
+    {
+      "slot": "Bank1-Slot10",
+      "name": "Di'zok Signet of Service",
+      "id": 5728
+    },
+    {
+      "slot": "Bank2",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank2-Slot1",
+      "name": "Eyepatch of Plunder",
+      "id": 30008
+    },
+    {
+      "slot": "Bank2-Slot2",
+      "name": "Ball of Velium",
+      "id": 25307
+    },
+    {
+      "slot": "Bank2-Slot3",
+      "name": "Jade Chokidai Prod",
+      "id": 7256
+    },
+    {
+      "slot": "Bank2-Slot4",
+      "name": "Blazing Boots of Fennin Ro",
+      "id": 11615
+    },
+    {
+      "slot": "Bank2-Slot5",
+      "name": "Owlbear Feathered Cap",
+      "id": 7148
+    },
+    {
+      "slot": "Bank2-Slot6",
+      "name": "Wurm Egg",
+      "id": 19138
+    },
+    {
+      "slot": "Bank2-Slot7",
+      "name": "Hammer of Battle",
+      "id": 25202
+    },
+    {
+      "slot": "Bank2-Slot8",
+      "name": "Sleeper's Key",
+      "id": 27265
+    },
+    {
+      "slot": "Bank2-Slot9",
+      "name": "Iksar Hide Cape",
+      "id": 5779
+    },
+    {
+      "slot": "Bank2-Slot10",
+      "name": "Katana of Flowing Water",
+      "id": 10859
+    },
+    {
+      "slot": "Bank3",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank3-Slot1",
+      "name": "Excellent Siren Scales",
+      "id": 25109
+    },
+    {
+      "slot": "Bank3-Slot2",
+      "name": "Runed Symbol",
+      "id": 31252
+    },
+    {
+      "slot": "Bank3-Slot3",
+      "name": "Unadorned Plate Gauntlets",
+      "id": 24962
+    },
+    {
+      "slot": "Bank3-Slot4",
+      "name": "Greater Dragon's Head",
+      "id": 25118
+    },
+    {
+      "slot": "Bank3-Slot5",
+      "name": "Giant Warrior Helmet",
+      "id": 29062
+    },
+    {
+      "slot": "Bank3-Slot6",
+      "name": "Ring of the Shissar",
+      "id": 19719
+    },
+    {
+      "slot": "Bank3-Slot7",
+      "name": "Crown of Resiliance",
+      "id": 31372
+    },
+    {
+      "slot": "Bank3-Slot8",
+      "name": "Melodic Charm",
+      "id": 31218
+    },
+    {
+      "slot": "Bank4",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank4-Slot1",
+      "name": "Corrupted Shissar Warsword",
+      "id": 7960
+    },
+    {
+      "slot": "Bank4-Slot2",
+      "name": "Bracelet of Woven Grass",
+      "id": 10360
+    },
+    {
+      "slot": "Bank4-Slot3",
+      "name": "Clawed Coat of Tyro",
+      "id": 29457
+    },
+    {
+      "slot": "Bank4-Slot4",
+      "name": "Robe of the Azure Sky",
+      "id": 10845
+    },
+    {
+      "slot": "Bank4-Slot5",
+      "name": "Gloves of the Brood",
+      "id": 19702
+    },
+    {
+      "slot": "Bank4-Slot6",
+      "name": "Spell: Elemental Maelstrom",
+      "id": 30403
+    },
+    {
+      "slot": "Bank4-Slot7",
+      "name": "Bracer of Benevolence",
+      "id": 29686
+    },
+    {
+      "slot": "Bank4-Slot8",
+      "name": "First Brood Talisman",
+      "id": 26012
+    },
+    {
+      "slot": "Bank5",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank5-Slot1",
+      "name": "Boots of the Vindicator",
+      "id": 25043
+    },
+    {
+      "slot": "Bank5-Slot2",
+      "name": "Wooden Flute",
+      "id": 13001
+    },
+    {
+      "slot": "Bank5-Slot3",
+      "name": "Bile Etched Obsidian Choker",
+      "id": 1550
+    },
+    {
+      "slot": "Bank5-Slot4",
+      "name": "Resonant Greaves",
+      "id": 31040
+    },
+    {
+      "slot": "Bank5-Slot5",
+      "name": "Medic's Pouch",
+      "id": 7472
+    },
+    {
+      "slot": "Bank5-Slot6",
+      "name": "Cracked Claw of Zlandicar",
+      "id": 26027
+    },
+    {
+      "slot": "Bank5-Slot7",
+      "name": "Leggings of Serenity",
+      "id": 30532
+    },
+    {
+      "slot": "Bank5-Slot8",
+      "name": "Spirit Wracked Cord",
+      "id": 5723
+    },
+    {
+      "slot": "Bank6",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank6-Slot1",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank6-Slot2",
+      "name": "Small Piece of Acrylia",
+      "id": 6098
+    },
+    {
+      "slot": "Bank6-Slot3",
+      "name": "Amygdalan Tendril",
+      "id": 5520
+    },
+    {
+      "slot": "Bank6-Slot4",
+      "name": "Braid of Golden Hair",
+      "id": 2579
+    },
+    {
+      "slot": "Bank6-Slot5",
+      "name": "Cloak of the Fearsome",
+      "id": 1551
+    },
+    {
+      "slot": "Bank6-Slot6",
+      "name": "Primal Velium Spear",
+      "id": 27322
+    },
+    {
+      "slot": "Bank6-Slot7",
+      "name": "Eye of the Owlbear Mother",
+      "id": 7149
+    },
+    {
+      "slot": "Bank6-Slot8",
+      "name": "Chestplate of Vindication",
+      "id": 25044
+    },
+    {
+      "slot": "Bank6-Slot9",
+      "name": "Voice of the Serpent",
+      "id": 8215
+    },
+    {
+      "slot": "Bank6-Slot10",
+      "name": "Collar of the Brood",
+      "id": 19700
+    },
+    {
+      "slot": "Bank7",
+      "name": "Velium Purifier",
+      "id": 17513
+    },
+    {
+      "slot": "Bank7-Slot1",
+      "name": "Small Piece of Velium",
+      "id": 22569
+    },
+    {
+      "slot": "Bank7-Slot2",
+      "name": "Small Piece of Velium",
+      "id": 22569
+    },
+    {
+      "slot": "Bank7-Slot3",
+      "name": "Velium Vial",
+      "id": 1561
+    },
+    {
+      "slot": "Bank7-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank8",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank8-Slot1",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank8-Slot2",
+      "name": "Essence of Darkness",
+      "id": 11594
+    },
+    {
+      "slot": "Bank8-Slot3",
+      "name": "Courier`s Potion",
+      "id": 5735
+    },
+    {
+      "slot": "Bank8-Slot4",
+      "name": "Crown of Rile",
+      "id": 10913
+    },
+    {
+      "slot": "Bank8-Slot5",
+      "name": "Temariel Vex",
+      "id": 32176
+    },
+    {
+      "slot": "Bank8-Slot6",
+      "name": "Zherozsh's Key",
+      "id": 19710
+    },
+    {
+      "slot": "Bank8-Slot7",
+      "name": "Zazuzh's Key",
+      "id": 19711
+    },
+    {
+      "slot": "Bank8-Slot8",
+      "name": "Regal band of Bathezid",
+      "id": 5727
+    },
+    {
+      "slot": "Bank8-Slot9",
+      "name": "Journeyman's Boots",
+      "id": 2300
+    },
+    {
+      "slot": "Bank8-Slot10",
+      "name": "Eye of Cazic Thule",
+      "id": 1547
+    },
+    {
+      "slot": "Bank9",
+      "name": "Mixing Bowl",
+      "id": 17906
+    },
+    {
+      "slot": "Bank9-Slot1",
+      "name": "Etching Tools",
+      "id": 8893
+    },
+    {
+      "slot": "Bank9-Slot2",
+      "name": "Small Bowl",
+      "id": 16939
+    },
+    {
+      "slot": "Bank9-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot4",
+      "name": "Large Bowl",
+      "id": 16942
+    },
+    {
+      "slot": "Bank10",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank10-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot3",
+      "name": "Velium Vial",
+      "id": 1561
+    },
+    {
+      "slot": "Bank10-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot5",
+      "name": "Velium Vial",
+      "id": 1561
+    },
+    {
+      "slot": "Bank10-Slot6",
+      "name": "Small Piece of Velium",
+      "id": 22569
+    },
+    {
+      "slot": "Bank10-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank11-Slot1",
+      "name": "Centi Meat",
+      "id": 32520
+    },
+    {
+      "slot": "Bank11-Slot2",
+      "name": "Ulthork Meat",
+      "id": 30093
+    },
+    {
+      "slot": "Bank11-Slot3",
+      "name": "Siren Parts",
+      "id": 22803
+    },
+    {
+      "slot": "Bank11-Slot4",
+      "name": "Centi Meat",
+      "id": 32520
+    },
+    {
+      "slot": "Bank11-Slot5",
+      "name": "Centi Toes",
+      "id": 32521
+    },
+    {
+      "slot": "Bank11-Slot6",
+      "name": "Iceclad Cutlassfish",
+      "id": 22767
+    },
+    {
+      "slot": "Bank11-Slot7",
+      "name": "Salty Whitefish",
+      "id": 22768
+    },
+    {
+      "slot": "Bank11-Slot8",
+      "name": "Iceclad Cutlassfish",
+      "id": 22767
+    },
+    {
+      "slot": "Bank11-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot10",
+      "name": "Salty Whitefish",
+      "id": 22768
+    },
+    {
+      "slot": "Bank12",
+      "name": "Deck of Spontaneous Generation",
+      "id": 17054
+    },
+    {
+      "slot": "Bank12-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank12-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank12-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank12-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank13-Slot1",
+      "name": "Words of Wealth: Top Left",
+      "id": 9500
+    },
+    {
+      "slot": "Bank13-Slot2",
+      "name": "Words of Wealth: Top Right",
+      "id": 9501
+    },
+    {
+      "slot": "Bank13-Slot3",
+      "name": "Words of Wealth: Bottom Left",
+      "id": 9502
+    },
+    {
+      "slot": "Bank13-Slot4",
+      "name": "Words of Wealth: Bottom Right",
+      "id": 9503
+    },
+    {
+      "slot": "Bank13-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank13-Slot6",
+      "name": "Metal Bits",
+      "id": 16905
+    },
+    {
+      "slot": "Bank13-Slot7",
+      "name": "High Quality Metal Bits",
+      "id": 22230
+    },
+    {
+      "slot": "Bank13-Slot8",
+      "name": "Metal Bits",
+      "id": 16905
+    },
+    {
+      "slot": "Bank13-Slot9",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank13-Slot10",
+      "name": "Velium Rings",
+      "id": 22566
+    },
+    {
+      "slot": "Bank14",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank14-Slot1",
+      "name": "Large Brick of Acrylia Ore",
+      "id": 10424
+    },
+    {
+      "slot": "Bank14-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot5",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank14-Slot6",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank14-Slot7",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank14-Slot8",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank14-Slot9",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank14-Slot10",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank15",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank15-Slot1",
+      "name": "Bracer of Benevolence",
+      "id": 29686
+    },
+    {
+      "slot": "Bank15-Slot2",
+      "name": "The Scepter of Shadows",
+      "id": 22198
+    },
+    {
+      "slot": "Bank15-Slot3",
+      "name": "North Wing Key",
+      "id": 28877
+    },
+    {
+      "slot": "Bank15-Slot4",
+      "name": "Shroud of the Dar Brood",
+      "id": 27261
+    },
+    {
+      "slot": "Bank15-Slot5",
+      "name": "Green Flower of Functionality",
+      "id": 6816
+    },
+    {
+      "slot": "Bank15-Slot6",
+      "name": "Boots of the Ancients",
+      "id": 29455
+    },
+    {
+      "slot": "Bank15-Slot7",
+      "name": "Girdle of Dark Power",
+      "id": 31364
+    },
+    {
+      "slot": "Bank15-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank16-Slot1",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank16-Slot2",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank16-Slot3",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank16-Slot4",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank16-Slot5",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank16-Slot6",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank16-Slot7",
+      "name": "Large Brick of Acrylia Ore",
+      "id": 10424
+    },
+    {
+      "slot": "Bank16-Slot8",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank16-Slot9",
+      "name": "Large Brick of Acrylia Ore",
+      "id": 10424
+    },
+    {
+      "slot": "Bank16-Slot10",
+      "name": "Block of Velium",
+      "id": 22097
+    },
+    {
+      "slot": "Bank17",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank17-Slot1",
+      "name": "10 Dose Blood of the Wolf",
+      "id": 14534
+    },
+    {
+      "slot": "Bank17-Slot2",
+      "name": "Tri-Plated Golden Hackle Hammer",
+      "id": 30502
+    },
+    {
+      "slot": "Bank17-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank18-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot9",
+      "name": "Tolapumj's Robe",
+      "id": 1624
+    },
+    {
+      "slot": "Bank18-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank19-Slot1",
+      "name": "Child's Tear",
+      "id": 1673
+    },
+    {
+      "slot": "Bank19-Slot2",
+      "name": "Fishing Bait",
+      "id": 13101
+    },
+    {
+      "slot": "Bank19-Slot3",
+      "name": "Fishing Pole",
+      "id": 13100
+    },
+    {
+      "slot": "Bank19-Slot4",
+      "name": "Fishing Pole",
+      "id": 13100
+    },
+    {
+      "slot": "Bank19-Slot5",
+      "name": "Seahorse Scales",
+      "id": 12999
+    },
+    {
+      "slot": "Bank19-Slot6",
+      "name": "Griegs Key",
+      "id": 27650
+    },
+    {
+      "slot": "Bank19-Slot7",
+      "name": "Earring of Resistance",
+      "id": 26512
+    },
+    {
+      "slot": "Bank19-Slot8",
+      "name": "Crystallized Serpent Eye",
+      "id": 30565
+    },
+    {
+      "slot": "Bank19-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank20-Slot1",
+      "name": "Smithing Chisel",
+      "id": 7052
+    },
+    {
+      "slot": "Bank20-Slot2",
+      "name": "File",
+      "id": 12011
+    },
+    {
+      "slot": "Bank20-Slot3",
+      "name": "Smithy Hammer",
+      "id": 10489
+    },
+    {
+      "slot": "Bank20-Slot4",
+      "name": "Velium Smithy Hammer",
+      "id": 10425
+    },
+    {
+      "slot": "Bank20-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot7",
+      "name": "Folded Sheet of Velium",
+      "id": 22096
+    },
+    {
+      "slot": "Bank20-Slot8",
+      "name": "Coldain Velium Temper",
+      "id": 22564
+    },
+    {
+      "slot": "Bank20-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank21-Slot1",
+      "name": "Soft Fur Padding",
+      "id": 8894
+    },
+    {
+      "slot": "Bank21-Slot2",
+      "name": "Drake Egg",
+      "id": 19137
+    },
+    {
+      "slot": "Bank21-Slot3",
+      "name": "Soft Fur Padding",
+      "id": 8894
+    },
+    {
+      "slot": "Bank21-Slot4",
+      "name": "Burin",
+      "id": 1854
+    },
+    {
+      "slot": "Bank21-Slot5",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank21-Slot6",
+      "name": "Manticore Mane",
+      "id": 30091
+    },
+    {
+      "slot": "Bank21-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank22-Slot1",
+      "name": "Small Piece of Acrylia",
+      "id": 6098
+    },
+    {
+      "slot": "Bank22-Slot2",
+      "name": "Small Piece of Acrylia",
+      "id": 6098
+    },
+    {
+      "slot": "Bank22-Slot3",
+      "name": "Chunk of Condensed Shadow",
+      "id": 10697
+    },
+    {
+      "slot": "Bank22-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot5",
+      "name": "Chunk of Condensed Shadow",
+      "id": 10697
+    },
+    {
+      "slot": "Bank22-Slot6",
+      "name": "Small Piece of Velium",
+      "id": 22569
+    },
+    {
+      "slot": "Bank22-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot10",
+      "name": "Block of Velium",
+      "id": 22097
+    },
+    {
+      "slot": "Bank23",
+      "name": "Fletching Kit",
+      "id": 17910
+    },
+    {
+      "slot": "Bank23-Slot1",
+      "name": "Faceted Emerald",
+      "id": 8892
+    },
+    {
+      "slot": "Bank23-Slot2",
+      "name": "Faceted Diamond",
+      "id": 8890
+    },
+    {
+      "slot": "Bank23-Slot3",
+      "name": "Faceted Sapphire",
+      "id": 8891
+    },
+    {
+      "slot": "Bank23-Slot4",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank23-Slot5",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank23-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank24-Slot1",
+      "name": "Large Brick of Acrylia Ore",
+      "id": 10424
+    },
+    {
+      "slot": "Bank24-Slot2",
+      "name": "Block of Velium",
+      "id": 22097
+    },
+    {
+      "slot": "Bank24-Slot3",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank24-Slot4",
+      "name": "Large Brick of Acrylia Ore",
+      "id": 10424
+    },
+    {
+      "slot": "Bank24-Slot5",
+      "name": "Block of Velium",
+      "id": 22097
+    },
+    {
+      "slot": "Bank24-Slot6",
+      "name": "Block of Acrylia Ore",
+      "id": 10420
+    },
+    {
+      "slot": "Bank24-Slot7",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank24-Slot8",
+      "name": "Block of Velium",
+      "id": 22097
+    },
+    {
+      "slot": "Bank24-Slot9",
+      "name": "Block of Velium",
+      "id": 22097
+    },
+    {
+      "slot": "Bank24-Slot10",
+      "name": "Block of Velium",
+      "id": 22097
+    },
+    {
+      "slot": "Bank25",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank25-Slot1",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot2",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot3",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot4",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot5",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot6",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot7",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot8",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot9",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank25-Slot10",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank26",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank26-Slot1",
+      "name": "Small Brick of Acrylia Ore",
+      "id": 10423
+    },
+    {
+      "slot": "Bank26-Slot2",
+      "name": "Shissar Blood",
+      "id": 22915
+    },
+    {
+      "slot": "Bank26-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot4",
+      "name": "Vampyre Fang",
+      "id": 2691
+    },
+    {
+      "slot": "Bank26-Slot5",
+      "name": "Maelin's Magical Concoction",
+      "id": 32700
+    },
+    {
+      "slot": "Bank26-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot7",
+      "name": "Maelin's Magical Concoction",
+      "id": 32700
+    },
+    {
+      "slot": "Bank26-Slot8",
+      "name": "Clump of Dough",
+      "id": 13090
+    },
+    {
+      "slot": "Bank26-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank27-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot5",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank27-Slot6",
+      "name": "Large Brick of Velium",
+      "id": 22094
+    },
+    {
+      "slot": "Bank27-Slot7",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank27-Slot8",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank27-Slot9",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank27-Slot10",
+      "name": "Small Brick of Velium",
+      "id": 22093
+    },
+    {
+      "slot": "Bank28",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank28-Slot1",
+      "name": "Crimson Potion",
+      "id": 14518
+    },
+    {
+      "slot": "Bank28-Slot2",
+      "name": "Crimson Potion",
+      "id": 14518
+    },
+    {
+      "slot": "Bank28-Slot3",
+      "name": "Crimson Potion",
+      "id": 14518
+    },
+    {
+      "slot": "Bank28-Slot4",
+      "name": "Crystallized Pumice",
+      "id": 14524
+    },
+    {
+      "slot": "Bank28-Slot5",
+      "name": "Shrieker Fluid",
+      "id": 32507
+    },
+    {
+      "slot": "Bank28-Slot6",
+      "name": "Crystallized Pumice",
+      "id": 14524
+    },
+    {
+      "slot": "Bank28-Slot7",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank28-Slot8",
+      "name": "Shrieker Spores",
+      "id": 32405
+    },
+    {
+      "slot": "Bank28-Slot9",
+      "name": "Key of the Misplaced",
+      "id": 20912
+    },
+    {
+      "slot": "Bank28-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank29-Slot1",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot2",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot3",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot4",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot5",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot6",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot7",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot8",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot9",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank29-Slot10",
+      "name": "Silver Thread",
+      "id": 12095
+    },
+    {
+      "slot": "Bank30",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank30-Slot1",
+      "name": "Heady Kiola",
+      "id": 16480
+    },
+    {
+      "slot": "Bank30-Slot2",
+      "name": "Silk Swatch",
+      "id": 16482
+    },
+    {
+      "slot": "Bank30-Slot3",
+      "name": "Crystalline Silk Swatch",
+      "id": 25663
+    },
+    {
+      "slot": "Bank30-Slot4",
+      "name": "Vial of Viscous Mana",
+      "id": 10250
+    },
+    {
+      "slot": "Bank30-Slot5",
+      "name": "Crystalline Silk Swatch",
+      "id": 25663
+    },
+    {
+      "slot": "Bank30-Slot6",
+      "name": "Vial of Viscous Mana",
+      "id": 10250
+    },
+    {
+      "slot": "Bank30-Slot7",
+      "name": "Crystalline Silk Swatch",
+      "id": 25663
+    },
+    {
+      "slot": "Bank30-Slot8",
+      "name": "Pant Pattern",
+      "id": 13811
+    },
+    {
+      "slot": "Bank30-Slot9",
+      "name": "Glass Shard",
+      "id": 16903
+    },
+    {
+      "slot": "Bank30-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank1-Slot1",
+      "name": "Djarns Amethyst Ring",
+      "id": 10366
+    },
+    {
+      "slot": "SharedBank1-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot3",
+      "name": "Diamond",
+      "id": 10037
+    },
+    {
+      "slot": "SharedBank1-Slot4",
+      "name": "Puppet Strings",
+      "id": 11643
+    },
+    {
+      "slot": "SharedBank1-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank1-Slot9",
+      "name": "Fungus Covered Great Staff",
+      "id": 2882
+    },
+    {
+      "slot": "SharedBank1-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank2",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank2-Slot1",
+      "name": "Earring of Living Slime",
+      "id": 27939
+    },
+    {
+      "slot": "SharedBank2-Slot2",
+      "name": "Sceptre of Destruction",
+      "id": 1154
+    },
+    {
+      "slot": "SharedBank2-Slot3",
+      "name": "Collar of the Brood",
+      "id": 19700
+    },
+    {
+      "slot": "SharedBank2-Slot4",
+      "name": "Trakasaur's Tooth",
+      "id": 11983
+    },
+    {
+      "slot": "SharedBank2-Slot5",
+      "name": "Gauntlets of Mortality",
+      "id": 26026
+    },
+    {
+      "slot": "SharedBank2-Slot6",
+      "name": "Hammered Golden Hoop",
+      "id": 5716
+    },
+    {
+      "slot": "SharedBank2-Slot7",
+      "name": "Immaculate Shell Horn",
+      "id": 28510
+    },
+    {
+      "slot": "SharedBank2-Slot8",
+      "name": "Mask of the Dragon Slayer",
+      "id": 29319
+    },
+    {
+      "slot": "SharedBank2-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank2-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3",
+      "name": "Darkwood Trunk",
+      "id": 17703
+    },
+    {
+      "slot": "SharedBank3-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank3-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank4-Slot1",
+      "name": "Sword of the Morning",
+      "id": 5158
+    },
+    {
+      "slot": "SharedBank4-Slot2",
+      "name": "Sarnak Summoner`s Dagger",
+      "id": 5759
+    },
+    {
+      "slot": "SharedBank4-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot4",
+      "name": "Seahorse Scales",
+      "id": 12999
+    },
+    {
+      "slot": "SharedBank4-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank5-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot10",
+      "name": "Cone of the Mystics",
+      "id": 14746
+    },
+    {
+      "slot": "SharedBank6",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank6-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank7-Slot1",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "SharedBank7-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot3",
+      "name": "Vile Sarnak Brew",
+      "id": 5805
+    },
+    {
+      "slot": "SharedBank7-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot5",
+      "name": "A Sandwich of Foul Smelling Herbs",
+      "id": 5803
+    },
+    {
+      "slot": "SharedBank7-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank8-Slot1",
+      "name": "a red throne",
+      "id": 24554
+    },
+    {
+      "slot": "SharedBank8-Slot2",
+      "name": "a black throne",
+      "id": 24550
+    },
+    {
+      "slot": "SharedBank8-Slot3",
+      "name": "a white throne",
+      "id": 24562
+    },
+    {
+      "slot": "SharedBank8-Slot4",
+      "name": "a blue throne",
+      "id": 24558
+    },
+    {
+      "slot": "SharedBank8-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot6",
+      "name": "a white crown",
+      "id": 24563
+    },
+    {
+      "slot": "SharedBank8-Slot7",
+      "name": "a blue crown",
+      "id": 24559
+    },
+    {
+      "slot": "SharedBank8-Slot8",
+      "name": "a black crown",
+      "id": 24551
+    },
+    {
+      "slot": "SharedBank8-Slot9",
+      "name": "a black knight",
+      "id": 24552
+    },
+    {
+      "slot": "SharedBank8-Slot10",
+      "name": "a blue knight",
+      "id": 24560
+    },
+    {
+      "slot": "SharedBank9",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank9-Slot1",
+      "name": "a red knight",
+      "id": 24556
+    },
+    {
+      "slot": "SharedBank9-Slot2",
+      "name": "a white knight",
+      "id": 24564
+    },
+    {
+      "slot": "SharedBank9-Slot3",
+      "name": "a white squire",
+      "id": 24565
+    },
+    {
+      "slot": "SharedBank9-Slot4",
+      "name": "a blue squire",
+      "id": 24561
+    },
+    {
+      "slot": "SharedBank9-Slot5",
+      "name": "a red squire",
+      "id": 24557
+    },
+    {
+      "slot": "SharedBank9-Slot6",
+      "name": "a black squire",
+      "id": 24553
+    },
+    {
+      "slot": "SharedBank9-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank10-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot2",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot4",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot6",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot7",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "SharedBank10-Slot8",
+      "name": "Fuzzlecutter Formula 5000",
+      "id": 12260
+    },
+    {
+      "slot": "SharedBank10-Slot9",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "SharedBank10-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank11",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank12",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank13",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank14",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank15",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank16",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank17",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank18",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank19",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank20",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank21",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank22",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank23",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank24",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank25",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank26",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank27",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank28",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank29",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank30",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank-Coin",
+      "name": "Currency",
+      "id": 0
+    }
+  ],
+  "pinnacle_bosses": {
+    "Classic": [
+      {
+        "boss": "Lord Nagafen",
+        "id": 32040,
+        "url": "https://www.pqdi.cc/npc/32040",
+        "first_kill": "Thu Aug 14 15:37:29 2025",
+        "total_kills_or_lockouts": 3
+      },
+      {
+        "boss": "Lady Vox",
+        "id": 73057,
+        "url": "https://www.pqdi.cc/npc/73057",
+        "first_kill": "Thu Aug 14 16:25:17 2025",
+        "total_kills_or_lockouts": 5
+      }
+    ],
+    "Kunark": [
+      {
+        "boss": "Phara Dar",
+        "id": 108510,
+        "url": "https://www.pqdi.cc/npc/108510",
+        "first_kill": "Sat Mar 29 21:59:05 2025",
+        "total_kills_or_lockouts": 19
+      }
+    ],
+    "Velious": [
+      {
+        "boss": "Tunare",
+        "id": 127002,
+        "url": "https://www.pqdi.cc/npc/127002",
+        "first_kill": "Tue Aug 19 23:32:57 2025",
+        "total_kills_or_lockouts": 22
+      },
+      {
+        "boss": "Vulak`Aerr",
+        "id": 124128,
+        "url": "https://www.pqdi.cc/npc/124128",
+        "first_kill": "Sat Sep 13 22:23:35 2025",
+        "total_kills_or_lockouts": 10
+      },
+      {
+        "boss": "The Avatar of War",
+        "id": 113244,
+        "url": "https://www.pqdi.cc/npc/113244",
+        "first_kill": "Mon May 12 20:49:53 2025",
+        "total_kills_or_lockouts": 25
+      }
+    ],
+    "Luclin": [
+      {
+        "boss": "Aten Ha Ra",
+        "id": 158436,
+        "url": "https://www.pqdi.cc/npc/158436",
+        "first_kill": "Tue Jan 13 23:43:34 2026",
+        "total_kills_or_lockouts": 6
+      }
+    ],
+    "Planes of Power": [
+      {
+        "boss": "Quarm",
+        "id": null,
+        "url": null,
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ]
+  },
+  "stats": {
+    "total_deaths": 433,
+    "resurrections_accepted": 276,
+    "environmental_or_bleeding_deaths": 11,
+    "total_level_dings": 58,
+    "max_level": 60,
+    "total_aas_earned": 226,
+    "total_lockouts": 1887,
+    "total_guild_kill_announcements": 971,
+    "top_zones_by_entries": [
+      [
+        "The Dawnshroud Peaks",
+        782
+      ],
+      [
+        "Sanctus Seru",
+        735
+      ],
+      [
+        "Western Wastes",
+        564
+      ],
+      [
+        "The Wakening Land",
+        479
+      ],
+      [
+        "Kael Drakkel",
+        432
+      ],
+      [
+        "The Fungus Grove",
+        387
+      ],
+      [
+        "The Maiden's Eye",
+        324
+      ],
+      [
+        "Nexus",
+        317
+      ],
+      [
+        "The Umbral Plains",
+        278
+      ],
+      [
+        "Vex Thal",
+        276
+      ]
+    ],
+    "top_zones_by_deaths": [
+      [
+        "The Fungus Grove",
+        84
+      ],
+      [
+        "The City of Mist",
+        53
+      ],
+      [
+        "Plane of Fear (Instanced)",
+        31
+      ],
+      [
+        "The Maiden's Eye",
+        30
+      ],
+      [
+        "Vex Thal",
+        29
+      ],
+      [
+        "Temple of Veeshan",
+        26
+      ],
+      [
+        "Kael Drakkel",
+        22
+      ],
+      [
+        "Sanctus Seru",
+        15
+      ],
+      [
+        "Sleeper's Tomb",
+        11
+      ],
+      [
+        "Grieg's End",
+        11
+      ]
+    ],
+    "top_zones_by_aas": [
+      [
+        "The Fungus Grove",
+        125
+      ],
+      [
+        "Grieg's End",
+        31
+      ],
+      [
+        "The Maiden's Eye",
+        14
+      ],
+      [
+        "Veksar",
+        10
+      ],
+      [
+        "Ssraeshza Temple",
+        7
+      ],
+      [
+        "Ruins of Sebilis",
+        6
+      ],
+      [
+        "Acrylia Caverns",
+        6
+      ],
+      [
+        "The Deep",
+        5
+      ],
+      [
+        "Plane of Mischief",
+        5
+      ],
+      [
+        "Akheva Ruins",
+        4
+      ]
+    ],
+    "top_npcs_slain": [
+      {
+        "name": "orc centurion",
+        "count": 132,
+        "id": 9129,
+        "level": 3,
+        "hp": 48,
+        "url": "https://www.pqdi.cc/npc/9129",
+        "zone": "West Freeport"
+      },
+      {
+        "name": "Eye of Steps",
+        "count": 115,
+        "id": null,
+        "level": null,
+        "hp": null,
+        "url": null,
+        "zone": null
+      },
+      {
+        "name": "Dervish Cutthroat",
+        "count": 70,
+        "id": 21080,
+        "level": 10,
+        "hp": 192,
+        "url": "https://www.pqdi.cc/npc/21080",
+        "zone": "West Commonlands"
+      },
+      {
+        "name": "caiman",
+        "count": 51,
+        "id": 37027,
+        "level": 11,
+        "hp": 280,
+        "url": "https://www.pqdi.cc/npc/37027",
+        "zone": "Oasis of Marr"
+      },
+      {
+        "name": "deepwater crocodile",
+        "count": 34,
+        "id": 37108,
+        "level": 17,
+        "hp": 530,
+        "url": "https://www.pqdi.cc/npc/37108",
+        "zone": "Oasis of Marr"
+      },
+      {
+        "name": "crocodile",
+        "count": 29,
+        "id": 37042,
+        "level": 13,
+        "hp": 360,
+        "url": "https://www.pqdi.cc/npc/37042",
+        "zone": "Oasis of Marr"
+      },
+      {
+        "name": "young kodiak",
+        "count": 24,
+        "id": 20031,
+        "level": 9,
+        "hp": 220,
+        "url": "https://www.pqdi.cc/npc/20031",
+        "zone": "Kithicor Forest"
+      },
+      {
+        "name": "orc oracle",
+        "count": 24,
+        "id": 22052,
+        "level": 8,
+        "hp": 190,
+        "url": "https://www.pqdi.cc/npc/22052",
+        "zone": "East Commonlands"
+      },
+      {
+        "name": "orc apprentice",
+        "count": 23,
+        "id": 10008,
+        "level": 1,
+        "hp": 20,
+        "url": "https://www.pqdi.cc/npc/10008",
+        "zone": "East Freeport"
+      },
+      {
+        "name": "willowisp",
+        "count": 22,
+        "id": 4154,
+        "level": 9,
+        "hp": 220,
+        "url": "https://www.pqdi.cc/npc/4154",
+        "zone": "Qeynos Hills"
+      }
+    ],
+    "pvp_nemesis": [
+      {
+        "name": "Berkodo",
+        "count": 7
+      }
+    ],
+    "top_pve_nemesis": [
+      {
+        "name": "a Shik`nar Forager",
+        "count": 24,
+        "id": 157022,
+        "level": 53,
+        "zone": "The Fungus Grove",
+        "url": "https://www.pqdi.cc/npc/157022"
+      },
+      {
+        "name": "Shik`nar Soldier",
+        "count": 13,
+        "id": 157021,
+        "level": 51,
+        "zone": "The Fungus Grove",
+        "url": "https://www.pqdi.cc/npc/157021"
+      },
+      {
+        "name": "gyrating goo",
+        "count": 12,
+        "id": 90006,
+        "level": 43,
+        "zone": "The City of Mist",
+        "url": "https://www.pqdi.cc/npc/90006"
+      },
+      {
+        "name": "Fright",
+        "count": 11,
+        "id": 72004,
+        "level": 55,
+        "zone": "Plane of Fear",
+        "url": "https://www.pqdi.cc/npc/72004"
+      },
+      {
+        "name": "a Chakta Fungusbeast",
+        "count": 10,
+        "id": 157071,
+        "level": 46,
+        "zone": "The Fungus Grove",
+        "url": "https://www.pqdi.cc/npc/157071"
+      }
+    ],
+    "top_tell_recipients": [
+      [
+        "Pinkiy",
+        488
+      ],
+      [
+        "Poep",
+        150
+      ],
+      [
+        "pinkiy",
+        101
+      ],
+      [
+        "Tweedledum",
+        96
+      ],
+      [
+        "Cephei",
+        96
+      ],
+      [
+        "Forbin",
+        69
+      ],
+      [
+        "Tsalwin",
+        67
+      ],
+      [
+        "Soulys",
+        61
+      ],
+      [
+        "aeolus",
+        60
+      ],
+      [
+        "Artifact",
+        60
+      ]
+    ],
+    "top_tell_senders": [
+      [
+        "Pinkiy",
+        633
+      ],
+      [
+        "Bizzznawa",
+        426
+      ],
+      [
+        "Tavir",
+        399
+      ],
+      [
+        "Poep",
+        273
+      ],
+      [
+        "Cephei",
+        178
+      ],
+      [
+        "Soulys",
+        151
+      ],
+      [
+        "Artifact",
+        149
+      ],
+      [
+        "Gage",
+        136
+      ],
+      [
+        "Forbin",
+        129
+      ],
+      [
+        "Tweedledum",
+        120
+      ]
+    ],
+    "top_group_companions": [
+      [
+        "Tsalwin",
+        1109
+      ],
+      [
+        "Buffin",
+        584
+      ],
+      [
+        "Pinkiy",
+        322
+      ],
+      [
+        "Beta",
+        254
+      ],
+      [
+        "Destu",
+        245
+      ],
+      [
+        "Evocate",
+        239
+      ],
+      [
+        "Forbin",
+        232
+      ],
+      [
+        "Sage",
+        180
+      ],
+      [
+        "Jaykits",
+        178
+      ],
+      [
+        "Nature",
+        169
+      ]
+    ],
+    "top_raid_companions": [
+      [
+        "Tsalwin",
+        15944
+      ],
+      [
+        "Poep",
+        9462
+      ],
+      [
+        "Lyric",
+        6751
+      ],
+      [
+        "Soulys",
+        5633
+      ],
+      [
+        "Nfidell",
+        4692
+      ],
+      [
+        "Jaykits",
+        3391
+      ],
+      [
+        "Bluesage",
+        3226
+      ],
+      [
+        "Audari",
+        2492
+      ],
+      [
+        "Artifact",
+        1954
+      ],
+      [
+        "Lowgrade",
+        1889
+      ]
+    ],
+    "top_looters_seen": [
+      [
+        "Destroy",
+        1548
+      ],
+      [
+        "Cephei",
+        1513
+      ],
+      [
+        "Kodyak",
+        702
+      ],
+      [
+        "Varrek",
+        673
+      ],
+      [
+        "Tweedledum",
+        613
+      ],
+      [
+        "Nature",
+        570
+      ],
+      [
+        "Tsalwin",
+        511
+      ],
+      [
+        "Lizlemon",
+        462
+      ],
+      [
+        "Buffin",
+        424
+      ],
+      [
+        "Pinkiy",
+        327
+      ]
+    ],
+    "top_spells_or_songs": [],
+    "top_songs_memorized": [
+      [
+        "Selo`s Accelerating Chorus",
+        875
+      ],
+      [
+        "Largo`s Absonant Binding",
+        641
+      ],
+      [
+        "Fufil`s Curtailing Chant",
+        541
+      ],
+      [
+        "Solon's Bewitching Bravura",
+        489
+      ],
+      [
+        "Occlusion of Sound",
+        470
+      ],
+      [
+        "McVaxius` Rousing Rondo",
+        427
+      ],
+      [
+        "Cassindra`s Chorus of Clarity",
+        405
+      ],
+      [
+        "Tuyen`s Chant of Flame",
+        388
+      ],
+      [
+        "Cantata of Replenishment",
+        369
+      ],
+      [
+        "Kelin`s Lugubrious Lament",
+        363
+      ],
+      [
+        "Kazumi's Note of Preservation",
+        348
+      ],
+      [
+        "Chords of Dissonance",
+        322
+      ],
+      [
+        "Denon`s Disruptive Discord",
+        321
+      ],
+      [
+        "Chorus of Replenishment",
+        298
+      ],
+      [
+        "Shauri`s Sonorous Clouding",
+        292
+      ]
+    ],
+    "bard_twisting": {
+      "selo_pulses": 83795,
+      "songs_completed": 178904,
+      "missed_notes": 28409
+    },
+    "cleric_stats": {
+      "complete_healing_casts": 0,
+      "rezzes_cast": 0,
+      "divine_intervention_casts": 0,
+      "group_heals": 0,
+      "aegolism_casts": 0,
+      "heroic_bond_casts": 0
+    },
+    "necro_stats": {
+      "twitch_casts": 0,
+      "dots_cast": 0,
+      "lifetaps_cast": 0,
+      "feign_death_casts": 0,
+      "pet_summons": 0,
+      "rezzes_cast": 0
+    },
+    "top_raid_boss_kills_overall": [
+      [
+        "Derakor the Vindicator",
+        38
+      ],
+      [
+        "King Tormax",
+        36
+      ],
+      [
+        "The Statue of Rallos Zek",
+        36
+      ],
+      [
+        "The Idol of Rallos Zek",
+        27
+      ],
+      [
+        "Dozekar the Cursed",
+        26
+      ],
+      [
+        "The Avatar of War",
+        25
+      ],
+      [
+        "Essedera",
+        23
+      ],
+      [
+        "Lepethida",
+        22
+      ],
+      [
+        "Tunare",
+        22
+      ],
+      [
+        "Ventani the Warder",
+        22
+      ],
+      [
+        "Tavekalem",
+        21
+      ],
+      [
+        "Krigara",
+        21
+      ],
+      [
+        "Casalen",
+        21
+      ],
+      [
+        "Nanzata the Warder",
+        21
+      ],
+      [
+        "Hraashna the Warder",
+        21
+      ]
+    ]
+  },
+  "level_timeline_firsts": [
+    {
+      "timestamp": "Tue Sep 24 09:15:11 2024",
+      "level": 6,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 04 11:44:08 2025",
+      "level": 7,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 04 12:04:37 2025",
+      "level": 8,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 18 09:58:25 2025",
+      "level": 9,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 18 10:17:38 2025",
+      "level": 10,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 18 10:40:13 2025",
+      "level": 11,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 18 11:07:47 2025",
+      "level": 12,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 18 11:46:11 2025",
+      "level": 13,
+      "zone": "East Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jan 19 22:16:38 2025",
+      "level": 14,
+      "zone": "West Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jan 19 22:59:29 2025",
+      "level": 15,
+      "zone": "West Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jan 20 10:01:48 2025",
+      "level": 16,
+      "zone": "West Commonlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Mar 09 01:24:09 2025",
+      "level": 17,
+      "zone": "Oasis of Marr",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Mar 09 03:07:06 2025",
+      "level": 18,
+      "zone": "Oasis of Marr",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 10 13:52:23 2025",
+      "level": 19,
+      "zone": "Oasis of Marr",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 10 17:47:11 2025",
+      "level": 20,
+      "zone": "Oasis of Marr",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 01:12:13 2025",
+      "level": 21,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 09:43:02 2025",
+      "level": 22,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 09:59:18 2025",
+      "level": 23,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 10:38:45 2025",
+      "level": 24,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 11:14:24 2025",
+      "level": 25,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 12:41:15 2025",
+      "level": 26,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 13:17:36 2025",
+      "level": 27,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 14:16:49 2025",
+      "level": 28,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 13 15:11:00 2025",
+      "level": 29,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Mar 14 11:27:51 2025",
+      "level": 30,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Mar 14 12:23:03 2025",
+      "level": 31,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Mar 14 13:12:16 2025",
+      "level": 32,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Mar 14 21:00:05 2025",
+      "level": 33,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Mar 15 11:05:00 2025",
+      "level": 34,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Mar 15 14:25:33 2025",
+      "level": 35,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Mar 15 15:23:16 2025",
+      "level": 36,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Mar 15 16:08:41 2025",
+      "level": 37,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Mar 15 17:12:57 2025",
+      "level": 38,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Mar 15 18:30:06 2025",
+      "level": 39,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Mar 16 01:04:28 2025",
+      "level": 40,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Mar 16 02:21:42 2025",
+      "level": 41,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Mar 16 18:10:32 2025",
+      "level": 42,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Mar 16 19:05:15 2025",
+      "level": 43,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 17 00:08:55 2025",
+      "level": 44,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 17 00:35:20 2025",
+      "level": 45,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 17 09:36:50 2025",
+      "level": 46,
+      "zone": "an Arena (PvP) area",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 17 10:55:51 2025",
+      "level": 47,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 17 12:29:56 2025",
+      "level": 48,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 17 20:31:56 2025",
+      "level": 49,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 17 21:16:47 2025",
+      "level": 50,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Mar 18 23:36:30 2025",
+      "level": 51,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Mar 19 10:20:52 2025",
+      "level": 52,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Mar 19 11:49:16 2025",
+      "level": 53,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Mar 19 22:58:12 2025",
+      "level": 54,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Mar 20 19:01:54 2025",
+      "level": 55,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Mar 21 00:13:21 2025",
+      "level": 56,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Mar 21 23:50:07 2025",
+      "level": 57,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Mar 23 15:43:43 2025",
+      "level": 58,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Mar 24 15:12:38 2025",
+      "level": 59,
+      "zone": "The City of Mist",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Mar 25 00:07:38 2025",
+      "level": 60,
+      "zone": "The City of Mist",
+      "first_time": true
+    }
+  ],
+  "aa_events": [
+    {
+      "timestamp": "Sat Aug 02 10:44:40 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Aug 02 12:29:43 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 03 13:20:14 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 03 14:40:51 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 03 16:14:18 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 03 21:54:14 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 03 23:21:07 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Aug 04 00:44:13 2025",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 06 12:55:20 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 06 14:45:02 2025",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 06 16:05:35 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 06 22:12:53 2025",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Aug 07 18:45:44 2025",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Aug 08 00:22:28 2025",
+      "banked": 4,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Fri Aug 08 01:54:06 2025",
+      "banked": 1,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Mon Aug 11 23:22:00 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Aug 11 23:55:19 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Aug 14 20:44:42 2025",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Aug 15 01:04:01 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Aug 27 22:17:41 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Aug 27 23:13:55 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Aug 30 16:36:25 2025",
+      "banked": 1,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sun Aug 31 01:50:13 2025",
+      "banked": 2,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Sun Aug 31 21:44:38 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 31 22:35:47 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 31 23:45:59 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Sep 03 22:11:31 2025",
+      "banked": 6,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Fri Sep 12 00:27:44 2025",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Sep 12 22:23:50 2025",
+      "banked": 2,
+      "zone": "Temple of Veeshan"
+    },
+    {
+      "timestamp": "Thu Sep 25 22:11:07 2025",
+      "banked": 3,
+      "zone": "Veeshan's Peak"
+    },
+    {
+      "timestamp": "Wed Oct 01 22:47:32 2025",
+      "banked": 4,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Fri Oct 03 23:42:08 2025",
+      "banked": 5,
+      "zone": "The Great Divide"
+    },
+    {
+      "timestamp": "Wed Oct 15 00:41:32 2025",
+      "banked": 6,
+      "zone": "Dragon Necropolis"
+    },
+    {
+      "timestamp": "Sat Oct 18 23:29:15 2025",
+      "banked": 7,
+      "zone": "Temple of Veeshan"
+    },
+    {
+      "timestamp": "Mon Oct 20 17:29:59 2025",
+      "banked": 8,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Sun Nov 02 23:02:56 2025",
+      "banked": 9,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Sun Nov 02 23:30:02 2025",
+      "banked": 1,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Sun Nov 02 23:57:20 2025",
+      "banked": 2,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Tue Nov 18 16:27:21 2025",
+      "banked": 3,
+      "zone": "Kael Drakkel"
+    },
+    {
+      "timestamp": "Fri Nov 21 00:57:11 2025",
+      "banked": 1,
+      "zone": "Akheva Ruins"
+    },
+    {
+      "timestamp": "Sat Nov 22 02:06:24 2025",
+      "banked": 2,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Sun Nov 23 00:56:23 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Nov 23 01:21:12 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Nov 23 21:40:47 2025",
+      "banked": 5,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sun Nov 23 22:19:20 2025",
+      "banked": 6,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sun Nov 23 22:56:08 2025",
+      "banked": 7,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Nov 26 22:50:40 2025",
+      "banked": 2,
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Sat Dec 06 19:54:03 2025",
+      "banked": 3,
+      "zone": "The Grey"
+    },
+    {
+      "timestamp": "Sun Dec 07 22:26:19 2025",
+      "banked": 4,
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Wed Dec 10 17:07:22 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Dec 10 17:43:18 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Dec 10 23:41:08 2025",
+      "banked": 7,
+      "zone": "Akheva Ruins"
+    },
+    {
+      "timestamp": "Fri Dec 12 21:07:29 2025",
+      "banked": 8,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Fri Dec 12 21:38:24 2025",
+      "banked": 9,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Fri Dec 12 22:08:33 2025",
+      "banked": 1,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Fri Dec 12 22:36:34 2025",
+      "banked": 2,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Fri Dec 12 23:10:07 2025",
+      "banked": 3,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Fri Dec 12 23:38:56 2025",
+      "banked": 4,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Wed Dec 17 22:06:29 2025",
+      "banked": 5,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Dec 17 23:02:47 2025",
+      "banked": 6,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Thu Dec 18 09:55:49 2025",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 13:01:31 2025",
+      "banked": 8,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 13:33:55 2025",
+      "banked": 9,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 14:22:14 2025",
+      "banked": 10,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 14:50:09 2025",
+      "banked": 11,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 15:20:46 2025",
+      "banked": 12,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 15:49:53 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 16:16:01 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 16:43:44 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 17:10:32 2025",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 17:41:14 2025",
+      "banked": 8,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 20 18:19:47 2025",
+      "banked": 9,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Dec 21 16:17:21 2025",
+      "banked": 1,
+      "zone": "Plane of Mischief"
+    },
+    {
+      "timestamp": "Sun Dec 21 22:00:15 2025",
+      "banked": 2,
+      "zone": "Plane of Mischief"
+    },
+    {
+      "timestamp": "Mon Dec 22 11:00:13 2025",
+      "banked": 3,
+      "zone": "Plane of Mischief"
+    },
+    {
+      "timestamp": "Fri Dec 26 10:43:40 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 02:09:53 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 02:36:55 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 10:47:24 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 11:27:06 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 12:00:22 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 12:33:38 2025",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 13:03:13 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 13:30:17 2025",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 17:00:14 2025",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 17:28:17 2025",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Dec 27 17:55:30 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Dec 28 22:08:24 2025",
+      "banked": 7,
+      "zone": "Plane of Mischief"
+    },
+    {
+      "timestamp": "Mon Dec 29 18:08:37 2025",
+      "banked": 8,
+      "zone": "Plane of Mischief"
+    },
+    {
+      "timestamp": "Sat Jan 03 12:00:47 2026",
+      "banked": 6,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Sat Jan 03 12:48:53 2026",
+      "banked": 7,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Sun Jan 04 20:54:11 2026",
+      "banked": 8,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Jan 04 23:31:13 2026",
+      "banked": 9,
+      "zone": "Vex Thal"
+    },
+    {
+      "timestamp": "Mon Jan 05 09:43:55 2026",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 05 10:08:06 2026",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 05 10:18:26 2026",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 05 11:01:41 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 05 19:55:48 2026",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Jan 06 10:41:51 2026",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Jan 07 21:44:23 2026",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Jan 07 21:56:52 2026",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Jan 07 22:19:13 2026",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Jan 07 22:49:51 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jan 08 14:26:27 2026",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jan 08 14:42:37 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jan 08 15:03:53 2026",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jan 08 17:19:54 2026",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Jan 10 15:13:01 2026",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Jan 18 01:20:11 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Jan 18 01:48:19 2026",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 19 11:40:35 2026",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 19 12:00:16 2026",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 19 12:23:38 2026",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Jan 19 20:19:44 2026",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Jan 25 15:34:01 2026",
+      "banked": 2,
+      "zone": "Akheva Ruins"
+    },
+    {
+      "timestamp": "Sun Jan 25 16:17:04 2026",
+      "banked": 3,
+      "zone": "Akheva Ruins"
+    },
+    {
+      "timestamp": "Thu Jan 29 13:49:31 2026",
+      "banked": 4,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Jan 29 14:30:06 2026",
+      "banked": 5,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Jan 29 15:18:40 2026",
+      "banked": 1,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Jan 29 15:54:11 2026",
+      "banked": 2,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Jan 29 20:24:15 2026",
+      "banked": 3,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Fri Jan 30 11:43:08 2026",
+      "banked": 4,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Fri Jan 30 14:53:22 2026",
+      "banked": 5,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Fri Jan 30 15:27:41 2026",
+      "banked": 6,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Fri Jan 30 16:06:07 2026",
+      "banked": 7,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Fri Jan 30 16:40:22 2026",
+      "banked": 8,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 13:25:43 2026",
+      "banked": 3,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 14:09:57 2026",
+      "banked": 4,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 14:50:51 2026",
+      "banked": 5,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 15:21:00 2026",
+      "banked": 6,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 16:17:22 2026",
+      "banked": 1,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 20:14:23 2026",
+      "banked": 2,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 20:46:10 2026",
+      "banked": 3,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 01 21:19:06 2026",
+      "banked": 4,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Feb 05 19:16:53 2026",
+      "banked": 1,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Feb 05 19:51:22 2026",
+      "banked": 2,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sat Feb 07 09:37:33 2026",
+      "banked": 3,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sat Feb 07 10:14:46 2026",
+      "banked": 4,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sat Feb 07 18:40:52 2026",
+      "banked": 5,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sat Feb 07 19:16:00 2026",
+      "banked": 6,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Feb 08 21:12:04 2026",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 08 21:36:05 2026",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 08 22:10:39 2026",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 08 22:27:16 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 08 22:55:38 2026",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 08 23:19:58 2026",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 08 23:42:35 2026",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Feb 09 00:14:53 2026",
+      "banked": 8,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Feb 09 16:05:04 2026",
+      "banked": 1,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Mon Feb 09 19:45:07 2026",
+      "banked": 2,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Mon Feb 09 20:23:22 2026",
+      "banked": 3,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Wed Feb 11 21:27:39 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Feb 12 19:53:08 2026",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Feb 12 20:08:41 2026",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Feb 12 20:32:24 2026",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 15 16:20:56 2026",
+      "banked": 8,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Feb 15 16:38:10 2026",
+      "banked": 9,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Feb 16 10:22:23 2026",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Feb 18 21:56:38 2026",
+      "banked": 7,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Fri Feb 27 14:27:44 2026",
+      "banked": 8,
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Wed Mar 04 13:14:20 2026",
+      "banked": 3,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Mar 05 21:55:14 2026",
+      "banked": 4,
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Tue Mar 10 18:23:36 2026",
+      "banked": 3,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Thu Mar 19 22:17:22 2026",
+      "banked": 4,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Thu Mar 19 22:51:13 2026",
+      "banked": 5,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Thu Mar 19 23:24:55 2026",
+      "banked": 6,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Thu Mar 19 23:56:09 2026",
+      "banked": 7,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Fri Mar 20 00:25:47 2026",
+      "banked": 3,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Fri Mar 20 00:57:49 2026",
+      "banked": 4,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Tue Mar 31 10:46:23 2026",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Mar 31 11:04:51 2026",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Apr 22 23:01:30 2026",
+      "banked": 3,
+      "zone": "Plane of Fear (Instanced)"
+    },
+    {
+      "timestamp": "Fri Apr 24 17:23:21 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Apr 24 17:40:35 2026",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 13:12:39 2026",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 13:13:21 2026",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 13:45:53 2026",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 13:46:36 2026",
+      "banked": 3,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 14:23:39 2026",
+      "banked": 4,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 22:12:40 2026",
+      "banked": 5,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 22:52:44 2026",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Apr 26 23:28:10 2026",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Apr 27 00:02:32 2026",
+      "banked": 8,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Apr 27 00:03:32 2026",
+      "banked": 9,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Apr 27 00:41:26 2026",
+      "banked": 10,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Apr 27 01:13:57 2026",
+      "banked": 11,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Apr 27 01:14:45 2026",
+      "banked": 12,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Apr 27 11:23:44 2026",
+      "banked": 13,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Apr 28 20:18:20 2026",
+      "banked": 14,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Apr 29 20:38:32 2026",
+      "banked": 15,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu May 14 00:24:45 2026",
+      "banked": 16,
+      "zone": "Plane of Fear (Instanced)"
+    },
+    {
+      "timestamp": "Thu Jun 04 20:05:18 2026",
+      "banked": 17,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jun 04 22:06:31 2026",
+      "banked": 18,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jun 04 22:07:13 2026",
+      "banked": 19,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 05 12:23:20 2026",
+      "banked": 20,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 05 12:53:50 2026",
+      "banked": 21,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Jun 06 01:35:11 2026",
+      "banked": 22,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Jun 06 09:46:45 2026",
+      "banked": 23,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Jun 06 09:47:35 2026",
+      "banked": 24,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Jun 09 15:59:23 2026",
+      "banked": 25,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Jun 09 17:46:56 2026",
+      "banked": 26,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Jun 09 17:57:52 2026",
+      "banked": 27,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Jun 09 18:19:47 2026",
+      "banked": 28,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Jun 09 19:06:57 2026",
+      "banked": 17,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Jun 10 17:36:20 2026",
+      "banked": 18,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Jun 10 17:37:08 2026",
+      "banked": 19,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Jun 10 22:23:14 2026",
+      "banked": 20,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jun 11 01:32:41 2026",
+      "banked": 21,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jun 11 01:33:35 2026",
+      "banked": 22,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Thu Jun 11 21:23:46 2026",
+      "banked": 14,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 12 00:53:30 2026",
+      "banked": 15,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 12 01:40:17 2026",
+      "banked": 16,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 19 02:11:16 2026",
+      "banked": 17,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 19 02:12:23 2026",
+      "banked": 18,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 19 09:20:29 2026",
+      "banked": 19,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 19 13:17:50 2026",
+      "banked": 20,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jun 19 23:48:12 2026",
+      "banked": 21,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Jun 20 18:37:32 2026",
+      "banked": 22,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sat Jun 20 18:38:19 2026",
+      "banked": 23,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Jun 21 14:16:10 2026",
+      "banked": 24,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Jun 21 14:32:18 2026",
+      "banked": 25,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Jun 21 15:04:32 2026",
+      "banked": 26,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Jul 03 23:13:33 2026",
+      "banked": 27,
+      "zone": "Grieg's End"
+    },
+    {
+      "timestamp": "Sun Aug 16 23:14:23 2026",
+      "banked": 28,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Fri Aug 28 20:24:43 2026",
+      "banked": 29,
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Sat Aug 29 13:51:36 2026",
+      "banked": 30,
+      "zone": "Ruins of Sebilis"
+    }
+  ]
+}

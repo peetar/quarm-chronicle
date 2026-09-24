@@ -1,0 +1,4605 @@
+{
+  "character": "Thebrain",
+  "last_name": null,
+  "character_class": "Cleric",
+  "character_race": "Halfling",
+  "date_range": {
+    "first": "Sun Sep 29 22:19:42 2024",
+    "last": "Thu Sep 17 00:17:40 2026"
+  },
+  "total_log_lines": 16039454,
+  "guild_history": [
+    {
+      "timestamp": "Sat Oct 19 22:00:42 2024",
+      "action": "joined",
+      "guild": "Project Faceless"
+    },
+    {
+      "timestamp": "Wed Oct 23 23:14:33 2024",
+      "action": "left",
+      "guild": "Dungeons and Dragons"
+    },
+    {
+      "timestamp": "Fri Oct 25 09:54:11 2024",
+      "action": "joined",
+      "guild": "Haven"
+    },
+    {
+      "timestamp": "Sat Dec 14 23:22:36 2024",
+      "action": "left",
+      "guild": "Haven"
+    },
+    {
+      "timestamp": "Sat Dec 14 23:24:58 2024",
+      "action": "joined",
+      "guild": "Dungeons and Dragons"
+    }
+  ],
+  "expansion_firsts": {
+    "Kunark": {
+      "timestamp": "Sun Oct 20 21:09:45 2024",
+      "zone": "Skyfire Mountains"
+    },
+    "Velious": {
+      "timestamp": "Tue Apr 01 18:13:16 2025",
+      "zone": "Iceclad Ocean"
+    },
+    "Luclin": {
+      "timestamp": "Mon Jul 28 00:24:38 2025",
+      "zone": "The Fungus Grove"
+    }
+  },
+  "epic_quest": {
+    "name": "Water Sprinkler of Nem Ankh",
+    "class": "Cleric Epic 1.0",
+    "effect": "Reviviscence",
+    "timestamp": "Inventory Confirmed",
+    "zone": "Project Quarm"
+  },
+  "equipped_gear": [
+    {
+      "slot": "Ear",
+      "name": "Hoop of Emptiness",
+      "id": 30535
+    },
+    {
+      "slot": "Head",
+      "name": "Halo of the Enlightened",
+      "id": 1549
+    },
+    {
+      "slot": "Face",
+      "name": "Mask of Judgement",
+      "id": 26785
+    },
+    {
+      "slot": "Ear",
+      "name": "Golden Leaf Earring",
+      "id": 2581
+    },
+    {
+      "slot": "Neck",
+      "name": "Polished Bone Collar",
+      "id": 30549
+    },
+    {
+      "slot": "Shoulders",
+      "name": "Shawl of Awakenings",
+      "id": 30566
+    },
+    {
+      "slot": "Arms",
+      "name": "Armguard of Piety",
+      "id": 28925
+    },
+    {
+      "slot": "Back",
+      "name": "Shroud of Veeshan",
+      "id": 1628
+    },
+    {
+      "slot": "Wrist",
+      "name": "Seru's Torque",
+      "id": 7868
+    },
+    {
+      "slot": "Wrist",
+      "name": "Wristband of Judgement",
+      "id": 26787
+    },
+    {
+      "slot": "Range",
+      "name": "Nocnivin's Small Book of Logic",
+      "id": 30562
+    },
+    {
+      "slot": "Hands",
+      "name": "Gauntlets of View",
+      "id": 28982
+    },
+    {
+      "slot": "Primary",
+      "name": "Stein of Falling Tears",
+      "id": 28978
+    },
+    {
+      "slot": "Secondary",
+      "name": "Book of Contemplation",
+      "id": 28915
+    },
+    {
+      "slot": "Fingers",
+      "name": "Ring of Immobilization",
+      "id": 28984
+    },
+    {
+      "slot": "Fingers",
+      "name": "Jade Skull Ring",
+      "id": 7826
+    },
+    {
+      "slot": "Chest",
+      "name": "Breastplate of Speed",
+      "id": 28937
+    },
+    {
+      "slot": "Legs",
+      "name": "Nightcaller Leggings",
+      "id": 26755
+    },
+    {
+      "slot": "Feet",
+      "name": "Boots of Silent Dreams",
+      "id": 28881
+    },
+    {
+      "slot": "Waist",
+      "name": "Circle of Smoke",
+      "id": 30534
+    },
+    {
+      "slot": "Ammo",
+      "name": "White Ornate Chain Bridle",
+      "id": 21809
+    },
+    {
+      "slot": "General1",
+      "name": "Box of Abu-Kar",
+      "id": 11703
+    },
+    {
+      "slot": "General1-Slot1",
+      "name": "Rusty Warhammer",
+      "id": 6014
+    },
+    {
+      "slot": "General1-Slot2",
+      "name": "Rusty Dagger",
+      "id": 7007
+    },
+    {
+      "slot": "General1-Slot3",
+      "name": "Ykeshan War Club",
+      "id": 6621
+    },
+    {
+      "slot": "General1-Slot4",
+      "name": "Tolapumj's Robe",
+      "id": 1624
+    },
+    {
+      "slot": "General1-Slot5",
+      "name": "Summoned: Black Bread",
+      "id": 13078
+    },
+    {
+      "slot": "General1-Slot6",
+      "name": "Summoned: Globe of Water",
+      "id": 13079
+    },
+    {
+      "slot": "General1-Slot7",
+      "name": "Spell: Divine Intervention",
+      "id": 19230
+    },
+    {
+      "slot": "General1-Slot8",
+      "name": "Akheva Blood",
+      "id": 10418
+    },
+    {
+      "slot": "General1-Slot9",
+      "name": "Deepwater Breastplate",
+      "id": 4544
+    },
+    {
+      "slot": "General1-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2",
+      "name": "Kavruul`s Mystic Pouch",
+      "id": 17701
+    },
+    {
+      "slot": "General2-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot6",
+      "name": "10 Dose Potion of the Swamp",
+      "id": 14571
+    },
+    {
+      "slot": "General2-Slot7",
+      "name": "Emerald",
+      "id": 10029
+    },
+    {
+      "slot": "General2-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General2-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General3",
+      "name": "Darkwood Trunk",
+      "id": 17703
+    },
+    {
+      "slot": "General3-Slot1",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General3-Slot2",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General3-Slot3",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General3-Slot4",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General3-Slot5",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General3-Slot6",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General3-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General3-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General3-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General3-Slot10",
+      "name": "A Glowing Orb",
+      "id": 8205
+    },
+    {
+      "slot": "General4",
+      "name": "Box of Nil Space",
+      "id": 17082
+    },
+    {
+      "slot": "General4-Slot1",
+      "name": "White Dragonscale Boots",
+      "id": 29645
+    },
+    {
+      "slot": "General4-Slot2",
+      "name": "Donal's Chestplate of Mourning",
+      "id": 4565
+    },
+    {
+      "slot": "General4-Slot3",
+      "name": "Bone-Clasped Girdle",
+      "id": 11666
+    },
+    {
+      "slot": "General4-Slot4",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General4-Slot5",
+      "name": "Ring of the Shissar",
+      "id": 19719
+    },
+    {
+      "slot": "General4-Slot6",
+      "name": "Fungus Covered Scale Shirt",
+      "id": 2735
+    },
+    {
+      "slot": "General4-Slot7",
+      "name": "Robe of the Azure Sky",
+      "id": 10845
+    },
+    {
+      "slot": "General4-Slot8",
+      "name": "Mask of Dark Thoughts",
+      "id": 26756
+    },
+    {
+      "slot": "General4-Slot9",
+      "name": "Gauntlets of Dragon Slaying",
+      "id": 25857
+    },
+    {
+      "slot": "General4-Slot10",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General5",
+      "name": "Bag of the Tinkerers",
+      "id": 32619
+    },
+    {
+      "slot": "General5-Slot1",
+      "name": "Peridot",
+      "id": 10028
+    },
+    {
+      "slot": "General5-Slot2",
+      "name": "Worker Sledgemallet",
+      "id": 12863
+    },
+    {
+      "slot": "General5-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General5-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General5-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General5-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General5-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General5-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6",
+      "name": "Bag of the Tinkerers",
+      "id": 32619
+    },
+    {
+      "slot": "General6-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot2",
+      "name": "Sap Encrusted Branch",
+      "id": 2582
+    },
+    {
+      "slot": "General6-Slot3",
+      "name": "Primal Velium Battlehammer",
+      "id": 27321
+    },
+    {
+      "slot": "General6-Slot4",
+      "name": "Hammer of the Sun",
+      "id": 28836
+    },
+    {
+      "slot": "General6-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General6-Slot6",
+      "name": "Shield of Energy",
+      "id": 26754
+    },
+    {
+      "slot": "General6-Slot7",
+      "name": "Imbued Shield of Paineel",
+      "id": 9428
+    },
+    {
+      "slot": "General6-Slot8",
+      "name": "Sprinkler of Suffering",
+      "id": 24621
+    },
+    {
+      "slot": "General7",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "General7-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "General7-Slot3",
+      "name": "Shadowed Storm Sphere",
+      "id": 26601
+    },
+    {
+      "slot": "General7-Slot4",
+      "name": "Shissar Apothic Staff",
+      "id": 10892
+    },
+    {
+      "slot": "General7-Slot5",
+      "name": "Emerald",
+      "id": 10029
+    },
+    {
+      "slot": "General7-Slot6",
+      "name": "Faithstone of Mischief",
+      "id": 24435
+    },
+    {
+      "slot": "General7-Slot7",
+      "name": "Water Sprinkler of the Forgiven",
+      "id": 6684
+    },
+    {
+      "slot": "General7-Slot8",
+      "name": "Earring of Purity",
+      "id": 5814
+    },
+    {
+      "slot": "General7-Slot9",
+      "name": "Eyepatch of Plunder",
+      "id": 30008
+    },
+    {
+      "slot": "General7-Slot10",
+      "name": "Donal's Bracer of Mourning",
+      "id": 4567
+    },
+    {
+      "slot": "General8",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "General8-Slot1",
+      "name": "Journeyman's Boots",
+      "id": 2300
+    },
+    {
+      "slot": "General8-Slot2",
+      "name": "Cloudy Steel Mask",
+      "id": 28942
+    },
+    {
+      "slot": "General8-Slot3",
+      "name": "Water Sprinkler of Nem Ankh",
+      "id": 5532
+    },
+    {
+      "slot": "General8-Slot4",
+      "name": "Wand of Casual Blessings",
+      "id": 26588
+    },
+    {
+      "slot": "General8-Slot5",
+      "name": "Fungus Covered Great Stick",
+      "id": 10895
+    },
+    {
+      "slot": "General8-Slot6",
+      "name": "Karn's Armplates of Retaliation",
+      "id": 28146
+    },
+    {
+      "slot": "General8-Slot7",
+      "name": "Holgresh Elder Beads",
+      "id": 24890
+    },
+    {
+      "slot": "General8-Slot8",
+      "name": "Guise of the Deceiver",
+      "id": 2469
+    },
+    {
+      "slot": "General8-Slot9",
+      "name": "Pegasus Feather Cloak",
+      "id": 2463
+    },
+    {
+      "slot": "General8-Slot10",
+      "name": "Manarock",
+      "id": 2970
+    },
+    {
+      "slot": "General-Coin",
+      "name": "Currency",
+      "id": 0
+    },
+    {
+      "slot": "Held",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank1",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank1-Slot1",
+      "name": "Essence of Darkness",
+      "id": 11594
+    },
+    {
+      "slot": "Bank1-Slot2",
+      "name": "Shiknar Ichor",
+      "id": 22912
+    },
+    {
+      "slot": "Bank1-Slot3",
+      "name": "Centi Meat",
+      "id": 32520
+    },
+    {
+      "slot": "Bank1-Slot4",
+      "name": "Chunk of Condensed Shadow",
+      "id": 10697
+    },
+    {
+      "slot": "Bank1-Slot5",
+      "name": "Mind worm meat",
+      "id": 32518
+    },
+    {
+      "slot": "Bank1-Slot6",
+      "name": "Centi Toes",
+      "id": 32521
+    },
+    {
+      "slot": "Bank1-Slot7",
+      "name": "Primal Velium Brawl Stick",
+      "id": 27324
+    },
+    {
+      "slot": "Bank1-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank2",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank2-Slot1",
+      "name": "Di'zok Signet of Service",
+      "id": 5728
+    },
+    {
+      "slot": "Bank2-Slot2",
+      "name": "Shield of Elders",
+      "id": 10851
+    },
+    {
+      "slot": "Bank2-Slot3",
+      "name": "Circlet of Summer",
+      "id": 31322
+    },
+    {
+      "slot": "Bank2-Slot4",
+      "name": "Talisman of Benevolence",
+      "id": 29687
+    },
+    {
+      "slot": "Bank2-Slot5",
+      "name": "Blazing Breastplate of Fennin Ro",
+      "id": 11614
+    },
+    {
+      "slot": "Bank2-Slot6",
+      "name": "Engraved DiZok Deathbringer",
+      "id": 5701
+    },
+    {
+      "slot": "Bank2-Slot7",
+      "name": "Akkirus' Mask of Warfare",
+      "id": 31233
+    },
+    {
+      "slot": "Bank2-Slot8",
+      "name": "Essence Lens",
+      "id": 2698
+    },
+    {
+      "slot": "Bank3",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank3-Slot1",
+      "name": "Concillium Report",
+      "id": 29886
+    },
+    {
+      "slot": "Bank3-Slot2",
+      "name": "Bile Stained Robes",
+      "id": 26528
+    },
+    {
+      "slot": "Bank3-Slot3",
+      "name": "Frakadar's Talisman",
+      "id": 27260
+    },
+    {
+      "slot": "Bank3-Slot4",
+      "name": "Supple Scale Armband",
+      "id": 1618
+    },
+    {
+      "slot": "Bank3-Slot5",
+      "name": "Lockpicks",
+      "id": 13010
+    },
+    {
+      "slot": "Bank3-Slot6",
+      "name": "Buckler of Insight",
+      "id": 31462
+    },
+    {
+      "slot": "Bank3-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank3-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank4",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank4-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank4-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank4-Slot3",
+      "name": "Straw Spun Belt",
+      "id": 11545
+    },
+    {
+      "slot": "Bank4-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank4-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank4-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank4-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank4-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank5",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank5-Slot1",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "Bank5-Slot2",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "Bank5-Slot3",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "Bank5-Slot4",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "Bank5-Slot5",
+      "name": "Golden Diamond Mask",
+      "id": 14706
+    },
+    {
+      "slot": "Bank5-Slot6",
+      "name": "Wolfs Eye Golden Bracelet",
+      "id": 14646
+    },
+    {
+      "slot": "Bank5-Slot7",
+      "name": "Wolfs Eye Golden Bracelet",
+      "id": 14646
+    },
+    {
+      "slot": "Bank5-Slot8",
+      "name": "Wolfs Eye Golden Bracelet",
+      "id": 14646
+    },
+    {
+      "slot": "Bank6",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank6-Slot1",
+      "name": "Spider Silk",
+      "id": 13041
+    },
+    {
+      "slot": "Bank6-Slot2",
+      "name": "Small Brick of Yttrium Ore",
+      "id": 22901
+    },
+    {
+      "slot": "Bank6-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank6-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank6-Slot5",
+      "name": "Straw Spun Belt",
+      "id": 11545
+    },
+    {
+      "slot": "Bank6-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank6-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank6-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank7-Slot1",
+      "name": "Small Piece of Velium",
+      "id": 22569
+    },
+    {
+      "slot": "Bank7-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank7-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank8",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank8-Slot1",
+      "name": "Maelin's Magical Concoction",
+      "id": 32701
+    },
+    {
+      "slot": "Bank8-Slot2",
+      "name": "Maelin's Annual Concoction",
+      "id": 2627
+    },
+    {
+      "slot": "Bank8-Slot3",
+      "name": "Maelin's Magical Concoction",
+      "id": 32700
+    },
+    {
+      "slot": "Bank8-Slot4",
+      "name": "Maelin's Magical Concoction",
+      "id": 32700
+    },
+    {
+      "slot": "Bank8-Slot5",
+      "name": "Undead Dragon Sinew",
+      "id": 6478
+    },
+    {
+      "slot": "Bank8-Slot6",
+      "name": "Icon of the Constant",
+      "id": 19012
+    },
+    {
+      "slot": "Bank8-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank8-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank9-Slot1",
+      "name": "Lustrous Russet Boots",
+      "id": 14731
+    },
+    {
+      "slot": "Bank9-Slot2",
+      "name": "Concillium Report",
+      "id": 29887
+    },
+    {
+      "slot": "Bank9-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot4",
+      "name": "Bracer of the Silent Star",
+      "id": 28891
+    },
+    {
+      "slot": "Bank9-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank9-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10",
+      "name": "Backpack",
+      "id": 17005
+    },
+    {
+      "slot": "Bank10-Slot1",
+      "name": "Left Eye of Xygoz",
+      "id": 24629
+    },
+    {
+      "slot": "Bank10-Slot2",
+      "name": "Myga's Talisman",
+      "id": 27221
+    },
+    {
+      "slot": "Bank10-Slot3",
+      "name": "White Dragon Scale Sash",
+      "id": 25199
+    },
+    {
+      "slot": "Bank10-Slot4",
+      "name": "Yunnb's Earring",
+      "id": 10912
+    },
+    {
+      "slot": "Bank10-Slot5",
+      "name": "Obsidian Necklace",
+      "id": 28911
+    },
+    {
+      "slot": "Bank10-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank10-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank11-Slot1",
+      "name": "Zherozsh's Key",
+      "id": 19710
+    },
+    {
+      "slot": "Bank11-Slot2",
+      "name": "Zazuzh's Key",
+      "id": 19711
+    },
+    {
+      "slot": "Bank11-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank11-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank12",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank12-Slot1",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot2",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot3",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot4",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot5",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot6",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot7",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot8",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot9",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank12-Slot10",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank13",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank14-Slot1",
+      "name": "Shard of the Shoulder",
+      "id": 29881
+    },
+    {
+      "slot": "Bank14-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank14-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank15-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot4",
+      "name": "Scout Report",
+      "id": 29688
+    },
+    {
+      "slot": "Bank15-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot6",
+      "name": "Sleeper's Key",
+      "id": 27265
+    },
+    {
+      "slot": "Bank15-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot8",
+      "name": "Unadorned Plate Boots",
+      "id": 24959
+    },
+    {
+      "slot": "Bank15-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank15-Slot10",
+      "name": "Corroded Plate Gauntlets",
+      "id": 24934
+    },
+    {
+      "slot": "Bank16",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank16-Slot1",
+      "name": "Weight of the Gods",
+      "id": 2924
+    },
+    {
+      "slot": "Bank16-Slot2",
+      "name": "Tan Silken Bridle",
+      "id": 21802
+    },
+    {
+      "slot": "Bank16-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot4",
+      "name": "Blue Diamond",
+      "id": 22503
+    },
+    {
+      "slot": "Bank16-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank16-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank17-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank17-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank18-Slot1",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot2",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot3",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot4",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot5",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot6",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot7",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot8",
+      "name": "Bone Chips",
+      "id": 13073
+    },
+    {
+      "slot": "Bank18-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank18-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank19-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank19-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank20-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank20-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank21",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank21-Slot1",
+      "name": "Hardened Bone Spaulders",
+      "id": 5739
+    },
+    {
+      "slot": "Bank21-Slot2",
+      "name": "The Scepter of Shadows",
+      "id": 22198
+    },
+    {
+      "slot": "Bank21-Slot3",
+      "name": "Tan Rope Bridle",
+      "id": 21800
+    },
+    {
+      "slot": "Bank21-Slot4",
+      "name": "Spirit Wracked Cord",
+      "id": 5723
+    },
+    {
+      "slot": "Bank21-Slot5",
+      "name": "Sacrifice",
+      "id": 29329
+    },
+    {
+      "slot": "Bank21-Slot6",
+      "name": "Talisman of the Burrower",
+      "id": 26606
+    },
+    {
+      "slot": "Bank21-Slot7",
+      "name": "Onyx Chain Sleeves",
+      "id": 31381
+    },
+    {
+      "slot": "Bank21-Slot8",
+      "name": "Akkirus Greaves of the Risen",
+      "id": 31145
+    },
+    {
+      "slot": "Bank21-Slot9",
+      "name": "Regal band of Bathezid",
+      "id": 5727
+    },
+    {
+      "slot": "Bank21-Slot10",
+      "name": "Shard of the Eye",
+      "id": 29882
+    },
+    {
+      "slot": "Bank22",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank22-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank22-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank23-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot3",
+      "name": "Swirling Sphere of Color",
+      "id": 20494
+    },
+    {
+      "slot": "Bank23-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank23-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank24-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank24-Slot7",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "Bank24-Slot8",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "Bank24-Slot9",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "Bank24-Slot10",
+      "name": "Fish Rolls",
+      "id": 13475
+    },
+    {
+      "slot": "Bank25",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank25-Slot1",
+      "name": "Emerald Ring",
+      "id": 10045
+    },
+    {
+      "slot": "Bank25-Slot2",
+      "name": "Fire Opal",
+      "id": 10031
+    },
+    {
+      "slot": "Bank25-Slot3",
+      "name": "Emerald Ring",
+      "id": 10045
+    },
+    {
+      "slot": "Bank25-Slot4",
+      "name": "Opal Bracelet",
+      "id": 10046
+    },
+    {
+      "slot": "Bank25-Slot5",
+      "name": "Opal Bracelet",
+      "id": 10046
+    },
+    {
+      "slot": "Bank25-Slot6",
+      "name": "Star Ruby",
+      "id": 10032
+    },
+    {
+      "slot": "Bank25-Slot7",
+      "name": "Fire Emerald",
+      "id": 10033
+    },
+    {
+      "slot": "Bank25-Slot8",
+      "name": "Opal Bracelet",
+      "id": 10046
+    },
+    {
+      "slot": "Bank25-Slot9",
+      "name": "Emerald Ring",
+      "id": 10045
+    },
+    {
+      "slot": "Bank25-Slot10",
+      "name": "Emerald Ring",
+      "id": 10045
+    },
+    {
+      "slot": "Bank26",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank26-Slot1",
+      "name": "Umbral Platemail Gauntlets",
+      "id": 4845
+    },
+    {
+      "slot": "Bank26-Slot2",
+      "name": "Velium Encrusted Gauntlets",
+      "id": 25201
+    },
+    {
+      "slot": "Bank26-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank26-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank27-Slot1",
+      "name": "Emerald Ring",
+      "id": 10045
+    },
+    {
+      "slot": "Bank27-Slot2",
+      "name": "Opal Bracelet",
+      "id": 10046
+    },
+    {
+      "slot": "Bank27-Slot3",
+      "name": "Blood Ember Vambraces",
+      "id": 4524
+    },
+    {
+      "slot": "Bank27-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank27-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank28-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank28-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "Bank29-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29-Slot3",
+      "name": "Fire Emerald",
+      "id": 10033
+    },
+    {
+      "slot": "Bank29-Slot4",
+      "name": "Runed Tear",
+      "id": 31263
+    },
+    {
+      "slot": "Bank29-Slot5",
+      "name": "White Tear",
+      "id": 31261
+    },
+    {
+      "slot": "Bank29-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank29-Slot8",
+      "name": "Onyx Chain Leggings",
+      "id": 31374
+    },
+    {
+      "slot": "Bank29-Slot9",
+      "name": "Jade Chokidai Prod",
+      "id": 7256
+    },
+    {
+      "slot": "Bank29-Slot10",
+      "name": "Xalgozian Fang",
+      "id": 7236
+    },
+    {
+      "slot": "Bank30",
+      "name": "Mechanized Lockpicks",
+      "id": 16865
+    },
+    {
+      "slot": "SharedBank1",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank1-Slot1",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "SharedBank1-Slot2",
+      "name": "Platinum Diamond Wedding Ring",
+      "id": 14707
+    },
+    {
+      "slot": "SharedBank1-Slot3",
+      "name": "Platinum Jacinth Wedding Ring",
+      "id": 14699
+    },
+    {
+      "slot": "SharedBank1-Slot4",
+      "name": "Platinum Jacinth Wedding Ring",
+      "id": 14699
+    },
+    {
+      "slot": "SharedBank1-Slot5",
+      "name": "Velium Blue Diamond Bracelet",
+      "id": 30299
+    },
+    {
+      "slot": "SharedBank1-Slot6",
+      "name": "10 Dose Cloudy Potion",
+      "id": 19078
+    },
+    {
+      "slot": "SharedBank1-Slot7",
+      "name": "Golden Blue Diamond Pendant",
+      "id": 30366
+    },
+    {
+      "slot": "SharedBank1-Slot8",
+      "name": "10 Dose Cloudy Potion",
+      "id": 19078
+    },
+    {
+      "slot": "SharedBank1-Slot9",
+      "name": "Bladestopper",
+      "id": 11632
+    },
+    {
+      "slot": "SharedBank1-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank2",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank2-Slot1",
+      "name": "Spell: Garrison's Superior Sunder",
+      "id": 19526
+    },
+    {
+      "slot": "SharedBank2-Slot2",
+      "name": "Charred Bone Key",
+      "id": 20362
+    },
+    {
+      "slot": "SharedBank2-Slot3",
+      "name": "Splintered Wooden Key",
+      "id": 20361
+    },
+    {
+      "slot": "SharedBank2-Slot4",
+      "name": "Shiny Brass Idol",
+      "id": 14322
+    },
+    {
+      "slot": "SharedBank2-Slot5",
+      "name": "Akheva Blood",
+      "id": 10418
+    },
+    {
+      "slot": "SharedBank2-Slot6",
+      "name": "Shield of the Water Dragon",
+      "id": 11588
+    },
+    {
+      "slot": "SharedBank2-Slot7",
+      "name": "Shissar venom sack",
+      "id": 32527
+    },
+    {
+      "slot": "SharedBank2-Slot8",
+      "name": "Peacebringer",
+      "id": 6646
+    },
+    {
+      "slot": "SharedBank2-Slot9",
+      "name": "Platinum Blue Diamond Tiara",
+      "id": 30367
+    },
+    {
+      "slot": "SharedBank2-Slot10",
+      "name": "Spell: Remove Greater Curse",
+      "id": 19522
+    },
+    {
+      "slot": "SharedBank3",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank3-Slot1",
+      "name": "Meteor Dust",
+      "id": 22914
+    },
+    {
+      "slot": "SharedBank3-Slot2",
+      "name": "Fungoid Sap",
+      "id": 22913
+    },
+    {
+      "slot": "SharedBank3-Slot3",
+      "name": "Shaded dagger",
+      "id": 32155
+    },
+    {
+      "slot": "SharedBank3-Slot4",
+      "name": "Hierophant's Cloak",
+      "id": 1622
+    },
+    {
+      "slot": "SharedBank3-Slot5",
+      "name": "Spell: Scars of Sigil",
+      "id": 19358
+    },
+    {
+      "slot": "SharedBank3-Slot6",
+      "name": "Spell: Succor",
+      "id": 19253
+    },
+    {
+      "slot": "SharedBank3-Slot7",
+      "name": "Spell: Death Pact",
+      "id": 19203
+    },
+    {
+      "slot": "SharedBank3-Slot8",
+      "name": "Spell: Draught of Jiva",
+      "id": 19328
+    },
+    {
+      "slot": "SharedBank3-Slot9",
+      "name": "Sword of Skyfire",
+      "id": 5151
+    },
+    {
+      "slot": "SharedBank3-Slot10",
+      "name": "Spell: Garrison's Superior Sunder",
+      "id": 19526
+    },
+    {
+      "slot": "SharedBank4",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank4-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank4-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank5-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank5-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank6-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank6-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank7-Slot1",
+      "name": "Hardened Clay Bracelet",
+      "id": 3212
+    },
+    {
+      "slot": "SharedBank7-Slot2",
+      "name": "Poison Wind Censer",
+      "id": 6205
+    },
+    {
+      "slot": "SharedBank7-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank7-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank8-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank8-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank9-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank9-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10",
+      "name": "Vale Sewing Kit",
+      "id": 17812
+    },
+    {
+      "slot": "SharedBank10-Slot1",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot2",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot3",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot4",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot5",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot6",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot7",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot8",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot9",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank10-Slot10",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank11",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank12",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank13",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank14",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank15",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank16",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank17",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank18",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank19",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank20",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank21",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank22",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank23",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank24",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank25",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank26",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank27",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank28",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank29",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "SharedBank30",
+      "name": "Empty",
+      "id": 0
+    },
+    {
+      "slot": "Bank-Coin",
+      "name": "Currency",
+      "id": 0
+    }
+  ],
+  "pinnacle_bosses": {
+    "Classic": [
+      {
+        "boss": "Lord Nagafen",
+        "id": 32040,
+        "url": "https://www.pqdi.cc/npc/32040",
+        "first_kill": "Mon Oct 28 18:12:13 2024",
+        "total_kills_or_lockouts": 13
+      },
+      {
+        "boss": "Lady Vox",
+        "id": 73057,
+        "url": "https://www.pqdi.cc/npc/73057",
+        "first_kill": "Fri Jan 31 21:04:11 2025",
+        "total_kills_or_lockouts": 5
+      }
+    ],
+    "Kunark": [
+      {
+        "boss": "Phara Dar",
+        "id": 108510,
+        "url": "https://www.pqdi.cc/npc/108510",
+        "first_kill": "Tue Nov 19 18:51:01 2024",
+        "total_kills_or_lockouts": 25
+      }
+    ],
+    "Velious": [
+      {
+        "boss": "Tunare",
+        "id": 127002,
+        "url": "https://www.pqdi.cc/npc/127002",
+        "first_kill": "Sat May 31 22:21:13 2025",
+        "total_kills_or_lockouts": 14
+      },
+      {
+        "boss": "Vulak`Aerr",
+        "id": 124128,
+        "url": "https://www.pqdi.cc/npc/124128",
+        "first_kill": "Fri Jun 13 23:51:50 2025",
+        "total_kills_or_lockouts": 6
+      },
+      {
+        "boss": "The Avatar of War",
+        "id": 113244,
+        "url": "https://www.pqdi.cc/npc/113244",
+        "first_kill": "Fri Apr 25 21:25:06 2025",
+        "total_kills_or_lockouts": 16
+      }
+    ],
+    "Luclin": [
+      {
+        "boss": "Aten Ha Ra",
+        "id": 158436,
+        "url": "https://www.pqdi.cc/npc/158436",
+        "first_kill": "Tue Jan 06 22:46:49 2026",
+        "total_kills_or_lockouts": 18
+      }
+    ],
+    "Planes of Power": [
+      {
+        "boss": "Quarm",
+        "id": null,
+        "url": null,
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ]
+  },
+  "stats": {
+    "total_deaths": 230,
+    "resurrections_accepted": 205,
+    "environmental_or_bleeding_deaths": 6,
+    "total_level_dings": 60,
+    "max_level": 60,
+    "total_aas_earned": 158,
+    "total_lockouts": 2460,
+    "total_guild_kill_announcements": 1123,
+    "top_zones_by_entries": [
+      [
+        "Western Wastes",
+        482
+      ],
+      [
+        "The Maiden's Eye",
+        465
+      ],
+      [
+        "The Dawnshroud Peaks",
+        371
+      ],
+      [
+        "Ssraeshza Temple",
+        292
+      ],
+      [
+        "Vex Thal",
+        280
+      ],
+      [
+        "Timorous Deep",
+        274
+      ],
+      [
+        "The Umbral Plains",
+        247
+      ],
+      [
+        "Temple of Veeshan",
+        239
+      ],
+      [
+        "Sanctus Seru",
+        236
+      ],
+      [
+        "Skyfire Mountains",
+        230
+      ]
+    ],
+    "top_zones_by_deaths": [
+      [
+        "Temple of Veeshan",
+        34
+      ],
+      [
+        "Veeshan's Peak",
+        31
+      ],
+      [
+        "Ssraeshza Temple",
+        27
+      ],
+      [
+        "Sanctus Seru",
+        15
+      ],
+      [
+        "Kael Drakkel",
+        14
+      ],
+      [
+        "Vex Thal",
+        13
+      ],
+      [
+        "Sleeper's Tomb",
+        12
+      ],
+      [
+        "Plane of Fear (Instanced)",
+        10
+      ],
+      [
+        "Akheva Ruins",
+        9
+      ],
+      [
+        "Ruins of Sebilis",
+        8
+      ]
+    ],
+    "top_zones_by_aas": [
+      [
+        "The Maiden's Eye",
+        62
+      ],
+      [
+        "Ssraeshza Temple",
+        39
+      ],
+      [
+        "The Deep",
+        22
+      ],
+      [
+        "Sanctus Seru",
+        9
+      ],
+      [
+        "Acrylia Caverns",
+        9
+      ],
+      [
+        "The Fungus Grove",
+        6
+      ],
+      [
+        "Ruins of Sebilis",
+        3
+      ],
+      [
+        "Akheva Ruins",
+        2
+      ],
+      [
+        "Vex Thal",
+        2
+      ],
+      [
+        "Temple of Veeshan",
+        1
+      ]
+    ],
+    "top_npcs_slain": [
+      {
+        "name": "klaugg disciple",
+        "count": 279,
+        "id": 1501007,
+        "level": 42,
+        "hp": 6500,
+        "url": "https://www.pqdi.cc/npc/1501007",
+        "zone": "myriah"
+      },
+      {
+        "name": "reanimated drudge",
+        "count": 74,
+        "id": 173106,
+        "level": 52,
+        "hp": 12500,
+        "url": "https://www.pqdi.cc/npc/173106",
+        "zone": "The Maiden's Eye"
+      },
+      {
+        "name": "vampyre bat",
+        "count": 67,
+        "id": 173366,
+        "level": 46,
+        "hp": 7550,
+        "url": "https://www.pqdi.cc/npc/173366",
+        "zone": "The Maiden's Eye"
+      },
+      {
+        "name": "goblin guard",
+        "count": 54,
+        "id": 11022,
+        "level": 8,
+        "hp": 190,
+        "url": "https://www.pqdi.cc/npc/11022",
+        "zone": "Runnyeye"
+      },
+      {
+        "name": "Shik`nar Forager",
+        "count": 48,
+        "id": 157022,
+        "level": 53,
+        "hp": 13505,
+        "url": "https://www.pqdi.cc/npc/157022",
+        "zone": "The Fungus Grove"
+      },
+      {
+        "name": "klaugg reveler",
+        "count": 27,
+        "id": 1501005,
+        "level": 42,
+        "hp": 5000,
+        "url": "https://www.pqdi.cc/npc/1501005",
+        "zone": "myriah"
+      },
+      {
+        "name": "Shik`nar Soldier",
+        "count": 27,
+        "id": 157021,
+        "level": 51,
+        "hp": 11861,
+        "url": "https://www.pqdi.cc/npc/157021",
+        "zone": "The Fungus Grove"
+      },
+      {
+        "name": "klaugg frostfoiler",
+        "count": 26,
+        "id": 1501006,
+        "level": 42,
+        "hp": 7500,
+        "url": "https://www.pqdi.cc/npc/1501006",
+        "zone": "myriah"
+      },
+      {
+        "name": "mind burrower",
+        "count": 26,
+        "id": 173002,
+        "level": 52,
+        "hp": 12500,
+        "url": "https://www.pqdi.cc/npc/173002",
+        "zone": "The Maiden's Eye"
+      },
+      {
+        "name": "fire beetle",
+        "count": 23,
+        "id": 2024,
+        "level": 2,
+        "hp": 32,
+        "url": "https://www.pqdi.cc/npc/2024",
+        "zone": "North Qeynos"
+      }
+    ],
+    "pvp_nemesis": [],
+    "top_pve_nemesis": [
+      {
+        "name": "Hoshkar",
+        "count": 13,
+        "id": 108517,
+        "level": 65,
+        "zone": "Veeshan's Peak",
+        "url": "https://www.pqdi.cc/npc/108517"
+      },
+      {
+        "name": "Emperor Ssraeshza",
+        "count": 10,
+        "id": 162065,
+        "level": 66,
+        "zone": "Ssraeshza Temple",
+        "url": "https://www.pqdi.cc/npc/162065"
+      },
+      {
+        "name": "Ventani the Warder",
+        "count": 6,
+        "id": 128091,
+        "level": 70,
+        "zone": "Sleeper's Tomb",
+        "url": "https://www.pqdi.cc/npc/128091"
+      },
+      {
+        "name": "The Avatar of War",
+        "count": 5,
+        "id": 113244,
+        "level": 70,
+        "zone": "Kael Drakkel",
+        "url": "https://www.pqdi.cc/npc/113244"
+      },
+      {
+        "name": "sebilite juggernaut",
+        "count": 4,
+        "id": 89184,
+        "level": 57,
+        "zone": "Ruins of Sebilis",
+        "url": "https://www.pqdi.cc/npc/89184"
+      }
+    ],
+    "top_tell_recipients": [
+      [
+        "Pinkiy",
+        554
+      ],
+      [
+        "Tweedledum",
+        210
+      ],
+      [
+        "Cephei",
+        182
+      ],
+      [
+        "Soulys",
+        163
+      ],
+      [
+        "pinkiy",
+        136
+      ],
+      [
+        "Tsalwin",
+        123
+      ],
+      [
+        "Forbin",
+        120
+      ],
+      [
+        "Lyric",
+        116
+      ],
+      [
+        "Veronika",
+        105
+      ],
+      [
+        "Nfidell",
+        102
+      ]
+    ],
+    "top_tell_senders": [
+      [
+        "Pinkiy",
+        857
+      ],
+      [
+        "Soulys",
+        390
+      ],
+      [
+        "Asirk",
+        372
+      ],
+      [
+        "Tweedledum",
+        257
+      ],
+      [
+        "Lyric",
+        243
+      ],
+      [
+        "Lemonjelly",
+        212
+      ],
+      [
+        "Tsalwin",
+        202
+      ],
+      [
+        "Artifact",
+        196
+      ],
+      [
+        "Cephei",
+        191
+      ],
+      [
+        "Forbin",
+        183
+      ]
+    ],
+    "top_group_companions": [
+      [
+        "Tsalwin",
+        3239
+      ],
+      [
+        "Buffin",
+        1080
+      ],
+      [
+        "Nfidell",
+        1037
+      ],
+      [
+        "Cephei",
+        704
+      ],
+      [
+        "Destu",
+        698
+      ],
+      [
+        "Lyric",
+        485
+      ],
+      [
+        "Daell",
+        442
+      ],
+      [
+        "Jaykits",
+        389
+      ],
+      [
+        "Pinkiy",
+        349
+      ],
+      [
+        "Audari",
+        345
+      ]
+    ],
+    "top_raid_companions": [
+      [
+        "Tsalwin",
+        24775
+      ],
+      [
+        "Lyric",
+        14631
+      ],
+      [
+        "Poep",
+        11314
+      ],
+      [
+        "Soulys",
+        9764
+      ],
+      [
+        "Nfidell",
+        7599
+      ],
+      [
+        "Audari",
+        5402
+      ],
+      [
+        "Bluesage",
+        4775
+      ],
+      [
+        "Cephei",
+        3788
+      ],
+      [
+        "Jaykits",
+        2922
+      ],
+      [
+        "Buffin",
+        2414
+      ]
+    ],
+    "top_looters_seen": [
+      [
+        "Cephei",
+        2902
+      ],
+      [
+        "Pinkiy",
+        1296
+      ],
+      [
+        "Tweedlede",
+        996
+      ],
+      [
+        "Tweedledum",
+        780
+      ],
+      [
+        "Evocate",
+        434
+      ],
+      [
+        "Aniimal",
+        388
+      ],
+      [
+        "Buffin",
+        373
+      ],
+      [
+        "Kyulin",
+        342
+      ],
+      [
+        "Tsalwin",
+        330
+      ],
+      [
+        "Sturmboli",
+        285
+      ]
+    ],
+    "top_spells_or_songs": [
+      [
+        "Complete Healing",
+        23639
+      ],
+      [
+        "Greater Healing",
+        10442
+      ],
+      [
+        "Immobilize",
+        8743
+      ],
+      [
+        "Ethereal Remedy",
+        5939
+      ],
+      [
+        "Celestial Elixir",
+        5100
+      ],
+      [
+        "Yaulp V",
+        4686
+      ],
+      [
+        "Reviviscence",
+        3979
+      ],
+      [
+        "Ethereal Light",
+        3692
+      ],
+      [
+        "Strike",
+        3552
+      ],
+      [
+        "Pacify",
+        3524
+      ],
+      [
+        "Mark of Karn",
+        3157
+      ],
+      [
+        "Mark of Retaliation",
+        2868
+      ],
+      [
+        "Unswerving Hammer of Faith",
+        2791
+      ],
+      [
+        "Divine Light",
+        2787
+      ],
+      [
+        "Epitaph of Life",
+        2784
+      ]
+    ],
+    "top_songs_memorized": [
+      [
+        "Unswerving Hammer of Faith",
+        795
+      ],
+      [
+        "Heroic Bond",
+        598
+      ],
+      [
+        "Immobilize",
+        537
+      ],
+      [
+        "Gate",
+        507
+      ],
+      [
+        "Abundant Drink",
+        480
+      ],
+      [
+        "Mark of Karn",
+        472
+      ],
+      [
+        "Abundant Food",
+        424
+      ],
+      [
+        "Symbol of Marzin",
+        423
+      ],
+      [
+        "Divine Barrier",
+        393
+      ],
+      [
+        "Aegolism",
+        365
+      ],
+      [
+        "Remedy",
+        309
+      ],
+      [
+        "Celestial Elixir",
+        296
+      ],
+      [
+        "Annul Magic",
+        286
+      ],
+      [
+        "Heroism",
+        280
+      ],
+      [
+        "Yaulp V",
+        254
+      ]
+    ],
+    "bard_twisting": {
+      "selo_pulses": 5820,
+      "songs_completed": 0,
+      "missed_notes": 0
+    },
+    "cleric_stats": {
+      "complete_healing_casts": 23639,
+      "rezzes_cast": 4120,
+      "divine_intervention_casts": 169,
+      "group_heals": 59,
+      "aegolism_casts": 444,
+      "heroic_bond_casts": 913
+    },
+    "necro_stats": {
+      "twitch_casts": 0,
+      "dots_cast": 0,
+      "lifetaps_cast": 0,
+      "feign_death_casts": 0,
+      "pet_summons": 0,
+      "rezzes_cast": 0
+    },
+    "top_raid_boss_kills_overall": [
+      [
+        "Kaas Thox Xi Aten Ha Ra",
+        36
+      ],
+      [
+        "Vyzh`dra the Cursed",
+        35
+      ],
+      [
+        "Vyzh`dra the Exiled",
+        33
+      ],
+      [
+        "Blood of Ssraeshza",
+        29
+      ],
+      [
+        "a glyph covered serpent",
+        28
+      ],
+      [
+        "Emperor Ssraeshza",
+        26
+      ],
+      [
+        "Thall Va Xakra",
+        26
+      ],
+      [
+        "Phara Dar",
+        25
+      ],
+      [
+        "Dozekar the Cursed",
+        24
+      ],
+      [
+        "Trakanon",
+        22
+      ],
+      [
+        "Shei Vinitras",
+        22
+      ],
+      [
+        "Lord Inquisitor Seru",
+        22
+      ],
+      [
+        "Va Xi Aten Ha Ra",
+        19
+      ],
+      [
+        "Silverwing",
+        18
+      ],
+      [
+        "Aten Ha Ra",
+        18
+      ]
+    ]
+  },
+  "level_timeline_firsts": [
+    {
+      "timestamp": "Sun Sep 29 22:49:00 2024",
+      "level": 2,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 22:51:06 2024",
+      "level": 3,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 22:54:58 2024",
+      "level": 4,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 23:01:16 2024",
+      "level": 5,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 23:08:04 2024",
+      "level": 6,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 23:15:56 2024",
+      "level": 7,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 23:23:31 2024",
+      "level": 8,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 23:35:31 2024",
+      "level": 9,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 29 23:49:31 2024",
+      "level": 10,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 00:04:27 2024",
+      "level": 11,
+      "zone": "Misty Thicket",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 00:47:23 2024",
+      "level": 12,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 01:02:53 2024",
+      "level": 13,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 18:51:07 2024",
+      "level": 14,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 21:25:37 2024",
+      "level": 15,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 21:40:16 2024",
+      "level": 16,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 21:56:58 2024",
+      "level": 17,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 22:13:28 2024",
+      "level": 18,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 22:34:08 2024",
+      "level": 19,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 22:57:48 2024",
+      "level": 20,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 23:18:41 2024",
+      "level": 21,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Sep 30 23:43:53 2024",
+      "level": 22,
+      "zone": "Runnyeye",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Oct 01 19:09:46 2024",
+      "level": 23,
+      "zone": "Halls of Injustice",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Oct 02 23:10:10 2024",
+      "level": 24,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Oct 03 00:00:30 2024",
+      "level": 25,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Oct 03 12:29:35 2024",
+      "level": 26,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 07 19:48:50 2024",
+      "level": 27,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 07 22:07:27 2024",
+      "level": 28,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 07 23:08:46 2024",
+      "level": 29,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 07 23:43:03 2024",
+      "level": 30,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Oct 08 00:16:11 2024",
+      "level": 31,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Oct 08 00:48:00 2024",
+      "level": 32,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Oct 11 22:03:45 2024",
+      "level": 33,
+      "zone": "Halls of Injustice, 30 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Oct 11 22:42:59 2024",
+      "level": 34,
+      "zone": "Halls of Injustice, 30 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Oct 11 23:18:52 2024",
+      "level": 35,
+      "zone": "Halls of Injustice, 30 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Oct 12 00:16:15 2024",
+      "level": 36,
+      "zone": "Halls of Injustice, 30 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Oct 13 00:15:30 2024",
+      "level": 37,
+      "zone": "Halls of Injustice 6",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Oct 13 22:01:47 2024",
+      "level": 38,
+      "zone": "Halls of Injustice 6",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Oct 13 22:44:34 2024",
+      "level": 39,
+      "zone": "Halls of Injustice 6",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 14 10:16:05 2024",
+      "level": 40,
+      "zone": "Halls of Injustice 6",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 14 11:24:16 2024",
+      "level": 41,
+      "zone": "Halls of Injustice 6",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 14 18:08:44 2024",
+      "level": 42,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 14 22:28:00 2024",
+      "level": 43,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 14 23:37:44 2024",
+      "level": 44,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Oct 15 00:42:22 2024",
+      "level": 45,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Oct 15 22:49:41 2024",
+      "level": 46,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Oct 16 00:10:15 2024",
+      "level": 47,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Oct 17 00:24:04 2024",
+      "level": 48,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Oct 17 09:13:41 2024",
+      "level": 49,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Oct 17 22:03:15 2024",
+      "level": 50,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Oct 18 22:43:06 2024",
+      "level": 51,
+      "zone": "Halls of Injustice, 50 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Oct 19 22:42:01 2024",
+      "level": 52,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Oct 20 00:05:00 2024",
+      "level": 53,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Oct 20 14:38:53 2024",
+      "level": 54,
+      "zone": "Halls of Injustice 2",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Oct 27 22:10:06 2024",
+      "level": 55,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Dec 19 00:42:51 2024",
+      "level": 56,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jan 04 00:09:12 2025",
+      "level": 57,
+      "zone": "Neriak - Foreign Quarter",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Jan 09 22:22:12 2025",
+      "level": 58,
+      "zone": "Neriak - Foreign Quarter",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Jan 17 13:25:33 2025",
+      "level": 59,
+      "zone": "Domain of Frost",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Jan 17 20:34:22 2025",
+      "level": 60,
+      "zone": "Domain of Frost",
+      "first_time": true
+    }
+  ],
+  "aa_events": [
+    {
+      "timestamp": "Sun Aug 03 15:24:57 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 03 17:04:17 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 03 22:53:55 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Aug 04 00:43:24 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Aug 14 23:28:13 2025",
+      "banked": 1,
+      "zone": "Akheva Ruins"
+    },
+    {
+      "timestamp": "Mon Aug 18 22:30:33 2025",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Mon Aug 18 23:23:49 2025",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Aug 19 00:01:54 2025",
+      "banked": 2,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Tue Aug 19 00:37:30 2025",
+      "banked": 1,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Sun Aug 24 21:37:00 2025",
+      "banked": 2,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sun Aug 24 23:51:15 2025",
+      "banked": 3,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 28 21:20:04 2025",
+      "banked": 4,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 28 23:37:19 2025",
+      "banked": 1,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sat Aug 30 17:01:43 2025",
+      "banked": 2,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Mon Sep 01 00:35:55 2025",
+      "banked": 3,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Wed Sep 03 23:39:45 2025",
+      "banked": 4,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Sun Sep 07 01:48:21 2025",
+      "banked": 5,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Fri Sep 12 00:09:50 2025",
+      "banked": 6,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Fri Sep 12 01:54:57 2025",
+      "banked": 7,
+      "zone": "The Fungus Grove"
+    },
+    {
+      "timestamp": "Wed Nov 19 01:00:02 2025",
+      "banked": 2,
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Sun Nov 30 20:57:43 2025",
+      "banked": 1,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Sun Nov 30 22:12:07 2025",
+      "banked": 2,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Dec 03 00:57:13 2025",
+      "banked": 3,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Dec 03 22:41:02 2025",
+      "banked": 4,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Dec 03 23:30:30 2025",
+      "banked": 5,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Dec 04 23:40:56 2025",
+      "banked": 6,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sat Dec 06 14:40:22 2025",
+      "banked": 3,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sat Dec 06 15:37:19 2025",
+      "banked": 4,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sat Dec 06 16:31:56 2025",
+      "banked": 5,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sat Dec 27 22:12:47 2025",
+      "banked": 6,
+      "zone": "Temple of Veeshan"
+    },
+    {
+      "timestamp": "Tue Jan 13 20:50:42 2026",
+      "banked": 1,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Sun Jan 25 00:40:20 2026",
+      "banked": 2,
+      "zone": "Vex Thal"
+    },
+    {
+      "timestamp": "Sun Jan 25 13:08:37 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jan 27 17:29:18 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Jan 28 23:04:15 2026",
+      "banked": 3,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Sun Feb 01 17:06:21 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Feb 01 17:42:13 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Feb 06 22:25:30 2026",
+      "banked": 2,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Feb 19 23:26:24 2026",
+      "banked": 3,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Tue Mar 17 21:26:07 2026",
+      "banked": 4,
+      "zone": "Vex Thal"
+    },
+    {
+      "timestamp": "Sat Mar 21 15:55:26 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Mar 21 16:43:54 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Mar 29 21:45:18 2026",
+      "banked": 1,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Wed Apr 01 22:08:44 2026",
+      "banked": 2,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Wed Apr 01 22:42:04 2026",
+      "banked": 3,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Wed Apr 01 23:13:46 2026",
+      "banked": 4,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Wed Apr 01 23:43:54 2026",
+      "banked": 5,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Thu Apr 02 00:16:23 2026",
+      "banked": 4,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Thu Apr 09 21:36:06 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Apr 09 22:08:42 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Apr 09 22:33:45 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Apr 12 00:14:47 2026",
+      "banked": 4,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Fri Apr 17 16:28:51 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Apr 18 23:34:32 2026",
+      "banked": 6,
+      "zone": "Akheva Ruins"
+    },
+    {
+      "timestamp": "Sun May 03 22:02:54 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun May 03 23:00:35 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun May 03 23:38:13 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon May 04 15:02:49 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun May 10 22:41:21 2026",
+      "banked": 3,
+      "zone": "Plane of Sky (Instanced)"
+    },
+    {
+      "timestamp": "Mon May 25 18:00:03 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon May 25 19:02:01 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed May 27 22:26:23 2026",
+      "banked": 2,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed May 27 23:30:59 2026",
+      "banked": 3,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Thu May 28 00:04:54 2026",
+      "banked": 4,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Thu May 28 00:33:33 2026",
+      "banked": 5,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Sat May 30 14:30:08 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun May 31 13:21:49 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Jun 01 18:44:19 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Jun 01 19:18:56 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Jun 21 16:21:40 2026",
+      "banked": 4,
+      "zone": "Ruins of Sebilis"
+    },
+    {
+      "timestamp": "Sun Jun 28 18:05:13 2026",
+      "banked": 5,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Mon Jun 29 12:01:18 2026",
+      "banked": 6,
+      "zone": "Acrylia Caverns"
+    },
+    {
+      "timestamp": "Fri Jul 03 20:17:05 2026",
+      "banked": 7,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 00:50:08 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 11:02:13 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 12:20:24 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 12:50:53 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 17:04:40 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 17:43:32 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 18:15:58 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 07 22:13:56 2026",
+      "banked": 1,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Jul 08 15:30:27 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Jul 08 15:55:23 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Jul 08 22:53:44 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Jul 08 23:22:57 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Jul 11 23:28:21 2026",
+      "banked": 6,
+      "zone": "Plane of Fear (Instanced)"
+    },
+    {
+      "timestamp": "Wed Jul 15 00:46:07 2026",
+      "banked": 7,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Jul 15 11:16:21 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jul 16 00:05:35 2026",
+      "banked": 9,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jul 16 00:36:50 2026",
+      "banked": 10,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jul 16 10:44:06 2026",
+      "banked": 11,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jul 16 11:12:41 2026",
+      "banked": 12,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jul 16 11:36:54 2026",
+      "banked": 13,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jul 16 17:02:10 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Jul 18 16:26:06 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Jul 22 22:58:41 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Jul 25 19:38:37 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Jul 25 20:24:40 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Jul 25 20:50:20 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jul 30 22:23:57 2026",
+      "banked": 2,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Thu Jul 30 23:01:09 2026",
+      "banked": 3,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Sun Aug 02 23:02:23 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 02 23:28:37 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Aug 03 00:07:32 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Aug 03 00:34:33 2026",
+      "banked": 7,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 04 17:53:10 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Aug 09 22:19:13 2026",
+      "banked": 9,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Mon Aug 10 23:24:21 2026",
+      "banked": 10,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Tue Aug 11 20:20:45 2026",
+      "banked": 11,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 11 23:58:03 2026",
+      "banked": 6,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 13 17:54:59 2026",
+      "banked": 7,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Aug 13 18:23:28 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Aug 17 17:37:50 2026",
+      "banked": 9,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Aug 17 18:08:31 2026",
+      "banked": 10,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 19 16:28:38 2026",
+      "banked": 11,
+      "zone": "The Grey"
+    },
+    {
+      "timestamp": "Wed Aug 19 21:38:17 2026",
+      "banked": 12,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Aug 19 22:02:51 2026",
+      "banked": 13,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Aug 19 22:33:55 2026",
+      "banked": 14,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Aug 19 22:54:04 2026",
+      "banked": 15,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Aug 19 23:15:11 2026",
+      "banked": 16,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Aug 19 23:35:26 2026",
+      "banked": 17,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Wed Aug 19 23:58:10 2026",
+      "banked": 18,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Thu Aug 20 21:45:20 2026",
+      "banked": 19,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 20 22:05:16 2026",
+      "banked": 20,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 20 22:33:25 2026",
+      "banked": 21,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 20 22:55:06 2026",
+      "banked": 22,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 20 23:15:12 2026",
+      "banked": 23,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Aug 20 23:33:06 2026",
+      "banked": 24,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Tue Sep 01 16:15:16 2026",
+      "banked": 25,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Sep 01 16:54:10 2026",
+      "banked": 26,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Sep 01 17:28:17 2026",
+      "banked": 27,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Sep 02 20:21:41 2026",
+      "banked": 28,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 20:40:33 2026",
+      "banked": 29,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 20:59:53 2026",
+      "banked": 27,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 21:18:37 2026",
+      "banked": 28,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 21:39:11 2026",
+      "banked": 29,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 21:59:25 2026",
+      "banked": 28,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 22:18:41 2026",
+      "banked": 29,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 22:38:32 2026",
+      "banked": 26,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 22:58:23 2026",
+      "banked": 27,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 23:18:23 2026",
+      "banked": 28,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 23:36:33 2026",
+      "banked": 29,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Wed Sep 02 23:55:25 2026",
+      "banked": 24,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Sep 03 00:22:53 2026",
+      "banked": 25,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Sep 03 00:38:50 2026",
+      "banked": 26,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Sep 03 00:52:00 2026",
+      "banked": 27,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Sep 03 01:07:16 2026",
+      "banked": 28,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Sep 03 01:21:04 2026",
+      "banked": 29,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Thu Sep 03 23:10:21 2026",
+      "banked": 21,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Thu Sep 03 23:26:41 2026",
+      "banked": 22,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Thu Sep 03 23:39:16 2026",
+      "banked": 23,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Thu Sep 03 23:52:02 2026",
+      "banked": 24,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Fri Sep 04 00:06:34 2026",
+      "banked": 25,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Fri Sep 04 00:19:10 2026",
+      "banked": 26,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Fri Sep 04 00:35:00 2026",
+      "banked": 27,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Fri Sep 04 00:51:41 2026",
+      "banked": 28,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Fri Sep 04 01:07:36 2026",
+      "banked": 29,
+      "zone": "The Deep"
+    },
+    {
+      "timestamp": "Sun Sep 06 17:36:20 2026",
+      "banked": 28,
+      "zone": "Ruins of Sebilis"
+    }
+  ]
+}

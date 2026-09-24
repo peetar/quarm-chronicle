@@ -1,0 +1,1743 @@
+{
+  "character": "Zondro",
+  "last_name": null,
+  "character_class": "Necromancer",
+  "character_race": "Iksar",
+  "date_range": {
+    "first": "Sun Jun 02 22:27:02 2024",
+    "last": "Mon Sep 21 15:05:34 2026"
+  },
+  "total_log_lines": 5047872,
+  "guild_history": [
+    {
+      "timestamp": "Fri Sep 06 17:29:15 2024",
+      "action": "joined",
+      "guild": "Project Faceless"
+    },
+    {
+      "timestamp": "Wed Oct 23 22:54:53 2024",
+      "action": "left",
+      "guild": "Dungeons and Dragons"
+    },
+    {
+      "timestamp": "Wed Oct 23 22:58:51 2024",
+      "action": "joined",
+      "guild": "Haven"
+    },
+    {
+      "timestamp": "Sat Dec 14 23:55:16 2024",
+      "action": "left",
+      "guild": "Haven"
+    },
+    {
+      "timestamp": "Sat Dec 14 23:57:49 2024",
+      "action": "joined",
+      "guild": "Dungeons and Dragons"
+    }
+  ],
+  "expansion_firsts": {
+    "Kunark": {
+      "timestamp": "Sun Jun 02 22:27:03 2024",
+      "zone": "Field of Bone"
+    },
+    "Velious": {
+      "timestamp": "Sun Apr 06 12:41:12 2025",
+      "zone": "Iceclad Ocean"
+    },
+    "Luclin": {
+      "timestamp": "Wed Aug 06 20:40:03 2025",
+      "zone": "Nexus"
+    }
+  },
+  "epic_quest": {
+    "name": "Scythe of the Shadowed Soul",
+    "class": "Necromancer Epic 1.0",
+    "effect": "Torment of Shadows",
+    "timestamp": "Thu Feb 13 21:43:32 2025",
+    "zone": "Lake Rathetear"
+  },
+  "equipped_gear": [],
+  "pinnacle_bosses": {
+    "Classic": [
+      {
+        "boss": "Lord Nagafen",
+        "id": 32040,
+        "url": "https://www.pqdi.cc/npc/32040",
+        "first_kill": "Tue Apr 08 20:06:05 2025",
+        "total_kills_or_lockouts": 1
+      },
+      {
+        "boss": "Lady Vox",
+        "id": 73057,
+        "url": "https://www.pqdi.cc/npc/73057",
+        "first_kill": "Wed Apr 22 14:35:38 2026",
+        "total_kills_or_lockouts": 1
+      }
+    ],
+    "Kunark": [
+      {
+        "boss": "Phara Dar",
+        "id": 108510,
+        "url": "https://www.pqdi.cc/npc/108510",
+        "first_kill": "Fri Dec 13 20:45:06 2024",
+        "total_kills_or_lockouts": 3
+      }
+    ],
+    "Velious": [
+      {
+        "boss": "Tunare",
+        "id": 127002,
+        "url": "https://www.pqdi.cc/npc/127002",
+        "first_kill": "Mon Jun 29 23:10:49 2026",
+        "total_kills_or_lockouts": 1
+      },
+      {
+        "boss": "Vulak`Aerr",
+        "id": 124128,
+        "url": "https://www.pqdi.cc/npc/124128",
+        "first_kill": "Fri May 09 22:20:44 2025",
+        "total_kills_or_lockouts": 6
+      },
+      {
+        "boss": "The Avatar of War",
+        "id": 113244,
+        "url": "https://www.pqdi.cc/npc/113244",
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ],
+    "Luclin": [
+      {
+        "boss": "Aten Ha Ra",
+        "id": 158436,
+        "url": "https://www.pqdi.cc/npc/158436",
+        "first_kill": "Tue Feb 17 23:48:46 2026",
+        "total_kills_or_lockouts": 9
+      }
+    ],
+    "Planes of Power": [
+      {
+        "boss": "Quarm",
+        "id": null,
+        "url": null,
+        "first_kill": null,
+        "total_kills_or_lockouts": 0
+      }
+    ]
+  },
+  "stats": {
+    "total_deaths": 220,
+    "resurrections_accepted": 139,
+    "environmental_or_bleeding_deaths": 25,
+    "total_level_dings": 65,
+    "max_level": 60,
+    "total_aas_earned": 112,
+    "total_lockouts": 675,
+    "total_guild_kill_announcements": 313,
+    "top_zones_by_entries": [
+      [
+        "Timorous Deep",
+        418
+      ],
+      [
+        "The Umbral Plains",
+        260
+      ],
+      [
+        "The Maiden's Eye",
+        211
+      ],
+      [
+        "Vex Thal",
+        209
+      ],
+      [
+        "The Dawnshroud Peaks",
+        182
+      ],
+      [
+        "Nexus",
+        165
+      ],
+      [
+        "Western Wastes",
+        134
+      ],
+      [
+        "Sanctus Seru",
+        133
+      ],
+      [
+        "Neriak - Commons",
+        131
+      ],
+      [
+        "Ssraeshza Temple",
+        131
+      ]
+    ],
+    "top_zones_by_deaths": [
+      [
+        "Vex Thal",
+        34
+      ],
+      [
+        "Field of Bone",
+        24
+      ],
+      [
+        "Ssraeshza Temple",
+        17
+      ],
+      [
+        "Temple of Veeshan",
+        15
+      ],
+      [
+        "Ruins of Old Guk",
+        6
+      ],
+      [
+        "Akheva Ruins",
+        6
+      ],
+      [
+        "Firiona Vie",
+        4
+      ],
+      [
+        "Timorous Deep",
+        4
+      ],
+      [
+        "Southern Felwithe",
+        4
+      ],
+      [
+        "Ruins of Sebilis",
+        4
+      ]
+    ],
+    "top_zones_by_aas": [
+      [
+        "The Maiden's Eye",
+        67
+      ],
+      [
+        "The City of Shar Vahl",
+        15
+      ],
+      [
+        "Katta Castellum",
+        9
+      ],
+      [
+        "The Grey",
+        5
+      ],
+      [
+        "The Paludal Caverns",
+        4
+      ],
+      [
+        "Vex Thal",
+        4
+      ],
+      [
+        "Dragon Necropolis",
+        3
+      ],
+      [
+        "Veksar",
+        2
+      ],
+      [
+        "Ssraeshza Temple",
+        2
+      ],
+      [
+        "Sanctus Seru",
+        1
+      ]
+    ],
+    "top_npcs_slain": [
+      {
+        "name": "decaying skeleton",
+        "count": 108,
+        "id": 78036,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/78036",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "carrion beetle hatchling",
+        "count": 62,
+        "id": 78042,
+        "level": 1,
+        "hp": 20,
+        "url": "https://www.pqdi.cc/npc/78042",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "scorpion",
+        "count": 49,
+        "id": 78002,
+        "level": 2,
+        "hp": 32,
+        "url": "https://www.pqdi.cc/npc/78002",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "scaled wolf pup",
+        "count": 37,
+        "id": 78004,
+        "level": 1,
+        "hp": 16,
+        "url": "https://www.pqdi.cc/npc/78004",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "scalebone skeleton",
+        "count": 21,
+        "id": 78045,
+        "level": 7,
+        "hp": 170,
+        "url": "https://www.pqdi.cc/npc/78045",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "skeleton",
+        "count": 20,
+        "id": 78116,
+        "level": 4,
+        "hp": 80,
+        "url": "https://www.pqdi.cc/npc/78116",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "Eye of Zondro",
+        "count": 20,
+        "id": null,
+        "level": null,
+        "hp": null,
+        "url": null,
+        "zone": null
+      },
+      {
+        "name": "greater skeleton",
+        "count": 17,
+        "id": 78242,
+        "level": 11,
+        "hp": 280,
+        "url": "https://www.pqdi.cc/npc/78242",
+        "zone": "Field of Bone"
+      },
+      {
+        "name": "icebone skeleton",
+        "count": 17,
+        "id": 83151,
+        "level": 22,
+        "hp": 710,
+        "url": "https://www.pqdi.cc/npc/83151",
+        "zone": "Swamp of No Hope"
+      },
+      {
+        "name": "drolvarg growler",
+        "count": 17,
+        "id": 84004,
+        "level": 29,
+        "hp": 1131,
+        "url": "https://www.pqdi.cc/npc/84004",
+        "zone": "Firiona Vie"
+      }
+    ],
+    "pvp_nemesis": [
+      {
+        "name": "Lazrahriz",
+        "count": 3
+      },
+      {
+        "name": "Zondro",
+        "count": 2
+      }
+    ],
+    "top_pve_nemesis": [
+      {
+        "name": "Kaas Thox Xi Aten Ha Ra",
+        "count": 6,
+        "id": 158437,
+        "level": 66,
+        "zone": "Vex Thal",
+        "url": "https://www.pqdi.cc/npc/158437"
+      },
+      {
+        "name": "carrion beetle hatchling",
+        "count": 4,
+        "id": 78042,
+        "level": 1,
+        "zone": "Field of Bone",
+        "url": "https://www.pqdi.cc/npc/78042"
+      },
+      {
+        "name": "Aten Ha Ra",
+        "count": 4,
+        "id": 158436,
+        "level": 66,
+        "zone": "Vex Thal",
+        "url": "https://www.pqdi.cc/npc/158436"
+      },
+      {
+        "name": "greater skeleton",
+        "count": 3,
+        "id": 78242,
+        "level": 11,
+        "zone": "Field of Bone",
+        "url": "https://www.pqdi.cc/npc/78242"
+      },
+      {
+        "name": "a shadowbound skulker",
+        "count": 3,
+        "id": 6100505,
+        "level": 55,
+        "zone": "injustice",
+        "url": "https://www.pqdi.cc/npc/6100505"
+      }
+    ],
+    "top_tell_recipients": [
+      [
+        "Pinkiy",
+        198
+      ],
+      [
+        "Tweedledum",
+        117
+      ],
+      [
+        "cephei",
+        68
+      ],
+      [
+        "Forbin",
+        50
+      ],
+      [
+        "bluesage",
+        44
+      ],
+      [
+        "pinkiy",
+        36
+      ],
+      [
+        "Aeolus",
+        36
+      ],
+      [
+        "Silkey",
+        35
+      ],
+      [
+        "Resent",
+        33
+      ],
+      [
+        "Trailmixx",
+        30
+      ]
+    ],
+    "top_tell_senders": [
+      [
+        "Xebeker",
+        572
+      ],
+      [
+        "Gasobtik",
+        497
+      ],
+      [
+        "Jasobab",
+        420
+      ],
+      [
+        "Karn",
+        368
+      ],
+      [
+        "Lareker",
+        368
+      ],
+      [
+        "Zebober",
+        342
+      ],
+      [
+        "Kenarn",
+        323
+      ],
+      [
+        "Lebarn",
+        321
+      ],
+      [
+        "Zobobn",
+        304
+      ],
+      [
+        "Zasn",
+        284
+      ]
+    ],
+    "top_group_companions": [
+      [
+        "Tsalwin",
+        534
+      ],
+      [
+        "Buffin",
+        425
+      ],
+      [
+        "Destu",
+        263
+      ],
+      [
+        "Qados",
+        215
+      ],
+      [
+        "Tailsweat",
+        171
+      ],
+      [
+        "Pharraun",
+        146
+      ],
+      [
+        "Ereptyle",
+        143
+      ],
+      [
+        "Kyrissean",
+        132
+      ],
+      [
+        "Syczlak",
+        123
+      ],
+      [
+        "Clerenic",
+        121
+      ]
+    ],
+    "top_raid_companions": [
+      [
+        "Tsalwin",
+        7589
+      ],
+      [
+        "Poep",
+        4296
+      ],
+      [
+        "Lyric",
+        3691
+      ],
+      [
+        "Audari",
+        3488
+      ],
+      [
+        "Lowgrade",
+        2364
+      ],
+      [
+        "Jill",
+        1796
+      ],
+      [
+        "Bluesage",
+        1339
+      ],
+      [
+        "Nfidell",
+        1119
+      ],
+      [
+        "Soulys",
+        1114
+      ],
+      [
+        "Docpyrrh",
+        1018
+      ]
+    ],
+    "top_looters_seen": [
+      [
+        "Tweedledum",
+        906
+      ],
+      [
+        "Cephei",
+        592
+      ],
+      [
+        "Kyulin",
+        270
+      ],
+      [
+        "Tsalwin",
+        219
+      ],
+      [
+        "Pinkiy",
+        185
+      ],
+      [
+        "Buffin",
+        169
+      ],
+      [
+        "Beerbottles",
+        164
+      ],
+      [
+        "Sturmboli",
+        159
+      ],
+      [
+        "Standard",
+        101
+      ],
+      [
+        "Cillian",
+        85
+      ]
+    ],
+    "top_spells_or_songs": [
+      [
+        "Dooming Darkness",
+        11321
+      ],
+      [
+        "Minor Shielding",
+        5182
+      ],
+      [
+        "Engulfing Darkness",
+        5047
+      ],
+      [
+        "Splurt",
+        4961
+      ],
+      [
+        "Cessation of Cor",
+        4898
+      ],
+      [
+        "Vexing Mordinia",
+        4446
+      ],
+      [
+        "Disease Cloud",
+        4216
+      ],
+      [
+        "Ancient: Lifebane",
+        4090
+      ],
+      [
+        "Mana Conversion",
+        3745
+      ],
+      [
+        "Funeral Pyre of Kelador",
+        3472
+      ],
+      [
+        "Ward Undead",
+        3056
+      ],
+      [
+        "Invoke Fear",
+        2971
+      ],
+      [
+        "Heat Blood",
+        2344
+      ],
+      [
+        "Pyrocruor",
+        2157
+      ],
+      [
+        "Bond of Death",
+        2103
+      ]
+    ],
+    "top_songs_memorized": [
+      [
+        "Ancient: Master of Death",
+        802
+      ],
+      [
+        "Augmentation of Death",
+        738
+      ],
+      [
+        "Cessation of Cor",
+        676
+      ],
+      [
+        "Pyrocruor",
+        617
+      ],
+      [
+        "Dooming Darkness",
+        611
+      ],
+      [
+        "Splurt",
+        449
+      ],
+      [
+        "Envenomed Bolt",
+        410
+      ],
+      [
+        "Gate",
+        393
+      ],
+      [
+        "Emissary of Thule",
+        372
+      ],
+      [
+        "Vexing Mordinia",
+        363
+      ],
+      [
+        "Levant",
+        355
+      ],
+      [
+        "Shield of the Magi",
+        350
+      ],
+      [
+        "Augment Death",
+        346
+      ],
+      [
+        "Demi Lich",
+        346
+      ],
+      [
+        "Allure of Death",
+        337
+      ]
+    ],
+    "bard_twisting": {
+      "selo_pulses": 607,
+      "songs_completed": 0,
+      "missed_notes": 0
+    },
+    "cleric_stats": {
+      "complete_healing_casts": 0,
+      "rezzes_cast": 0,
+      "divine_intervention_casts": 0,
+      "group_heals": 0,
+      "aegolism_casts": 0,
+      "heroic_bond_casts": 0
+    },
+    "necro_stats": {
+      "twitch_casts": 424,
+      "dots_cast": 17624,
+      "lifetaps_cast": 365,
+      "feign_death_casts": 1356,
+      "pet_summons": 614,
+      "rezzes_cast": 8
+    },
+    "top_raid_boss_kills_overall": [
+      [
+        "King Tranix",
+        18
+      ],
+      [
+        "Kaas Thox Xi Aten Ha Ra",
+        17
+      ],
+      [
+        "Thall Va Xakra",
+        14
+      ],
+      [
+        "a glyph covered serpent",
+        13
+      ],
+      [
+        "Vyzh`dra the Exiled",
+        13
+      ],
+      [
+        "Vyzh`dra the Cursed",
+        13
+      ],
+      [
+        "Shei Vinitras",
+        13
+      ],
+      [
+        "Diabo Xi Xin",
+        12
+      ],
+      [
+        "Kaas Thox Xi Ans Dyek",
+        11
+      ],
+      [
+        "Diabo Xi Xin Thall",
+        11
+      ],
+      [
+        "Diabo Xi Va",
+        11
+      ],
+      [
+        "Thall Va Kelun",
+        11
+      ],
+      [
+        "Diabo Xi Va Temariel",
+        11
+      ],
+      [
+        "Lcea Katta",
+        11
+      ],
+      [
+        "Va Xi Aten Ha Ra",
+        9
+      ]
+    ]
+  },
+  "level_timeline_firsts": [
+    {
+      "timestamp": "Sun Jun 02 22:32:52 2024",
+      "level": 2,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jun 02 23:36:44 2024",
+      "level": 3,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 03 18:22:59 2024",
+      "level": 4,
+      "zone": "Cabilis East",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 03 19:43:27 2024",
+      "level": 5,
+      "zone": "Cabilis East",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jun 05 10:32:44 2024",
+      "level": 6,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 10 12:31:52 2024",
+      "level": 7,
+      "zone": "Swamp of No Hope",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 10 15:09:26 2024",
+      "level": 8,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jun 11 01:03:17 2024",
+      "level": 9,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jun 15 10:55:43 2024",
+      "level": 10,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jun 15 23:59:27 2024",
+      "level": 11,
+      "zone": "Kurn's Tower",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jun 16 01:25:30 2024",
+      "level": 12,
+      "zone": "Kurn's Tower",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 17 00:58:06 2024",
+      "level": 13,
+      "zone": "Kurn's Tower",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 17 10:41:07 2024",
+      "level": 14,
+      "zone": "Kurn's Tower",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jun 18 00:29:35 2024",
+      "level": 15,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jun 18 22:54:57 2024",
+      "level": 16,
+      "zone": "Kurn's Tower",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jun 19 19:09:47 2024",
+      "level": 17,
+      "zone": "Kurn's Tower (Alternate)",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jun 19 21:08:53 2024",
+      "level": 18,
+      "zone": "Kurn's Tower (Alternate)",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Jun 20 19:55:31 2024",
+      "level": 19,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Jun 21 09:50:06 2024",
+      "level": 20,
+      "zone": "Field of Bone",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jun 22 22:50:17 2024",
+      "level": 21,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jun 23 01:06:15 2024",
+      "level": 22,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jun 23 16:08:33 2024",
+      "level": 23,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 24 00:03:11 2024",
+      "level": 24,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 24 16:38:45 2024",
+      "level": 25,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jun 24 22:33:39 2024",
+      "level": 26,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jun 25 10:28:31 2024",
+      "level": 27,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jun 25 18:26:46 2024",
+      "level": 28,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jun 25 22:37:14 2024",
+      "level": 29,
+      "zone": "Lake of Ill Omen",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Jun 28 00:08:03 2024",
+      "level": 30,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Jun 28 23:37:33 2024",
+      "level": 31,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jun 30 00:21:38 2024",
+      "level": 32,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jun 30 22:56:04 2024",
+      "level": 33,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jul 01 20:56:25 2024",
+      "level": 34,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jul 02 09:37:55 2024",
+      "level": 35,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Jul 04 23:45:24 2024",
+      "level": 36,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jul 06 22:53:53 2024",
+      "level": 37,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jul 07 14:20:39 2024",
+      "level": 38,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jul 08 00:47:46 2024",
+      "level": 39,
+      "zone": "Firiona Vie",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Jul 09 23:25:16 2024",
+      "level": 40,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Jul 12 21:18:51 2024",
+      "level": 41,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jul 13 19:36:34 2024",
+      "level": 42,
+      "zone": "The Overthere",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Jul 15 19:59:18 2024",
+      "level": 43,
+      "zone": "The Dreadlands",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 17 00:41:32 2024",
+      "level": 44,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 17 17:58:31 2024",
+      "level": 45,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Fri Jul 19 19:42:39 2024",
+      "level": 46,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Jul 20 00:13:17 2024",
+      "level": 47,
+      "zone": "The Emerald Jungle",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jul 21 00:59:29 2024",
+      "level": 48,
+      "zone": "Oggok",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Jul 28 22:52:23 2024",
+      "level": 49,
+      "zone": "East Freeport",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Jul 31 10:17:03 2024",
+      "level": 50,
+      "zone": "East Freeport",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Aug 01 12:32:10 2024",
+      "level": 51,
+      "zone": "Skyfire Mountains",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sat Aug 03 01:04:22 2024",
+      "level": 52,
+      "zone": "Southern Felwithe",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Aug 04 23:43:49 2024",
+      "level": 53,
+      "zone": "Southern Felwithe",
+      "first_time": true
+    },
+    {
+      "timestamp": "Tue Aug 06 21:41:51 2024",
+      "level": 54,
+      "zone": "Northern Felwithe",
+      "first_time": true
+    },
+    {
+      "timestamp": "Thu Aug 15 22:58:32 2024",
+      "level": 55,
+      "zone": "Ruins of Old Guk",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Sep 01 00:59:28 2024",
+      "level": 56,
+      "zone": "Neriak - Foreign Quarter",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Oct 02 12:16:18 2024",
+      "level": 57,
+      "zone": "Halls of Injustice",
+      "first_time": true
+    },
+    {
+      "timestamp": "Mon Oct 07 10:37:00 2024",
+      "level": 58,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Wed Oct 09 10:15:01 2024",
+      "level": 59,
+      "zone": "Halls of Injustice, 40 Ward",
+      "first_time": true
+    },
+    {
+      "timestamp": "Sun Oct 13 16:00:15 2024",
+      "level": 60,
+      "zone": "Halls of Injustice 6",
+      "first_time": true
+    }
+  ],
+  "aa_events": [
+    {
+      "timestamp": "Fri Aug 15 23:08:36 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Aug 16 13:14:10 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Aug 16 15:09:51 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Aug 16 18:21:49 2025",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 19 15:32:49 2025",
+      "banked": 1,
+      "zone": "The Paludal Caverns"
+    },
+    {
+      "timestamp": "Tue Aug 19 16:55:12 2025",
+      "banked": 1,
+      "zone": "The Paludal Caverns"
+    },
+    {
+      "timestamp": "Wed Oct 22 14:29:09 2025",
+      "banked": 1,
+      "zone": "The Paludal Caverns"
+    },
+    {
+      "timestamp": "Tue Nov 11 19:42:54 2025",
+      "banked": 2,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Tue Nov 11 20:21:35 2025",
+      "banked": 3,
+      "zone": "Veksar"
+    },
+    {
+      "timestamp": "Fri Nov 28 23:05:32 2025",
+      "banked": 2,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Sun Nov 30 14:06:17 2025",
+      "banked": 3,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Mon Dec 01 10:54:32 2025",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Dec 04 20:15:07 2025",
+      "banked": 1,
+      "zone": "The Grey"
+    },
+    {
+      "timestamp": "Thu Dec 04 21:26:14 2025",
+      "banked": 2,
+      "zone": "The Grey"
+    },
+    {
+      "timestamp": "Thu Dec 04 22:09:19 2025",
+      "banked": 3,
+      "zone": "The Grey"
+    },
+    {
+      "timestamp": "Fri Dec 05 23:40:08 2025",
+      "banked": 4,
+      "zone": "Ssraeshza Temple"
+    },
+    {
+      "timestamp": "Mon Dec 08 20:40:37 2025",
+      "banked": 5,
+      "zone": "Dragon Necropolis"
+    },
+    {
+      "timestamp": "Tue Dec 09 12:01:54 2025",
+      "banked": 6,
+      "zone": "Dragon Necropolis"
+    },
+    {
+      "timestamp": "Wed Dec 24 14:06:17 2025",
+      "banked": 1,
+      "zone": "Dragon Necropolis"
+    },
+    {
+      "timestamp": "Mon Jan 19 00:02:48 2026",
+      "banked": 2,
+      "zone": "Vex Thal"
+    },
+    {
+      "timestamp": "Thu Jan 22 19:12:34 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 19:34:04 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 19:59:48 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 20:22:56 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 20:43:46 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 21:11:18 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 21:39:22 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 22:11:24 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 22:44:55 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 23:21:54 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Jan 22 23:46:34 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Feb 10 13:28:22 2026",
+      "banked": 2,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Wed Feb 11 01:05:25 2026",
+      "banked": 3,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Wed Feb 11 08:29:41 2026",
+      "banked": 4,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Wed Feb 11 16:15:39 2026",
+      "banked": 3,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Tue Feb 24 16:02:09 2026",
+      "banked": 4,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Tue Feb 24 16:54:36 2026",
+      "banked": 1,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Tue Feb 24 17:38:22 2026",
+      "banked": 2,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Fri Feb 27 16:13:14 2026",
+      "banked": 3,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Fri Feb 27 19:35:55 2026",
+      "banked": 4,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Fri Feb 27 20:20:02 2026",
+      "banked": 5,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Sat Apr 18 14:10:44 2026",
+      "banked": 6,
+      "zone": "The Paludal Caverns"
+    },
+    {
+      "timestamp": "Sat Apr 18 17:55:30 2026",
+      "banked": 1,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Sun Apr 19 18:14:16 2026",
+      "banked": 2,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Mon Apr 20 15:19:43 2026",
+      "banked": 1,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Wed Apr 22 09:57:58 2026",
+      "banked": 2,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Thu Apr 23 00:13:44 2026",
+      "banked": 3,
+      "zone": "The City of Shar Vahl"
+    },
+    {
+      "timestamp": "Thu Apr 23 13:33:43 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Apr 23 13:49:56 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Apr 23 14:06:59 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun May 31 14:51:27 2026",
+      "banked": 3,
+      "zone": "Sanctus Seru"
+    },
+    {
+      "timestamp": "Tue Jun 23 20:31:40 2026",
+      "banked": 4,
+      "zone": "Vex Thal"
+    },
+    {
+      "timestamp": "Fri Jul 10 11:00:41 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Jul 10 11:22:53 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Jul 10 11:44:26 2026",
+      "banked": 7,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Jul 10 12:04:06 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Jul 10 17:33:43 2026",
+      "banked": 9,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Jul 10 17:51:14 2026",
+      "banked": 1,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Jul 10 18:13:43 2026",
+      "banked": 2,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Jul 11 20:39:18 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Jul 12 12:07:31 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Jul 12 15:13:20 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Jul 12 15:43:20 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Jul 12 16:06:06 2026",
+      "banked": 7,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Jul 12 16:28:24 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sun Jul 12 22:07:07 2026",
+      "banked": 3,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Jul 13 20:31:17 2026",
+      "banked": 4,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Jul 13 20:50:27 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 14 15:18:28 2026",
+      "banked": 6,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 14 18:29:00 2026",
+      "banked": 7,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 14 20:43:24 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Jul 21 14:21:32 2026",
+      "banked": 9,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Tue Jul 21 15:14:04 2026",
+      "banked": 10,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Tue Jul 21 16:00:33 2026",
+      "banked": 11,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Fri Jul 24 10:57:22 2026",
+      "banked": 6,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Fri Jul 24 11:35:50 2026",
+      "banked": 7,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Sat Jul 25 00:12:31 2026",
+      "banked": 2,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Sat Jul 25 10:56:11 2026",
+      "banked": 3,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Sat Jul 25 11:37:18 2026",
+      "banked": 4,
+      "zone": "Katta Castellum"
+    },
+    {
+      "timestamp": "Sun Aug 02 19:08:45 2026",
+      "banked": 5,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Aug 22 21:32:24 2026",
+      "banked": 6,
+      "zone": "Vex Thal"
+    },
+    {
+      "timestamp": "Mon Aug 24 20:44:27 2026",
+      "banked": 7,
+      "zone": "The Grey"
+    },
+    {
+      "timestamp": "Tue Aug 25 15:19:21 2026",
+      "banked": 8,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 25 15:36:45 2026",
+      "banked": 9,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 25 15:54:03 2026",
+      "banked": 10,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 25 16:13:42 2026",
+      "banked": 11,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 25 16:32:01 2026",
+      "banked": 12,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 25 16:49:26 2026",
+      "banked": 13,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Aug 25 20:29:02 2026",
+      "banked": 14,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 26 21:48:04 2026",
+      "banked": 15,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 26 22:10:36 2026",
+      "banked": 16,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 26 22:29:18 2026",
+      "banked": 17,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Aug 26 22:46:37 2026",
+      "banked": 18,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Aug 27 10:27:07 2026",
+      "banked": 19,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Aug 27 10:44:50 2026",
+      "banked": 20,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Thu Aug 27 11:07:26 2026",
+      "banked": 21,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Aug 28 15:57:40 2026",
+      "banked": 22,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Aug 28 16:23:57 2026",
+      "banked": 23,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Aug 28 16:46:39 2026",
+      "banked": 24,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Aug 28 17:08:33 2026",
+      "banked": 25,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Aug 29 17:07:30 2026",
+      "banked": 26,
+      "zone": "The Grey"
+    },
+    {
+      "timestamp": "Fri Sep 04 17:59:22 2026",
+      "banked": 27,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Fri Sep 04 18:14:12 2026",
+      "banked": 28,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Sep 05 16:24:22 2026",
+      "banked": 29,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Sep 05 16:39:16 2026",
+      "banked": 30,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Sat Sep 05 20:41:14 2026",
+      "banked": 28,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Tue Sep 08 20:41:47 2026",
+      "banked": 29,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Wed Sep 09 17:32:17 2026",
+      "banked": 24,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Sep 14 09:25:26 2026",
+      "banked": 25,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Sep 14 09:42:47 2026",
+      "banked": 26,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Sep 14 10:00:33 2026",
+      "banked": 27,
+      "zone": "The Maiden's Eye"
+    },
+    {
+      "timestamp": "Mon Sep 14 11:39:56 2026",
+      "banked": 28,
+      "zone": "Vex Thal"
+    }
+  ]
+}

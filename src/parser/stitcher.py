@@ -35,7 +35,6 @@ class LogFileInfo:
         
         # Read last timestamp by seeking near end of file
         with open(self.file_path, "rb") as f:
-            # Read last 64 KB
             seek_pos = max(0, self.size_bytes - 65536)
             f.seek(seek_pos)
             tail_lines = f.read().decode("utf-8", errors="replace").splitlines()
@@ -66,11 +65,6 @@ class LogStitcher:
         self._discover_files()
 
     def _discover_files(self):
-        # Match patterns like:
-        # eqlog_Character_pq.proj.txt
-        # eqlog_Character_pq.proj_archive_*.txt
-        # eqlog_Character_pq.proj_*.txt
-        # log_archive/eqlog_Character_*.txt
         patterns = [
             os.path.join(self.base_dir, f"eqlog_{self.character_name}_pq.proj*.txt"),
             os.path.join(self.base_dir, "log_archive", f"eqlog_{self.character_name}_*.txt")
@@ -79,16 +73,18 @@ class LogStitcher:
         found_paths = set()
         for pat in patterns:
             for p in glob.glob(pat):
-                # Ignore duplicate files like ' - Copy'
                 if " - Copy" in p:
                     continue
                 found_paths.add(p)
 
         infos = []
         for p in found_paths:
-            info = LogFileInfo(p)
-            if info.first_dt and info.last_dt:
-                infos.append(info)
+            try:
+                info = LogFileInfo(p)
+                if info.first_dt and info.last_dt:
+                    infos.append(info)
+            except (PermissionError, OSError):
+                continue
 
         # Sort chronologically by first timestamp
         infos.sort(key=lambda x: x.first_dt)
@@ -108,31 +104,23 @@ class LogStitcher:
 
     def stream_lines(self) -> Generator[str, None, None]:
         """
-        Yields lines across all files in chronological order, skipping lines
-        if an archive has exact timestamp overlap with a subsequent file.
+        Yields lines across all files in chronological order.
+        Only de-duplicates across file transitions (if file N+1 begins before file N ended).
         """
-        last_yielded_dt = None
+        prev_file_end_dt = None
 
         for fi in self.file_infos:
             print(f"[LogStitcher] Streaming {os.path.basename(fi.file_path)}...")
             with open(fi.file_path, "r", encoding="utf-8", errors="replace") as f:
                 for line in f:
-                    # Optional timestamp overlap check
-                    if last_yielded_dt:
+                    if prev_file_end_dt:
                         m = TS_RE.match(line)
                         if m:
                             try:
                                 dt = datetime.strptime(m.group("ts"), TIME_FORMAT)
-                                if dt <= last_yielded_dt:
+                                if dt <= prev_file_end_dt:
                                     continue
-                                last_yielded_dt = dt
-                            except ValueError:
-                                pass
-                    else:
-                        m = TS_RE.match(line)
-                        if m:
-                            try:
-                                last_yielded_dt = datetime.strptime(m.group("ts"), TIME_FORMAT)
                             except ValueError:
                                 pass
                     yield line
+            prev_file_end_dt = fi.last_dt

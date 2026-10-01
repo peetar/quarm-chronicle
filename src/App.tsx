@@ -384,9 +384,21 @@ export const App: React.FC = () => {
                             Level {char.level} {char.characterClass}
                           </div>
                         </div>
-                        <span className="text-[10px] text-cyan font-mono bg-cyan/10 border border-cyan/30 px-1.5 py-0.5 rounded">
-                          {char.totalLogLines.toLocaleString()} lines
-                        </span>
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-[10px] text-cyan font-mono bg-cyan/10 border border-cyan/30 px-1.5 py-0.5 rounded">
+                            {char.totalLogLines.toLocaleString()} lines
+                          </span>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleDeleteSavedCharacter(char.name);
+                            }}
+                            className="text-slate-500 hover:text-rose-400 hover:bg-rose-500/10 p-1 rounded transition-colors"
+                            title={`Delete ${char.name} from cache`}
+                          >
+                            🗑️
+                          </button>
+                        </div>
                       </div>
                       <div className="mt-3 pt-2 border-t border-slate-800 text-[10px] text-slate-500 flex justify-between items-center">
                         <span>Guild: &lt;{char.guild}&gt;</span>

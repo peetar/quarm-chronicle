@@ -91,7 +91,7 @@ export const ProjectorBuilder: React.FC<ProjectorBuilderProps> = ({
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          {/* Button 1: Regenerate all selected cards (with current data) */}
+          {/* Button 1: View Chronicle Dashboard with selected cards */}
           <button
             onClick={() => {
               if (onRegenerateCards) {
@@ -103,9 +103,9 @@ export const ProjectorBuilder: React.FC<ProjectorBuilderProps> = ({
               }
             }}
             className="text-xs px-3.5 py-1.5 rounded-lg border border-gold bg-gold/20 text-gold-soft hover:bg-gold/30 font-bold transition-all shadow-gold-glow flex items-center gap-1.5"
-            title="Regenerate all selected cards and timeline with current data"
+            title="Open the Chronicle Dashboard with the selected cards below"
           >
-            <span>🔄</span> Regenerate Selected Cards
+            <span>📜</span> View Dashboard ({selectedCardIds.length})
           </button>
 
           {/* Button 2: Reparse the log (and then regenerate tiles) */}
@@ -233,14 +233,14 @@ export const ProjectorBuilder: React.FC<ProjectorBuilderProps> = ({
         <div className="flex flex-wrap justify-between items-center gap-3 pb-3 border-b border-slate-800">
           <div>
             <h3 className="text-sm font-bold text-slate-200 uppercase tracking-wider flex items-center gap-2">
-              <span>🧩</span> Modular Chronicle Cards
+              <span>🧩</span> Modular Chronicle Cards ({selectedCardIds.length} of {CARD_REGISTRY.length} active)
             </h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Select which cards are displayed in your chosen projector.
+              Check or uncheck cards to customize your Chronicle Dashboard and Slideshow views.
             </p>
           </div>
 
-          <div className="flex items-center gap-2 text-xs">
+          <div className="flex flex-wrap items-center gap-2 text-xs">
             <button
               onClick={handleSelectDefault}
               className="px-2.5 py-1 rounded bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors"
@@ -258,6 +258,12 @@ export const ProjectorBuilder: React.FC<ProjectorBuilderProps> = ({
               className="px-2.5 py-1 rounded bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors"
             >
               Clear All
+            </button>
+            <button
+              onClick={() => onLaunchProjector('summary')}
+              className="px-3 py-1 rounded bg-gold/20 border border-gold text-gold-soft font-bold hover:bg-gold/30 transition-colors flex items-center gap-1 shadow-gold-glow"
+            >
+              <span>🚀</span> Launch Dashboard ({selectedCardIds.length}) &rarr;
             </button>
           </div>
         </div>
@@ -298,6 +304,19 @@ export const ProjectorBuilder: React.FC<ProjectorBuilderProps> = ({
               </label>
             );
           })}
+        </div>
+
+        {/* Bottom Action Footer */}
+        <div className="pt-3 border-t border-slate-800/80 flex flex-wrap justify-between items-center gap-3">
+          <span className="text-xs text-slate-400">
+            {selectedCardIds.length} of {CARD_REGISTRY.length} cards selected
+          </span>
+          <button
+            onClick={() => onLaunchProjector('summary')}
+            className="text-xs px-4 py-2 rounded-lg bg-gold/20 border border-gold text-gold-soft font-bold hover:bg-gold/30 transition-colors flex items-center gap-1.5 shadow-gold-glow"
+          >
+            <span>🚀</span> Launch Chronicle Dashboard ({selectedCardIds.length} cards) &rarr;
+          </button>
         </div>
       </div>
     </div>

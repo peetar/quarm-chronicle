@@ -31712,7 +31712,128 @@
         "count": 11
       }
     ],
-    "topSlainMobs": [],
+    "topSlainMobs": [
+      {
+        "mob": "orc centurion",
+        "count": 132,
+        "id": 9129,
+        "url": "https://www.pqdi.cc/npc/9129",
+        "level": 3,
+        "hp": 48
+      },
+      {
+        "mob": "Dervish Cutthroat",
+        "count": 70,
+        "id": 21080,
+        "url": "https://www.pqdi.cc/npc/21080",
+        "level": 10,
+        "hp": 192
+      },
+      {
+        "mob": "caiman",
+        "count": 51,
+        "id": 37027,
+        "url": "https://www.pqdi.cc/npc/37027",
+        "level": 11,
+        "hp": 280
+      },
+      {
+        "mob": "deepwater crocodile",
+        "count": 34,
+        "id": 37108,
+        "url": "https://www.pqdi.cc/npc/37108",
+        "level": 17,
+        "hp": 530
+      },
+      {
+        "mob": "crocodile",
+        "count": 29,
+        "id": 37042,
+        "url": "https://www.pqdi.cc/npc/37042",
+        "level": 13,
+        "hp": 360
+      },
+      {
+        "mob": "young kodiak",
+        "count": 24,
+        "id": 20031,
+        "url": "https://www.pqdi.cc/npc/20031",
+        "level": 9,
+        "hp": 220
+      },
+      {
+        "mob": "orc oracle",
+        "count": 24,
+        "id": 22052,
+        "url": "https://www.pqdi.cc/npc/22052",
+        "level": 8,
+        "hp": 190
+      },
+      {
+        "mob": "orc apprentice",
+        "count": 23,
+        "id": 10008,
+        "url": "https://www.pqdi.cc/npc/10008",
+        "level": 1,
+        "hp": 20
+      },
+      {
+        "mob": "willowisp",
+        "count": 22,
+        "id": 4154,
+        "url": "https://www.pqdi.cc/npc/4154",
+        "level": 9,
+        "hp": 220
+      },
+      {
+        "mob": "darkweed snake",
+        "count": 22,
+        "id": 20035,
+        "url": "https://www.pqdi.cc/npc/20035",
+        "level": 8,
+        "hp": 190
+      },
+      {
+        "mob": "orc legionnaire",
+        "count": 21,
+        "id": 9009,
+        "url": "https://www.pqdi.cc/npc/9009",
+        "level": 11,
+        "hp": 290
+      },
+      {
+        "mob": "deepwater caiman",
+        "count": 19,
+        "id": 37130,
+        "url": "https://www.pqdi.cc/npc/37130",
+        "level": 15,
+        "hp": 430
+      },
+      {
+        "mob": "giant spider",
+        "count": 18,
+        "id": 12025,
+        "url": "https://www.pqdi.cc/npc/12025",
+        "level": 7,
+        "hp": 170
+      },
+      {
+        "mob": "puma",
+        "count": 17,
+        "id": 21027,
+        "url": "https://www.pqdi.cc/npc/21027",
+        "level": 5,
+        "hp": 110
+      },
+      {
+        "mob": "krup ghoul knight",
+        "count": 16,
+        "id": 89081,
+        "url": "https://www.pqdi.cc/npc/89081",
+        "level": 47,
+        "hp": 10828
+      }
+    ],
     "aaByZone": [
       {
         "zone": "The Fungus Grove",
@@ -31790,6 +31911,295 @@
       }
     ],
     "bardSongsTwisted": 180192,
-    "bardSeloPulses": 84708
+    "bardSeloPulses": 84708,
+    "totalKills": 1348,
+    "bossKillShots": [
+      {
+        "boss": "A Shadow Master",
+        "count": 3,
+        "id": 163046,
+        "url": "https://www.pqdi.cc/npc/163046",
+        "zone": "Grieg's End",
+        "lastTimestamp": "Wed Jun 24 16:14:22 2026",
+        "lastDate": "Jun 24, 2026",
+        "isPinnacle": false,
+        "hp": 45000
+      },
+      {
+        "boss": "Vulak`Aerr",
+        "count": 2,
+        "id": 124128,
+        "url": "https://www.pqdi.cc/npc/124128",
+        "zone": "Temple of Veeshan",
+        "lastTimestamp": "Sun Nov 09 00:11:41 2025",
+        "lastDate": "Nov 09, 2025",
+        "isPinnacle": true,
+        "hp": 150000
+      },
+      {
+        "boss": "Zlandicar",
+        "count": 2,
+        "id": 123115,
+        "url": "https://www.pqdi.cc/npc/123115",
+        "zone": "Dragon Necropolis",
+        "lastTimestamp": "Sun Dec 07 21:53:12 2025",
+        "lastDate": "Dec 07, 2025",
+        "isPinnacle": false,
+        "hp": 110000
+      },
+      {
+        "boss": "Hraashna the Warder",
+        "count": 2,
+        "id": 128093,
+        "url": "https://www.pqdi.cc/npc/128093",
+        "zone": "Sleeper's Tomb",
+        "lastTimestamp": "Mon Nov 10 21:54:12 2025",
+        "lastDate": "Nov 10, 2025",
+        "isPinnacle": false,
+        "hp": 200000
+      },
+      {
+        "boss": "Queen Raltaas",
+        "count": 1,
+        "id": 123020,
+        "url": "https://www.pqdi.cc/npc/123020",
+        "zone": "Dragon Necropolis",
+        "lastTimestamp": "Wed Nov 12 01:02:54 2025",
+        "lastDate": "Nov 12, 2025",
+        "isPinnacle": false,
+        "hp": 60000
+      },
+      {
+        "boss": "Essedera",
+        "count": 1,
+        "id": 124024,
+        "url": "https://www.pqdi.cc/npc/124024",
+        "zone": "Temple of Veeshan",
+        "lastTimestamp": "Wed Nov 12 00:09:17 2025",
+        "lastDate": "Nov 12, 2025",
+        "isPinnacle": false,
+        "hp": 120000
+      },
+      {
+        "boss": "Zun Centien Xakra",
+        "count": 1,
+        "id": 158058,
+        "url": "https://www.pqdi.cc/npc/158058",
+        "zone": "Vex Thal",
+        "lastTimestamp": "Wed Jan 21 22:44:54 2026",
+        "lastDate": "Jan 21, 2026",
+        "isPinnacle": false,
+        "hp": 75000
+      },
+      {
+        "boss": "Lord Nagafen",
+        "count": 1,
+        "id": 32040,
+        "url": "https://www.pqdi.cc/npc/32040",
+        "zone": "Nagafen's Lair",
+        "lastTimestamp": "Wed Feb 11 17:13:28 2026",
+        "lastDate": "Feb 11, 2026",
+        "isPinnacle": true,
+        "hp": 32000
+      },
+      {
+        "boss": "Gesha Mraal",
+        "count": 1,
+        "id": 163101,
+        "url": "https://www.pqdi.cc/npc/163101",
+        "zone": "Grieg's End",
+        "lastTimestamp": "Tue Sep 22 17:57:00 2026",
+        "lastDate": "Sep 22, 2026",
+        "isPinnacle": false,
+        "hp": 40000
+      },
+      {
+        "boss": "Singultus Primorus",
+        "count": 1,
+        "id": 163019,
+        "url": "https://www.pqdi.cc/npc/163019",
+        "zone": "Grieg's End",
+        "lastTimestamp": "Tue Sep 08 11:26:24 2026",
+        "lastDate": "Sep 08, 2026",
+        "isPinnacle": false,
+        "hp": 20000
+      },
+      {
+        "boss": "a fiery guardian",
+        "count": 1,
+        "id": 124080,
+        "url": "https://www.pqdi.cc/npc/124080",
+        "zone": "Temple of Veeshan",
+        "lastTimestamp": "Tue Oct 14 23:14:30 2025",
+        "lastDate": "Oct 14, 2025",
+        "isPinnacle": false,
+        "hp": 65500
+      },
+      {
+        "boss": "Dain Frostreaver IV",
+        "count": 1,
+        "id": 129003,
+        "url": "https://www.pqdi.cc/npc/129003",
+        "zone": "Icewell Keep",
+        "lastTimestamp": "Tue Oct 07 21:26:58 2025",
+        "lastDate": "Oct 07, 2025",
+        "isPinnacle": false,
+        "hp": 400000
+      },
+      {
+        "boss": "Terror",
+        "count": 1,
+        "id": 72002,
+        "url": "https://www.pqdi.cc/npc/72002",
+        "zone": "Plane of Fear (Instanced)",
+        "lastTimestamp": "Thu May 28 22:41:55 2026",
+        "lastDate": "May 28, 2026",
+        "isPinnacle": false,
+        "hp": 32000
+      },
+      {
+        "boss": "Zov Zethon Xakra",
+        "count": 1,
+        "id": 158022,
+        "url": "https://www.pqdi.cc/npc/158022",
+        "zone": "Vex Thal",
+        "lastTimestamp": "Thu Feb 12 23:36:40 2026",
+        "lastDate": "Feb 12, 2026",
+        "isPinnacle": false,
+        "hp": 50000
+      },
+      {
+        "boss": "Pli Zethon",
+        "count": 1,
+        "id": 158035,
+        "url": "https://www.pqdi.cc/npc/158035",
+        "zone": "Vex Thal",
+        "lastTimestamp": "Thu Feb 12 23:35:25 2026",
+        "lastDate": "Feb 12, 2026",
+        "isPinnacle": false,
+        "hp": 65000
+      },
+      {
+        "boss": "Qua Va Liako",
+        "count": 1,
+        "id": 158067,
+        "url": "https://www.pqdi.cc/npc/158067",
+        "zone": "Vex Thal",
+        "lastTimestamp": "Thu Feb 12 23:28:17 2026",
+        "lastDate": "Feb 12, 2026",
+        "isPinnacle": false,
+        "hp": 60000
+      },
+      {
+        "boss": "Midayor",
+        "count": 1,
+        "id": 124025,
+        "url": "https://www.pqdi.cc/npc/124025",
+        "zone": "Temple of Veeshan",
+        "lastTimestamp": "Sun Sep 07 00:34:42 2025",
+        "lastDate": "Sep 07, 2025",
+        "isPinnacle": false,
+        "hp": 120000
+      },
+      {
+        "boss": "Overking Bathezid",
+        "count": 1,
+        "id": 103056,
+        "url": "https://www.pqdi.cc/npc/103056",
+        "zone": "Chardok",
+        "lastTimestamp": "Sun Nov 16 22:33:51 2025",
+        "lastDate": "Nov 16, 2025",
+        "isPinnacle": false,
+        "hp": 32000
+      },
+      {
+        "boss": "Ventani the Warder",
+        "count": 1,
+        "id": 128091,
+        "url": "https://www.pqdi.cc/npc/128091",
+        "zone": "Sleeper's Tomb",
+        "lastTimestamp": "Sun Jun 07 21:08:46 2026",
+        "lastDate": "Jun 07, 2026",
+        "isPinnacle": false,
+        "hp": 200000
+      },
+      {
+        "boss": "Tukaarak the Warder",
+        "count": 1,
+        "id": 128092,
+        "url": "https://www.pqdi.cc/npc/128092",
+        "zone": "Sleeper's Tomb",
+        "lastTimestamp": "Sun Jul 19 20:45:38 2026",
+        "lastDate": "Jul 19, 2026",
+        "isPinnacle": false,
+        "hp": 200000
+      },
+      {
+        "boss": "Qua Zethon",
+        "count": 1,
+        "id": 158048,
+        "url": "https://www.pqdi.cc/npc/158048",
+        "zone": "Vex Thal",
+        "lastTimestamp": "Sun Jan 04 22:38:59 2026",
+        "lastDate": "Jan 04, 2026",
+        "isPinnacle": false,
+        "hp": 45000
+      },
+      {
+        "boss": "Pli Zethon Xakra",
+        "count": 1,
+        "id": 158036,
+        "url": "https://www.pqdi.cc/npc/158036",
+        "zone": "Vex Thal",
+        "lastTimestamp": "Sun Jan 04 22:26:16 2026",
+        "lastDate": "Jan 04, 2026",
+        "isPinnacle": false,
+        "hp": 65000
+      },
+      {
+        "boss": "a gyrating mass",
+        "count": 1,
+        "id": 48335,
+        "url": "https://www.pqdi.cc/npc/48335",
+        "zone": "Accursed Temple of Cazic Thule",
+        "lastTimestamp": "Sun Aug 16 17:28:26 2026",
+        "lastDate": "Aug 16, 2026",
+        "isPinnacle": false,
+        "hp": 20000
+      },
+      {
+        "boss": "Kelorek'Dar",
+        "count": 1,
+        "id": 117000,
+        "url": "https://www.pqdi.cc/npc/117000",
+        "zone": "Cobaltscar",
+        "lastTimestamp": "Sat Sep 06 01:10:45 2025",
+        "lastDate": "Sep 06, 2025",
+        "isPinnacle": false,
+        "hp": 100000
+      },
+      {
+        "boss": "Xaui Tatrua",
+        "count": 1,
+        "id": 179030,
+        "url": "https://www.pqdi.cc/npc/179030",
+        "zone": "Akheva Ruins",
+        "lastTimestamp": "Sat Jan 24 01:12:54 2026",
+        "lastDate": "Jan 24, 2026",
+        "isPinnacle": false,
+        "hp": 75000
+      },
+      {
+        "boss": "Fallen Sergeant",
+        "count": 1,
+        "id": 176011,
+        "url": "https://www.pqdi.cc/npc/176011",
+        "zone": "The Umbral Plains",
+        "lastTimestamp": "Mon Aug 31 10:59:57 2026",
+        "lastDate": "Aug 31, 2026",
+        "isPinnacle": false,
+        "hp": 60000
+      }
+    ]
   }
 }

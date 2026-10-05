@@ -34,6 +34,7 @@
   - [x] Replace separate Overview Snapshot mode with direct 📋 Copy Image and 💾 Download PNG buttons on the interactive timeline header.
   - [x] Add monk martial arts, feign death failure tracking, and melee disciplines (Kicks landed, Mend success/fail ratio, Bandages, FD fail/spell break, and deaths immediately following failed FD).
   - [x] Add Class-based and specialized PoP AA learn/improvement milestones across week and month timeline views and chronicle dashboard with TAKP wiki database.
+  - [x] Add Personal Kills & Boss Kill Shots Card (`KillsCard.tsx`), tracking total mob kills, top slain foes, and personal raid boss final killing blows while rejecting guild toast announcements.
   - [x] Verify production Vite build (`dist/` bundle) and Python unit tests.
 
 ## Backlog Ideas

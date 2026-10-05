@@ -205,11 +205,33 @@ export interface EraMilestone {
   zone: string;
 }
 
+export interface SlainMob {
+  mob: string;
+  count: number;
+  id?: number | null;
+  url?: string | null;
+  level?: number;
+  hp?: number;
+}
+
+export interface BossKillShot {
+  boss: string;
+  count: number;
+  id?: number | null;
+  url?: string | null;
+  zone?: string;
+  lastTimestamp?: string;
+  lastDate?: string;
+  isPinnacle?: boolean;
+  hp?: number;
+}
+
 export interface CharacterAggregates {
   totalAAs: number;
   totalDeaths: number;
   totalBossKills: number;
   totalZoneTransitions: number;
+  totalKills?: number;
   bardSongsTwisted?: number;
   bardSeloPulses?: number;
   monkKicks?: number;
@@ -223,7 +245,8 @@ export interface CharacterAggregates {
   topGroupCompanions: Array<{ companion: string; count: number }>;
   topRaidCompanions: Array<{ companion: string; count: number }>;
   topSlainKillers: Array<{ killer: string; count: number }>;
-  topSlainMobs: Array<{ mob: string; count: number }>;
+  topSlainMobs: Array<SlainMob>;
+  bossKillShots?: Array<BossKillShot>;
   aaByZone: Array<{ zone: string; count: number }>;
   topRaidBossesDefeated: Array<{ boss: string; count: number; id?: number | null; url?: string | null }>;
 }

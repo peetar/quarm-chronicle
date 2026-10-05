@@ -9,6 +9,7 @@ import { ClassMasteryCard } from '../cards/ClassMasteryCard';
 import { AAPointsCard } from '../cards/AAPointsCard';
 import { MortalityNemesisCard } from '../cards/MortalityNemesisCard';
 import { SecondaryClassCard } from '../cards/SecondaryClassCard';
+import { KillsCard } from '../cards/KillsCard';
 import { SocialCircleCard } from '../cards/SocialCircleCard';
 import { MilestonesCard } from '../cards/MilestonesCard';
 import { InteractiveTimelineCard } from '../cards/InteractiveTimelineCard';
@@ -47,6 +48,8 @@ export const SlideshowProjector: React.FC<ProjectorProps> = ({
         return <PinnacleBossesCard data={data} />;
       case 'top_raid_kills':
         return <TopRaidKillsCard data={data} />;
+      case 'kills':
+        return <KillsCard data={data} />;
       case 'class_mastery':
         return <ClassMasteryCard data={data} />;
       case 'aa_points':

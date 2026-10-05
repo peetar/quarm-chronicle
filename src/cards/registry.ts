@@ -38,6 +38,15 @@ export const CARD_REGISTRY: CardDefinition[] = [
     defaultSelected: true,
   },
   {
+    id: 'kills',
+    title: '🎯 Personal Kills & Boss Kill Shots',
+    shortTitle: 'Kill Shots',
+    category: 'combat',
+    description: 'Total mobs slain, personal raid boss killing blows, and most frequent mob conquests.',
+    icon: '🎯',
+    defaultSelected: true,
+  },
+  {
     id: 'class_mastery',
     title: '🕊️ Class Mastery & Primary Signature Spells',
     shortTitle: 'Class Mastery',

@@ -8,6 +8,7 @@ import { ClassMasteryCard } from '../cards/ClassMasteryCard';
 import { AAPointsCard } from '../cards/AAPointsCard';
 import { MortalityNemesisCard } from '../cards/MortalityNemesisCard';
 import { SecondaryClassCard } from '../cards/SecondaryClassCard';
+import { KillsCard } from '../cards/KillsCard';
 import { SocialCircleCard } from '../cards/SocialCircleCard';
 import { MilestonesCard } from '../cards/MilestonesCard';
 import { InteractiveTimelineCard } from '../cards/InteractiveTimelineCard';
@@ -151,13 +152,16 @@ export const SummaryProjector: React.FC<ProjectorProps> = ({
           </div>
         )}
 
-        {/* 6. Wide Card: Social & Companions */}
+        {/* 6. Wide Card: Personal Kills & Boss Kill Shots */}
+        {isSelected('kills') && <KillsCard data={data} className="mb-4" />}
+
+        {/* 7. Wide Card: Social & Companions */}
         {isSelected('social_circle') && <SocialCircleCard data={data} className="mb-4" />}
 
-        {/* 7. Wide Card: Milestones & Expansion Firsts */}
+        {/* 8. Wide Card: Milestones & Expansion Firsts */}
         {isSelected('milestones') && <MilestonesCard data={data} className="mb-4" />}
 
-        {/* 8. Interactive Timeline Card (if selected) */}
+        {/* 9. Interactive Timeline Card (if selected) */}
         {isSelected('interactive_timeline') && <InteractiveTimelineCard data={data} className="mt-6" />}
 
         <footer className="text-center mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-500 tracking-wider">

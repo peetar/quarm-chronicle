@@ -13,6 +13,8 @@ import {
   DailyZoneActivityEvent,
   EraMilestone,
   ClassAALearnEvent,
+  BossKillShot,
+  SlainMob,
 } from '../types/events';
 import CLASS_AAS from '../data/class_aas.json';
 
@@ -22,6 +24,7 @@ const DING_PATTERN = /Welcome to level (\d+)!/i;
 const AA_PATTERN = /You have gained an ability point!\s*You now have (\d+) ability point(?:\(s\)|s)?\./i;
 const AA_GAIN_PATTERN = /^You have gained the ability \"(?<name>[^\"]+)\" at a cost of (?<cost>\d+) ability points?\./i;
 const AA_IMPROVE_PATTERN = /^You have improved (?<name>.+?)(?:\s+(?<rank>\d+))? at a cost of (?<cost>\d+) ability points?\./i;
+const YOU_SLAIN_PATTERN = /^You have slain (?<target>.+?)\s*!$/i;
 const DEATH_SLAIN = /^You have been slain by ([^!]+)!/i;
 const CAST_PATTERN = /^You begin (?:casting|singing) (.*?)\./i;
 const GUILD_JOIN = /^You have joined (?!the group|the raid)(.+?)\.?$/i;
@@ -287,6 +290,127 @@ function normalizeBossName(name: string): string {
   return name.trim();
 }
 
+const KNOWN_RAID_BOSS_NAMES = new Set([
+  'lord inquisitor seru', 'lcea katta', 'dain frostreaver iv', 'king tormax',
+  'derakor the vindicator', 'the statue of rallos zek', 'the idol of rallos zek',
+  'dozekar the cursed', 'zlandicar', "kelorek'dar",
+  'ventani the warder', 'tukaarak the warder', 'hraashna the warder', 'nanzata the warder',
+  'midayor', 'essedera', 'lepethida', 'tavekalem',
+  'praesertum matpa', 'praesertum rhugol', 'praesertum vantorus', 'praesertum bikki',
+  'emperor ssraeshza', 'high priest of ssraeshza', "rhag'zadune", "rhag'mozdehk",
+  "arch lich rhag'zadune", 'blood of chardok', 'overking bathezid', 'queen cristanos thex',
+  'trakanon', 'venril sathir', 'gorenaire', 'talendor', 'severilous', 'faydedar',
+  'klandicar', 'ikatiar the venom', 'eishir of the mire', 'jorlleag', 'nevederia',
+  'sevelow', 'cazic thule', 'inny', 'innoruuk', 'dracoliche', 'dread', 'terror', 'fright',
+  'thall va kelun', 'diabo xi va', 'va xi aten ha ra', 'diabo xi xin', 'diabo xi xin thall',
+  'thall xakra kaan', 'kaas thall xi ans dyek', 'kaas thall xi luclin', 'diabo xi va temari',
+  'xerkizh the creator', 'shei vinitras', 'the itraer vius', 'grieg veneficus',
+  'lord vyemm', 'dagarn the destroyer', "koi'doken", 'mirenilla', 'gozzrem', 'lendiniara the keeper',
+  'telkorenar', 'kreizenn the ancient', 'vyemm', 'queen raltaas'
+]);
+
+function resolveNpc(
+  name: string,
+  npcDatabase?: any
+): { id: number | null; url: string | null; level?: number; hp?: number } {
+  if (!npcDatabase) return { id: null, url: null };
+  const cleaned = name.trim().toLowerCase().replace(/`/g, "'");
+  const override = npcDatabase.custom_overrides?.[cleaned];
+  if (override) {
+    return {
+      id: override.id ?? null,
+      url: override.id ? `https://www.pqdi.cc/npc/${override.id}` : null,
+      level: override.level,
+      hp: override.hp,
+    };
+  }
+  let matches = npcDatabase.npcs_by_name?.[cleaned];
+  if (!matches || matches.length === 0) {
+    for (const prefix of ['a ', 'an ', 'the ']) {
+      if (cleaned.startsWith(prefix)) {
+        matches = npcDatabase.npcs_by_name?.[cleaned.slice(prefix.length)];
+        if (matches && matches.length > 0) break;
+      } else {
+        matches = npcDatabase.npcs_by_name?.[prefix + cleaned];
+        if (matches && matches.length > 0) break;
+      }
+    }
+  }
+  if (matches && matches.length > 0) {
+    const cand = matches[0];
+    return {
+      id: cand.id ?? null,
+      url: cand.id ? `https://www.pqdi.cc/npc/${cand.id}` : null,
+      level: cand.level,
+      hp: cand.hp,
+    };
+  }
+  return { id: null, url: null };
+}
+
+function checkBossTarget(
+  target: string,
+  currentZone: string,
+  npcDatabase?: any
+): { isBoss: boolean; canonName: string; isPinnacle: boolean; npcId: number | null; npcUrl: string | null; hp?: number } {
+  const cleaned = target.trim().toLowerCase().replace(/`/g, "'");
+  const cleanedNoThe = cleaned.startsWith('the ') ? cleaned.slice(4).trim() : cleaned;
+
+  // 1. Pinnacle Bosses
+  for (const [normK, canon] of Object.entries(NORM_PINNACLES)) {
+    const kClean = normK.replace(/`/g, "'").toLowerCase();
+    const kNoThe = kClean.startsWith('the ') ? kClean.slice(4).trim() : kClean;
+    if (cleaned === kClean || cleanedNoThe === kNoThe || cleaned === kNoThe) {
+      const res = resolveNpc(canon, npcDatabase);
+      return { isBoss: true, canonName: canon, isPinnacle: true, npcId: res.id, npcUrl: res.url, hp: res.hp };
+    }
+  }
+
+  // 2. Known raid boss names
+  if (KNOWN_RAID_BOSS_NAMES.has(cleaned) || KNOWN_RAID_BOSS_NAMES.has(cleanedNoThe)) {
+    const canon = target.trim().replace(/`/g, "'");
+    const res = resolveNpc(canon, npcDatabase);
+    return { isBoss: true, canonName: canon, isPinnacle: false, npcId: res.id, npcUrl: res.url, hp: res.hp };
+  }
+
+  // 3. Custom overrides in npc_database
+  if (npcDatabase?.custom_overrides) {
+    const ov = npcDatabase.custom_overrides[cleaned] || npcDatabase.custom_overrides[cleanedNoThe];
+    if (ov) {
+      return {
+        isBoss: true,
+        canonName: target.trim().replace(/`/g, "'"),
+        isPinnacle: false,
+        npcId: ov.id ?? null,
+        npcUrl: ov.id ? `https://www.pqdi.cc/npc/${ov.id}` : null,
+        hp: ov.hp,
+      };
+    }
+  }
+
+  // 4. Mobs in npcDatabase with high HP or raid event prefix '#'
+  if (npcDatabase?.npcs_by_name) {
+    const matches = npcDatabase.npcs_by_name[cleaned] || npcDatabase.npcs_by_name[cleanedNoThe];
+    if (matches && matches.length > 0) {
+      const cand = matches[0];
+      const hp = cand.hp || 0;
+      const isEvent = (cand.name || '').startsWith('#');
+      if (hp >= 45000 || (hp >= 20000 && isEvent)) {
+        return {
+          isBoss: true,
+          canonName: target.trim().replace(/`/g, "'"),
+          isPinnacle: false,
+          npcId: cand.id ?? null,
+          npcUrl: cand.id ? `https://www.pqdi.cc/npc/${cand.id}` : null,
+          hp,
+        };
+      }
+    }
+  }
+
+  return { isBoss: false, canonName: target.trim(), isPinnacle: false, npcId: null, npcUrl: null };
+}
+
 function parseEqDate(tsStr: string): { dt: Date | null; iso: string | null; dateStr: string | null } {
   try {
     const normalized = tsStr.replace(/\s+/g, ' ');
@@ -421,6 +545,11 @@ self.onmessage = async (event: MessageEvent) => {
     let fdFailedOrBroken = 0;
     let deathsAfterFailedFd = 0;
     let lastFailedFdMs = 0;
+
+    // Kill Tracking (Total Kills, Slain Mobs, Boss Kill Shots)
+    let totalKills = 0;
+    const slainMobCounts: Record<string, number> = {};
+    const bossKillShotsMap: Record<string, BossKillShot> = {};
 
     // /who command tracking (Tier 1)
     const whoClassVotes: Record<string, number> = {};
@@ -1071,6 +1200,46 @@ self.onmessage = async (event: MessageEvent) => {
       }
 
       // ------------------------------------------------------------------
+      // Slain Foes & Boss Kill Shots
+      // ------------------------------------------------------------------
+      if (msg.startsWith('You have slain ')) {
+        const sm = YOU_SLAIN_PATTERN.exec(msg);
+        if (sm && sm.groups) {
+          totalKills++;
+          const target = sm.groups.target.trim();
+          if (!target.toLowerCase().startsWith('eye of ')) {
+            const cleanTarget = target.replace(/^(?:a|an)\s+/i, '');
+            slainMobCounts[cleanTarget] = (slainMobCounts[cleanTarget] || 0) + 1;
+            const { isBoss, canonName, isPinnacle, npcId, npcUrl, hp } = checkBossTarget(target, currentZone, npcDatabase);
+            if (isBoss) {
+              const { dateStr } = parseEqDate(ts);
+              if (!bossKillShotsMap[canonName]) {
+                bossKillShotsMap[canonName] = {
+                  boss: canonName,
+                  count: 0,
+                  id: npcId,
+                  url: npcUrl,
+                  zone: currentZone,
+                  lastTimestamp: ts,
+                  lastDate: dateStr || '',
+                  isPinnacle,
+                  hp,
+                };
+              }
+              bossKillShotsMap[canonName].count++;
+              bossKillShotsMap[canonName].lastTimestamp = ts;
+              bossKillShotsMap[canonName].lastDate = dateStr || '';
+              bossKillShotsMap[canonName].zone = currentZone;
+              if (hp && !bossKillShotsMap[canonName].hp) bossKillShotsMap[canonName].hp = hp;
+              if (npcId && !bossKillShotsMap[canonName].id) bossKillShotsMap[canonName].id = npcId;
+              if (npcUrl && !bossKillShotsMap[canonName].url) bossKillShotsMap[canonName].url = npcUrl;
+            }
+          }
+        }
+        continue;
+      }
+
+      // ------------------------------------------------------------------
       // Deaths (Level 3)
       // ------------------------------------------------------------------
       if (msg.startsWith('You have been slain by ') || msg === 'You died.') {
@@ -1473,6 +1642,26 @@ self.onmessage = async (event: MessageEvent) => {
       0
     );
 
+    const topSlainMobs: SlainMob[] = Object.entries(slainMobCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 15)
+      .map(([mob, count]) => {
+        const res = resolveNpc(mob, npcDatabase);
+        return {
+          mob,
+          count,
+          id: res.id,
+          url: res.url,
+          level: res.level,
+          hp: res.hp,
+        };
+      });
+
+    const bossKillShots: BossKillShot[] = Object.values(bossKillShotsMap).sort((a, b) => {
+      if (b.count !== a.count) return b.count - a.count;
+      return (b.lastTimestamp || '').localeCompare(a.lastTimestamp || '');
+    });
+
     const bundle: ParsedCharacterBundle = {
       character: {
         name: characterName,
@@ -1506,6 +1695,7 @@ self.onmessage = async (event: MessageEvent) => {
         totalDeaths,
         totalBossKills,
         totalZoneTransitions,
+        totalKills: totalKills > 0 ? totalKills : undefined,
         bardSongsTwisted: bardSongsEnded > 0 ? bardSongsEnded : undefined,
         bardSeloPulses: bardSeloPulses > 0 ? bardSeloPulses : undefined,
         monkKicks: monkKicks > 0 ? monkKicks : undefined,
@@ -1519,7 +1709,8 @@ self.onmessage = async (event: MessageEvent) => {
         topGroupCompanions: topGroup,
         topRaidCompanions: topRaid,
         topSlainKillers: topKillers,
-        topSlainMobs: [],
+        topSlainMobs,
+        bossKillShots: bossKillShots.length > 0 ? bossKillShots : undefined,
         aaByZone: topAAZones,
         topRaidBossesDefeated: topBosses,
       },

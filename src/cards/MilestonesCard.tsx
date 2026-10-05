@@ -45,6 +45,18 @@ export const MilestonesCard: React.FC<CardProps> = ({ data, className = '' }) =>
             </div>
           ))}
 
+        {events.level2
+          .filter((e) => e.type === 'pop_flag')
+          .map((flag: any, i: number) => (
+            <div key={`mflag-${i}`} className="py-2 flex justify-between items-center">
+              <span className="text-amber-300 font-semibold flex items-center gap-1.5 truncate pr-2">
+                <span>🚩</span> {flag.title || flag.flagName}
+              </span>
+              <span className="text-slate-400 whitespace-nowrap">{flag.date}</span>
+              <span className="text-cyan font-medium whitespace-nowrap pl-2">{flag.zone}</span>
+            </div>
+          ))}
+
         {eras.map((era) => (
           <div key={era.era} className="py-2 flex justify-between items-center">
             <span className="text-slate-200 flex items-center gap-1.5">

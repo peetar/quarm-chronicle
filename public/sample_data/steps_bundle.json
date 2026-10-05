@@ -8,9 +8,9 @@
     "guild": "Dungeons and Dragons",
     "dateRange": {
       "start": "2024-07-06",
-      "end": "2026-09-17",
+      "end": "2026-10-02",
       "startIso": "2024-07-06T10:11:39",
-      "endIso": "2026-09-17T22:34:55"
+      "endIso": "2026-10-02T12:58:55"
     },
     "totalLogLines": 12962723,
     "lastParsedAt": "2026-09-22 12:00:00"
@@ -39,6 +39,12 @@
       "timestamp": "Fri Jul 25 20:13:26 2025",
       "date": "2025-07-25",
       "zone": "Nexus"
+    },
+    {
+      "era": "Planes of Power",
+      "timestamp": "Fri Oct 02 08:34:25 2026",
+      "date": "2026-10-02",
+      "zone": "Plane of Justice"
     }
   ],
   "events": {
@@ -4149,6 +4155,90 @@
         "timestamp": "Sat Aug 29 13:51:36 2026",
         "date": "2026-08-29",
         "iso": "2026-08-29T13:51:36"
+      },
+      {
+        "level": 2,
+        "type": "pop_flag",
+        "title": "Justice: Speak to Mavuin",
+        "flagName": "Justice: Speak to Mavuin",
+        "detail": "Mavuin tells you, 'I know it has been said for years before me, and will be said for years after, but I was truly framed...'",
+        "sourceNpc": "Mavuin",
+        "zone": "Plane of Justice",
+        "timestamp": "Fri Oct 02 08:34:25 2026",
+        "date": "2026-10-02",
+        "iso": "2026-10-02T08:34:25"
+      },
+      {
+        "level": 2,
+        "type": "pop_flag",
+        "title": "Justice: Trial Completed (Tribunal)",
+        "flagName": "Justice: Trial Completed (Tribunal)",
+        "detail": "The Tribunal tells you, 'You have completed a trial - impressive for mortals. You can tell Mavuin that we will hear his plea. We will seek him out as time befits us.'",
+        "sourceNpc": "The Tribunal",
+        "zone": "Plane of Justice",
+        "timestamp": "Fri Oct 02 08:52:56 2026",
+        "date": "2026-10-02",
+        "iso": "2026-10-02T08:52:56"
+      },
+      {
+        "level": 2,
+        "type": "pop_flag",
+        "title": "Justice: Return to Mavuin",
+        "flagName": "Justice: Return to Mavuin",
+        "detail": "Mavuin tells you, 'So you have pleaded my case to the Tribunal, I am most thankful. I hope you will be able to succeed in your further travels in the Planes.'",
+        "sourceNpc": "Mavuin",
+        "zone": "Plane of Justice",
+        "timestamp": "Fri Oct 02 08:53:30 2026",
+        "date": "2026-10-02",
+        "iso": "2026-10-02T08:53:30"
+      },
+      {
+        "level": 2,
+        "type": "pop_flag",
+        "title": "Storms: Speak to Askr (Giant Heads)",
+        "flagName": "Storms: Speak to Askr (Giant Heads)",
+        "detail": "Askr looks over the remnants of the storm giants in his hands then looks up at you with a sorrowful gaze. 'Good work, you may be the ones to help me push back the scourge.'",
+        "sourceNpc": "Askr the Lost",
+        "zone": "Plane of Storms",
+        "timestamp": "Fri Oct 02 12:18:27 2026",
+        "date": "2026-10-02",
+        "iso": "2026-10-02T12:18:27"
+      },
+      {
+        "level": 2,
+        "type": "pop_flag",
+        "title": "Storms: Askr's Medallion (Esoteric Meld)",
+        "flagName": "Storms: Askr's Medallion (Esoteric Meld)",
+        "detail": "Askr the Lost says 'You have retrieved the pieces! You are well on your way to pushing forth into the Bastion!'",
+        "sourceNpc": "Askr the Lost",
+        "zone": "Plane of Storms",
+        "timestamp": "Fri Oct 02 12:19:23 2026",
+        "date": "2026-10-02",
+        "iso": "2026-10-02T12:19:23"
+      },
+      {
+        "level": 2,
+        "type": "pop_flag",
+        "title": "Bastion of Thunder Access",
+        "flagName": "Bastion of Thunder Access",
+        "detail": "An aura of soft light gleams around you as the shrine reacts to your Talisman of Thunderous Foyer and sends you forth into the mighty Bastion of Thunder.",
+        "sourceNpc": "Shrine of Thunder",
+        "zone": "Bastion of Thunder",
+        "timestamp": "Fri Oct 02 12:20:50 2026",
+        "date": "2026-10-02",
+        "iso": "2026-10-02T12:20:50"
+      },
+      {
+        "level": 2,
+        "type": "pop_flag",
+        "title": "Disease: Speak to Adler Fuirstel",
+        "flagName": "Disease: Speak to Adler Fuirstel",
+        "detail": "Adler Fuirstel tells you, 'The ward is carried by the one that Bertoxxulous has created to guard the entrance to the crypt. Seek out Grummus and return to me with the ward.'",
+        "sourceNpc": "Adler Fuirstel",
+        "zone": "Plane of Tranquility",
+        "timestamp": "Fri Oct 02 12:58:55 2026",
+        "date": "2026-10-02",
+        "iso": "2026-10-02T12:58:55"
       }
     ],
     "level3": [
@@ -32200,6 +32290,7 @@
         "isPinnacle": false,
         "hp": 60000
       }
-    ]
+    ],
+    "totalPoPFlags": 7
   }
 }

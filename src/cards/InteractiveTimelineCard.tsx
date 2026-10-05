@@ -506,9 +506,9 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
     } else if (zoomLevel === 2) {
       list.push(...dailyBossSummaries);
       list.push(...dailyDeathSummaries);
-      list.push(...events.level2.filter((e) => e.type === 'aa_gain' || e.type === 'class_aa_learn'));
+      list.push(...events.level2.filter((e) => e.type === 'aa_gain' || e.type === 'class_aa_learn' || e.type === 'pop_flag'));
     } else if (zoomLevel >= 3) {
-      list.push(...events.level2.filter((e) => e.type === 'aa_gain' || e.type === 'class_aa_learn'));
+      list.push(...events.level2.filter((e) => e.type === 'aa_gain' || e.type === 'class_aa_learn' || e.type === 'pop_flag'));
       list.push(...events.level3);
     }
 
@@ -768,6 +768,31 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
                   );
                 }
 
+                if (e.type === 'pop_flag') {
+                  const tiers = [150, 110, 70, 30];
+                  const baseTop = tiers[idx % tiers.length];
+                  const jitter = getEventJitter(e.flagName + idx, 8);
+                  const chosenTop = Math.max(16, Math.min(165, baseTop + jitter));
+                  const stemHeight = Math.max(14, 240 - chosenTop - 24);
+
+                  return (
+                    <div
+                      key={`pop-flag-${idx}`}
+                      style={{ left: `${leftPct}%`, top: `${chosenTop}px` }}
+                      className="absolute -translate-x-1/2 flex flex-col items-center z-20 hover:z-50 pointer-events-none"
+                    >
+                      <div
+                        onClick={() => setSelectedEvent(e)}
+                        className="pointer-events-auto cursor-pointer bg-amber-950/95 border border-amber-400 text-amber-200 px-2.5 py-1 rounded-full text-xs font-bold whitespace-nowrap shadow-[0_0_12px_rgba(245,158,11,0.5)] hover:scale-110 transition-transform flex items-center gap-1.5"
+                      >
+                        <span>🚩</span>
+                        <span>{e.flagName}</span>
+                      </div>
+                      <div style={{ height: `${stemHeight}px` }} className="w-[1.5px] bg-amber-400 opacity-75 pointer-events-none" />
+                    </div>
+                  );
+                }
+
                 if (e.type === 'guild_join' || e.type === 'guild_leave') {
                   const tiers = [24, 56, 88];
                   const baseStem = tiers[idx % tiers.length];
@@ -1007,6 +1032,7 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
               <span><strong className="text-gold-soft">👑</strong> Pinnacle First Kills</span>
               <span><strong className="text-gold">✨</strong> Epic 1.0 Weapon</span>
               <span><strong className="text-amber-400">●</strong> Milestone Dings (1–60)</span>
+              <span><strong className="text-amber-400">🚩</strong> PoP Character Flags</span>
               <span><strong className="text-indigo-400">🔮</strong> Class & Specialized AAs</span>
               <span><strong className="text-purple">◆</strong> Alternate Advancements ({data.aggregates.totalAAs} AAs)</span>
               <span><strong className="text-cyan">⚔️</strong> {data.aggregates.totalBossKills} Raid & PvP Boss Kills</span>
@@ -1054,6 +1080,25 @@ export const InteractiveTimelineCard: React.FC<CardProps> = ({ data, className =
                   {selectedEvent.description && (
                     <div className="mt-2 p-2.5 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-300 leading-relaxed">
                       {selectedEvent.description}
+                    </div>
+                  )}
+                </>
+              )}
+              {selectedEvent.type === 'pop_flag' && (
+                <>
+                  <div className="flex justify-between border-b border-white/5 py-1">
+                    <span className="text-slate-400">Progression Flag:</span>
+                    <span className="text-amber-300 font-semibold">{selectedEvent.flagName}</span>
+                  </div>
+                  {selectedEvent.sourceNpc && (
+                    <div className="flex justify-between border-b border-white/5 py-1">
+                      <span className="text-slate-400">Source:</span>
+                      <span className="text-slate-200 font-medium">{selectedEvent.sourceNpc}</span>
+                    </div>
+                  )}
+                  {selectedEvent.detail && (
+                    <div className="mt-2 p-2.5 bg-slate-950/70 rounded-lg border border-slate-800 text-xs text-slate-300 leading-relaxed italic">
+                      "{selectedEvent.detail}"
                     </div>
                   )}
                 </>

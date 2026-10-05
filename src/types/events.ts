@@ -145,6 +145,19 @@ export interface ClassAALearnEvent {
   iso?: string;
 }
 
+export interface PoPFlagEvent {
+  level: number;
+  type: 'pop_flag';
+  title: string;
+  flagName: string;
+  detail?: string;
+  sourceNpc?: string;
+  zone: string;
+  timestamp: string;
+  date: string;
+  iso?: string;
+}
+
 export interface DailyZoneActivityEvent {
   level: number;
   type: 'daily_zone_activity';
@@ -232,6 +245,7 @@ export interface CharacterAggregates {
   totalBossKills: number;
   totalZoneTransitions: number;
   totalKills?: number;
+  totalPoPFlags?: number;
   bardSongsTwisted?: number;
   bardSeloPulses?: number;
   monkKicks?: number;
@@ -256,7 +270,7 @@ export interface ParsedCharacterBundle {
   eras: EraMilestone[];
   events: {
     level1: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent>;
-    level2: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent | ClassAALearnEvent>;
+    level2: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent | ClassAALearnEvent | PoPFlagEvent>;
     level3: Array<BossKillEvent | DeathEvent | DailyZoneActivityEvent>;
   };
   aggregates: CharacterAggregates;

@@ -13,12 +13,14 @@ import {
   DailyZoneActivityEvent,
   EraMilestone,
   ClassAALearnEvent,
+  PoPFlagEvent,
   BossKillShot,
   SlainMob,
 } from '../types/events';
 import CLASS_AAS from '../data/class_aas.json';
 
 const TS_PATTERN = /^\[([A-Za-z]{3}\s+[A-Za-z]{3}\s+[\s\d]?\d\s+\d{2}:\d{2}:\d{2}\s+\d{4})\]\s*(.*)\r?$/;
+const POP_FLAG_PATTERN = /^You (?:have )?received? a character flag!/i;
 const ZONE_PATTERN = /^You have entered ([^\.]+)\./i;
 const DING_PATTERN = /Welcome to level (\d+)!/i;
 const AA_PATTERN = /You have gained an ability point!\s*You now have (\d+) ability point(?:\(s\)|s)?\./i;
@@ -411,6 +413,452 @@ function checkBossTarget(
   return { isBoss: false, canonName: target.trim(), isPinnacle: false, npcId: null, npcUrl: null };
 }
 
+interface PoPFlagRule {
+  speakerPattern?: RegExp;
+  textPattern: RegExp;
+  flagName: string;
+  zone: string;
+  sourceNpc: string;
+}
+
+const POP_FLAG_RULES: PoPFlagRule[] = [
+  // Justice
+  {
+    speakerPattern: /Mavuin/i,
+    textPattern: /I was truly framed|plead my case|evidence of Mavuin/i,
+    flagName: 'Justice: Speak to Mavuin',
+    zone: 'Plane of Justice',
+    sourceNpc: 'Mavuin',
+  },
+  {
+    speakerPattern: /Tribunal/i,
+    textPattern: /completed a trial|hear his plea|impressive for mortals/i,
+    flagName: 'Justice: Trial Completed (Tribunal)',
+    zone: 'Plane of Justice',
+    sourceNpc: 'The Tribunal',
+  },
+  {
+    speakerPattern: /Mavuin/i,
+    textPattern: /pleaded my case to the Tribunal|most thankful/i,
+    flagName: 'Justice: Return to Mavuin',
+    zone: 'Plane of Justice',
+    sourceNpc: 'Mavuin',
+  },
+
+  // Storms & Bastion of Thunder
+  {
+    speakerPattern: /Askr/i,
+    textPattern: /remnants of the storm giants|push back the scourge|prowess in battle/i,
+    flagName: 'Storms: Speak to Askr (Giant Heads)',
+    zone: 'Plane of Storms',
+    sourceNpc: 'Askr the Lost',
+  },
+  {
+    speakerPattern: /Askr|mystical medallion/i,
+    textPattern: /mystical medallion given to you by Askr|retrieved the pieces/i,
+    flagName: "Storms: Askr's Medallion (Esoteric Meld)",
+    zone: 'Plane of Storms',
+    sourceNpc: 'Askr the Lost',
+  },
+  {
+    speakerPattern: /Talisman of Thunderous Foyer|Bastion of Thunder|shrine/i,
+    textPattern: /Bastion of Thunder|shrine reacts|Talisman of Thunderous Foyer/i,
+    flagName: 'Bastion of Thunder Access',
+    zone: 'Bastion of Thunder',
+    sourceNpc: 'Shrine of Thunder',
+  },
+  {
+    speakerPattern: /Askr/i,
+    textPattern: /inside the entry hall|entry hall of Bastion/i,
+    flagName: 'Thunder: Hail Askr in BoT',
+    zone: 'Bastion of Thunder',
+    sourceNpc: 'Askr the Lost',
+  },
+  {
+    speakerPattern: /Agnarr|Karana/i,
+    textPattern: /information obtained from Karana|defeat agnarr|path of the Fallen/i,
+    flagName: 'Thunder: Defeat Agnarr & Hail Karana',
+    zone: 'Bastion of Thunder',
+    sourceNpc: 'Karana',
+  },
+
+  // Disease & Crypt of Decay
+  {
+    speakerPattern: /Adler Fuirstel|Adler/i,
+    textPattern: /what ward|ward is carried by the one/i,
+    flagName: 'Disease: Speak to Adler Fuirstel',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Adler Fuirstel',
+  },
+  {
+    speakerPattern: /Milyk Fuirstel|Planar Projection|Grummus/i,
+    textPattern: /return to me with the ward|grummus has been destroyed/i,
+    flagName: 'Disease: Grummus Defeated (Ward Obtained)',
+    zone: 'Plane of Disease',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Elder Fuirstel/i,
+    textPattern: /sores covering his face|remove this pox|fell this god|heat radiating from his face/i,
+    flagName: 'Decay: Deliver Ward to Elder Fuirstel',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Elder Fuirstel',
+  },
+  {
+    speakerPattern: /Tarkil Adan/i,
+    textPattern: /small glowing bone fragment|depths of Lxanvom|bone throne|was king once/i,
+    flagName: 'Decay: Access to Lower Depths (Tarkil Adan)',
+    zone: 'Crypt of Decay',
+    sourceNpc: 'Tarkil Adan',
+  },
+  {
+    speakerPattern: /Milyk Fuirstel|Bertoxxulous|Planar Projection/i,
+    textPattern: /Bertoxxulous is slain|brother and I are forever in your debt/i,
+    flagName: 'Decay: Defeat Bertoxxulous',
+    zone: 'Crypt of Decay',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Elder Fuirstel/i,
+    textPattern: /renounced our following of Bertoxxulous|Welcome back friend/i,
+    flagName: 'Decay: Return to Elder Fuirstel',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Elder Fuirstel',
+  },
+
+  // Nightmare
+  {
+    speakerPattern: /Adroha Jezith|Adroha/i,
+    textPattern: /punishing him for allowing entrance|tortured by nightmares/i,
+    flagName: 'Nightmare: Speak to Adroha Jezith',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Adroha Jezith',
+  },
+  {
+    speakerPattern: /Thelin Poxbourne|Thelin/i,
+    textPattern: /destroy her for all that have had to endure|swept away from his nightmare|completed his pact/i,
+    flagName: 'Nightmare: Complete Hedge Maze Event',
+    zone: 'Plane of Nightmare',
+    sourceNpc: 'Thelin Poxbourne',
+  },
+  {
+    speakerPattern: /Thelin Poxbourne|Planar Projection|Terris Thule/i,
+    textPattern: /cruel hand of Terris no longer shall torment|express to you my gratitude|Terris Thule's grasp/i,
+    flagName: 'Nightmare: Defeat Terris Thule',
+    zone: 'Plane of Nightmare',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Thelin Poxbourne|Elder Poxbourne|Thelin/i,
+    textPattern: /forever in your debt|saved from a world of eternal nightmares|cannot stand to greet you|still quite weak/i,
+    flagName: 'Nightmare: Return to Elder Poxbourne',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Elder Poxbourne',
+  },
+
+  // Innovation & Tactics
+  {
+    speakerPattern: /Nitram Anizok|Nitram/i,
+    textPattern: /twist the very bottom rivet|main factory door|close one|study these schematics/i,
+    flagName: 'Innovation: Factory Key (Nitram Anizok)',
+    zone: 'Plane of Innovation',
+    sourceNpc: 'Nitram Anizok',
+  },
+  {
+    speakerPattern: /Giwin Mirakon|Giwin/i,
+    textPattern: /warring spirit within you|stop the energy carriers|test the machine/i,
+    flagName: 'Innovation: Giwin Mirakon (Test Machine)',
+    zone: 'Plane of Innovation',
+    sourceNpc: 'Giwin Mirakon',
+  },
+  {
+    speakerPattern: /Giwin Mirakon|Giwin/i,
+    textPattern: /destroyed the machine|Battlefields of Zek|find him in Drunder/i,
+    flagName: 'Innovation: Manaetic Behemoth Defeated',
+    zone: 'Plane of Innovation',
+    sourceNpc: 'Giwin Mirakon',
+  },
+  {
+    speakerPattern: /Vallon Zek/i,
+    textPattern: /pack of notes from Vallon|notes from Vallon/i,
+    flagName: 'Tactics: Defeat Vallon Zek',
+    zone: 'Plane of Tactics',
+    sourceNpc: 'Vallon Zek',
+  },
+  {
+    speakerPattern: /Tallon Zek/i,
+    textPattern: /pack of notes from Tallon|notes from Tallon/i,
+    flagName: 'Tactics: Defeat Tallon Zek',
+    zone: 'Plane of Tactics',
+    sourceNpc: 'Tallon Zek',
+  },
+  {
+    speakerPattern: /Rallos Zek/i,
+    textPattern: /parchments of Rallos|Rallos Zek/i,
+    flagName: 'Tactics: Defeat Rallos Zek',
+    zone: 'Plane of Tactics',
+    sourceNpc: 'Rallos Zek',
+  },
+
+  // Torment
+  {
+    speakerPattern: /Fahlia Shadyglade|Fahlia/i,
+    textPattern: /Tylis has mentioned in agony|Maareq|outsider was one|i will go/i,
+    flagName: 'Torment: Speak to Fahlia Shadyglade',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Fahlia Shadyglade',
+  },
+  {
+    speakerPattern: /Tylis Newleaf|Tylis/i,
+    textPattern: /removed from his agony|depths of the Plane of Torment/i,
+    flagName: 'Torment: Keeper of Sorrows (Rescue Tylis)',
+    zone: 'Plane of Torment',
+    sourceNpc: 'Tylis Newleaf',
+  },
+  {
+    speakerPattern: /Saryrn/i,
+    textPattern: /Saryrn been destroyed|aura surrounds the mystical symbols/i,
+    flagName: 'Torment: Defeat Saryrn',
+    zone: 'Plane of Torment',
+    sourceNpc: 'Planar Projection',
+  },
+
+  // Valor & Halls of Honor
+  {
+    speakerPattern: /Aerin`Dar|Aerin'Dar/i,
+    textPattern: /defeated the construct Aerin|bested Aerin/i,
+    flagName: 'Valor: Defeat Aerin`Dar',
+    zone: 'Plane of Valor',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Trydan Faye|Trydan/i,
+    textPattern: /power of Trydan Faye|Rydda`Dar in the first/i,
+    flagName: 'Honor: Rydda`Dar Trial (Trydan Faye)',
+    zone: 'Halls of Honor',
+    sourceNpc: 'Trydan Faye',
+  },
+  {
+    speakerPattern: /Rhaliq Trell|Rhaliq/i,
+    textPattern: /power of Rhaliq Trell|saved the villagers/i,
+    flagName: 'Honor: Save Villagers Trial (Rhaliq Trell)',
+    zone: 'Halls of Honor',
+    sourceNpc: 'Rhaliq Trell',
+  },
+  {
+    speakerPattern: /Alekson Garn|Alekson/i,
+    textPattern: /power of Alekson Garn|defeated the nomads/i,
+    flagName: 'Honor: Save Nomads Trial (Alekson Garn)',
+    zone: 'Halls of Honor',
+    sourceNpc: 'Alekson Garn',
+  },
+  {
+    speakerPattern: /Mithaniel Marr|Mithaniel/i,
+    textPattern: /Mithaniel has been bested|Cipher of the Divine Language/i,
+    flagName: 'Temple of Marr: Defeat Mithaniel Marr',
+    zone: 'Halls of Honor',
+    sourceNpc: 'Planar Projection',
+  },
+
+  // Solusek Ro
+  {
+    speakerPattern: /Miak the Light Bearer|Miak/i,
+    textPattern: /portal into the Plane of Fire has been altered/i,
+    flagName: 'Solusek: Portal Altered (Miak)',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Miak the Light Bearer',
+  },
+  {
+    speakerPattern: /Xuzl/i,
+    textPattern: /Xuzl's arcane wisdom pulses in your mind|Xuzl/i,
+    flagName: 'Solusek: Xuzl Defeated (Wing 1)',
+    zone: "Solusek Ro's Tower",
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Arlyxir/i,
+    textPattern: /Arlyxir's wealth of knowledge|Arlyxir/i,
+    flagName: 'Solusek: Arlyxir Defeated (Wing 2)',
+    zone: "Solusek Ro's Tower",
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Dresolik/i,
+    textPattern: /power of Dresolik surges through you|Protector of Dresolik/i,
+    flagName: 'Solusek: Protector of Dresolik Defeated (Wing 3)',
+    zone: "Solusek Ro's Tower",
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Rizlona/i,
+    textPattern: /Rizlona's song slips through your thoughts|Rizlona/i,
+    flagName: 'Solusek: Rizlona Defeated (Wing 4)',
+    zone: "Solusek Ro's Tower",
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Jiva/i,
+    textPattern: /Jiva's strength fills your body|Jiva/i,
+    flagName: 'Solusek: Jiva Defeated (Wing 5)',
+    zone: "Solusek Ro's Tower",
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Solusek Ro/i,
+    textPattern: /true route to the Plane of Fire|Solusek Ro has been defeated/i,
+    flagName: 'Solusek: Defeat Solusek Ro',
+    zone: "Solusek Ro's Tower",
+    sourceNpc: 'Planar Projection',
+  },
+
+  // Elemental Planes & Time
+  {
+    speakerPattern: /Fennin Ro/i,
+    textPattern: /Globe of Dancing Flame|Fennin Ro/i,
+    flagName: 'Fire: Defeat Fennin Ro',
+    zone: 'Plane of Fire',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Xegony/i,
+    textPattern: /Amorphous Cloud of Air|Xegony/i,
+    flagName: 'Air: Defeat Xegony',
+    zone: 'Plane of Air',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Coirnav/i,
+    textPattern: /Sphere of Coalesced Water|Coirnav/i,
+    flagName: 'Water: Defeat Coirnav',
+    zone: 'Plane of Water',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Arbitor|Arbiter/i,
+    textPattern: /Passkey of the Twelve|Arbitor/i,
+    flagName: 'Earth: Passkey of the Twelve (Arbiter)',
+    zone: 'Plane of Earth A',
+    sourceNpc: 'A Mystical Arbitor of Earth',
+  },
+  {
+    speakerPattern: /Rathe/i,
+    textPattern: /Mound of Living Stone|Rathe Council/i,
+    flagName: 'Earth: Defeat The Rathe Council',
+    zone: 'Plane of Earth B',
+    sourceNpc: 'Planar Projection',
+  },
+  {
+    speakerPattern: /Maelin/i,
+    textPattern: /Zeks and Solusek are planning|what lore/i,
+    flagName: 'Tactics: Spoke to Maelin about Solusek Ro',
+    zone: 'Plane of Knowledge',
+    sourceNpc: 'Grand Librarian Maelin',
+  },
+  {
+    speakerPattern: /Maelin/i,
+    textPattern: /Cipher of the Divine Language appears on your arms|Cipher/i,
+    flagName: 'Cipher of Divine Language',
+    zone: 'Plane of Knowledge',
+    sourceNpc: 'Grand Librarian Maelin',
+  },
+  {
+    speakerPattern: /Maelin/i,
+    textPattern: /fate of Zebuxoruk|gather materials/i,
+    flagName: 'Zebuxoruk Fate: Part 1',
+    zone: 'Plane of Knowledge',
+    sourceNpc: 'Grand Librarian Maelin',
+  },
+  {
+    speakerPattern: /Seer Mal Nae`Shi|guided meditation|meditation/i,
+    textPattern: /guided meditation|unlock your memory|unlock your memories|reveal/i,
+    flagName: 'Plane of Tranquility: Guided Meditation',
+    zone: 'Plane of Tranquility',
+    sourceNpc: 'Seer Mal Nae`Shi',
+  },
+  {
+    speakerPattern: /Maelin|Time|Hourglass/i,
+    textPattern: /Quintessence of Elements|Hourglass Portal|bond with the Plane of Time/i,
+    flagName: 'Time: Hourglass Portal Attuned',
+    zone: 'Plane of Time',
+    sourceNpc: 'Loreseeker Maelin',
+  },
+];
+
+function identifyPoPFlag(
+  recentLines: Array<{ ts: string; msg: string }>,
+  currentZone: string
+): { flagName: string; detail: string; sourceNpc: string; zone: string } {
+  // 1. Check backwards through recent lines against POP_FLAG_RULES
+  for (let i = recentLines.length - 1; i >= 0; i--) {
+    const line = recentLines[i].msg;
+    for (const rule of POP_FLAG_RULES) {
+      if (rule.textPattern.test(line)) {
+        return {
+          flagName: rule.flagName,
+          detail: line,
+          sourceNpc: rule.sourceNpc,
+          zone: rule.zone || currentZone || 'Planes of Power',
+        };
+      }
+      if (rule.speakerPattern && rule.speakerPattern.test(line)) {
+        if (rule.textPattern.test(line)) {
+          return {
+            flagName: rule.flagName,
+            detail: line,
+            sourceNpc: rule.sourceNpc,
+            zone: rule.zone || currentZone || 'Planes of Power',
+          };
+        }
+      }
+    }
+  }
+
+  // 2. Zone-specific special cases:
+  // e.g. In Plane of Valor clicking the pillar to Halls of Honor
+  if (currentZone.toLowerCase().includes('plane of valor')) {
+    const detail = recentLines.length > 0 ? recentLines[recentLines.length - 1].msg : '';
+    return {
+      flagName: 'Valor: Zone into Halls of Honor',
+      detail,
+      sourceNpc: 'Halls of Honor Pillar',
+      zone: 'Plane of Valor',
+    };
+  }
+
+  // 3. Fallback: extract NPC if it's an NPC tell
+  for (let i = recentLines.length - 1; i >= 0; i--) {
+    const line = recentLines[i].msg;
+    const tm = /^([A-Za-z\s`]+) tells you, '(.+)'/i.exec(line);
+    if (tm) {
+      const npc = tm[1].trim();
+      const text = tm[2].trim();
+      return {
+        flagName: `PoP Flag: ${npc}`,
+        detail: text,
+        sourceNpc: npc,
+        zone: currentZone || 'Plane of Tranquility',
+      };
+    }
+    if (/shrine reacts|portal|aura\s+of\s+soft\s+light/i.test(line)) {
+      return {
+        flagName: 'PoP Flag: Planar Attunement',
+        detail: line,
+        sourceNpc: 'Planar Portal',
+        zone: currentZone || 'Planes of Power',
+      };
+    }
+  }
+
+  // 4. Ultimate fallback
+  const lastMsg = recentLines.length > 0 ? recentLines[recentLines.length - 1].msg : '';
+  return {
+    flagName: 'PoP Character Flag',
+    detail: lastMsg,
+    sourceNpc: 'Planar Progression',
+    zone: currentZone || 'Planes of Power',
+  };
+}
+
 function parseEqDate(tsStr: string): { dt: Date | null; iso: string | null; dateStr: string | null } {
   try {
     const normalized = tsStr.replace(/\s+/g, ' ');
@@ -551,6 +999,12 @@ self.onmessage = async (event: MessageEvent) => {
     const slainMobCounts: Record<string, number> = {};
     const bossKillShotsMap: Record<string, BossKillShot> = {};
 
+    // PoP Character Flags tracking (Level 2)
+    let totalPoPFlags = 0;
+    let lastPoPFlagName = '';
+    let lastPoPFlagMs = 0;
+    const recentDialogueBuffer: Array<{ ts: string; msg: string }> = [];
+
     // /who command tracking (Tier 1)
     const whoClassVotes: Record<string, number> = {};
     const whoRaceVotes: Record<string, number> = {};
@@ -568,7 +1022,7 @@ self.onmessage = async (event: MessageEvent) => {
 
     // Event collections
     const level1Events: Array<LevelDingEvent | GuildEvent | EpicEvent | PinnacleFirstKillEvent> = [];
-    const level2Events: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent | ClassAALearnEvent> = [];
+    const level2Events: Array<AAGainEvent | ZoneEntryEvent | SpellFirstEvent | ClassAALearnEvent | PoPFlagEvent> = [];
     const level3Events: Array<BossKillEvent | DeathEvent | DailyZoneActivityEvent> = [];
 
     // Aggregates buffers
@@ -655,6 +1109,23 @@ self.onmessage = async (event: MessageEvent) => {
         }
         if (iso) lastIso = iso;
         if (dateStr) lastDate = dateStr;
+
+        // Buffer recent dialogue & events for context-aware character flag attribution
+        if (!POP_FLAG_PATTERN.test(msg)) {
+          if (
+            !msg.includes('points of damage') &&
+            !msg.includes('You try to ') &&
+            !msg.includes('misses') &&
+            !msg.includes('is pierced by') &&
+            !msg.includes('is slashed by') &&
+            !msg.includes('is crushed by')
+          ) {
+            recentDialogueBuffer.push({ ts, msg });
+            if (recentDialogueBuffer.length > 8) {
+              recentDialogueBuffer.shift();
+            }
+          }
+        }
 
       // ------------------------------------------------------------------
       // /who command lines & Anonymous/Roleplaying inspections (Tier 1)
@@ -943,6 +1414,38 @@ self.onmessage = async (event: MessageEvent) => {
               }
             }
           }
+        }
+        continue;
+      }
+
+      // ------------------------------------------------------------------
+      // Planes of Power Character Flags (Level 2)
+      // ------------------------------------------------------------------
+      if (POP_FLAG_PATTERN.test(msg)) {
+        const flagInfo = identifyPoPFlag(recentDialogueBuffer, currentZone);
+        // Deduplicate rapid re-hails of the same flag within 120 seconds
+        const isDuplicate =
+          flagInfo.flagName === lastPoPFlagName &&
+          lineMs - lastPoPFlagMs < 120000;
+
+        if (!isDuplicate) {
+          lastPoPFlagName = flagInfo.flagName;
+          lastPoPFlagMs = lineMs;
+          totalPoPFlags++;
+
+          const { iso, dateStr } = parseEqDate(ts);
+          level2Events.push({
+            level: 2,
+            type: 'pop_flag',
+            title: flagInfo.flagName,
+            flagName: flagInfo.flagName,
+            detail: flagInfo.detail || undefined,
+            sourceNpc: flagInfo.sourceNpc || undefined,
+            zone: flagInfo.zone || currentZone,
+            timestamp: ts,
+            date: dateStr || '',
+            iso: iso || undefined,
+          });
         }
         continue;
       }
@@ -1696,6 +2199,7 @@ self.onmessage = async (event: MessageEvent) => {
         totalBossKills,
         totalZoneTransitions,
         totalKills: totalKills > 0 ? totalKills : undefined,
+        totalPoPFlags: totalPoPFlags > 0 ? totalPoPFlags : undefined,
         bardSongsTwisted: bardSongsEnded > 0 ? bardSongsEnded : undefined,
         bardSeloPulses: bardSeloPulses > 0 ? bardSeloPulses : undefined,
         monkKicks: monkKicks > 0 ? monkKicks : undefined,
